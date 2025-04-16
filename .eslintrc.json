@@ -1,0 +1,22 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:testing-library/react",
+    "plugin:jest-dom/recommended",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "react-hooks", "testing-library", "jest-dom", "prettier"],
+  "rules": {
+    "@typescript-eslint/ban-ts-comment": ["error", { "ts-ignore": true }],
+    "prettier/prettier": "error",
+    "no-unused-vars": "error",
+    "no-console": "error",
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-page-custom-font": "off"
+  },
+  "ignorePatterns": ["node_modules/", ".next/", "out/", "public/", "**/*.d.ts", "**/*.js"]
+}

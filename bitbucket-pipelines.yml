@@ -1,0 +1,20 @@
+pipelines:
+  default:
+    - step:
+        name: Install, Test, Lint, and Build
+        caches:
+          - node
+        script:
+          - echo "📦 Installing dependencies..."
+          - npm install
+
+          - echo "🧪 Running tests..."
+          - npx vitest run
+
+          - echo "🧹 Running lint..."
+          - npx next lint
+
+          - echo "🏗️ Building the project..."
+          - npx next build
+        artifacts:
+          - .next/**/*
