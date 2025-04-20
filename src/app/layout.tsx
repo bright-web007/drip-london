@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Geist, Geist_Mono, Montserrat } from 'next/font/google';
 import './globals.css';
 import { AppProvider } from '@/context/AppContext';
-import Link from 'next/link';
+import Footer from '@/components/Footer/Footer';
+import Navbar from '@/components/Navbar/Navbar';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -11,6 +12,11 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: '--font-geist-mono',
+  subsets: ['latin'],
+});
+
+const fontMontserrat = Montserrat({
+  variable: '--font-montserrat',
   subsets: ['latin'],
 });
 
@@ -26,27 +32,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} ${fontMontserrat.variable} antialiased`}
+      >
         <AppProvider>
           <div className="min-h-screen flex flex-col">
-            <header className="bg-primary-500 text-white shadow-md">
-              <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-                <h1 className="text-xl font-bold">My App</h1>
-                <nav className="space-x-4">
-                  <Link href="/">Home</Link>
-                  <Link href="/about">About</Link>
-                  <Link href="/dashboard">Dashboard</Link>
-                </nav>
-              </div>
-            </header>
+            <Navbar />
 
             <main>{children}</main>
 
-            <footer className="py-4 border-t border-gray-300 bg-gray-100">
-              <div className="container mx-auto px-4 text-center">
-                <p>&copy; {new Date().getFullYear()} My App. All rights reserved.</p>
-              </div>
-            </footer>
+            <Footer />
           </div>
         </AppProvider>
       </body>
