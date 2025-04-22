@@ -7,7 +7,7 @@ import CurvyUnderline from '@/assets/icons-svg/CurvyUnderline';
 const Block3 = () => {
   return (
     <div className="bg-blau-600 py-16 xl:py-20">
-      <div className="flex items-center flex-col-reverse md:flex-row w-[90%] mx-auto">
+      <div className="flex items-center flex-col-reverse md:flex-row w-[90%] xl:w-[85%] 2xl:w-[75%] mx-auto">
         <div className="border-5 border-white w-full md:w-[50%] xl:w-[40%] group overflow-hidden">
           <Image
             src={peopleEating}
@@ -36,7 +36,7 @@ const Block3 = () => {
           <CurvyUnderline />
         </div>
       </div>
-      <div className="flex items-center flex-col md:flex-row w-[90%] md:w-[80%] mx-auto my-5 md:my-40">
+      <div className="flex items-center flex-col md:flex-row w-[90%] md:w-[75%] 2xl:w-[65%] mx-auto my-5 md:my-40">
         <div className="border-5 border-white w-full md:w-[60%] h-[380px] md:h-[315px] xl:h-[450px] group overflow-hidden rotate-0  md:rotate-340">
           <Image
             src={peopleSnapping}

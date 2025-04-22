@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button';
 const Block4 = () => {
   return (
     <div className="bg-beige-400 py-16 xl:py-20">
-      <div className="w-[90%] mx-auto">
+      <div className="w-[90%] xl:w-[85%] 2xl:w-[75%] m mx-auto">
         <div className="flex  flex-col md:flex-row items-center  justify-between">
           <div className="text-[#898155] w-full md:w-[48%] mb-8 md:mb-0">
             <h1 className="text-2xl font-semibold leading-11 font-thankslabs">
@@ -40,7 +40,7 @@ const Block4 = () => {
             <Image
               src={drinks1}
               alt="People eating"
-              className="w-full h-[380px] object-cover group-hover:scale-110 transition-transform duration-500 ease-in-out"
+              className="w-full h-[400px] object-cover group-hover:scale-110 transition-transform duration-500 ease-in-out"
               width={400}
               height={400}
             />
