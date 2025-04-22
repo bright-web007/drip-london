@@ -3,9 +3,11 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import logo from '../../assets/logo.svg';
 import dish from '../../assets/dish.svg';
+import dishFill from '../../assets/dish-fill.svg';
 import { Icon } from '@iconify/react';
 import { Button } from '../ui/button';
 import { useRouter } from 'next/navigation';
+import menuHover from '@/assets/icons-svg/menu-hover.svg';
 
 const Navbar = () => {
   const times = [
@@ -61,15 +63,33 @@ const Navbar = () => {
         />
 
         <div className="flex items-center justify-end border-b border-white w-[25%] lg:w-[40%] text-white text-sm font-medium leading-6 h-18">
-          <div className="flex items-center h-full pr-4 cursor-pointer">
-            <Image src={dish} alt="Dish" width={35} height={24} />
-            <p className="ml-2">Reservation</p>
+          <div className="flex items-center h-full pr-4 cursor-pointer group">
+            <Image src={dish} alt="Dish" width={35} height={24} className="group-hover:hidden" />
+            <Image
+              src={dishFill}
+              alt="Dish"
+              width={35}
+              height={24}
+              className="hidden group-hover:block"
+            />
+            <p className="ml-2 group-hover:font-semibold text-base">Reservation</p>
           </div>
           <div
-            className="flex items-center px-8 border-l border-white h-full cursor-pointer"
+            className="group flex items-center px-8 border-l border-white h-full cursor-pointer"
             onClick={openMenu}
           >
-            <Icon icon="line-md:menu" className="text-white w-6 h-6 cursor-pointer" />
+            <Icon
+              icon="line-md:menu"
+              className="text-white w-7 h-7 cursor-pointer group-hover:hidden"
+            />
+
+            <Image
+              src={menuHover}
+              alt="Menu"
+              width={28}
+              height={28}
+              className="hidden group-hover:block"
+            />
           </div>
         </div>
       </div>

@@ -17,9 +17,11 @@ const Block3 = () => {
             height={400}
           />
         </div>
-        <div className="text-white w-full md:w-[45%] mb-12 md:mb-0 md:ml-8">
+        <div className="text-white w-full md:w-[40%] mb-12 md:mb-0 md:ml-8">
           <CurvyUnderline />
-          <h1 className="text-2xl leading-12 font-semibold mt-10">Make Memories at DRIP LONDON</h1>
+          <h1 className="text-2xl leading-12 font-semibold mt-10 mb-6 font-thankslabs">
+            Make Memories at DRIP LONDON
+          </h1>
           <p className="text-sm leading-6 font-normal">
             A Sharing Concept West African Menu focused on local, seasonal and sustainable
             produce – energetic atmosphere and redefining the club culture offering a unique

@@ -74,12 +74,14 @@ const Block6 = () => {
         </div>
 
         <div className="w-full md:w-[56%] text-beige-500">
-          <h1 className="text-3xl leading-15 font-semibold">Events / Journal</h1>
+          <h1 className="text-3xl font-semibold font-thankslabs mb-12">Events / Journal</h1>
           {events.map((item, index) => (
-            <div className="flex items-start gap-x-4 mb-6" key={index}>
+            <div className="flex items-start gap-x-4 mb-8" key={index}>
               <p className="text-sm leading-6 font-monserrat w-[15%] md:w-[10%]">{item.time}</p>
               <div className="w-[80%]">
-                <h1 className="text-xs md:text-sm leading-6 font-semibold">{item.title}</h1>
+                <h1 className="text-xs md:text-sm leading-6 font-semibold font-thankslabs mb-6">
+                  {item.title}
+                </h1>
                 <p className="text-xs md:text-sm leading-5 md:leading-6 font-monserrat">
                   {item.description}
                 </p>

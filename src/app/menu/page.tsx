@@ -1,11 +1,15 @@
+'use client';
+
 import Image from 'next/image';
 import logo from '@/assets/logo.svg';
 import { Icon } from '@iconify/react';
 import menuBg from '@/assets/menu-bg.jpeg';
+import { useRouter } from 'next/navigation';
 
 const navLinks = ['Home', 'The Menus', 'About', 'Book an Event', 'News', 'Contacts'];
 
-const Menu = () => {
+const MenuNavigation = () => {
+  const router = useRouter();
   return (
     <div className="flex items-center justify-between h-[100vh]">
       <div
@@ -13,7 +17,10 @@ const Menu = () => {
         style={{ backgroundImage: `url(${menuBg.src})` }}
       >
         <div className="absolute inset-0 bg-[rgba(0,0,0,0.39)]" />
-        <div className="absolute bg-beige-500 p-1 rounded-full flex items-center justify-center w-10 h-10 m-6">
+        <div
+          className="absolute bg-beige-500 p-1 rounded-full flex items-center justify-center w-10 h-10 m-6"
+          onClick={() => router.back()}
+        >
           <Icon icon="fluent-mdl2:cancel" className="w-3 h-3 text-white cursor-pointer" />
         </div>
 
@@ -21,9 +28,9 @@ const Menu = () => {
           {navLinks.map((item, index) => (
             <div
               key={index}
-              className="group bg-transparent hover:text-beige-500 text-sm cursor-pointer rounded-[2px] px-6 py-2 text-white flex items-center justify-center transition-all duration-300"
+              className="group bg-transparent hover:text-beige-500 text-sm cursor-pointer rounded-[2px] px-6 py-4 text-white flex items-center justify-center transition-all duration-300"
             >
-              <p className="flex items-center text-[40px] font-medium leading-14  space-x-1">
+              <p className="flex items-center font-thankslabs text-[40px] font-medium leading-14  space-x-1">
                 <span>{item}</span>
                 <span className="overflow-hidden max-w-0 opacity-0 group-hover:max-w-[2.5rem] group-hover:opacity-100 transition-all duration-300">
                   →
@@ -52,4 +59,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default MenuNavigation;

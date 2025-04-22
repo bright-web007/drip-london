@@ -9,9 +9,11 @@ const Block4 = () => {
   return (
     <div className="bg-beige-400 py-16 xl:py-20">
       <div className="w-[90%] mx-auto">
-        <div className="flex  flex-col md:flex-row  justify-between">
+        <div className="flex  flex-col md:flex-row items-center  justify-between">
           <div className="text-[#898155] w-full md:w-[48%] mb-8 md:mb-0">
-            <h1 className="text-2xl font-semibold leading-11">Private Dining and Events</h1>
+            <h1 className="text-2xl font-semibold leading-11 font-thankslabs">
+              Private Dining and Events
+            </h1>
             <p className="font-monserrat text-sm leading-6 font-normal mt-6">
               At Drip London we transform events into vibrant celebrations of connection and
               culture. Our immersive West African fusion restaurant offers more than just a meal —
@@ -44,7 +46,7 @@ const Block4 = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col-reverse md:flex-row  justify-between mt-8 md:mt-20">
+        <div className="flex flex-col-reverse md:flex-row items-center justify-between mt-8 md:mt-20">
           <div className="border-5 border-white w-full md:w-[48%] group overflow-hidden mt-8 md:mt-0">
             <Image
               src={drinks2}
@@ -55,7 +57,7 @@ const Block4 = () => {
             />
           </div>
           <div className="text-beige-500 w-full md:w-[48%]">
-            <h1 className="text-2xl font-semibold leading-11">
+            <h1 className="text-2xl font-semibold leading-11 font-thankslabs">
               A Stylish, Flexible Venue for Every Occasion
             </h1>
             <p className="font-monserrat text-sm leading-6 font-normal mt-6">

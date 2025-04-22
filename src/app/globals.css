@@ -1,3 +1,7 @@
+@font-face {
+  font-family: ThanksLabs;
+  src: url('../assets//fonts/ThanksLabs/ThanksLab-Medium.otf') format('opentype');
+}
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
@@ -5,14 +9,15 @@
 
 @theme inline {
   --color-background: var(--background);
-  --color-beige-300: #C7B869;
-  --color-beige-400: #F4F1E1;
+  --color-beige-300: #c7b869;
+  --color-beige-400: #f4f1e1;
   --color-beige-500: #898155;
-  --color-blau-600: #10139D;
+  --color-blau-600: #10139d;
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-monserrat: var(--font-montserrat);
+  --font-thankslabs: ThanksLabs, 'Open Sans';
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);

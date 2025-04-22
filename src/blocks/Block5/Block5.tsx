@@ -45,7 +45,9 @@ const Block5 = () => {
           fade ? 'opacity-100' : 'opacity-0'
         }`}
       >
-        <h1 className="text-sm leading-8 font-semibold">{reviews[currentIndex].quote}</h1>
+        <h1 className="text-sm leading-8 font-semibold font-thankslabs">
+          {reviews[currentIndex].quote}
+        </h1>
       </div>
 
       <div className="flex items-center mt-6">
