@@ -14,7 +14,7 @@ const Block1 = () => {
           {' '}
           Welcome to DRIP LONDON
         </h1>
-        <p className="text-[20px] text-white leading-6 font-normal w-[70%] md:w-[50%] text-center mt-8 mb-6">
+        <p className="text-[20px] text-white leading-6 font-normal w-[70%] md:w-[55%] text-center mt-8 mb-6">
           Drip London is a West African fusion restaurant in Central London that offers a unique
           immersive dining experience in a stylish atmosphere.
         </p>
