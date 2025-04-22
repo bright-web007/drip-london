@@ -6,7 +6,14 @@ import { Icon } from '@iconify/react';
 import menuBg from '@/assets/menu-bg.jpeg';
 import { useRouter } from 'next/navigation';
 
-const navLinks = ['Home', 'The Menus', 'About', 'Book an Event', 'News', 'Contacts'];
+const navLinks = [
+  { name: 'Home', link: '/' },
+  { name: 'The Menus', link: '/' },
+  { name: 'About', link: '/about' },
+  { name: 'Book an Event', link: '/' },
+  { name: 'News', link: '/' },
+  { name: 'Contacts', link: '/' },
+];
 
 const MenuNavigation = () => {
   const router = useRouter();
@@ -30,12 +37,15 @@ const MenuNavigation = () => {
               key={index}
               className="group bg-transparent hover:text-beige-500 text-sm cursor-pointer rounded-[2px] px-6 py-4 text-white flex items-center justify-center transition-all duration-300"
             >
-              <p className="flex items-center font-thankslabs text-[40px] font-medium leading-14  space-x-1">
-                <span>{item}</span>
-                <span className="overflow-hidden max-w-0 opacity-0 group-hover:max-w-[2.5rem] group-hover:opacity-100 transition-all duration-300">
+              <a
+                href={item.link}
+                className="flex items-center font-thankslabs text-2xl md:text-[28px] xl:text-[40px]  font-medium leading-10 md:leading-9 xl:leading-14  space-x-1"
+              >
+                <span>{item.name}</span>
+                <span className="overflow-hidden max-w-0 opacity-0 group-hover:max-w-[2.5rem] text-beige-500 group-hover:opacity-100 transition-all duration-300">
                   →
                 </span>
-              </p>
+              </a>
             </div>
           ))}
         </div>
