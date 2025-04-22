@@ -60,7 +60,7 @@ const Block6 = () => {
 
   return (
     <div className="bg-beige-400 md:bg-white">
-      <div className="flex items-start flex-col md:flex-row justify-between w-[90%] mx-auto py-20">
+      <div className="flex items-start flex-col md:flex-row justify-between w-[90%] xl:w-[85%] 2xl:w-[75%] mx-auto py-20">
         <div className="w-full md:w-[40%] group overflow-hidden relative h-[380px] md:h-[290px] xl:h-[450px]">
           <Image
             src={slideshowImages[currentIndex].src}
