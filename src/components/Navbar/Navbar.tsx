@@ -34,8 +34,8 @@ const Navbar = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const openMenu = () => {
-    router.push('/menu');
+  const openNavigation = () => {
+    router.push('/navigation');
   };
 
   return (
@@ -76,7 +76,7 @@ const Navbar = () => {
           </div>
           <div
             className="group flex items-center px-8 border-l border-white h-full cursor-pointer"
-            onClick={openMenu}
+            onClick={openNavigation}
           >
             <Icon
               icon="line-md:menu"

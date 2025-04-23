@@ -7,7 +7,7 @@ import Footer from '../Footer/Footer';
 export default function LayoutWrapper({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
 
-  const noLayoutRoutes = ['/menu'];
+  const noLayoutRoutes = ['/navigation'];
 
   const shouldUseLayout = !noLayoutRoutes.includes(pathname);
 

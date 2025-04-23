@@ -3,9 +3,9 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { events } from '@/helpers/data';
-import image1 from '@/assets/slideshowImages/image1.jpeg';
-import image2 from '@/assets/slideshowImages/image2.jpeg';
-import image3 from '@/assets/slideshowImages/image3.jpeg';
+import image1 from '@/assets/slideshowImages/image1.jpg';
+import image2 from '@/assets/slideshowImages/image2.jpg';
+import image3 from '@/assets/slideshowImages/image3.jpg';
 
 const slideshowImages = [
   {
