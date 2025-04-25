@@ -7,10 +7,10 @@ import dinning from '@/assets/dinning-table.png'
 
 const Block16 = () => {
   return (
-    <div className="">
+    <div className="pt-[36px] pr-[24px] pb-[55px] pl-[24px]">
         
-        <div className="flex h-[624px] p-[24px] flex-col gap-[10px] bg-[#F4F1E1]">
-         <div className="flex flex-col items-start self-stretch gap-[32px] border-2 border-[rgba(107,107,107,0.48)] p-[40px] ">
+        <div className="flex  p-[24px] flex-col gap-[10px] bg-[#F4F1E1]">
+         <div className=" flex flex-col items-start self-stretch gap-[32px] border-2 border-[rgba(107,107,107,0.48)] p-[40px] ">
 
               <div className="gap-[12px]">
                   <p className="font-thankslabs text-[16px] text-[#898155] not-italic font-[254px] leading-[30px] self-stretch">Phone</p>
@@ -47,7 +47,7 @@ const Block16 = () => {
 
         <div className="bg-[#898155] p-[24px]">
 
-               <div className="bg-[] border-2 flex flex-col place-items-center h-[576px] ">
+               <div className="bg-[] border-2 flex flex-col gap-[12px] place-items-center  ">
                       <div>
                           <Image src={fork} alt="fork and knife"  />
                       </div>
@@ -72,8 +72,8 @@ const Block16 = () => {
                               </div>
                       </div>
 
-                      <div>
-                             <Image src={dinning} alt='dinning table' />
+                      <div className="border-none  aspect-[463.5/309] max-w-[463.5px]">
+                             <Image src={dinning} alt='dinning table' className=" "/>
                       </div>
 
                </div>
