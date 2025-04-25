@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import peopleEating from '@/assets/people-eating.jpeg';
-import peopleSnapping from '@/assets/people-snapping.jpeg';
-import snaps from '@/assets/snaps.jpeg';
+import memories1 from '@/assets/memories1.jpg';
+import memories2 from '@/assets/memories2.jpg';
+import memories3 from '@/assets/memories3.jpg';
 import CurvyUnderline from '@/assets/icons-svg/CurvyUnderline';
 
 const Block3 = () => {
@@ -10,7 +10,7 @@ const Block3 = () => {
       <div className="flex items-center flex-col-reverse md:flex-row w-[90%] xl:w-[85%] 2xl:w-[75%] mx-auto">
         <div className="border-5 border-white w-full md:w-[50%] xl:w-[40%] group overflow-hidden">
           <Image
-            src={peopleEating}
+            src={memories1}
             alt="People eating"
             className="w-full h-[380px] md:h-[315px] xl:h-[450px] object-cover group-hover:scale-110 transition-transform duration-500 ease-in-out"
             width={400}
@@ -39,7 +39,7 @@ const Block3 = () => {
       <div className="flex items-center flex-col md:flex-row w-[90%] md:w-[75%] 2xl:w-[65%] mx-auto my-5 md:my-40">
         <div className="border-5 border-white w-full md:w-[60%] h-[380px] md:h-[315px] xl:h-[450px] group overflow-hidden rotate-0  md:rotate-340">
           <Image
-            src={peopleSnapping}
+            src={memories2}
             alt="People snapping"
             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-in-out"
             width={350}
@@ -49,7 +49,7 @@ const Block3 = () => {
 
         <div className="border-5 border-white w-full md:w-[35%] h-[380px] md:h-[315px] xl:h-[450px] group overflow-hidden rotate-0 md:rotate-22 mt-5 md:mt-0">
           <Image
-            src={snaps}
+            src={memories3}
             alt="snaps"
             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-in-out"
             width={280}

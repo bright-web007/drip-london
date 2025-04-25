@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import forkKnife from '@/assets/fork-knife.svg';
-import drinks from '@/assets/drinks.jpeg';
-import main from '@/assets/main.jpeg';
-import dessert from '@/assets/dessert.jpeg';
+import drinks from '@/assets/drinks.jpg';
+import main from '@/assets/main.jpg';
+import dessert from '@/assets/dessert.jpg';
 
 const Block2 = () => {
   return (

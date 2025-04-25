@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import drinks1 from '@/assets/drinks1.jpeg';
-import drinks2 from '@/assets/drinks2.jpeg';
+import dinning1 from '@/assets/dining1.jpg';
+import dinning2 from '@/assets/dinning2.jpg';
 import right from '@/assets/right-color.svg';
 import left from '@/assets/left-color.png';
 import { Button } from '@/components/ui/button';
@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button';
 const Block4 = () => {
   return (
     <div className="bg-beige-400 py-16 xl:py-20">
-      <div className="w-[90%] xl:w-[85%] 2xl:w-[75%] m mx-auto">
+      <div className="w-[90%] xl:w-[85%] 2xl:w-[75%] mx-auto">
         <div className="flex  flex-col md:flex-row items-center  justify-between">
           <div className="text-[#898155] w-full md:w-[48%] mb-8 md:mb-0">
             <h1 className="text-2xl font-semibold leading-11 font-thankslabs">
@@ -38,8 +38,8 @@ const Block4 = () => {
           </div>
           <div className="border-5 border-white w-full md:w-[48%] group overflow-hidden">
             <Image
-              src={drinks1}
-              alt="People eating"
+              src={dinning1}
+              alt="fine dinning"
               className="w-full h-[400px] object-cover group-hover:scale-110 transition-transform duration-500 ease-in-out"
               width={400}
               height={400}
@@ -49,8 +49,8 @@ const Block4 = () => {
         <div className="flex flex-col-reverse md:flex-row items-center justify-between mt-8 md:mt-20">
           <div className="border-5 border-white w-full md:w-[48%] group overflow-hidden mt-8 md:mt-0">
             <Image
-              src={drinks2}
-              alt="People eating"
+              src={dinning2}
+              alt="fine dinning"
               className="w-full h-[500px] object-cover group-hover:scale-110 transition-transform duration-500 ease-in-out"
               width={400}
               height={400}

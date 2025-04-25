@@ -2,14 +2,16 @@ import { Button } from '@/components/ui/button';
 import left from '@/assets/left-fly.svg';
 import right from '@/assets/right-fly.svg';
 import Image from 'next/image';
-import bookTable from '@/assets/book-table.svg';
 import followUs from '@/assets/follow-us.svg';
 import { Icon } from '@iconify/react';
+import { LayoutHeader } from '@/components/LayoutHeader/LayoutHeader';
+import BookTable from '@/assets/icons-svg/BookTable';
 
 const Block1 = () => {
   return (
-    <div className="flex flex-col mt-[-72px] font-monserrat bg-gray-700 h-[100vh] xl:h-[120vh] relative">
-      <div className=" absolute inset-0 flex flex-col items-center justify-center">
+    <div className="flex flex-col mt-[-72px] font-monserrat bg-gray-500 h-[100vh] xl:h-[120vh] relative">
+      <LayoutHeader />
+      <div className=" absolute inset-0 z-10 flex flex-col items-center justify-center">
         <h1 className=" text-[24px] md:text-[32px] xl:text-[50px] font-bold w-[80%] md:w-[75%] text-center text-white font-thankslabs">
           {' '}
           Welcome to DRIP LONDON
@@ -45,8 +47,7 @@ const Block1 = () => {
             ))}
           </div>
         </div>
-
-        <Image src={bookTable} alt="Book table" width={120} height={120} />
+        <BookTable />
       </div>
     </div>
   );
