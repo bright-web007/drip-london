@@ -12,7 +12,7 @@ const navLinks = [
   { name: 'About', link: '/about' },
   { name: 'Book an Event', link: '/' },
   { name: 'News', link: '/' },
-  { name: 'Contacts', link: '/' },
+  { name: 'Contacts', link: '/contact-us' },
 ];
 
 const MenuNavigation = () => {
