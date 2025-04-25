@@ -21,6 +21,7 @@
   --color-beige-300: #c7b869;
   --color-beige-400: #f4f1e1;
   --color-beige-500: #898155;
+  --color-blau-500: #5146DD;
   --color-blau-600: #10139d;
   --color-foreground: var(--foreground);
   --animate-spin-slow: spin-slow 20s linear infinite;

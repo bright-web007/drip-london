@@ -57,3 +57,127 @@ export const events = [
       'We toasted to strong women, good vibes, and unforgettable moments. From mimosas to music, relive the highlights of our Women’s Day brunch a celebration of community, empowerment, and joy.',
   },
 ];
+
+export const drinksMenu = {
+  cocktails: [
+    {
+      title: 'Savannah Drip',
+      description:
+        'Strawberry & cucumber Gin bramble, a refreshing burst of sweet and herbal notes.',
+      price: '£12.50',
+    },
+    {
+      title: 'Golden Hour',
+      description: 'Rhubarb Gin sour, perfectly tangy with a smooth finish.',
+      price: '£13.00',
+    },
+    {
+      title: 'Pineapple Royale',
+      description: 'Hennessy with a tropical pineapple twist, rich and regal',
+      price: '£14.50',
+    },
+    {
+      title: 'Oga’s Spicy Margarita',
+      description: 'Spicy Margarita, a royal blend of citrus and agave.',
+      price: '£14.00',
+    },
+    {
+      title: 'Crimson Kiss',
+      description: 'Disaronno & cranberry, sweet, tart, and unforgettable.',
+      price: '£14.50',
+    },
+    {
+      title: 'Sunstone',
+      description: 'Lemon Drop, a bright and zesty delight.',
+      price: '£12.50',
+    },
+    {
+      title: 'Polaroid Paradise',
+      description:
+        'Capture the moment with a surprise Tequila cocktail served with its own keepsake polaroid.',
+      price: '£15.00',
+    },
+  ],
+  mocktails: [
+    {
+      title: 'Victoria Island',
+      description:
+        'A tropical fusion of coconut water, creamy coconut milk, zesty lime juice, and a hint of blue raspberry syrup.',
+      price: '£8.50',
+    },
+    {
+      title: 'Green Gold',
+      description:
+        'Crisp apple juice, agave, and fresh lime, inspired by the golden orchards and lush landscapes of West Africa.',
+      price: '£8.00',
+    },
+    {
+      title: 'Baobab Bloom',
+      description:
+        'A bold fusion of seasonal fruits with a citrus kick, echoing the vibrant colours of a West African sunset',
+      price: '£8.50',
+    },
+  ],
+};
+
+export const foodMenu = {
+  SmallPlates: [
+    {
+      title: 'Savannah Drip',
+      description:
+        'Strawberry & cucumber Gin bramble, a refreshing burst of sweet and herbal notes.',
+      price: '£12.50',
+    },
+    {
+      title: 'Golden Hour',
+      description: 'Rhubarb Gin sour, perfectly tangy with a smooth finish.',
+      price: '£13.00',
+    },
+    {
+      title: 'Pineapple Royale',
+      description: 'Hennessy with a tropical pineapple twist, rich and regal',
+      price: '£14.50',
+    },
+    {
+      title: 'Oga’s Spicy Margarita',
+      description: 'Spicy Margarita, a royal blend of citrus and agave.',
+      price: '£14.00',
+    },
+    {
+      title: 'Crimson Kiss',
+      description: 'Disaronno & cranberry, sweet, tart, and unforgettable.',
+      price: '£14.50',
+    },
+    {
+      title: 'Sunstone',
+      description: 'Lemon Drop, a bright and zesty delight.',
+      price: '£12.50',
+    },
+    {
+      title: 'Polaroid Paradise',
+      description:
+        'Capture the moment with a surprise Tequila cocktail served with its own keepsake polaroid.',
+      price: '£15.00',
+    },
+  ],
+  largePlates: [
+    {
+      title: 'Victoria Island',
+      description:
+        'A tropical fusion of coconut water, creamy coconut milk, zesty lime juice, and a hint of blue raspberry syrup.',
+      price: '£8.50',
+    },
+    {
+      title: 'Green Gold',
+      description:
+        'Crisp apple juice, agave, and fresh lime, inspired by the golden orchards and lush landscapes of West Africa.',
+      price: '£8.00',
+    },
+    {
+      title: 'Baobab Bloom',
+      description:
+        'A bold fusion of seasonal fruits with a citrus kick, echoing the vibrant colours of a West African sunset',
+      price: '£8.50',
+    },
+  ],
+};
