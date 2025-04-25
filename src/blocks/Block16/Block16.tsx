@@ -45,9 +45,9 @@ const Block16 = () => {
 
           {/* savor a tasty meal design */}
 
-        <div className="">
+        <div className="bg-[#898155] p-[24px]">
 
-               <div className="bg-[blue] flex flex-col place-items-center h-[576px] ">
+               <div className="bg-[] border-2 flex flex-col place-items-center h-[576px] ">
                       <div>
                           <Image src={fork} alt="fork and knife"  />
                       </div>
