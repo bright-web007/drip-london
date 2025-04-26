@@ -9,8 +9,8 @@ const Block16 = () => {
   return (
     <div className="pt-[36px] pr-[24px] pb-[55px] pl-[24px]">
         
-        <div className="h-[624px] flex  p-[24px] flex-col gap-[10px] bg-[#F4F1E1]">
-         <div className="h-[576px]  flex flex-col items-start self-stretch gap-[32px] border-2 border-[rgba(107,107,107,0.48)] p-[40px] ">
+        <div className="h-[624px]  flex  p-[24px] flex-col gap-[10px] bg-[#F4F1E1]">
+         <div className="h-[576px] flex flex-col items-start self-stretch gap-[32px] border-2 border-[rgba(107,107,107,0.48)] p-[40px] ">
 
               <div className="h-[72px] w-[254]  flex flex-col  self-stretch gap-[12px]">
                   <p className="h-[30px] w-[254] font-thankslabs text-[16px] text-[#898155] not-italic font-[254px] leading-[30px] self-stretch">Phone</p>
@@ -53,9 +53,9 @@ const Block16 = () => {
 
           {/* savor a tasty meal design */}
 
-        <div className="bg-[#898155] p-[24px] h-[624px] ">
+        <div className="bg-[#898155] p-[24px] h-[624px]">
 
-               <div className="h-[576px] border-2 flex flex-col gap-[12px]  items-center justify-center ">
+               <div className="h-[576px]  border-2 flex flex-col gap-[12px]  items-center ">
                       <div className="h-[60px] w-[48px]">
                           <Image src={fork} alt="fork and knife"  />
                       </div>
@@ -81,7 +81,7 @@ const Block16 = () => {
                       </div>
 
                       <div className="border-none  aspect-[463.5/309] ">
-                             <Image src={dinning} alt='dinning table' className=" "/>
+                             <Image src={dinning} alt='dinning table' className="w-[463.5px] h-[ 309px] "/>
                       </div>
 
                </div>

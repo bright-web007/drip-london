@@ -7,7 +7,7 @@ const Block15 = () => {
     <div className="relative w-full h-[70vh] overflow-hidden mt-[-72px]">
       <Image
         src={contactbg}
-        alt="Menu"
+        alt="contact background"
         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-in-out"
         width={400}
         height={400}
