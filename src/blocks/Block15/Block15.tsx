@@ -9,12 +9,11 @@ const Block15 = () => {
         src={contactbg}
         alt="contact background"
         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-in-out"
-        width={400}
-        height={400}
+       
       />
      
       <div className="absolute inset-0  flex items-center justify-center ">
-        <h1 className="font-thankslabs font-bold text-2xl md:text-[32px] xl:text-[50px] text-white">
+        <h1 className="font-thankslabs font-bold text-[24px] sm:text-[28px] md:text-[32px]  lg:text-[40px] xl:text-[50px] text-white">
           Get in Touch
         </h1>
       </div>

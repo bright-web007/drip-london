@@ -4,39 +4,40 @@ import group1 from '@/assets/group1.svg'
 import group2 from '@/assets/group2.svg'
 import Image from 'next/image'
 import dinning from '@/assets/dinning-table.png'
+import fulldinning from '@/assets/full-dinning.png'
 
 const Block16 = () => {
   return (
-    <div className="pt-[36px] pr-[24px] pb-[55px] pl-[24px]">
+    <div className="pt-[36px] pr-[24px] pb-[55px] pl-[24px] sm:pt-[40px] sm:pr-[28px] sm:pl-[28px]   md:pt-[70px] md:pl-[36px] md:pr-[36px] md:flex   lg:pr-[70px] lg:pl-[70px]   xl:pt-[70px] xl:pb-[55px] xl:pr-[120px] xl:pl-[120px]  xl:justify-center xl:items-center xl:self-stretch ">
         
-        <div className="h-[624px]  flex  p-[24px] flex-col gap-[10px] bg-[#F4F1E1]">
-         <div className="h-[576px] flex flex-col items-start self-stretch gap-[32px] border-2 border-[rgba(107,107,107,0.48)] p-[40px] ">
+        <div className="h-[624px]  flex  p-[24px] flex-col bg-[#F4F1E1]   ">
+         <div className="h-[576px] flex flex-col items-start self-stretch gap-[32px] border-2 border-[rgba(107,107,107,0.48)] p-[40px]  sm:p-[50px]   md:p-[40px] ">
 
-              <div className="h-[72px] w-[254]  flex flex-col  self-stretch gap-[12px]">
-                  <p className="h-[30px] w-[254] font-thankslabs text-[16px] text-[#898155] not-italic font-[254px] leading-[30px] self-stretch">Phone</p>
-                  <p className="h-[30px] w-[254] font-montserrat text-[14px]  text-[#898155] not-italic font-[254px]">+449 654 8789</p>
+              <div className="h-[72px] w-[254]  flex flex-col  self-stretch gap-[12px] ">
+                  <p className="h-[30px] w-[254] font-thankslabs text-[16px] text-[#898155] not-italic font-[254px] leading-[30px] self-stretch    sm:text-[19px]   md:text-[22px]">Phone</p>
+                  <p className="h-[30px] w-[254] font-montserrat text-[14px]  text-[#898155] not-italic font-[254px]    sm:text-[16px]   md:text-[18px]">+449 654 8789</p>
               </div>
 
               <div className="h-[72px] w-[254]  flex flex-col self-stretch gap-[12px]">
-                  <p className="h-[30px] w-[254] font-thankslabs text-[16px] text-[#898155] not-italic font-[254px] leading-[30px] self-stretch">E-mail</p>
+                  <p className="h-[30px] w-[254] font-thankslabs text-[16px] text-[#898155] not-italic font-[254px] leading-[30px] self-stretch    sm:text-[19px]   md:text-[22px]">E-mail</p>
                   <a href="mailto:reservations@drip.london"
-                     className="h-[30px] w-[254] font-montserrat text-[14px] text-[#898155] underline decoration-solid decoration-skip-ink-none decoration-[auto] underline-offset-auto not-italic"
-                   >
+                     className="h-[30px] w-[254] font-montserrat text-[14px] text-[#898155] underline decoration-solid decoration-skip-ink-none decoration-[auto] underline-offset-auto not-italic    sm:text-[16px]   md:text-[18px]"
+                     >
                           reservations@drip.london
                   </a>
 
               </div>
 
               <div className="h-[120px] w-[254]  flex flex-col  self-stretch gap-[12px]">
-                  <p className="h-[30px] w-[254] font-thankslabs text-[16px] text-[#898155] not-italic font-[254px] leading-[30px] self-stretch">Address</p>
-                  <p className="h-[60px] w-[254] font-montserrat text-[14px]  text-[#898155] not-italic font-[254px]">27 Clerkwenwell road, London EC1M 5RN</p>
+                  <p className="h-[30px] w-[254] font-thankslabs text-[16px] text-[#898155] not-italic font-[254px] leading-[30px] self-stretch    sm:text-[19px]   md:text-[22px]">Address</p>
+                  <p className="h-[60px] w-[254] font-montserrat text-[14px]  text-[#898155] not-italic font-[254px]    sm:text-[16px]  md:text-[18px]">27 Clerkwenwell road, London EC1M 5RN</p>
               </div>
 
               <div className="h-[162px] w-[254]  flex flex-col  self-stretch gap-[12px]">
-                  <div  className="h-[60px] w-[254] font-thankslabs text-[16px] text-[#898155] not-italic font-[254px] leading-[30px] self-stretch">
+                  <div  className="h-[60px] w-[254] font-thankslabs text-[16px] text-[#898155] not-italic font-[254px] leading-[30px] self-stretch    sm:text-[19px]   md:text-[22px]">
                       <p>Opening Hours</p>
                   </div>
-                  <div className="h-[120px] w-[254] font-montserrat text-[14px]  text-[#898155] not-italic font-[254px] leading-[21px] self-stretch">
+                  <div className="h-[120px] w-[254] font-montserrat text-[14px]  text-[#898155] not-italic font-[254px] leading-[21px] self-stretch    sm:text-[18px]">
                       <p>Monday-Closed</p>
                       <p>Tuesday-Closed</p>
                       <p>Wednesday to Sunday: 6:30pm-2:00am</p>
@@ -53,10 +54,10 @@ const Block16 = () => {
 
           {/* savor a tasty meal design */}
 
-        <div className="bg-[#898155] p-[24px] h-[624px]">
+        <div className="bg-[#898155] p-[24px] h-[624px]  xl:h-[624px]">
 
-               <div className="h-[576px]  border-2 flex flex-col gap-[12px]  items-center ">
-                      <div className="h-[60px] w-[48px]">
+               <div className="h-[576px]  border-2 flex flex-col gap-[12px]  items-center p-[10px] justify-center   sm:p-[40px] sm:gap-[20px]   md:p-[30px]">
+                      <div className="h-[60px] w-[48px]  ">
                           <Image src={fork} alt="fork and knife"  />
                       </div>
 
@@ -80,8 +81,12 @@ const Block16 = () => {
                               </div>
                       </div>
 
-                      <div className="border-none  aspect-[463.5/309] ">
-                             <Image src={dinning} alt='dinning table' className="w-[463.5px] h-[ 309px] "/>
+                      <div className=" aspect-[365/309]  sm:aspect-[565/300]   md:aspect-[365/309]   lg:aspect-[450/309]      xl:hidden">
+                             <Image src={dinning} alt='dinning table'  className="w-full h-[309px]"/>
+                      </div>
+
+                      <div className="hidden  aspect-[365/250]  xl:block">
+                             <Image src={fulldinning} alt='dinning table'  className="w-full h-[309px]"/>
                       </div>
 
                </div>
