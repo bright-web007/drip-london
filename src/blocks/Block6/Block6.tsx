@@ -59,7 +59,7 @@ const Block6 = () => {
           </h1>
           {events.map((item, index) => (
             <div className="flex items-start gap-x-4 mb-6 md:mb-8" key={index}>
-              <p className="text-sm leading-6 font-monserrat w-[15%] md:w-[10%]">{item.time}</p>
+              <p className="text-sm leading-6 font-monserrat w-[15%]">{item.time}</p>
               <div className="w-[80%]">
                 <h1 className="text-xs md:text-sm leading-6 font-semibold font-thankslabs mb-4 md:mb-6">
                   {item.title}

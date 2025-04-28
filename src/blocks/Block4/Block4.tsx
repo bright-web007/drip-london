@@ -24,7 +24,7 @@ const Block4 = () => {
             <div className="flex items-center mt-10">
               <Image src={left} alt="Drip London Logo" width={12} height={16} color="red" />
               <div className="border border-[#89815578] p-[2px] rounded-[2px]">
-                <Button className="group bg-transparent border border-beige-500 hover:bg-beige-500 text-sm cursor-pointer rounded-[2px] px-6 py-5 text-beige-500  flex items-center justify-center transition-all duration-300">
+                <Button className="group bg-transparent border border-beige-500 hover:text-white hover:bg-beige-500 text-sm cursor-pointer rounded-[2px] px-6 py-5 text-beige-500  flex items-center justify-center transition-all duration-300">
                   <span className="flex items-center space-x-1">
                     <span> Make a Reservation</span>
                     <span className="overflow-hidden max-w-0 opacity-0 group-hover:max-w-[1.2rem] group-hover:opacity-100 transition-all duration-300">
