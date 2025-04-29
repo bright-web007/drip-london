@@ -13,7 +13,7 @@ const Block7 = () => {
         height={400}
       />
       <div className="absolute inset-0  flex items-center justify-center ">
-        <h1 className="font-thankslabs font-bold text-2xl md:text-[32px] xl:text-[50px] text-white">
+        <h1 className="font-thankslabs text-center leading-11 md:leading-14 font-bold text-2xl md:text-[32px] xl:text-[50px] text-white mx-4 md:mx-0">
           Savour Every Taste
         </h1>
       </div>

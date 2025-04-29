@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import logo from '../../assets/logo.svg';
 import { Icon } from '@iconify/react';
+import { navLinks } from '@/helpers/data';
 
 const Footer = () => {
   return (
@@ -13,18 +14,19 @@ const Footer = () => {
       </div>
       <div className="w-[70%] xl:w-[50%] mx-auto pt-10">
         <div className="flex items-center flex-wrap justify-center xl:justify-between gap-x-2 ">
-          {['HOME', 'THE MENU', 'ABOUT', 'BOOK AN EVENT', 'NEWS', 'CONTACT'].map(
-            (item, idx, arr) => (
-              <React.Fragment key={item}>
-                <h1 className="text-sm leading-6 font-medium text-white capitalize whitespace-nowrap">
-                  {item}
-                </h1>
-                {idx !== arr.length - 1 && (
-                  <Icon icon="oui:dot" className="text-white w-[14px] h-[14px]" />
-                )}
-              </React.Fragment>
-            )
-          )}
+          {navLinks.map((item, idx, arr) => (
+            <React.Fragment key={item.name}>
+              <a
+                href={item.link}
+                className="text-sm uppercase leading-6 font-medium cursor-pointer text-white whitespace-nowrap"
+              >
+                {item.name}
+              </a>
+              {idx !== arr.length - 1 && (
+                <Icon icon="oui:dot" className="text-white w-[14px] h-[14px]" />
+              )}
+            </React.Fragment>
+          ))}
         </div>
       </div>
 
