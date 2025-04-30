@@ -1,7 +1,7 @@
 import React from 'react'
 import fork from '@/assets/fork.svg'
-import group1 from '@/assets/group1.svg'
-import group2 from '@/assets/group2.svg'
+import group1 from '@/assets/left-fly.svg'
+import group2 from '@/assets/right-fly.svg'
 import Image from 'next/image'
 import dinning from '@/assets/dinning-table.png'
 import fulldinning from '@/assets/full-dinning.png'
@@ -10,7 +10,7 @@ const Block16 = () => {
   return (
     <div className="pt-[36px] pr-[24px] pb-[55px] pl-[24px] sm:pt-[40px] sm:pr-[28px] sm:pl-[28px]   md:pt-[70px] md:pl-[36px] md:pr-[36px] md:flex   lg:pr-[70px] lg:pl-[70px]   xl:pt-[70px] xl:pb-[55px] xl:pr-[120px] xl:pl-[120px]  xl:justify-center xl:items-center xl:self-stretch ">
         
-        <div className="h-[624px]  flex  p-[24px] flex-col bg-[#F4F1E1]   ">
+        <div className="h-[624px] xl:w-[50%]  flex  p-[24px] flex-col bg-[#F4F1E1]   ">
          <div className="h-[576px] flex flex-col items-start self-stretch gap-[32px] border-2 border-[rgba(107,107,107,0.48)] p-[40px]  sm:p-[50px]   md:p-[40px] ">
 
               <div className="h-[72px] w-[254]  flex flex-col  self-stretch gap-[12px] ">
@@ -54,7 +54,7 @@ const Block16 = () => {
 
           {/* savor a tasty meal design */}
 
-        <div className="bg-[#898155] p-[24px] h-[624px]  xl:h-[624px]">
+        <div className="bg-[#898155] p-[24px] h-[624px] xl:w-[50%]  xl:h-[624px]">
 
                <div className="h-[576px]  border-2 flex flex-col gap-[12px]  items-center p-[10px] justify-center   sm:p-[40px] sm:gap-[20px]   md:p-[30px]">
                       <div className="h-[60px] w-[48px]  ">
