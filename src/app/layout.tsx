@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Montserrat } from 'next/font/google';
 import './globals.css';
 import { AppProvider } from '@/context/AppContext';
 import LayoutWrapper from '@/components/LayoutWrapper/LayoutWrapper';
+import { restaurantSchema } from '@/helpers/data';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -31,6 +32,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(restaurantSchema),
+          }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${fontMontserrat.variable} antialiased`}
       >

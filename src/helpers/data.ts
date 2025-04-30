@@ -190,3 +190,23 @@ export const navLinks = [
   { name: 'News', link: '/' },
   { name: 'Contacts', link: '/' },
 ];
+
+export const restaurantSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Restaurant',
+  name: 'Drip London',
+  image: 'https://driplondon.com/images/restaurant.jpg',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '123 Example St',
+    addressLocality: 'London',
+    addressRegion: 'Greater London',
+    postalCode: 'E1 6AN',
+    addressCountry: 'GB',
+  },
+  telephone: '+44 20 7946 0958',
+  servesCuisine: ['Coffee', 'Brunch', 'British'],
+  url: 'https://driplondon.com',
+  acceptsReservations: 'True',
+  menu: 'https://driplondon.com/menu',
+};
