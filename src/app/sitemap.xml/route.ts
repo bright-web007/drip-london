@@ -6,15 +6,10 @@ function generateSitemapEntry(loc: string): string {
         </sitemap>`;
 }
 
-function generateOtherSitemaps(otherPages: string[], baseUrl: string): string {
-  return otherPages.map(page => generateSitemapEntry(`${baseUrl}/sitemaps/${page}`)).join('');
-}
-
-function generateSitemap(pages: string[], baseUrl: string): string {
+function generateSitemap(baseUrl: string): string {
   return `<?xml version="1.0" encoding="UTF-8"?>
         <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
             ${generateSitemapEntry(`${baseUrl}/sitemaps/static`)}
-            ${generateOtherSitemaps(pages, baseUrl)}
         </sitemapindex>`.trim();
 }
 
@@ -25,15 +20,11 @@ export async function GET(): Promise<Response> {
       : process.env.NEXT_PUBLIC_SITE_URL;
 
   try {
-    const pages = ['food', 'drinks'];
-
-    const sitemap = generateSitemap(pages, baseUrl as string);
+    const sitemap = generateSitemap(baseUrl as string);
 
     return new Response(sitemap, {
       headers: {
         'Content-Type': 'application/xml; charset=utf-8',
-        'Cache-Control': `public, max-age=${3600 * 24}`,
-        'X-Content-Type-Options': 'nosniff',
       },
     });
   } catch (error) {

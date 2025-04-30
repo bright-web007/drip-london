@@ -6,9 +6,11 @@ export async function GET() {
       ? 'http://localhost:3000'
       : process.env.NEXT_PUBLIC_SITE_URL;
 
-  const staticPages = navLinks.map(staticPagePath => {
-    return `${baseUrl}${staticPagePath.link}`;
-  });
+  const staticPages = navLinks
+    .filter(page => !page.name.includes('Event'))
+    .map(staticPagePath => {
+      return `${baseUrl}${staticPagePath.link}`;
+    });
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
         <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
