@@ -12,13 +12,16 @@ const Block1 = () => {
     <div className="flex flex-col mt-[-72px] font-monserrat bg-gray-500 h-[100vh] xl:h-[120vh] relative">
       <LayoutHeader />
       <div className=" absolute inset-0 z-10 flex flex-col items-center justify-center">
-        <h1 className=" text-[24px] md:text-[32px] xl:text-[50px] font-bold w-[80%] md:w-[75%] text-center text-white font-thankslabs">
+        <h1 className=" text-[24px] md:text-[32px] xl:text-[50px] font-bold w-[70%] md:w-[75%] text-center text-white font-thankslabs">
           {' '}
           Welcome to DRIP LONDON
         </h1>
-        <p className="text-[20px] text-white leading-6 font-normal w-[70%] md:w-[55%] text-center mt-8 mb-6">
-          Drip London is a West African fusion restaurant in Central London that offers a unique
-          immersive dining experience in a stylish atmosphere.
+        <p className="text-xs md:text-base xl:text-[20px] text-white leading-5 md:leading-6 font-normal w-[85%] md:w-[55%] text-center mt-8 mb-6">
+          Where bold West African flavours meet modern culinary flair in the heart of the city. At
+          Drip, we serve more than just food—we deliver an immersive dining experience that blends
+          tradition, creativity, and culture. Step into our stylish space and indulge in vibrant,
+          fire-grilled dishes, rich spice blends, and soulful storytelling on every plate. This is
+          West African fusion, reimagined. 
         </p>
         <div className="flex items-center">
           <Image src={left} alt="Drip London Logo" width={12} height={16} />
@@ -35,10 +38,10 @@ const Block1 = () => {
           <Image src={right} alt="Drip London Logo" width={12} height={16} />
         </div>
       </div>
-      <div className=" absolute bottom-[5%] flex items-end justify-between w-full px-12">
+      <div className=" absolute bottom-[5%] flex items-end justify-between w-full px-4 md:px-12">
         <Image src={followUs} alt="Follow us" width={20} height={310} />
 
-        <div className="flex flex-col items-center justify-center mr-[-90px] ">
+        <div className="hidden md:flex flex-col items-center justify-center mr-[-90px] ">
           <Icon icon="devicon:google" className="text-white w-14 h-14 cursor-pointer" />
           <div className="flex items-center mt-2">
             <p className="text-white text-sm font-medium mr-2">4.8</p>

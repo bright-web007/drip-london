@@ -41,8 +41,8 @@ const Navbar = () => {
   return (
     <div className="font-monserrat bg-transparent z-40">
       <div className="flex items-end justify-center">
-        <div className="flex items-center h-18 border-b border-white w-[25%]  lg:w-[40%] text-white text-sm font-medium leading-6">
-          <Button className="bg-beige-500 border-2 border-[#8981555C] cursor-pointer rounded-[2px] px-6 mx-4">
+        <div className="flex items-center h-18 border-b border-white w-[45%]  lg:w-[40%] text-white text-[10px] md:text-sm font-medium leading-6 pl-2 md:pl-4">
+          <Button className="bg-beige-500 border-2 border-[#8981555C] cursor-pointer rounded-[2px] px-6 mr-4 hidden md:flex">
             Open Times
           </Button>
           <p
@@ -59,28 +59,36 @@ const Navbar = () => {
           alt="Drip London Logo"
           width={154}
           height={72}
-          className="mx-auto cursor-pointer  object-contain h-[72px]"
+          className="mx-auto cursor-pointer  object-contain h-[50px] md:h-[72px]"
         />
 
-        <div className="flex items-center justify-end border-b border-white w-[25%] lg:w-[40%] text-white text-sm font-medium leading-6 h-18">
-          <div className="flex items-center h-full pr-4 cursor-pointer group">
-            <Image src={dish} alt="Dish" width={35} height={24} className="group-hover:hidden" />
+        <div className="flex items-center justify-end border-b border-white w-[45%] lg:w-[40%] text-white text-[10px] md:text-sm font-medium leading-6 h-18">
+          <div className="flex items-center -ml-4 md:-ml-0 h-full pr-2 md:pr-4 cursor-pointer group">
+            <Image
+              src={dish}
+              alt="Dish"
+              width={35}
+              height={24}
+              className="group-hover:hidden w-7 h-4 md:w-9 md:h-6"
+            />
             <Image
               src={dishFill}
               alt="Dish"
               width={35}
               height={24}
-              className="hidden group-hover:block"
+              className="hidden group-hover:block w-7 h-4 md:w-9 md:h-6"
             />
-            <p className="ml-2 group-hover:font-semibold text-base">Reservation</p>
+            <p className="ml-1 md:ml-2 group-hover:font-semibold text-[10px] md:text-base">
+              Reservation
+            </p>
           </div>
           <div
-            className="group flex items-center px-8 border-l border-white h-full cursor-pointer"
+            className="group flex items-center px-4 md:px-8 border-l border-white h-full cursor-pointer"
             onClick={openNavigation}
           >
             <Icon
               icon="line-md:menu"
-              className="text-white w-7 h-7 cursor-pointer group-hover:hidden"
+              className="text-white w-5 h-5  md:w-7 md:h-7 cursor-pointer group-hover:hidden"
             />
 
             <Image
@@ -88,7 +96,7 @@ const Navbar = () => {
               alt="Menu"
               width={28}
               height={28}
-              className="hidden group-hover:block"
+              className="hidden group-hover:block w-5 h-5  md:w-7 md:h-7"
             />
           </div>
         </div>

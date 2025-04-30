@@ -181,3 +181,12 @@ export const foodMenu = {
     },
   ],
 };
+
+export const navLinks = [
+  { name: 'Home', link: '/' },
+  { name: 'The Menus', link: '/menu' },
+  { name: 'About', link: '/about' },
+  { name: 'Book an Event', link: '/' },
+  { name: 'News', link: '/' },
+  { name: 'Contacts', link: '/' },
+];

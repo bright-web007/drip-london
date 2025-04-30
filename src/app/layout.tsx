@@ -35,7 +35,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${fontMontserrat.variable} antialiased`}
       >
         <AppProvider>
-          <div className="min-h-screen flex flex-col">
+          <div className="min-h-screen flex flex-col overflow-hidden">
             <LayoutWrapper>{children}</LayoutWrapper>
           </div>
         </AppProvider>
