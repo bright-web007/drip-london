@@ -8,9 +8,9 @@ import fulldinning from '@/assets/full-dinning.png'
 
 const Block16 = () => {
   return (
-    <div className="pt-[36px] pr-[24px] pb-[55px] pl-[24px] sm:pt-[40px] sm:pr-[28px] sm:pl-[28px]   md:pt-[70px] md:pl-[36px] md:pr-[36px] md:flex   lg:pr-[70px] lg:pl-[70px]   xl:pt-[70px] xl:pb-[55px] xl:pr-[120px] xl:pl-[120px]  xl:justify-center xl:items-center xl:self-stretch ">
-        
-        <div className="h-[624px] xl:w-[50%]  flex  p-[24px] flex-col bg-[#F4F1E1]   ">
+    <div className=" pt-[36px] pr-[24px] pb-[55px] pl-[24px] sm:pt-[40px] sm:pr-[28px] sm:pl-[28px]   md:pt-[70px] md:pl-[36px] md:pr-[36px] md:flex   lg:pr-[70px] lg:pl-[70px]   xl:pt-[70px] xl:pb-[55px] xl:pr-[120px] xl:pl-[120px]  xl:justify-center xl:items-center xl:self-stretch ">
+     <div className=" md:flex w-[90%] md:w-[97%]  xl:w-[85%] 2xl:w-[75%] mx-auto">  
+        <div className="h-[624px]   md:w-[50%]  flex  p-[24px] flex-col bg-[#F4F1E1]   ">
          <div className="h-[576px] flex flex-col items-start self-stretch gap-[32px] border-2 border-[rgba(107,107,107,0.48)] p-[40px]  sm:p-[50px]   md:p-[40px] ">
 
               <div className="h-[72px] w-[254]  flex flex-col  self-stretch gap-[12px] ">
@@ -54,7 +54,7 @@ const Block16 = () => {
 
           {/* savor a tasty meal design */}
 
-        <div className="bg-[#898155] p-[24px] h-[624px] xl:w-[50%]  xl:h-[624px]">
+        <div className="bg-[#898155]  p-[24px] h-[624px] md:w-[50%]  xl:h-[624px]">
 
                <div className="h-[576px]  border-2 flex flex-col gap-[12px]  items-center p-[10px] justify-center   sm:p-[40px] sm:gap-[20px]   md:p-[30px]">
                       <div className="h-[60px] w-[48px]  ">
@@ -81,17 +81,18 @@ const Block16 = () => {
                               </div>
                       </div>
 
-                      <div className=" aspect-[365/309]  sm:aspect-[565/300]   md:aspect-[365/309]   lg:aspect-[450/309]      xl:hidden">
+                      <div className=" aspect-[323/309]  sm:aspect-[520/309]   md:aspect-[335/309]   lg:aspect-[415/309]      xl:hidden">
                              <Image src={dinning} alt='dinning table'  className="w-full h-[309px]"/>
                       </div>
 
-                      <div className="hidden  aspect-[365/250]  xl:block">
+                      <div className="hidden  aspect-[295/250]  xl:block">
                              <Image src={fulldinning} alt='dinning table'  className="w-full h-[309px]"/>
                       </div>
 
                </div>
 
         </div>
+      </div> 
     </div>
   )
 }
