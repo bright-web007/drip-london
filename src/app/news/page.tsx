@@ -16,7 +16,7 @@ const news = () => {
         <Block19 />
 
         <div> 
-          <div className="grid grid-cols-1 gap-x-[25.2055px] gap-y-[20px] pt-[36px] pb-[60px] pr-[24px] pl-[24px]">
+          <div className="grid grid-cols-1 items-center justify-center gap-x-[25.2055px] gap-y-[25px] pt-[36px] pb-[60px] pr-[24px] pl-[24px]    sm:pt-[48px] sm:pb-[50px] sm:pr-[30px] sm:pl-[30px]  md:grid-cols-2  md:gap-y-[40px] md:pt-[70px] md:pb-[60px] md:pr-[36px] md:pl-[36px]  xl:p-[120px]   2xl:pt-[150px]  2xl:pb-[150px]  2xl:pr-[190px]  2xl:pl-[190px]">
                <Block20
                    image={card1}
                    date="April 25, 2025"
@@ -58,8 +58,9 @@ const news = () => {
                   subtitle="Celebrate in Style: Your Guide to Private Dining at Drip"
                   description="Whether it's an anniversary, product launch, or VIP dinner, our private dining experience is designed to impress. Learn what's included, how to book, and how we bring your event vision to life."
                />
-               <Block14 />
+               
          </div>
+               <Block14 />
          </div>
          
     </div>
