@@ -81,11 +81,11 @@ const Block16 = () => {
                               </div>
                       </div>
 
-                      <div className=" aspect-[323/309]  sm:aspect-[520/309]   md:aspect-[335/309]   lg:aspect-[415/309]      xl:hidden">
+                      <div className=" w-[126%] h-[80%] sm:w-[130%]   md:w-[145%]   lg:w-[134%]      xl:hidden">
                              <Image src={dinning} alt='dinning table'  className="w-full h-[309px]"/>
                       </div>
 
-                      <div className="hidden  aspect-[295/250]  xl:block">
+                      <div className="hidden  w-[110%] h-[80%]  xl:block">
                              <Image src={fulldinning} alt='dinning table'  className="w-full h-[309px]"/>
                       </div>
 

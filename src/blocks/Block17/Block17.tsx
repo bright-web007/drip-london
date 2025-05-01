@@ -11,7 +11,7 @@ const Block17 = () => {
         <div className="relative h-[475px]  md:flex w-[90%] sm:w-[89%] md:w-[97%] lg:w-[97%]  xl:w-[85%] 2xl:w-[91%] mx-auto">
 
              <div className="absolute bg-[rgba(21,21,21,0.55)] opacity-100  pr-[17.875px] pl-[18px] pb-[8px] pt-[9px] w-full h-[121px]   md:h-[154px]  md:pr-[391.875px] md:pl-[24px] md:pb-[25px] md:pt-[25px]">
-                 <div className="w-[290px] h-[104px] border rounded shadow p-2 text-sm font-sans bg-white  md:h-[104px]">
+                 <div className="w-[100%] h-[104px] border rounded shadow p-2 text-sm font-sans bg-white ">
                       <a
                          href="https://www.google.com/maps?q=52.375889,4.891306"
                          target="_blank"
