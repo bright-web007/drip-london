@@ -6,9 +6,9 @@ import left from '@/assets/left-color.png';
 
 const Block14 = () => {
   return (
-    <div className="bg-beige-400 py-16 xl:py-20">
-      <div className="flex flex-col md:flex-row items-center  justify-between w-[90%] xl:w-[85%] 2xl:w-[75%] mx-auto">
-        <div className="bg-blau-500 relative w-[90%] mb-8 xl:mb-0 md:w-[45%] h-[400px] xl:h-[560px] rounded-t-[50%]">
+    <div className="bg-beige-400 pr-[24px] pl-[24px] pb-[55px] pt-[83px] xl:py-20">
+      <div className="flex flex-col gap-[44.9px] items-center  justify-between w-[90%]  sm:items-start md:flex-row xl:w-[85%] 2xl:w-[75%] mx-auto">
+        <div className="bg-blau-500 relative w-[354.632px] h-[385.728px] rounded-t-[50%]  md:w-[45%]">
           <Image
             src={hostEvent}
             alt="host Event"
