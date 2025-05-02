@@ -11,8 +11,8 @@ const navLinks = [
   { name: 'The Menus', link: '/menu' },
   { name: 'About', link: '/about' },
   { name: 'Book an Event', link: '/' },
-  { name: 'News', link: '/news' },
-  { name: 'Contacts', link: '/' },
+  { name: 'News', link: '/' },
+  { name: 'Contacts', link: '/contact-us' },
 ];
 
 const MenuNavigation = () => {
