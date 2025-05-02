@@ -210,3 +210,38 @@ export const restaurantSchema = {
   acceptsReservations: 'True',
   menu: `${process.env.NEXT_PUBLIC_SITE_URL}/menu`,
 };
+
+export const menuSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Menu',
+  name: 'Drip London Menu',
+  url: `${process.env.NEXT_PUBLIC_SITE_URL}/menu`,
+  hasMenuSection: [
+    {
+      '@type': 'MenuSection',
+      name: 'Drinks',
+      hasMenuItem: [
+        drinksMenu.cocktails.map(drink => ({
+          '@type': 'MenuItem',
+          name: drink.title,
+          description: drink.description,
+          offers: {
+            '@type': 'Offer',
+            price: drink.price,
+            priceCurrency: 'GBP',
+          },
+        })),
+        drinksMenu.mocktails.map(drink => ({
+          '@type': 'MenuItem',
+          name: drink.title,
+          description: drink.description,
+          offers: {
+            '@type': 'Offer',
+            price: drink.price,
+            priceCurrency: 'GBP',
+          },
+        })),
+      ],
+    },
+  ],
+};
