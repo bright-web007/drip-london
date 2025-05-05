@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Image from 'next/image';
 import contactbg from '@/assets/background/contact-bg.jpg';
 
@@ -9,16 +9,15 @@ const Block15 = () => {
         src={contactbg}
         alt="contact background"
         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-in-out"
-       
       />
-     
+
       <div className="absolute inset-0  flex items-center justify-center ">
-        <h1 className="font-thankslabs font-bold text-[24px] sm:text-[28px] md:text-[32px]  lg:text-[40px] xl:text-[50px] text-white">
+        <h1 className="font-thankslabs text-center leading-11 md:leading-14 font-bold text-2xl md:text-[32px] xl:text-[50px] text-white mx-4 md:mx-0">
           Get in Touch
         </h1>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Block15
+export default Block15;

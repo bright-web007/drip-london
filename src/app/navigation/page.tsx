@@ -5,15 +5,7 @@ import logo from '@/assets/logo.svg';
 import { Icon } from '@iconify/react';
 import menuBg from '@/assets/menu-bg.jpeg';
 import { useRouter } from 'next/navigation';
-
-const navLinks = [
-  { name: 'Home', link: '/' },
-  { name: 'The Menus', link: '/menu' },
-  { name: 'About', link: '/about' },
-  { name: 'Book an Event', link: '/' },
-  { name: 'News', link: '/' },
-  { name: 'Contacts', link: '/contact-us' },
-];
+import { navLinks } from '@/helpers/data';
 
 const MenuNavigation = () => {
   const router = useRouter();
