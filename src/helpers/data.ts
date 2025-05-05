@@ -1,3 +1,11 @@
+import smallPlatesImage from '@/assets/food1.png';
+import largePlatesImage from '@/assets/food2.png';
+import sideImage from '@/assets/food3.png';
+import dessertImage from '@/assets/food4.png';
+import cocktailsImg from '@/assets/drink1.png';
+import mocktailImg from '@/assets/drink2.png';
+
+
 export const reviews = [
   {
     author: 'Richard Johnson',
@@ -59,7 +67,9 @@ export const events = [
 ];
 
 export const drinksMenu = {
-  cocktails: [
+  cocktails:{
+    image: cocktailsImg,
+    items:  [
     {
       title: 'Savannah Drip',
       description:
@@ -97,8 +107,11 @@ export const drinksMenu = {
         'Capture the moment with a surprise Tequila cocktail served with its own keepsake polaroid.',
       price: '£15.00',
     },
-  ],
-  mocktails: [
+  ]
+},
+  mocktails:{
+    image: mocktailImg,
+    items:  [
     {
       title: 'Victoria Island',
       description:
@@ -117,11 +130,14 @@ export const drinksMenu = {
         'A bold fusion of seasonal fruits with a citrus kick, echoing the vibrant colours of a West African sunset',
       price: '£8.50',
     },
-  ],
+  ]
+},
 };
 
 export const foodMenu = {
-  SmallPlates: [
+  SmallPlates:{
+  image: smallPlatesImage,
+  items: [
     {
       title: 'Suya Buttermilk Chicken',
       description:
@@ -149,8 +165,11 @@ export const foodMenu = {
       price: '£11.50',
     },
     
-  ],
-  largePlates: [
+  ]
+ },
+  largePlates:{
+    image: largePlatesImage,
+    items:  [
     {
       title: 'Kaduna Beef Suya',
       description:
@@ -187,7 +206,42 @@ export const foodMenu = {
         'Grilled octopus on a bed of butter beans and golden potatoes, drizzled in a rich, spiced jus. Topped with crispy chicken',
       price: '£17.00',
     },
-  ],
+  ]
+ },
+
+   Sides:{
+    image: sideImage,
+    items: [
+    {
+      title: 'Sweet Potato, Swede & Cassava Mash',
+      price: '£9.50',
+    },
+    {
+      title: 'Jollof Rice',
+      price: '£8.50',
+    },
+    {
+      title: 'Fried Plantain',
+      price: '£6.50',
+    },
+    {
+      title: 'Suya Fries',
+      price: '£6.50',
+    },
+  ]
+  },
+   Dessert:{
+    image: dessertImage,
+    items:   [
+    {
+      title: 'Warm filled doughnuts',
+      description:
+      'Light, pillowy doughnuts served warm, with your choice of indulgent fillings: rich chocolate, delicate pistachio, or spiced Biscoff.',
+      price: '£12.00',
+     
+    },
+  ]
+  },
 };
 
 export const navLinks = [
