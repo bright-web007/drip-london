@@ -11,7 +11,7 @@ const page = () => {
         404
       </h1>
 
-      <p className="font-thankslabs  text-[10px]  text-beige-500 mb-[10px]   md:text-[15px]    xl:text-[20px]">
+      <p className="font-thankslabs  text-[10px]  text-beige-500 mb-[10px]   md:text-[15px]    xl:text-[10px]">
           -NOT FOUND -
       </p>
 
