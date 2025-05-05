@@ -1,16 +1,31 @@
+import React from 'react'
 import Link from 'next/link';
 
-export default function NotFound() {
+
+const page = () => {
   return (
-    <div className="container mx-auto p-4 text-center">
-      <h1 className="text-4xl font-bold mb-4">404 - Not Found</h1>
-      <p className="mb-6">The page you're looking for doesn't exist.</p>
+    <div className=" bg-[#afa4a4] w-full h-[70vh]  mt-[-72px] flex items-center justify-center ">
+
+    <div className="bg-[white] border-4 shadow-lg border-[white] h-[50%] w-[50%] flex flex-col justify-center  place-items-center ">
+      <h1 className="font-thankslabs  text-[70px]  text-beige-500  md:text-[80px]   lg:text-[85px]   xl:text-[95px]">
+        404
+      </h1>
+
+      <p className="font-thankslabs  text-[10px]  text-beige-500 mb-[10px]   md:text-[15px]    xl:text-[10px]">
+          -NOT FOUND -
+      </p>
+
       <Link
-        href="/"
-        className="px-4 py-2 bg-primary-500 text-white rounded-md hover:bg-primary-700 transition-colors"
-      >
-        Back to Home
-      </Link>
+          href="/"
+          className="px-4 py-2 border-2  bg-beige-500 text-[white] rounded-md hover:bg-beige-500 transition-colors"
+         >
+         Back to Home
+        </Link>
+
     </div>
-  );
+
+  </div>
+  )
 }
+
+export default page
