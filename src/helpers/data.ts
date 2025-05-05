@@ -1,9 +1,3 @@
-import card1 from '@/assets/card1.png';
-import card2 from '@/assets/card2.png';
-import card3 from '@/assets/card3.png';
-import card4 from '@/assets/card4.png';
-import card5 from '@/assets/card5.png';
-import card6 from '@/assets/card6.png';
 
 import smallPlatesImage from '@/assets/food1.png';
 import largePlatesImage from '@/assets/food2.png';
@@ -11,6 +5,14 @@ import sideImage from '@/assets/food3.png';
 import dessertImage from '@/assets/food4.png';
 import cocktailsImg from '@/assets/drink1.png';
 import mocktailImg from '@/assets/drink2.png';
+
+import card1 from '@/assets/card1.png';
+import card2 from '@/assets/card2.png';
+import card3 from '@/assets/card3.png';
+import card4 from '@/assets/card4.png';
+import card5 from '@/assets/card5.png';
+import card6 from '@/assets/card6.png';
+
 
 
 export const reviews = [
@@ -74,180 +76,179 @@ export const events = [
 ];
 
 export const drinksMenu = {
-  cocktails:{
+  cocktails: {
     image: cocktailsImg,
-    items:  [
-    {
-      title: 'Savannah Drip',
-      description:
-        'Strawberry & cucumber Gin bramble, a refreshing burst of sweet and herbal notes.',
-      price: '£12.50',
-    },
-    {
-      title: 'Golden Hour',
-      description: 'Rhubarb Gin sour, perfectly tangy with a smooth finish.',
-      price: '£13.00',
-    },
-    {
-      title: 'Pineapple Royale',
-      description: 'Hennessy with a tropical pineapple twist, rich and regal',
-      price: '£14.50',
-    },
-    {
-      title: 'Oga’s Spicy Margarita',
-      description: 'Spicy Margarita, a royal blend of citrus and agave.',
-      price: '£14.00',
-    },
-    {
-      title: 'Crimson Kiss',
-      description: 'Disaronno & cranberry, sweet, tart, and unforgettable.',
-      price: '£14.50',
-    },
-    {
-      title: 'Sunstone',
-      description: 'Lemon Drop, a bright and zesty delight.',
-      price: '£12.50',
-    },
-    {
-      title: 'Polaroid Paradise',
-      description:
-        'Capture the moment with a surprise Tequila cocktail served with its own keepsake polaroid.',
-      price: '£15.00',
-    },
-  ]
-},
-  mocktails:{
+    items: [
+      {
+        title: 'Savannah Drip',
+        description:
+          'Strawberry & cucumber Gin bramble, a refreshing burst of sweet and herbal notes.',
+        price: '£12.50',
+      },
+      {
+        title: 'Golden Hour',
+        description: 'Rhubarb Gin sour, perfectly tangy with a smooth finish.',
+        price: '£13.00',
+      },
+      {
+        title: 'Pineapple Royale',
+        description: 'Hennessy with a tropical pineapple twist, rich and regal',
+        price: '£14.50',
+      },
+      {
+        title: 'Oga’s Spicy Margarita',
+        description: 'Spicy Margarita, a royal blend of citrus and agave.',
+        price: '£14.00',
+      },
+      {
+        title: 'Crimson Kiss',
+        description: 'Disaronno & cranberry, sweet, tart, and unforgettable.',
+        price: '£14.50',
+      },
+      {
+        title: 'Sunstone',
+        description: 'Lemon Drop, a bright and zesty delight.',
+        price: '£12.50',
+      },
+      {
+        title: 'Polaroid Paradise',
+        description:
+          'Capture the moment with a surprise Tequila cocktail served with its own keepsake polaroid.',
+        price: '£15.00',
+      },
+    ],
+  },
+  mocktails: {
     image: mocktailImg,
-    items:  [
-    {
-      title: 'Victoria Island',
-      description:
-        'A tropical fusion of coconut water, creamy coconut milk, zesty lime juice, and a hint of blue raspberry syrup.',
-      price: '£8.50',
-    },
-    {
-      title: 'Green Gold',
-      description:
-        'Crisp apple juice, agave, and fresh lime, inspired by the golden orchards and lush landscapes of West Africa.',
-      price: '£8.00',
-    },
-    {
-      title: 'Baobab Bloom',
-      description:
-        'A bold fusion of seasonal fruits with a citrus kick, echoing the vibrant colours of a West African sunset',
-      price: '£8.50',
-    },
-  ]
-},
+    items: [
+      {
+        title: 'Victoria Island',
+        description:
+          'A tropical fusion of coconut water, creamy coconut milk, zesty lime juice, and a hint of blue raspberry syrup.',
+        price: '£8.50',
+      },
+      {
+        title: 'Green Gold',
+        description:
+          'Crisp apple juice, agave, and fresh lime, inspired by the golden orchards and lush landscapes of West Africa.',
+        price: '£8.00',
+      },
+      {
+        title: 'Baobab Bloom',
+        description:
+          'A bold fusion of seasonal fruits with a citrus kick, echoing the vibrant colours of a West African sunset',
+        price: '£8.50',
+      },
+    ],
+  },
 };
 
 export const foodMenu = {
-  SmallPlates:{
-  image: smallPlatesImage,
-  items: [
-    {
-      title: 'Suya Buttermilk Chicken',
-      description:
-        'Juicy, skin-on chicken thighs marinated in a rich, spicy Suya blend.',
-      price: '£15.50',
-    },
-    {
-      title: 'Mushroom Skewers with Teriyaki & Crispy Tenkasu',
-      description: 'Grilled maitake and shiitake mushrooms, glazed in a thick, sweet teriyaki sauce, with a crispy tempura finish.',
-      price: '£9.50',
-    },
-    {
-      title: 'Suya Salmon Ceviche  with Crispy Plantain',
-      description: 'Velvety salmon, caviar, and a trio of roe. Finished with daikon, green mango, ponzu with a tangy mix of green mango, and a splash of lime.',
-      price: '£18.50',
-    },
-    {
-      title: 'Grilled Prawn Skewers with Sweet Chilli',
-      description: 'Flame-grilled prawns marinated in a sweet chilli glaze, blending bold West African spices with a perfect balance of heat and sweetness in every bite.',
-      price: '£13.50',
-    },
-    {
-      title: 'Okra, Cucumber & Sesame, Miso Salad',
-      description: 'Cool, crisp cucumber paired with pickled okra, fennel and a fragrant miso dressing. Finished with toasted pine nuts.',
-      price: '£11.50',
-    },
-    
-  ]
- },
-  largePlates:{
+  SmallPlates: {
+    image: smallPlatesImage,
+    items: [
+      {
+        title: 'Suya Buttermilk Chicken',
+        description: 'Juicy, skin-on chicken thighs marinated in a rich, spicy Suya blend.',
+        price: '£15.50',
+      },
+      {
+        title: 'Mushroom Skewers with Teriyaki & Crispy Tenkasu',
+        description:
+          'Grilled maitake and shiitake mushrooms, glazed in a thick, sweet teriyaki sauce, with a crispy tempura finish.',
+        price: '£9.50',
+      },
+      {
+        title: 'Suya Salmon Ceviche  with Crispy Plantain',
+        description:
+          'Velvety salmon, caviar, and a trio of roe. Finished with daikon, green mango, ponzu with a tangy mix of green mango, and a splash of lime.',
+        price: '£18.50',
+      },
+      {
+        title: 'Grilled Prawn Skewers with Sweet Chilli',
+        description:
+          'Flame-grilled prawns marinated in a sweet chilli glaze, blending bold West African spices with a perfect balance of heat and sweetness in every bite.',
+        price: '£13.50',
+      },
+      {
+        title: 'Okra, Cucumber & Sesame, Miso Salad',
+        description:
+          'Cool, crisp cucumber paired with pickled okra, fennel and a fragrant miso dressing. Finished with toasted pine nuts.',
+        price: '£11.50',
+      },
+    ],
+  },
+  largePlates: {
     image: largePlatesImage,
-    items:  [
-    {
-      title: 'Kaduna Beef Suya',
-      description:
-        'Tender beef skewers marinated in a bold blend of spices and ground peanuts, flame-grilled to smoky perfection. Served with crisp onions and juicy tomatoes.',
-      price: '£15.25',
-    },
-    {
-      title: 'Lagos Style Asun',
-      description:
-        'Slow-cooked goat meat, flash-grilled and tossed in a spicy pepper medley.',
-      price: '£18.25',
-    },
-    {
-      title: 'Grilled Day Boat Fish',
-      description:
-        'Grilled fresh catch fish, served with a bold pepper soup purée, complemented by delicate sea vegetables and crisp samphire. Please ask your server for today’s selection an pricing.',
-      price: 'DOA',
-    },
-    {
-      title: 'Lobster & Jollof Rice',
-      description:
-        'Tender lobster meat served alongside a silky lobster béarnaise with fluffy jollof.',
-      price: '£38.00',
-    },
-    {
-      title: 'Suya Beef Steak with Bone Marrow',
-      description:
-        'Suya spiced beef steak with a rich bone marrow butter and red wine sauce.',
-      price: '£52.00',
-    },
-    {
-      title: 'Grilled Octopus & Butter Beans',
-      description:
-        'Grilled octopus on a bed of butter beans and golden potatoes, drizzled in a rich, spiced jus. Topped with crispy chicken',
-      price: '£17.00',
-    },
-  ]
- },
+    items: [
+      {
+        title: 'Kaduna Beef Suya',
+        description:
+          'Tender beef skewers marinated in a bold blend of spices and ground peanuts, flame-grilled to smoky perfection. Served with crisp onions and juicy tomatoes.',
+        price: '£15.25',
+      },
+      {
+        title: 'Lagos Style Asun',
+        description: 'Slow-cooked goat meat, flash-grilled and tossed in a spicy pepper medley.',
+        price: '£18.25',
+      },
+      {
+        title: 'Grilled Day Boat Fish',
+        description:
+          'Grilled fresh catch fish, served with a bold pepper soup purée, complemented by delicate sea vegetables and crisp samphire. Please ask your server for today’s selection an pricing.',
+        price: 'DOA',
+      },
+      {
+        title: 'Lobster & Jollof Rice',
+        description:
+          'Tender lobster meat served alongside a silky lobster béarnaise with fluffy jollof.',
+        price: '£38.00',
+      },
+      {
+        title: 'Suya Beef Steak with Bone Marrow',
+        description: 'Suya spiced beef steak with a rich bone marrow butter and red wine sauce.',
+        price: '£52.00',
+      },
+      {
+        title: 'Grilled Octopus & Butter Beans',
+        description:
+          'Grilled octopus on a bed of butter beans and golden potatoes, drizzled in a rich, spiced jus. Topped with crispy chicken',
+        price: '£17.00',
+      },
+    ],
+  },
 
-   Sides:{
+  Sides: {
     image: sideImage,
     items: [
-    {
-      title: 'Sweet Potato, Swede & Cassava Mash',
-      price: '£9.50',
-    },
-    {
-      title: 'Jollof Rice',
-      price: '£8.50',
-    },
-    {
-      title: 'Fried Plantain',
-      price: '£6.50',
-    },
-    {
-      title: 'Suya Fries',
-      price: '£6.50',
-    },
-  ]
+      {
+        title: 'Sweet Potato, Swede & Cassava Mash',
+        price: '£9.50',
+      },
+      {
+        title: 'Jollof Rice',
+        price: '£8.50',
+      },
+      {
+        title: 'Fried Plantain',
+        price: '£6.50',
+      },
+      {
+        title: 'Suya Fries',
+        price: '£6.50',
+      },
+    ],
   },
-   Dessert:{
+  Dessert: {
     image: dessertImage,
-    items:   [
-    {
-      title: 'Warm filled doughnuts',
-      description:
-      'Light, pillowy doughnuts served warm, with your choice of indulgent fillings: rich chocolate, delicate pistachio, or spiced Biscoff.',
-      price: '£12.00',
-     
-    },
-  ]
+    items: [
+      {
+        title: 'Warm filled doughnuts',
+        description:
+          'Light, pillowy doughnuts served warm, with your choice of indulgent fillings: rich chocolate, delicate pistachio, or spiced Biscoff.',
+        price: '£12.00',
+      },
+    ],
   },
 };
 
