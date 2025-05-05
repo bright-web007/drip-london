@@ -242,3 +242,10 @@ export const latestNews = [
       "Whether it's an anniversary, product launch, or VIP dinner, our private dining experience is designed to impress. Learn what's included, how to book, and how we bring your event vision to life.",
   },
 ];
+
+export const Meta_Tags = {
+  siteName: 'Drip London',
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL,
+  description:
+    'At Drip, we serve more than just food—we deliver an immersive dining experience that blends tradition, creativity, and culture. Step into our stylish space and indulge in vibrant, fire-grilled dishes, rich spice blends, and soulful storytelling on every plate.',
+};
