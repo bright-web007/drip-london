@@ -3,6 +3,29 @@
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import type { Metadata } from 'next';
+import { Meta_Tags } from '@/helpers/data';
+import logo from '@/assets/logo.svg';
+
+export const metadata: Metadata = {
+  title: `Dashboard | ${Meta_Tags.siteName}`,
+  description: `${Meta_Tags.description}`,
+  openGraph: {
+    title: `Dashboard | ${Meta_Tags.siteName}`,
+    description: `${Meta_Tags.description}`,
+    url: `${Meta_Tags.siteUrl}/dashboard`,
+    siteName: `${Meta_Tags.siteName}`,
+    images: [
+      {
+        url: `${logo}`,
+        width: 1200,
+        height: 630,
+        alt: `${Meta_Tags.siteName} Dashboard`,
+      },
+    ],
+    type: 'website',
+  },
+};
 
 export default function DashboardPage() {
   const router = useRouter();
