@@ -7,8 +7,8 @@ import left from '@/assets/left-color.png';
 const Block14 = () => {
   return (
     <div className="bg-beige-400 py-16 xl:py-20">
-      <div className="flex flex-col md:flex-row items-center  justify-between w-[90%] xl:w-[85%] 2xl:w-[75%] mx-auto">
-        <div className="bg-blau-500 relative w-[90%] mb-8 xl:mb-0 md:w-[45%] h-[400px] xl:h-[560px] rounded-t-[50%]">
+      <div className="flex flex-col gap-10 items-center  justify-between w-[90%] md:flex-row xl:w-[85%] 2xl:w-[75%] mx-auto">
+        <div className="bg-blau-500 relative w-[90%] h-[380px] xl:h-[500px] rounded-t-[50%]  md:w-[40%]">
           <Image
             src={hostEvent}
             alt="host Event"
@@ -17,7 +17,7 @@ const Block14 = () => {
             height={400}
           />
         </div>
-        <div className="text-[#898155] w-full md:w-[48%] mb-8 md:mb-0">
+        <div className="text-[#898155] w-full md:w-[48%]">
           <h1 className="text-2xl font-semibold leading-11 font-thankslabs">
             Host Your Event the Drip London Way
           </h1>
