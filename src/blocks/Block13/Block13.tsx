@@ -25,10 +25,11 @@ const Block13 = () => {
       <div className="w-[80%] ml-12">
         {section.items.map((item, index) => (
           <div key={index} className="flex items-center justify-between mb-6">
-            <div className="mr-4">
+            <div className="mr-4 w-[70%]">
               <h1 className="text-xs font-semibold mb-1.5">{item.title}</h1>
               <p className="font-monserrat text-xs text-[#6D6D6D]">{item.description}</p>
             </div>
+            <hr className="border-b-[0.5px] border-t-0 border-[#B58C6778] w-[20%]" />
             <p className="font-semibold text-sm">{item.price}</p>
           </div>
         ))}
@@ -80,10 +81,13 @@ const Block13 = () => {
         {/* Render food or drinks */}
         {(menu === 'drinks' ? Object.entries(drinksMenu) : Object.entries(foodMenu)).map(
           ([key, section]) =>
-            renderSection(capitalize(key), section as {
-              items: { title: string; description: string; price: string }[];
-              image: StaticImageData;
-            })
+            renderSection(
+              capitalize(key),
+              section as {
+                items: { title: string; description: string; price: string }[];
+                image: StaticImageData;
+              }
+            )
         )}
       </div>
 
@@ -104,4 +108,3 @@ const Block13 = () => {
 };
 
 export default Block13;
-

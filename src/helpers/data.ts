@@ -1,4 +1,3 @@
-
 import smallPlatesImage from '@/assets/food1.png';
 import largePlatesImage from '@/assets/food2.png';
 import sideImage from '@/assets/food3.png';
@@ -12,8 +11,6 @@ import card3 from '@/assets/card3.png';
 import card4 from '@/assets/card4.png';
 import card5 from '@/assets/card5.png';
 import card6 from '@/assets/card6.png';
-
-
 
 export const reviews = [
   {
@@ -256,7 +253,7 @@ export const navLinks = [
   { name: 'Home', link: '/' },
   { name: 'The Menus', link: '/menu' },
   { name: 'About', link: '/about' },
-  { name: 'Book an Event', link: '/' },
+  { name: 'Reservation', link: '/' },
   { name: 'News', link: '/news' },
   { name: 'Contacts', link: '/contact-us' },
 ];
@@ -305,3 +302,98 @@ export const latestNews = [
       "Whether it's an anniversary, product launch, or VIP dinner, our private dining experience is designed to impress. Learn what's included, how to book, and how we bring your event vision to life.",
   },
 ];
+
+export const restaurantSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Restaurant',
+  name: 'Drip London',
+  image: `${process.env.NEXT_PUBLIC_SITE_URL}/drip-london-logo.jpg`,
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '27 Clerkwenwell road, London',
+    addressLocality: 'London',
+    addressRegion: 'Greater London',
+    postalCode: 'EC1M 5RN',
+    addressCountry: 'GB',
+  },
+  telephone: '+449 098 875 9876',
+  servesCuisine: ['West African Fusion', 'Modern European', 'Cocktails', 'Mocktails', 'Brunch'],
+  url: `${process.env.NEXT_PUBLIC_SITE_URL}`,
+  acceptsReservations: 'True',
+  menu: `${process.env.NEXT_PUBLIC_SITE_URL}/menu`,
+};
+
+export const menuSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Menu',
+  name: 'Drip London Menu',
+  url: `${process.env.NEXT_PUBLIC_SITE_URL}/menu`,
+  hasMenuSection: [
+    {
+      '@type': 'MenuSection',
+      name: 'Drinks',
+      hasMenuItem: [
+        drinksMenu.cocktails.items.map(drink => ({
+          '@type': 'MenuItem',
+          name: drink.title,
+          description: drink.description,
+          offers: {
+            '@type': 'Offer',
+            price: drink.price,
+            priceCurrency: 'GBP',
+          },
+        })),
+        drinksMenu.mocktails.items.map(drink => ({
+          '@type': 'MenuItem',
+          name: drink.title,
+          description: drink.description,
+          offers: {
+            '@type': 'Offer',
+            price: drink.price,
+            priceCurrency: 'GBP',
+          },
+        })),
+        foodMenu.largePlates.items.map(food => ({
+          '@type': 'MenuItem',
+          name: food.title,
+          description: food.description,
+          offers: {
+            '@type': 'Offer',
+            price: food.price,
+            priceCurrency: 'GBP',
+          },
+        })),
+        foodMenu.SmallPlates.items.map(food => ({
+          '@type': 'MenuItem',
+          name: food.title,
+          description: food.description,
+          offers: {
+            '@type': 'Offer',
+            price: food.price,
+            priceCurrency: 'GBP',
+          },
+        })),
+        foodMenu.Sides.items.map(side => ({
+          '@type': 'MenuItem',
+          name: side.title,
+          description: side.title,
+          offers: {
+            '@type': 'Offer',
+            price: side.price,
+            priceCurrency: 'GBP',
+          },
+        })),
+        foodMenu.Dessert.items.map(dessert => ({
+          '@type': 'MenuItem',
+          name: dessert.title,
+          description: dessert.description,
+          offers: {
+            '@type': 'Offer',
+            price: dessert.price,
+            priceCurrency: 'GBP',
+          },
+        })),
+      ],
+    },
+  ],
+};
