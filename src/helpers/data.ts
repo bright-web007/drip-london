@@ -1,4 +1,3 @@
-
 import smallPlatesImage from '@/assets/food1.png';
 import largePlatesImage from '@/assets/food2.png';
 import sideImage from '@/assets/food3.png';
@@ -12,8 +11,6 @@ import card3 from '@/assets/card3.png';
 import card4 from '@/assets/card4.png';
 import card5 from '@/assets/card5.png';
 import card6 from '@/assets/card6.png';
-
-
 
 export const reviews = [
   {
@@ -336,7 +333,7 @@ export const menuSchema = {
       '@type': 'MenuSection',
       name: 'Drinks',
       hasMenuItem: [
-        drinksMenu.cocktails.map(drink => ({
+        drinksMenu.cocktails.items.map(drink => ({
           '@type': 'MenuItem',
           name: drink.title,
           description: drink.description,
@@ -346,13 +343,53 @@ export const menuSchema = {
             priceCurrency: 'GBP',
           },
         })),
-        drinksMenu.mocktails.map(drink => ({
+        drinksMenu.mocktails.items.map(drink => ({
           '@type': 'MenuItem',
           name: drink.title,
           description: drink.description,
           offers: {
             '@type': 'Offer',
             price: drink.price,
+            priceCurrency: 'GBP',
+          },
+        })),
+        foodMenu.largePlates.items.map(food => ({
+          '@type': 'MenuItem',
+          name: food.title,
+          description: food.description,
+          offers: {
+            '@type': 'Offer',
+            price: food.price,
+            priceCurrency: 'GBP',
+          },
+        })),
+        foodMenu.SmallPlates.items.map(food => ({
+          '@type': 'MenuItem',
+          name: food.title,
+          description: food.description,
+          offers: {
+            '@type': 'Offer',
+            price: food.price,
+            priceCurrency: 'GBP',
+          },
+        })),
+        foodMenu.Sides.items.map(side => ({
+          '@type': 'MenuItem',
+          name: side.title,
+          description: side.title,
+          offers: {
+            '@type': 'Offer',
+            price: side.price,
+            priceCurrency: 'GBP',
+          },
+        })),
+        foodMenu.Dessert.items.map(dessert => ({
+          '@type': 'MenuItem',
+          name: dessert.title,
+          description: dessert.description,
+          offers: {
+            '@type': 'Offer',
+            price: dessert.price,
             priceCurrency: 'GBP',
           },
         })),
