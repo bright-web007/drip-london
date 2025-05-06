@@ -1,3 +1,4 @@
+'use client';
 import { Button } from '@/components/ui/button';
 import left from '@/assets/left-fly.svg';
 import right from '@/assets/right-fly.svg';
@@ -6,8 +7,10 @@ import followUs from '@/assets/follow-us.svg';
 import { Icon } from '@iconify/react';
 import { LayoutHeader } from '@/components/LayoutHeader/LayoutHeader';
 import BookTable from '@/assets/icons-svg/BookTable';
+import { useRouter } from 'next/navigation';
 
 const Block1 = () => {
+  const router = useRouter();
   return (
     <div className="flex flex-col mt-[-72px] font-monserrat bg-gray-500 h-[100vh] xl:h-[120vh] relative">
       <LayoutHeader />
@@ -26,7 +29,12 @@ const Block1 = () => {
         <div className="flex items-center">
           <Image src={left} alt="Drip London Logo" width={12} height={16} />
           <div className="border border-[#d9d9d9] p-[2px] rounded-[2px]">
-            <Button className="group bg-transparent border border-white hover:bg-beige-500 text-sm cursor-pointer rounded-[2px] px-6 py-2 text-white flex items-center justify-center transition-all duration-300">
+            <Button
+              onClick={() => {
+                router.push('/reservation');
+              }}
+              className="group bg-transparent border border-white hover:bg-beige-500 text-sm cursor-pointer rounded-[2px] px-6 py-2 text-white flex items-center justify-center transition-all duration-300"
+            >
               <span className="flex items-center space-x-1">
                 <span>Reserve your table</span>
                 <span className="overflow-hidden max-w-0 opacity-0 group-hover:max-w-[1.2rem] group-hover:opacity-100 transition-all duration-300">
