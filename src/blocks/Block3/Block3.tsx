@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import memories1 from '@/assets/memories1.jpg';
-import memories2 from '@/assets/memories2.jpg';
-import memories3 from '@/assets/memories3.jpg';
+import memories1 from '@/assets/memories1.webp';
+import memories2 from '@/assets/memories2.webp';
+import memories3 from '@/assets/memories3.webp';
 import CurvyUnderline from '@/assets/icons-svg/CurvyUnderline';
 import logoWhite from '@/assets/icons-svg/drip-icon-white.png';
 

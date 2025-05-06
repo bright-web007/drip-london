@@ -253,7 +253,7 @@ export const navLinks = [
   { name: 'Home', link: '/' },
   { name: 'The Menus', link: '/menu' },
   { name: 'About', link: '/about' },
-  { name: 'Reservation', link: '/' },
+  { name: 'Reservation', link: '/reservation' },
   { name: 'News', link: '/news' },
   { name: 'Contacts', link: '/contact-us' },
 ];
@@ -397,3 +397,28 @@ export const menuSchema = {
     },
   ],
 };
+
+export const timeSlots = [
+  '16:00',
+  '17:00',
+  '18:00',
+  '18:30',
+  '19:00',
+  '19:30',
+  '20:00',
+  '20:30',
+  '21:00',
+  '21:30',
+];
+
+export const dressSense = [
+  'Dress to Impress. Elegant and Sophisticated',
+  'Smart Casual. No Sport Wears or Hoodies',
+];
+
+export const acceptableIDs = [
+  'Valid and In-Date Photographic Driving Licence',
+  'Valid and In-Date Passport',
+  'Current Military/ UK Services Photo ID',
+  'Valid and In-Date Hologram ID Card',
+];
