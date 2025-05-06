@@ -7,10 +7,11 @@ import Block21 from '@/blocks/Block21/Block21'
 export const metadata: Metadata = {
   title: `Navigation | ${Meta_Tags.siteName}`,
   description: `${Meta_Tags.description}`,
+  metadataBase: new URL(`${Meta_Tags.siteUrl}`),
   openGraph: {
     title: `Navigation | ${Meta_Tags.siteName}`,
     description: `${Meta_Tags.description}`,
-    url: `${Meta_Tags.siteUrl}/navigation`,
+    url: `/navigation`,
     siteName: `${Meta_Tags.siteName}`,
     images: [
       {

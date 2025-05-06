@@ -8,10 +8,11 @@ import logo from '@/assets/logo.svg';
 export const metadata: Metadata = {
   title: `Contact Us | ${Meta_Tags.siteName}`,
   description: `${Meta_Tags.description}`,
+  metadataBase: new URL(`${Meta_Tags.siteUrl}`),
   openGraph: {
     title: `Contact Us | ${Meta_Tags.siteName}`,
     description: `${Meta_Tags.description}`,
-    url: `${Meta_Tags.siteUrl}/Contact`,
+    url: `/Contact`,
     siteName: `${Meta_Tags.siteName}`,
     images: [
       {

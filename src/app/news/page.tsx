@@ -10,10 +10,11 @@ import logo from '@/assets/logo.svg';
 export const metadata: Metadata = {
   title: `News | ${Meta_Tags.siteName}`,
   description: `${Meta_Tags.description}`,
+  metadataBase: new URL(`${Meta_Tags.siteUrl}`),
   openGraph: {
     title: `News | ${Meta_Tags.siteName}`,
     description: `${Meta_Tags.description}`,
-    url: `${Meta_Tags.siteUrl}/news`,
+    url: `/news`,
     siteName: `${Meta_Tags.siteName}`,
     images: [
       {

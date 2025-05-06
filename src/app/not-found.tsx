@@ -1,4 +1,29 @@
 import Link from 'next/link';
+import logo from '@/assets/logo.svg';
+import type { Metadata } from 'next';
+import { Meta_Tags } from '@/helpers/data';
+
+
+
+export const metadata: Metadata = {
+  title: `Not Found | ${Meta_Tags.siteName}`,
+  description: `${Meta_Tags.description}`,
+  openGraph: {
+    title: `Not Found | ${Meta_Tags.siteName}`,
+    description: `${Meta_Tags.description}`,
+    url: `${Meta_Tags.siteUrl}/404`,
+    siteName: `${Meta_Tags.siteName}`,
+    images: [
+      {
+        url: `${logo}`,
+        width: 1200,
+        height: 630,
+        alt: `${Meta_Tags.siteName} Not Found`,
+      },
+    ],
+    type: 'website',
+  },
+};
 
 export default function NotFound() {
   return (
