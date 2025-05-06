@@ -253,7 +253,7 @@ export const navLinks = [
   { name: 'Home', link: '/' },
   { name: 'The Menus', link: '/menu' },
   { name: 'About', link: '/about' },
-  { name: 'Book an Event', link: '/' },
+  { name: 'Reservation', link: '/' },
   { name: 'News', link: '/news' },
   { name: 'Contacts', link: '/contact-us' },
 ];

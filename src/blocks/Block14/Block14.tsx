@@ -8,7 +8,7 @@ const Block14 = () => {
   return (
     <div className="bg-beige-400 py-16 xl:py-20">
       <div className="flex flex-col gap-10 items-center  justify-between w-[90%] md:flex-row xl:w-[85%] 2xl:w-[75%] mx-auto">
-        <div className="bg-blau-500 relative w-[90%] h-[380px] xl:h-[500px] rounded-t-[50%]  md:w-[40%]">
+        <div className="bg-blau-500 relative w-[90%] h-[380px] xl:h-[550px] rounded-t-[50%]  md:w-[40%]">
           <Image
             src={hostEvent}
             alt="host Event"
