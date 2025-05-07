@@ -1,13 +1,12 @@
 import logo from '@/assets/logo.svg';
 import type { Metadata } from 'next';
 import { Meta_Tags } from '@/helpers/data';
-import Block21 from '@/blocks/Block21/Block21'
-
+import Block21 from '@/blocks/Block21/Block21';
 
 export const metadata: Metadata = {
   title: `Navigation | ${Meta_Tags.siteName}`,
   description: `${Meta_Tags.description}`,
-  metadataBase: new URL(Meta_Tags.siteUrl || 'https://driplondon.wazobia.uk'),
+  metadataBase: new URL(`${Meta_Tags.siteUrl}`),
   openGraph: {
     title: `Navigation | ${Meta_Tags.siteName}`,
     description: `${Meta_Tags.description}`,
@@ -33,6 +32,3 @@ const page = () => {
 };
 
 export default page;
-
-
-

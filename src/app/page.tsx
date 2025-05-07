@@ -8,12 +8,10 @@ import logo from '@/assets/logo.svg';
 import type { Metadata } from 'next';
 import { Meta_Tags } from '@/helpers/data';
 
-
-
 export const metadata: Metadata = {
   title: `Home | ${Meta_Tags.siteName}`,
   description: `${Meta_Tags.description}`,
-  metadataBase: new URL(Meta_Tags.siteUrl || 'https://driplondon.wazobia.uk'),
+  metadataBase: new URL(`${Meta_Tags.siteUrl}`),
   openGraph: {
     title: `Home | ${Meta_Tags.siteName}`,
     description: `${Meta_Tags.description}`,

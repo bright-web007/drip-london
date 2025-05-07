@@ -3,13 +3,23 @@ import Image from 'next/image';
 import logo from '../../assets/logo.svg';
 import { Icon } from '@iconify/react';
 import { navLinks } from '@/helpers/data';
+import { useRouter } from 'next/navigation';
 
 const Footer = () => {
+  const router = useRouter();
+
   return (
     <div className="bg-beige-500 py-12 font-monserrat">
       <div className="flex items-end justify-center">
         <hr className="border-t border-[#F0F0F036] my-2 w-[25%] lg:w-[40%]" />
-        <Image src={logo} alt="Drip London Logo" className="mx-auto" width={154} height={78} />
+        <Image
+          src={logo}
+          alt="Drip London Logo"
+          className="mx-auto"
+          width={154}
+          height={78}
+          onClick={() => router.push('/')}
+        />
         <hr className="border-t border-[#F0F0F036] my-2 w-[25%] lg:w-[40%]" />
       </div>
       <div className="w-[70%] xl:w-[50%] mx-auto pt-10">

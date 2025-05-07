@@ -19,7 +19,7 @@ const Block12 = () => {
         <div className="font-thankslabs text-beige-500">
           <p className="text-base leading-7 font-medium">25% Off on Weekends</p>
           <h1 className="uppercase text-3xl leading-9 font-semibold my-6">SUPER DEAL</h1>
-          <div className="flex items-center mt-10 z-10">
+          <div className="flex items-center mt-10 z-999">
             <Image src={left} alt="Drip London Logo" width={12} height={16} color="red" />
             <div className="border border-[#89815578] p-[2px] rounded-[2px]">
               <Button className="group  bg-transparent border border-beige-500 hover:bg-beige-500 text-sm cursor-pointer rounded-[2px] px-6 py-5 text-beige-500  flex items-center justify-center transition-all duration-300">
