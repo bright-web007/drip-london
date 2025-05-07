@@ -167,7 +167,7 @@ const Block22 = () => {
               <h1 className="text-[14px] font-thankslabs mb-4  sm:text-[16px]">{formatDisplayDate(date)}</h1>
               <div className="flex justify-center items-center gap-2 mb-4">
                 <Icon icon="mdi:account-check" className="w-[16px] h-[16px] text-[#B1B1B1]  sm:w-[17.5px] sm:h-[17.5px]  md:w-[19px] md:h-[19px]  xl:w-[24px] xl:h-[24px]" />
-                <span className="text-base text-[12px]  sm:text-[14px]">{guests} Guest</span>
+                <span className="text-base text-[12px]  sm:text-[14px]">{guests} Guests</span>
               </div>
               <div className="flex justify-center items-center gap-2 mb-6">
                 <Icon icon="mdi:pencil" className="w-[16px] h-[16px] text-blue-500  sm:w-[17.5px] sm:h-[17.5px]   md:w-[19px] md:h-[19px]  xl:w-[21px] xl:h-[21px]" />
