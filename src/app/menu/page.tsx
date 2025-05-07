@@ -11,7 +11,7 @@ import logo from '@/assets/logo.svg';
 export const metadata: Metadata = {
   title: `Menu | ${Meta_Tags.siteName}`,
   description: `${Meta_Tags.description}`,
-  metadataBase: new URL(Meta_Tags.siteUrl || 'https://driplondon.wazobia.uk'),
+  metadataBase: new URL(`${Meta_Tags.siteUrl}`),
   openGraph: {
     title: `Menu | ${Meta_Tags.siteName}`,
     description: `${Meta_Tags.description}`,
