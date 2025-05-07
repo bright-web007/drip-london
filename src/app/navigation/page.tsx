@@ -7,7 +7,7 @@ import Block21 from '@/blocks/Block21/Block21'
 export const metadata: Metadata = {
   title: `Navigation | ${Meta_Tags.siteName}`,
   description: `${Meta_Tags.description}`,
-  metadataBase: new URL(`${Meta_Tags.siteUrl}`),
+  metadataBase: new URL(Meta_Tags.siteUrl || 'https://driplondon.wazobia.uk'),
   openGraph: {
     title: `Navigation | ${Meta_Tags.siteName}`,
     description: `${Meta_Tags.description}`,

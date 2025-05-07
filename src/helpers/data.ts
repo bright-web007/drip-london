@@ -245,7 +245,7 @@ export const latestNews = [
 
 export const Meta_Tags = {
   siteName: 'Drip London',
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL,
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://driplondon.wazobia.uk',
   description:
     'At Drip, we serve more than just food—we deliver an immersive dining experience that blends tradition, creativity, and culture. Step into our stylish space and indulge in vibrant, fire-grilled dishes, rich spice blends, and soulful storytelling on every plate.',
 };
