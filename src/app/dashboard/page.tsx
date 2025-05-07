@@ -3,19 +3,36 @@
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import { useState, useEffect } from 'react';
 
 export default function DashboardPage() {
   const router = useRouter();
-  const username = localStorage.getItem('username');
+  const [username, setUsername] = useState<string | null>(null);
+  const [loading, setLoading] = useState(true);
 
-  if (!username) {
-    return <div>Loading...</div>;
-  }
+  useEffect(() => {
+    // Access localStorage safely in useEffect (client-side only)
+    const storedUsername = localStorage.getItem('username');
+    setUsername(storedUsername);
+    setLoading(false);
+    // Redirect if no username is found
+    if (!storedUsername) {
+      router.push('/');
+    }
+  }, [router]);
 
   const handleLogout = () => {
     localStorage.removeItem('username');
     router.push('/');
   };
+
+  if (loading) {
+    return <div className="flex min-h-screen items-center justify-center">Loading...</div>;
+  }
+
+  if (!username) {
+    return null; // Will redirect in useEffect
+  }
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-24">

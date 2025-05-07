@@ -1,5 +1,4 @@
 'use client';
-
 import { drinksMenu, foodMenu } from '@/helpers/data';
 import Image, { StaticImageData } from 'next/image';
 import { useState } from 'react';
@@ -80,10 +79,13 @@ const Block13 = () => {
         {/* Render food or drinks */}
         {(menu === 'drinks' ? Object.entries(drinksMenu) : Object.entries(foodMenu)).map(
           ([key, section]) =>
-            renderSection(capitalize(key), section as {
-              items: { title: string; description: string; price: string }[];
-              image: StaticImageData;
-            })
+            renderSection(
+              capitalize(key),
+              section as {
+                items: { title: string; description: string; price: string }[];
+                image: StaticImageData;
+              }
+            )
         )}
       </div>
 
@@ -104,4 +106,3 @@ const Block13 = () => {
 };
 
 export default Block13;
-

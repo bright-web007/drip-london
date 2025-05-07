@@ -1,4 +1,3 @@
-
 import smallPlatesImage from '@/assets/food1.png';
 import largePlatesImage from '@/assets/food2.png';
 import sideImage from '@/assets/food3.png';
@@ -12,8 +11,6 @@ import card3 from '@/assets/card3.png';
 import card4 from '@/assets/card4.png';
 import card5 from '@/assets/card5.png';
 import card6 from '@/assets/card6.png';
-
-
 
 export const reviews = [
   {
