@@ -1,5 +1,4 @@
 'use client';
-
 import { drinksMenu, foodMenu } from '@/helpers/data';
 import Image, { StaticImageData } from 'next/image';
 import { useState } from 'react';
