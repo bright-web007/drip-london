@@ -44,9 +44,21 @@ const Footer = () => {
         @Drip London Restaurant, London {new Date().getFullYear()}
       </p>
       <div className="flex items-center justify-center">
-        <Icon icon="line-md:instagram" className="text-white w-6 h-6 " />
+        <a
+          href="https://www.instagram.com/driplondon.uk/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon icon="line-md:instagram" className="text-white w-6 h-6 " />
+        </a>
         <hr className="border-t border-[#F0F0F036] my-2 w-6 mx-4" />
-        <Icon icon="circum:facebook" className="text-white w-6 h-6" />
+        <a
+          href="https://www.facebook.com/p/Driplondonuk-61554516034085/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon icon="circum:facebook" className="text-white w-6 h-6" />
+        </a>
         <hr className="border-t border-[#F0F0F036] my-2 w-6 mx-4" />
         <Icon icon="garden:twitter-stroke-12" className="text-white w-5 h-5" />
       </div>
