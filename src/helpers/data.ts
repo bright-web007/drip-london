@@ -429,3 +429,15 @@ export const Meta_Tags = {
   description:
     'At Drip, we serve more than just food—we deliver an immersive dining experience that blends tradition, creativity, and culture. Step into our stylish space and indulge in vibrant, fire-grilled dishes, rich spice blends, and soulful storytelling on every plate.',
 };
+
+export const containerStyle = {
+  width: '100%',
+  height: '100%',
+};
+
+export const center = {
+  lat: 51.522297,
+  lng: -0.102337,
+};
+
+export const GOOGLE_MAPS_APIKEY = 'AIzaSyB_Ujmyiir8qmceRFs5ICiSHUJhQnXRZD4';

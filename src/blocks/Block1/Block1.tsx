@@ -12,7 +12,7 @@ import { useRouter } from 'next/navigation';
 const Block1 = () => {
   const router = useRouter();
   return (
-    <div className="flex flex-col mt-[-72px] font-monserrat bg-gray-500 h-[100vh] relative">
+    <div className="flex flex-col mt-[-72px] font-monserrat bg-gray-500 h-[100vh] xl:h-[105vh] relative">
       <LayoutHeader />
       <div className=" absolute inset-0 z-10 flex flex-col items-center justify-center">
         <h1 className=" text-[24px] md:text-[32px] xl:text-[50px] font-bold w-[70%] md:w-[75%] text-center text-white font-thankslabs">
