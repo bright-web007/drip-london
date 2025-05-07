@@ -42,7 +42,10 @@ const Navbar = () => {
     <div className="font-monserrat bg-transparent z-40">
       <div className="flex items-end justify-center">
         <div className="flex items-center h-18 border-b border-white w-[45%]  lg:w-[40%] text-white text-[10px] md:text-sm font-medium leading-6 pl-2 md:pl-4">
-          <Button className="bg-beige-500 hover:bg-transparent border-2 border-[#8981555C] cursor-pointer rounded-[2px] px-6 mr-4 hidden md:flex">
+          <Button
+            onClick={() => router.push('/contact-us')}
+            className="bg-beige-500 hover:bg-transparent border-2 border-[#8981555C] cursor-pointer rounded-[2px] px-6 mr-4 hidden md:flex"
+          >
             Open Times
           </Button>
           <p
@@ -64,7 +67,10 @@ const Navbar = () => {
         />
 
         <div className="flex items-center justify-end border-b border-white w-[45%] lg:w-[40%] text-white text-[10px] md:text-sm font-medium leading-6 h-18">
-          <div className="flex items-center -ml-4 md:-ml-0 h-full pr-2 md:pr-4 cursor-pointer group">
+          <div
+            onClick={() => router.push('/reservation')}
+            className="flex items-center -ml-4 md:-ml-0 h-full pr-2 md:pr-4 cursor-pointer group"
+          >
             <Image
               src={dish}
               alt="Dish"

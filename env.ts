@@ -9,7 +9,8 @@ const envSchema = z.object({
 
 // Validate environment
 const _env = {
-  NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL || 
+  NEXT_PUBLIC_API_URL:
+    process.env.NEXT_PUBLIC_API_URL ||
     // Default value for build time (can be a placeholder)
     'http://placeholder-for-build-time.com',
 };
@@ -17,7 +18,6 @@ const _env = {
 const parsed = envSchema.safeParse(_env);
 
 if (!parsed.success) {
-  console.error('Environment validation failed:', parsed.error.format());
   throw new Error('Invalid or missing environment variables');
 }
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import newsbg from '@/assets/background/latest-news-bg.png';
+import newsbg from '@/assets/background/latest-news-bg.webp';
 
 const Block19 = () => {
   return (
