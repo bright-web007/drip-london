@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import logo from '@/assets/logo.svg';
 import { Icon } from '@iconify/react';
-import menuBg from '@/assets/menu-bg.jpeg';
+import menuBg from '@/assets/background/nav-bg.webp';
 import { useRouter } from 'next/navigation';
 import { navLinks } from '@/helpers/data';
 

@@ -15,7 +15,7 @@ const Block17 = () => {
               href="https://www.google.com/maps?q=6.469605,3.581631"
               target="_blank"
               rel="noopener noreferrer"
-              className="block flex flex-col h-full justify-between"
+              className="flex flex-col h-full justify-between"
             >
               <div className="flex justify-between items-start">
                 <div>
@@ -24,7 +24,7 @@ const Block17 = () => {
                     27 Clerkenwell Rd, London EC1M 5RN
                   </p>
                 </div>
-                <div className="text-blue-600 text-base font-medium font-medium flex flex-col items-center gap-1">
+                <div className="text-blue-600 text-base font-medium flex flex-col items-center gap-1">
                   <Icon icon="grommet-icons:directions" className="w-6 h-6" />
                   Directions
                 </div>
