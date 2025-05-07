@@ -1,5 +1,29 @@
 import React from 'react';
 import Link from 'next/link';
+import logo from '@/assets/logo.svg';
+import type { Metadata } from 'next';
+import { Meta_Tags } from '@/helpers/data';
+
+export const metadata: Metadata = {
+  title: `Not Found | ${Meta_Tags.siteName}`,
+  description: `${Meta_Tags.description}`,
+  metadataBase: new URL(`${Meta_Tags.siteUrl}`),
+  openGraph: {
+    title: `Not Found | ${Meta_Tags.siteName}`,
+    description: `${Meta_Tags.description}`,
+    url: `/404`,
+    siteName: `${Meta_Tags.siteName}`,
+    images: [
+      {
+        url: `${logo}`,
+        width: 1200,
+        height: 630,
+        alt: `${Meta_Tags.siteName} Not Found`,
+      },
+    ],
+    type: 'website',
+  },
+};
 
 const page = () => {
   return (
