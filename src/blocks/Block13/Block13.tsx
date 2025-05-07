@@ -24,10 +24,11 @@ const Block13 = () => {
       <div className="w-[80%] ml-12">
         {section.items.map((item, index) => (
           <div key={index} className="flex items-center justify-between mb-6">
-            <div className="mr-4">
+            <div className="mr-4 w-[70%]">
               <h1 className="text-xs font-semibold mb-1.5">{item.title}</h1>
               <p className="font-monserrat text-xs text-[#6D6D6D]">{item.description}</p>
             </div>
+            <hr className="border-b-[0.5px] border-t-0 border-[#B58C6778] w-[20%]" />
             <p className="font-semibold text-sm">{item.price}</p>
           </div>
         ))}
