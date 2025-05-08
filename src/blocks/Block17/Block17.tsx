@@ -1,9 +1,7 @@
 'use client';
 
 import React from 'react';
-import { GoogleMap, LoadScript } from '@react-google-maps/api';
 import { Icon } from '@iconify/react';
-import { center, containerStyle, GOOGLE_MAPS_APIKEY } from '@/helpers/data';
 
 const Block17 = () => {
   return (
@@ -12,7 +10,7 @@ const Block17 = () => {
         <div className="absolute bg-[rgba(21,21,21,0.55)] opacity-100 pr-[17.875px] pl-[18px] pb-[8px] pt-[9px] w-full h-[121px] md:h-[154px] md:pr-[391.875px] md:pl-[24px] md:pb-[25px] md:pt-[25px] z-10">
           <div className="w-[100%] h-[104px] border rounded shadow p-2 text-sm font-sans bg-white">
             <a
-              href="https://www.google.com/maps?q=6.469605,3.581631"
+              href="https://www.google.com/maps?q=51.522306,-0.102333"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-col h-full justify-between"
@@ -36,26 +34,17 @@ const Block17 = () => {
           </div>
         </div>
 
-        <div className="w-full h-full">
-          <LoadScript googleMapsApiKey={GOOGLE_MAPS_APIKEY}>
-            <GoogleMap
-              mapContainerStyle={containerStyle}
-              center={center}
-              zoom={15}
-              options={{
-                disableDefaultUI: true,
-                gestureHandling: 'greedy',
-                styles: [
-                  {
-                    featureType: 'poi',
-                    elementType: 'labels',
-                    stylers: [{ visibility: 'off' }],
-                  },
-                ],
-              }}
-            />
-          </LoadScript>
-        </div>
+        {/* Embedded Google Map */}
+        <iframe
+          title="Google Map"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1985.7220147104345!2d-0.102333!3d51.522306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1686065474410!5m2!1sen!2suk"
+          width="100%"
+          height="100%"
+          className="absolute top-0 left-0 w-full h-full rounded"
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        />
       </div>
     </div>
   );
