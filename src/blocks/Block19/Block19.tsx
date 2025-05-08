@@ -1,19 +1,22 @@
-import React from 'react'
-import Image from 'next/image'
-import newsbg from '@/assets/background/latest-news-bg.png'
+import React from 'react';
+import Image from 'next/image';
+import newsbg from '@/assets/background/latest-news-bg.webp';
 
 const Block19 = () => {
   return (
     <div className="relative w-full h-[70vh] overflow-hidden mt-[-72px]">
-      <Image src={newsbg} alt="Menu" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-in-out"
+      <Image
+        src={newsbg}
+        alt="Menu"
+        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-in-out"
       />
       <div className="absolute inset-0  flex items-center justify-center ">
-        <h1 className="font-thankslabs font-bold text-[14px] sm:text-[22px] md:text-[32px] xl:text-[50px] text-white">
-        Latest update from DRIP LONDON
+        <h1 className="font-thankslabs text-center leading-11 md:leading-14 font-bold text-2xl md:text-[32px] xl:text-[50px] text-white mx-4 md:mx-0">
+          Latest update from DRIP LONDON
         </h1>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Block19
+export default Block19;

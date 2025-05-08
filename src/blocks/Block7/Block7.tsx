@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import aboutBg from '@/assets/background/about-bg.svg';
+import aboutBg from '@/assets/background/about-bg.webp';
 
 const Block7 = () => {
   return (
