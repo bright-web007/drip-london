@@ -13,7 +13,7 @@ const Block1 = () => {
   return (
     <div className="flex flex-col mt-[-72px] font-monserrat bg-gray-500 h-[100vh] xl:h-[105vh] relative">
       <LayoutHeader />
-      <div className=" absolute inset-0 z-15 flex flex-col items-center justify-center">
+      <div className=" absolute inset-0 flex flex-col items-center justify-center">
         <h1 className=" text-[24px] md:text-[32px] xl:text-[50px] font-bold w-[70%] md:w-[75%] text-center text-white font-thankslabs">
           {' '}
           Welcome to DRIP LONDON
@@ -25,7 +25,7 @@ const Block1 = () => {
           fire-grilled dishes, rich spice blends, and soulful storytelling on every plate. This is
           West African fusion, reimagined. 
         </p>
-        <div className="flex items-center">
+        <div className="flex items-center z-30">
           <Image src={left} alt="Drip London Logo" width={12} height={16} />
           <div className="border border-[#d9d9d9] p-[2px] rounded-[2px]">
             <Button
@@ -45,8 +45,8 @@ const Block1 = () => {
           <Image src={right} alt="Drip London Logo" width={12} height={16} />
         </div>
       </div>
-      <div className=" absolute  bottom-[5%] flex items-end justify-between w-full px-4 md:px-12">
-        <div className="flex flex-col items-center gap-4 z-10">
+      <div className=" absolute z-15 bottom-[5%] flex items-end justify-between w-full px-4 md:px-12">
+        <div className="flex flex-col items-center gap-4">
           <h1 className="text-white text-sm font-medium rotate-90 mb-4">Follow us</h1>
           <div className="w-[1px] h-[50px] bg-[#F0F0F047]" />
           <div className="flex flex-col items-center gap-5 justify-center">
