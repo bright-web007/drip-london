@@ -256,6 +256,7 @@ export const navLinks = [
   { name: 'Reservation', link: '/reservation' },
   { name: 'News', link: '/news' },
   { name: 'Contacts', link: '/contact-us' },
+  { name: 'faq', link: '/faq' },
 ];
 
 export const latestNews = [
