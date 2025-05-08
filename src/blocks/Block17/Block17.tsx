@@ -34,12 +34,20 @@ const Block17 = () => {
           </div>
         </div>
 
-                          <Image src={mapbg} alt="map" className="w-full h-full object-cover" />
-
-        </div>
-
+        {/* Embedded Google Map */}
+        <iframe
+          title="Google Map"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1985.7220147104345!2d-0.102333!3d51.522306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1686065474410!5m2!1sen!2suk"
+          width="100%"
+          height="100%"
+          className="absolute top-0 left-0 w-full h-full rounded"
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        />
+      </div>
     </div>
-  )
-}
+  );
+};
 
 export default Block17;
