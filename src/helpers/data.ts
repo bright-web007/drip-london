@@ -254,9 +254,10 @@ export const navLinks = [
   { name: 'The Menus', link: '/menu' },
   { name: 'About', link: '/about' },
   { name: 'Reservation', link: '/reservation' },
+  { name: 'faq', link: '/faq' },
   { name: 'News', link: '/news' },
   { name: 'Contacts', link: '/contact-us' },
-  { name: 'faq', link: '/faq' },
+  
 ];
 
 export const latestNews = [
