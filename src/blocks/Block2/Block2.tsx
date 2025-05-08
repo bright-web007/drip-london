@@ -7,7 +7,7 @@ import dessert from '@/assets/dessert.jpg';
 const Block2 = () => {
   return (
     <div className="flex flex-col items-center bg-white py-20">
-      <div className="flex flex-col items-center mx-auto w-[80%] md:w-[70%] xl:w-[60%]">
+      <div className="flex flex-col items-center mx-auto w-[90%] md:w-[70%] xl:w-[60%]">
         <Image src={forkKnife} alt="Drip London Logo" width={48} height={60} />
         <h1 className="text-sm xl:text-xl font-semibold leading-8 xl:leading-10 text-center my-12 text-beige-500 font-thankslabs">
           Step into Drip London, where elevated dining meets electric nightlife. From mouth-watering
@@ -38,7 +38,7 @@ const Block2 = () => {
               <div className="absolute inset-0 bg-[#8B4513]/60 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out" />
 
               <div
-                className="absolute left-1/2 transform -translate-x-1/2 text-white text-xl font-bold z-10 transition-all duration-500 ease-in-out
+                className="absolute left-1/2 transform -translate-x-1/2 text-white text-lg md:text-sm xl:text-xl font-bold z-10 transition-all duration-500 ease-in-out
                         bottom-10 group-hover:bottom-1/2 group-hover:translate-y-1/2 capitalize text-center font-thankslabs"
               >
                 {item.alt}

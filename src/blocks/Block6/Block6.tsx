@@ -3,9 +3,9 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { events } from '@/helpers/data';
-import image1 from '@/assets/slideshowImages/image1.jpg';
-import image2 from '@/assets/slideshowImages/image2.jpg';
-import image3 from '@/assets/slideshowImages/image3.jpg';
+import image1 from '@/assets/slideshowImages/image1.webp';
+import image2 from '@/assets/slideshowImages/image2.webp';
+import image3 from '@/assets/slideshowImages/image3.webp';
 
 const slideshowImages = [
   {
@@ -59,7 +59,7 @@ const Block6 = () => {
           </h1>
           {events.map((item, index) => (
             <div className="flex items-start gap-x-4 mb-6 md:mb-8" key={index}>
-              <p className="text-sm leading-6 font-monserrat w-[15%] md:w-[10%]">{item.time}</p>
+              <p className="text-sm leading-6 font-monserrat w-[15%]">{item.time}</p>
               <div className="w-[80%]">
                 <h1 className="text-xs md:text-sm leading-6 font-semibold font-thankslabs mb-4 md:mb-6">
                   {item.title}
