@@ -32,7 +32,7 @@ const Navbar = () => {
     }, 3000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [times.length]); // <-- Added times.length to the dependency array
 
   const openNavigation = () => {
     router.push('/navigation');
