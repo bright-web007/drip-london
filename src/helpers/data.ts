@@ -254,6 +254,7 @@ export const navLinks = [
   { name: 'The Menus', link: '/menu' },
   { name: 'About', link: '/about' },
   { name: 'Reservation', link: '/reservation' },
+  { name: 'FAQs', link: '/faq' },
   { name: 'News', link: '/news' },
   { name: 'Contacts', link: '/contact-us' },
 ];
@@ -421,4 +422,87 @@ export const acceptableIDs = [
   'Valid and In-Date Passport',
   'Current Military/ UK Services Photo ID',
   'Valid and In-Date Hologram ID Card',
+];
+
+export const Meta_Tags = {
+  siteName: 'Drip London',
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://driplondon.wazobia.uk',
+  description:
+    'At Drip, we serve more than just food—we deliver an immersive dining experience that blends tradition, creativity, and culture. Step into our stylish space and indulge in vibrant, fire-grilled dishes, rich spice blends, and soulful storytelling on every plate.',
+};
+
+export const containerStyle = {
+  width: '100%',
+  height: '100%',
+};
+
+export const center = {
+  lat: 51.522297,
+  lng: -0.102337,
+};
+
+export const GOOGLE_MAPS_APIKEY = 'AIzaSyB_Ujmyiir8qmceRFs5ICiSHUJhQnXRZD4';
+
+export const faqreview = [
+  {
+    title: 'What is the experience like at Drip London?',
+    review:
+      'We’re not your typical restaurant. Expect an immersive evening filled with West African fusion cuisine, music, dancing, and theatrical flair. Our performers move through the space, engaging with guests for a truly unforgettable night.',
+  },
+
+  {
+    title: 'How do I make a reservation?',
+    review:
+      'Reservations can be made directly through our website. We recommend booking in advance.',
+  },
+
+  {
+    title: 'Is there live entertainment every night?',
+    review:
+      'The vibe is always alive at Drip London, Every evening feature vibrant music, immersive performances, and electric energy throughout the venue. On Saturdays and Sundays, we turn it up with a DJ spinning Afrobeat, Amapiano, Dancehall and feel-good tracks to late into the night. No matter when you join us, expect great music, passionate performances and unforgettable atmosphere.',
+  },
+
+  {
+    title: 'Is this experience suitable for children?',
+    review:
+      'We are a 21+ venue due to the nature of the performances and ambiance. For private family events, please contact us.',
+  },
+
+  {
+    title: 'How many people can I book for?',
+    review: 'Group dining: 12–30 guests | Brunch: Up to 10 guests per booking (larger on request)',
+  },
+
+  {
+    title: 'Do you require a deposit?',
+    review:
+      'Yes, group bookings require a 50% deposit. A La Carte and Brunch bookings require card details to secure.',
+  },
+
+  {
+    title: 'Can I bring a cake?',
+    review: 'Absolutely — please give us notice to help you set up.',
+  },
+
+  {
+    title: 'Do you cater to dietary requirements?',
+    review: 'Yes — we offer vegetarian, vegan, gluten-free, halal and allergen-friendly menus.',
+  },
+
+  {
+    title: 'Is the brunch really bottomless?',
+    review: 'Yes! Drinks flow freely for 90 minutes from your seating time.',
+  },
+
+  {
+    title: 'Can we stay after brunch?',
+    review:
+      'Yes. Stay into the evening — the lights go down; the DJ comes up, send us an email if you’d like to extend your brunch booking with us.',
+  },
+
+  {
+    title: 'What is your dresscode?',
+    review:
+      'We ask our guests to embrace the spirit of the experience with an effortlessly stylish, elevated and occasion ready dress code. Not permitted, Hats, Hoodies, Flip-flops or casual footwear, Sportswear (Including tracksuits, joggers, or athletic shoes).  We encourage all guests to dress with intention and occasion-appropriate polish. Management reserves the right to refuse entry to guests who do not adhere to the dress code.',
+  },
 ];

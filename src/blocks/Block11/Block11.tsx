@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import menuBg from '@/assets/background/menu-bg.svg';
+import menuBg from '@/assets/background/menu-bg.webp';
 
 const Block11 = () => {
   return (

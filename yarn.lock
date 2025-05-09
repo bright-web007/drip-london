@@ -6575,8 +6575,8 @@ __metadata:
   linkType: hard
 
 "msw@npm:^2.7.1":
-  version: 2.8.1
-  resolution: "msw@npm:2.8.1"
+  version: 2.8.2
+  resolution: "msw@npm:2.8.2"
   dependencies:
     "@bundled-es-modules/cookie": "npm:^2.0.1"
     "@bundled-es-modules/statuses": "npm:^1.0.1"
@@ -6603,7 +6603,7 @@ __metadata:
       optional: true
   bin:
     msw: cli/index.js
-  checksum: 10c0/a72341b98e9c2e3dcea3718786ae5d9f728f8efdbb08a6f94234e1f691e2475ada63283f3630f8bbea792ae8367a2b768ac9c2a44763cddb6ddc3c3fa758670a
+  checksum: 10c0/8b5156f6082c87de9c06a8a341dfd8a462446cc95291294129d76f89bee689e1e56fe6495e80496ca278e5e1451935a2677b61e2eedd658159b110ef5b3e73b0
   languageName: node
   linkType: hard
 
@@ -7588,6 +7588,15 @@ __metadata:
   version: 2.0.4
   resolution: "react-fast-compare@npm:2.0.4"
   checksum: 10c0/f0300c677e95198b5f993cbb8a983dab09586157dc678f9e2b5b29ff941b6677a8776fbbdc425ce102fad86937e36bb45cfcfd797f006270b97ccf287ebfb885
+  languageName: node
+  linkType: hard
+
+"react-icons@npm:^5.5.0":
+  version: 5.5.0
+  resolution: "react-icons@npm:5.5.0"
+  peerDependencies:
+    react: "*"
+  checksum: 10c0/a24309bfc993c19cbcbfc928157e53a137851822779977b9588f6dd41ffc4d11ebc98b447f4039b0d309a858f0a42980f6bfb4477fb19f9f2d1bc2e190fcf79c
   languageName: node
   linkType: hard
 
@@ -9137,6 +9146,7 @@ __metadata:
     "@testing-library/jest-dom": "npm:6.6.3"
     "@testing-library/react": "npm:^16.3.0"
     "@testing-library/user-event": "npm:14.6.1"
+    "@types/babel__core": "npm:^7.20.5"
     "@types/node": "npm:^20"
     "@types/react": "npm:^19"
     "@types/react-dom": "npm:^19"
@@ -9160,6 +9170,7 @@ __metadata:
     react: "npm:^18"
     react-datepicker: "npm:^8.3.0"
     react-dom: "npm:^18"
+    react-icons: "npm:^5.5.0"
     react-router-dom: "npm:^7.5.0"
     shadcn: "npm:^2.4.1"
     tailwind-merge: "npm:^3.2.0"

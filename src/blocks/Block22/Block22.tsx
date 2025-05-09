@@ -123,22 +123,12 @@ const Block22 = () => {
                   className={`w-6 h-6 ${isPastDate ? 'opacity-30 cursor-not-allowed' : 'cursor-pointer'}`}
                   onClick={isPastDate ? undefined : decrementDate}
                 />
-                <DatePicker
-                  selected={date}
-                  onChange={(selectedDate: Date | null) => {
-                    if (selectedDate) setDate(selectedDate);
-                  }}
-                  dateFormat="EEE, MMM dd"
-                  minDate={today}
-                  customInput={
-                    <div className="text-center cursor-pointer">
-                      <h1 className="font-thankslabs text-sm md:text-xl font-semibold pb-3">
-                        {formatDisplayDate(date)}
-                      </h1>
-                      <p className="font-monserrat text-xs md:text-base font-medium">Date</p>
-                    </div>
-                  }
-                />
+                <div className="text-center">
+                  <h1 className="font-thankslabs text-sm md:text-xl font-semibold pb-3">
+                    {formatDisplayDate(date)}
+                  </h1>
+                  <p className="font-monserrat text-xs md:text-base font-medium">Date</p>
+                </div>
                 <Icon
                   icon="ep:arrow-right"
                   className="w-6 h-6 cursor-pointer"
@@ -206,22 +196,22 @@ const Block22 = () => {
           <div className="w-full xl:w-[45%]">
             <Image src={reserve} alt="reserve" className="w-full h-[380px] object-cover" />
             <div className="bg-white p-10 text-[#898155] text-center">
-              <h1 className="text-[14px] font-thankslabs mb-4 sm:text-[16px]">
+              <h1 className="text-[14px] font-thankslabs mb-4  sm:text-[16px]">
                 {formatDisplayDate(date)}
               </h1>
               <div className="flex justify-center items-center gap-2 mb-4">
                 <Icon
                   icon="mdi:account-check"
-                  className="w-[16px] h-[16px] text-[#B1B1B1] sm:w-[17.5px] sm:h-[17.5px] md:w-[19px] md:h-[19px] xl:w-[24px] xl:h-[24px]"
+                  className="w-[16px] h-[16px] text-[#B1B1B1]  sm:w-[17.5px] sm:h-[17.5px]  md:w-[19px] md:h-[19px]  xl:w-[24px] xl:h-[24px]"
                 />
-                <span className="text-base text-[12px] sm:text-[14px]">{guests} Guests</span>
+                <span className="text-base text-[12px]  sm:text-[14px]">{guests} Guests</span>
               </div>
               <div className="flex justify-center items-center gap-2 mb-6">
                 <Icon
                   icon="mdi:pencil"
-                  className="w-[16px] h-[16px] text-blue-500 sm:w-[17.5px] sm:h-[17.5px] md:w-[19px] md:h-[19px] xl:w-[21px] xl:h-[21px]"
+                  className="w-[16px] h-[16px] text-blue-500  sm:w-[17.5px] sm:h-[17.5px]   md:w-[19px] md:h-[19px]  xl:w-[21px] xl:h-[21px]"
                 />
-                <span className="text-blue-500 text-[12px] underline cursor-pointer sm:text-[14px]">
+                <span className="text-blue-500 text-[12px] underline cursor-pointer  sm:text-[14px]">
                   Edit
                 </span>
               </div>
@@ -230,10 +220,10 @@ const Block22 = () => {
                   .fill(null)
                   .map((_, i) => (
                     <div key={i} className="bg-[#F3EFD9] p-6 rounded-md shadow-sm">
-                      <h2 className="text-[12px] font-bold font-thankslabs mb-2 sm:text-[14px]">
+                      <h2 className="text-[12px] font-bold font-thankslabs mb-2   sm:text-[14px]">
                         19:00
                       </h2>
-                      <button className="text-[#898155] font-monserrat text-[12px] underline hover:text-[#6c664b] transition sm:text-[14px]">
+                      <button className="text-[#898155] font-monserrat text-[12px] underline hover:text-[#6c664b] transition   sm:text-[14px]">
                         Select
                       </button>
                     </div>

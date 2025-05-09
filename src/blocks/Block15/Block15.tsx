@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import contactbg from '@/assets/background/contact-bg.jpg';
+import contactbg from '@/assets/background/contact-bg.webp';
 
 const Block15 = () => {
   return (
