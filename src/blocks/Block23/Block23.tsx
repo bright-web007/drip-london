@@ -1,6 +1,6 @@
-import React from 'react'
-import Image from 'next/image'; 
-import faqbg from '@/assets/background/faq-bg.png'
+import React from 'react';
+import Image from 'next/image';
+import faqbg from '@/assets/background/faq-bg.png';
 
 const Block23 = () => {
   return (
@@ -17,7 +17,7 @@ const Block23 = () => {
         </h1>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Block23
+export default Block23;

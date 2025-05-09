@@ -51,7 +51,11 @@ const Block22 = () => {
   return (
     <div className="relative w-full mt-[-72px]">
       <div className="absolute inset-0 -z-10">
-        <Image src={reservationBg} alt="reservation background" className="w-full h-full object-cover" />
+        <Image
+          src={reservationBg}
+          alt="reservation background"
+          className="w-full h-full object-cover"
+        />
       </div>
 
       {searching && <SearchProgress progress={progress} />}
@@ -118,32 +122,58 @@ const Block22 = () => {
                   onClick={isPastDate ? undefined : decrementDate}
                 />
                 <div className="text-center">
-                  <h1 className="font-thankslabs text-sm md:text-xl font-semibold pb-3">{formatDisplayDate(date)}</h1>
+                  <h1 className="font-thankslabs text-sm md:text-xl font-semibold pb-3">
+                    {formatDisplayDate(date)}
+                  </h1>
                   <p className="font-monserrat text-xs md:text-base font-medium">Date</p>
                 </div>
-                <Icon icon="ep:arrow-right" className="w-6 h-6 cursor-pointer" onClick={incrementDate} />
+                <Icon
+                  icon="ep:arrow-right"
+                  className="w-6 h-6 cursor-pointer"
+                  onClick={incrementDate}
+                />
               </div>
               <hr className="border-b-[0.5px] border-t-0 border-[#C2C2C2]" />
 
               {/* Guests */}
               <div className="text-beige-500 w-[70%] mx-auto flex items-center justify-between py-6">
-                <Icon icon="ep:arrow-left" className="w-6 h-6 cursor-pointer" onClick={decrementGuests} />
+                <Icon
+                  icon="ep:arrow-left"
+                  className="w-6 h-6 cursor-pointer"
+                  onClick={decrementGuests}
+                />
                 <div className="text-center">
-                  <h1 className="font-thankslabs text-sm md:text-xl font-semibold pb-3">{guests}</h1>
+                  <h1 className="font-thankslabs text-sm md:text-xl font-semibold pb-3">
+                    {guests}
+                  </h1>
                   <p className="font-monserrat text-xs md:text-base font-medium">Guests</p>
                 </div>
-                <Icon icon="ep:arrow-right" className="w-6 h-6 cursor-pointer" onClick={incrementGuests} />
+                <Icon
+                  icon="ep:arrow-right"
+                  className="w-6 h-6 cursor-pointer"
+                  onClick={incrementGuests}
+                />
               </div>
               <hr className="border-b-[0.5px] border-t-0 border-[#C2C2C2]" />
 
               {/* Time */}
               <div className="text-beige-500 w-[70%] mx-auto flex items-center justify-between py-6">
-                <Icon icon="ep:arrow-left" className="w-6 h-6 cursor-pointer" onClick={decrementTime} />
+                <Icon
+                  icon="ep:arrow-left"
+                  className="w-6 h-6 cursor-pointer"
+                  onClick={decrementTime}
+                />
                 <div className="text-center">
-                  <h1 className="font-thankslabs text-sm md:text-xl font-semibold pb-3">{timeSlots[timeIndex]}</h1>
+                  <h1 className="font-thankslabs text-sm md:text-xl font-semibold pb-3">
+                    {timeSlots[timeIndex]}
+                  </h1>
                   <p className="font-monserrat text-xs md:text-base font-medium">Time</p>
                 </div>
-                <Icon icon="ep:arrow-right" className="w-6 h-6 cursor-pointer" onClick={incrementTime} />
+                <Icon
+                  icon="ep:arrow-right"
+                  className="w-6 h-6 cursor-pointer"
+                  onClick={incrementTime}
+                />
               </div>
               <hr className="border-b-[0.5px] border-t-0 border-[#C2C2C2]" />
 
@@ -164,22 +194,38 @@ const Block22 = () => {
           <div className="w-full xl:w-[45%]">
             <Image src={reserve} alt="reserve" className="w-full h-[380px] object-cover" />
             <div className="bg-white p-10 text-[#898155] text-center">
-              <h1 className="text-[14px] font-thankslabs mb-4  sm:text-[16px]">{formatDisplayDate(date)}</h1>
+              <h1 className="text-[14px] font-thankslabs mb-4  sm:text-[16px]">
+                {formatDisplayDate(date)}
+              </h1>
               <div className="flex justify-center items-center gap-2 mb-4">
-                <Icon icon="mdi:account-check" className="w-[16px] h-[16px] text-[#B1B1B1]  sm:w-[17.5px] sm:h-[17.5px]  md:w-[19px] md:h-[19px]  xl:w-[24px] xl:h-[24px]" />
+                <Icon
+                  icon="mdi:account-check"
+                  className="w-[16px] h-[16px] text-[#B1B1B1]  sm:w-[17.5px] sm:h-[17.5px]  md:w-[19px] md:h-[19px]  xl:w-[24px] xl:h-[24px]"
+                />
                 <span className="text-base text-[12px]  sm:text-[14px]">{guests} Guests</span>
               </div>
               <div className="flex justify-center items-center gap-2 mb-6">
-                <Icon icon="mdi:pencil" className="w-[16px] h-[16px] text-blue-500  sm:w-[17.5px] sm:h-[17.5px]   md:w-[19px] md:h-[19px]  xl:w-[21px] xl:h-[21px]" />
-                <span className="text-blue-500 text-[12px] underline cursor-pointer  sm:text-[14px]">Edit</span>
+                <Icon
+                  icon="mdi:pencil"
+                  className="w-[16px] h-[16px] text-blue-500  sm:w-[17.5px] sm:h-[17.5px]   md:w-[19px] md:h-[19px]  xl:w-[21px] xl:h-[21px]"
+                />
+                <span className="text-blue-500 text-[12px] underline cursor-pointer  sm:text-[14px]">
+                  Edit
+                </span>
               </div>
               <div className="grid grid-cols-3 gap-4">
-                {Array(9).fill(null).map((_, i) => (
-                  <div key={i} className="bg-[#F3EFD9] p-6 rounded-md shadow-sm">
-                    <h2 className="text-[12px] font-bold font-thankslabs mb-2   sm:text-[14px]">19:00</h2>
-                    <button className="text-[#898155] font-monserrat text-[12px] underline hover:text-[#6c664b] transition   sm:text-[14px]">Select</button>
-                  </div>
-                ))}
+                {Array(9)
+                  .fill(null)
+                  .map((_, i) => (
+                    <div key={i} className="bg-[#F3EFD9] p-6 rounded-md shadow-sm">
+                      <h2 className="text-[12px] font-bold font-thankslabs mb-2   sm:text-[14px]">
+                        19:00
+                      </h2>
+                      <button className="text-[#898155] font-monserrat text-[12px] underline hover:text-[#6c664b] transition   sm:text-[14px]">
+                        Select
+                      </button>
+                    </div>
+                  ))}
               </div>
             </div>
           </div>
