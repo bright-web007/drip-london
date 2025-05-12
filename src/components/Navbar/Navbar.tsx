@@ -9,14 +9,16 @@ import { Button } from '../ui/button';
 import { useRouter } from 'next/navigation';
 import menuHover from '@/assets/icons-svg/menu-hover.svg';
 
+// Moved outside the component to avoid re-declaring every render
+const times = [
+  'Monday: Closed',
+  'Tuesday: Closed',
+  'Weds - Thurs: 6:30pm - 12:00am',
+  'Fri - Sat: 6:30pm - 2:00am',
+  'Sun: 6:30pm - 1:00am',
+];
+
 const Navbar = () => {
-  const times = [
-    'Monday: Closed',
-    'Tuesday: Closed',
-    'Weds - Thurs: 6:30pm - 12:00am',
-    'Fri - Sat: 6:30pm - 2:00am',
-    'Sun: 6:30pm - 1:00am',
-  ];
   const router = useRouter();
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -32,7 +34,7 @@ const Navbar = () => {
     }, 3000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, []); // ✅ No warning now since times.length is from a stable reference
 
   const openMenu = () => {
     router.push('/menu');
@@ -41,7 +43,7 @@ const Navbar = () => {
   return (
     <div className="font-monserrat bg-transparent z-40">
       <div className="flex items-end justify-center">
-        <div className="flex items-center h-18 border-b border-white w-[25%]  lg:w-[40%] text-white text-sm font-medium leading-6">
+        <div className="flex items-center h-18 border-b border-white w-[25%] lg:w-[40%] text-white text-sm font-medium leading-6">
           <Button className="bg-beige-500 border-2 border-[#8981555C] cursor-pointer rounded-[2px] px-6 mx-4">
             Open Times
           </Button>
@@ -59,7 +61,7 @@ const Navbar = () => {
           alt="Drip London Logo"
           width={154}
           height={72}
-          className="mx-auto cursor-pointer  object-contain h-[72px]"
+          className="mx-auto cursor-pointer object-contain h-[72px]"
         />
 
         <div className="flex items-center justify-end border-b border-white w-[25%] lg:w-[40%] text-white text-sm font-medium leading-6 h-18">
