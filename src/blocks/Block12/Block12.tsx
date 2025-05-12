@@ -1,3 +1,4 @@
+'use client';
 import Image from 'next/image';
 import eggs from '@/assets/eggs.svg';
 import { Button } from '@/components/ui/button';
@@ -7,7 +8,10 @@ import left from '@/assets/left-color.png';
 import gift from '@/assets/icons-svg/gift.svg';
 import chef from '@/assets/icons-svg/chef.svg'
 
+
+
 const Block12 = () => {
+  
   return (
     <div className="flex flex-col xl:flex-row items-center justify-between mx-auto w-[90%] xl:w-[75%] 2xl:w-[70%] py-16 xl:py-20">
       <div className="bg-beige-400 relative flex items-center h-[450px] w-full xl:w-[58%] mb-[20px] xl:mb-0 overflow-hidden">
