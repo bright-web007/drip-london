@@ -2,16 +2,16 @@
 import Image from 'next/image';
 import eggs from '@/assets/eggs.svg';
 import { Button } from '@/components/ui/button';
+import { useRouter } from 'next/navigation';
 import right from '@/assets/right-color.svg';
 import left from '@/assets/left-color.png';
-
 import gift from '@/assets/icons-svg/gift.svg';
 import chef from '@/assets/icons-svg/chef.svg'
 
 
 
 const Block12 = () => {
-  
+  const router = useRouter();
   return (
     <div className="flex flex-col xl:flex-row items-center justify-between mx-auto w-[90%] xl:w-[75%] 2xl:w-[70%] py-16 xl:py-20">
       <div className="bg-beige-400 relative flex items-center h-[450px] w-full xl:w-[58%] mb-[20px] xl:mb-0 overflow-hidden">
@@ -29,7 +29,11 @@ const Block12 = () => {
           <div className="flex items-center ">
             <Image src={left} alt="Drip London Logo" width={12} height={16} color="red" />
             <div className="border border-[#89815578] p-[2px] rounded-[2px]">
-              <Button  className="group  bg-transparent border border-beige-500 hover:bg-beige-500 text-sm cursor-pointer rounded-[2px] px-6 py-5 text-beige-500  flex items-center justify-center transition-all duration-300">
+              <Button  onClick={() => {
+                    router.push('/reservation');
+                  }} 
+                  className="group  bg-transparent border border-beige-500 hover:bg-beige-500 text-sm cursor-pointer rounded-[2px] px-6 py-5 text-beige-500  flex items-center justify-center transition-all duration-300"
+                  >
                 <span className="flex items-center space-x-1 font-monserrat">
                   <span className="text-[6px]  xl:text-[14px]">Book your brunch table</span>
                   <span className="overflow-hidden max-w-0 opacity-0 group-hover:max-w-[1.2rem] group-hover:opacity-100 transition-all duration-300">
