@@ -9,14 +9,16 @@ import { Button } from '../ui/button';
 import { useRouter } from 'next/navigation';
 import menuHover from '@/assets/icons-svg/menu-hover.svg';
 
+// Moved outside the component to avoid re-declaring every render
+const times = [
+  'Monday: Closed',
+  'Tuesday: Closed',
+  'Weds - Thurs: 6:30pm - 12:00am',
+  'Fri - Sat: 6:30pm - 2:00am',
+  'Sun: 6:30pm - 1:00am',
+];
+
 const Navbar = () => {
-  const times = [
-    'Monday: Closed',
-    'Tuesday: Closed',
-    'Weds - Thurs: 6:30pm - 12:00am',
-    'Fri - Sat: 6:30pm - 2:00am',
-    'Sun: 6:30pm - 1:00am',
-  ];
   const router = useRouter();
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -32,7 +34,7 @@ const Navbar = () => {
     }, 3000);
 
     return () => clearInterval(interval);
-  }, [times.length]);
+  }, []); // ✅ No warning now since times.length is from a stable reference
 
   const openNavigation = () => {
     router.push('/navigation');
