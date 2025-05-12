@@ -1,0 +1,109 @@
+'use client';
+import { drinksMenu, foodMenu } from '@/helpers/data';
+import Image, { StaticImageData } from 'next/image';
+import { useState } from 'react';
+
+const capitalize = (str: string) => str.charAt(0).toUpperCase() + str.slice(1);
+
+const Block13 = () => {
+  const [menu, setMenu] = useState<string>('food');
+
+  const renderSection = (
+    title: string,
+    section: {
+      items: { title: string; description: string; price: string }[];
+      image: StaticImageData;
+    }
+  ) => (
+    <div className="flex items-center mb-10" key={title}>
+      <div className="flex items-center justify-center">
+        <div className="-rotate-90 w-4 h-4 mt-30">
+          <h1 className="text-2xl font-bold">{title}</h1>
+        </div>
+      </div>
+      <div className="w-[80%] ml-12">
+        {section.items.map((item, index) => (
+          <div key={index} className="flex items-center justify-between mb-6">
+            <div className="mr-4 w-[70%]">
+              <h1 className="text-xs font-semibold mb-1.5">{item.title}</h1>
+              <p className="font-monserrat text-xs text-[#6D6D6D]">{item.description}</p>
+            </div>
+            <hr className="border-b-[0.5px] border-t-0 border-[#B58C6778] w-[20%]" />
+            <p className="font-semibold text-sm">{item.price}</p>
+          </div>
+        ))}
+      </div>
+      {section.image && (
+        <Image
+          src={section.image}
+          alt={title}
+          width={300}
+          height={300}
+          className="hidden xl:block"
+        />
+      )}
+    </div>
+  );
+
+  return (
+    <div className="flex flex-col items-center mx-auto w-[90%] xl:w-[85%] 2xl:w-[75%] py-16 xl:py-20">
+      {/* Tabs */}
+      <div className="flex justify-center font-semibold font-thankslabs text-xs leading-7 py-10 md:py-16">
+        <h1
+          className={`mr-4 px-6 md:px-11 cursor-pointer py-1.5 ${
+            menu === 'food' ? 'bg-beige-500 text-white' : 'bg-beige-400 text-beige-500'
+          }`}
+          onClick={() => setMenu('food')}
+        >
+          Food Menu
+        </h1>
+        <h1
+          className={`px-6 md:px-11 cursor-pointer py-1.5 ${
+            menu === 'drinks' ? 'bg-beige-500 text-white' : 'bg-beige-400 text-beige-500'
+          }`}
+          onClick={() => setMenu('drinks')}
+        >
+          Drinks Menu
+        </h1>
+      </div>
+
+      <div className="mt-8 font-thankslabs text-beige-500 w-full">
+        {/* Show description ONCE for food menu */}
+        {menu === 'food' && (
+          <p className="font-monserrat text-xs leading-5.5 text-[#6D6D6D] mb-12 text-left w-full xl:w-[80%]">
+            A curated selection of artfully crafted small plates, designed to be shared and
+            savoured. Each dish showcases bold flavours, seasonal ingredients, and thoughtful
+            pairing.
+          </p>
+        )}
+
+        {/* Render food or drinks */}
+        {(menu === 'drinks' ? Object.entries(drinksMenu) : Object.entries(foodMenu)).map(
+          ([key, section]) =>
+            renderSection(
+              capitalize(key),
+              section as {
+                items: { title: string; description: string; price: string }[];
+                image: StaticImageData;
+              }
+            )
+        )}
+      </div>
+
+      <section className="font-monserrat text-sm leading-5.5 text-center mt-4">
+        <h1 className="text-black mb-8 w-[95%] xl:w-[60%] mx-auto">
+          Alongside our curated selection of signature creations, we are pleased to offer all the
+          classic cocktails you know and love. Allow our bartenders to craft a timeless favourite,
+          tailored to your taste.
+        </h1>
+        <p className="text-[#676767] w-[95%] xl:w-[90%] mx-auto">
+          Please inform your server of any allergies or dietary restrictions before ordering. While
+          we take every precaution, we cannot guarantee the complete absence of allergens in any of
+          our dishes. 12.5% discretionary service charge will be added to each bill.
+        </p>
+      </section>
+    </div>
+  );
+};
+
+export default Block13;
