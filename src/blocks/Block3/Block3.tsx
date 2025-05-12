@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import memories1 from '@/assets/memories1.jpg';
-import memories2 from '@/assets/memories2.jpg';
-import memories3 from '@/assets/memories3.jpg';
+import memories1 from '@/assets/memories1.webp';
+import memories2 from '@/assets/memories2.webp';
+import memories3 from '@/assets/memories3.webp';
 import CurvyUnderline from '@/assets/icons-svg/CurvyUnderline';
 import logoWhite from '@/assets/icons-svg/drip-icon-white.png';
 
@@ -35,14 +35,14 @@ const Block3 = () => {
           <h1 className="text-2xl leading-12 font-semibold mt-10 mb-6 font-thankslabs">
             Make Memories at DRIP LONDON
           </h1>
-          <p className="text-sm leading-6 font-normal">
+          <p className="text-sm leading-6 font-normal font-monserrat">
             A Sharing Concept West African Menu focused on local, seasonal and sustainable
             produce – energetic atmosphere and redefining the club culture offering a unique
             inclusive dining experience in a stylish atmosphere, whilst capturing the essence of
             African culture. 
           </p>
 
-          <p className="text-sm leading-6 font-normal mt-6 mb-10">
+          <p className="text-sm leading-6 font-normal mt-6 mb-10 font-monserrat">
             The ultimate Dinner Club experience, a premier dining destination that combines classic
             dining in a stylish venue with live DJ sets, fire dancers and musical performances.
           </p>

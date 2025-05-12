@@ -1,17 +1,19 @@
+'use client';
 import { Button } from '@/components/ui/button';
 import left from '@/assets/left-fly.svg';
 import right from '@/assets/right-fly.svg';
 import Image from 'next/image';
-import followUs from '@/assets/follow-us.svg';
 import { Icon } from '@iconify/react';
 import { LayoutHeader } from '@/components/LayoutHeader/LayoutHeader';
 import BookTable from '@/assets/icons-svg/BookTable';
+import { useRouter } from 'next/navigation';
 
 const Block1 = () => {
+  const router = useRouter();
   return (
-    <div className="flex flex-col mt-[-72px] font-monserrat bg-gray-500 h-[100vh] xl:h-[120vh] relative">
+    <div className="flex flex-col mt-[-72px] font-monserrat bg-gray-500 h-[100vh] xl:h-[105vh] relative">
       <LayoutHeader />
-      <div className=" absolute inset-0 z-10 flex flex-col items-center justify-center">
+      <div className=" absolute inset-0 flex flex-col items-center justify-center">
         <h1 className=" text-[24px] md:text-[32px] xl:text-[50px] font-bold w-[70%] md:w-[75%] text-center text-white font-thankslabs">
           {' '}
           Welcome to DRIP LONDON
@@ -23,12 +25,17 @@ const Block1 = () => {
           fire-grilled dishes, rich spice blends, and soulful storytelling on every plate. This is
           West African fusion, reimagined. 
         </p>
-        <div className="flex items-center">
+        <div className="flex items-center z-30">
           <Image src={left} alt="Drip London Logo" width={12} height={16} />
           <div className="border border-[#d9d9d9] p-[2px] rounded-[2px]">
-            <Button className="group bg-transparent border border-white hover:bg-beige-500 text-sm cursor-pointer rounded-[2px] px-6 py-2 text-white flex items-center justify-center transition-all duration-300">
+            <Button
+              onClick={() => {
+                router.push('/reservation');
+              }}
+              className="group bg-transparent border border-white hover:bg-beige-500 text-sm cursor-pointer rounded-[2px] px-6 py-2 text-white flex items-center justify-center transition-all duration-300"
+            >
               <span className="flex items-center space-x-1">
-                <span>Book Now</span>
+                <span>Reserve your table</span>
                 <span className="overflow-hidden max-w-0 opacity-0 group-hover:max-w-[1.2rem] group-hover:opacity-100 transition-all duration-300">
                   →
                 </span>
@@ -38,10 +45,30 @@ const Block1 = () => {
           <Image src={right} alt="Drip London Logo" width={12} height={16} />
         </div>
       </div>
-      <div className=" absolute bottom-[5%] flex items-end justify-between w-full px-4 md:px-12">
-        <Image src={followUs} alt="Follow us" width={20} height={310} />
+      <div className=" absolute z-15 bottom-[5%] flex items-end justify-between w-full px-4 md:px-12">
+        <div className="flex flex-col items-center gap-4">
+          <h1 className="text-white text-sm font-medium rotate-90 mb-4">Follow us</h1>
+          <div className="w-[1px] h-[50px] bg-[#F0F0F047]" />
+          <div className="flex flex-col items-center gap-5 justify-center">
+            <a
+              href="https://www.instagram.com/driplondon.uk/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icon icon="line-md:instagram" className="text-white w-6 h-6 " />
+            </a>
+            <a
+              href="https://www.facebook.com/p/Driplondonuk-61554516034085/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icon icon="circum:facebook" className="text-white w-6 h-6" />
+            </a>
+            <Icon icon="garden:twitter-stroke-12" className="text-white w-5 h-5" />
+          </div>
+        </div>
 
-        <div className="hidden md:flex flex-col items-center justify-center mr-[-90px] ">
+        <div className="hidden md:flex flex-col items-center justify-center mr-[-85px] ">
           <Icon icon="devicon:google" className="text-white w-14 h-14 cursor-pointer" />
           <div className="flex items-center mt-2">
             <p className="text-white text-sm font-medium mr-2">4.8</p>
