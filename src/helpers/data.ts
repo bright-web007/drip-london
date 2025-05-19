@@ -12,6 +12,22 @@ import card4 from '@/assets/card4.png';
 import card5 from '@/assets/card5.png';
 import card6 from '@/assets/card6.png';
 
+import slide1 from '@/assets/slideshowImages/slide1.jpg';
+import slide2 from '@/assets/slideshowImages/slide2.jpg';
+import slide3 from '@/assets/slideshowImages/slide3.jpg';
+import slide4 from '@/assets/slideshowImages/slide4.jpg';
+
+import deam1 from '@/assets/deam1.jpg';
+import deam2 from '@/assets/deam2.jpg';
+import deam3 from '@/assets/deam3.jpg';
+
+import drip1 from '@/assets/drip1.jpg';
+import drip2 from '@/assets/drip2.jpg';
+import drip3 from '@/assets/drip3.jpg';
+import drip4 from '@/assets/drip4.jpg';
+import drip5 from '@/assets/drip5.jpg';
+import drip6 from '@/assets/drip6.jpg';
+
 export const reviews = [
   {
     author: 'Richard Johnson',
@@ -504,5 +520,92 @@ export const faqreview = [
     title: 'What is your dresscode?',
     review:
       'We ask our guests to embrace the spirit of the experience with an effortlessly stylish, elevated and occasion ready dress code. Not permitted, Hats, Hoodies, Flip-flops or casual footwear, Sportswear (Including tracksuits, joggers, or athletic shoes).  We encourage all guests to dress with intention and occasion-appropriate polish. Management reserves the right to refuse entry to guests who do not adhere to the dress code.',
+  },
+];
+
+export const dishes = [
+  {
+    img: slide1,
+    title: 'A New Taste of West Africa',
+    desc: 'Bold, fire-grilled dishes infused with rich spices.',
+  },
+  {
+    img: slide2,
+    title: 'More Than a Meal, It’s a Vibe ',
+    desc: 'An immersive dining experience blending storytelling and creativity.',
+  },
+  {
+    img: slide3,
+    title: 'Where City Nights Come Alive',
+    desc: 'Dine, drink, and dance in the heart of the city.',
+  },
+  {
+    img: slide4,
+    title: 'Look the Part. Live the Vibe.',
+    desc: 'Smart, bold, and unapologetically stylish—your drip matters.',
+  },
+];
+
+export const items = [
+  {
+    img: deam1,
+    title: 'Private Dining',
+    subtitle: 'EXPERIENCE GREAT TASTE',
+    desc: 'Host your event in style with curated menus, ambient luxury, and tailored service—perfect for birthdays, brand launches, and exclusive celebrations.',
+    buttons: [
+      {
+        label: 'Make a Reservation',
+        actionType: 'navigate',
+        path: '/reservation',
+      },
+    ],
+  },
+  {
+    img: deam2,
+    title: 'Bottomless Brunch',
+    subtitle: 'BRUNCH, BUT MAKE IT DRIP',
+    desc: 'Every Sunday from 5PM to 9PM, indulge in bold, flavorful plates crafted to excite your palate, paired with free flowing pours of prosecco or cocktails.',
+    buttons: [
+      {
+        label: 'View Menu',
+        actionType: 'navigate',
+        path: '/menu',
+      },
+    ],
+  },
+
+  {
+    img: deam3,
+    title: 'Night Life',
+    subtitle: 'AFTER DARK AT DRIP',
+    desc: 'As the lights dim, the energy rises. Experience electrifying beats, curated cocktails, and unforgettable vibes in our luxe late-night space.',
+    buttons: [
+      {
+        label: 'Make a Reservation',
+        actionType: 'navigate',
+        path: '/reservation',
+      },
+    ],
+  },
+];
+
+export const dits = [
+  {
+    img: drip1,
+  },
+  {
+    img: drip2,
+  },
+  {
+    img: drip3,
+  },
+  {
+    img: drip4,
+  },
+  {
+    img: drip5,
+  },
+  {
+    img: drip6,
   },
 ];

@@ -50,12 +50,7 @@ const Block12 = () => {
         </div>
         <div className="bg-beige-400 relative flex items-center justify-center w-full h-[215px] overflow-hidden">
           <div className="font-thankslabs text-beige-500 flex flex-col items-center justify-center">
-          <Icon
-            icon="mdi:chef-hat"
-            width={50}
-            height={50}
-            className="w-12 h-12 text-[#7A6E4F]" 
-            />
+            <Icon icon="mdi:chef-hat" width={50} height={50} className="w-12 h-12 text-[#7A6E4F]" />
             <p className="text-xs leading-6 font-medium ">£45pp</p>
             <p className="text-xs leading-6 font-medium ">90 Minutes Unlimited</p>
             <h1 className="uppercase text-base leading-9 font-medium">Prosecco</h1>

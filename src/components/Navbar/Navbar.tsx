@@ -1,9 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
-import logo from '../../assets/logo.svg';
-import dish from '../../assets/dish.svg';
-import dishFill from '../../assets/dish-fill.svg';
+import logo from '@/assets/icons-svg/drip-icon-white.png';
 import { Icon } from '@iconify/react';
 import { Button } from '../ui/button';
 import { useRouter } from 'next/navigation';
@@ -41,74 +39,31 @@ const Navbar = () => {
   };
 
   return (
-    <div className="font-monserrat bg-transparent z-40">
-      <div className="flex items-end justify-center">
-        <div className="flex items-center h-18 border-b border-white w-[45%]  lg:w-[40%] text-white text-[10px] md:text-sm font-medium leading-6 pl-2 md:pl-4">
-          <Button
-            onClick={() => router.push('/contact-us')}
-            className="bg-beige-500 hover:bg-transparent border-2 border-[#8981555C] cursor-pointer rounded-[2px] px-6 mr-4 hidden md:flex"
-          >
-            Open Times
-          </Button>
-          <p
-            className={`transition-opacity duration-300 ease-in-out ${
-              fade ? 'opacity-100' : 'opacity-0'
-            }`}
-          >
-            {times[currentIndex]}
-          </p>
-        </div>
-
+    <div className="font-monserrat bg-transparent z-40 flex justify-between mt-[12px] px-[24px]">
+      <div className="">
         <Image
           src={logo}
           alt="Drip London Logo"
-          width={154}
-          height={72}
+          width={30.623}
+          height={43.442}
           onClick={() => router.push('/')}
-          className="mx-auto cursor-pointer  object-contain h-[50px] md:h-[72px]"
+          className=" cursor-pointer   md:h-[72px]"
+        />
+      </div>
+
+      <div className="group flex items-center h-full cursor-pointer" onClick={openNavigation}>
+        <Icon
+          icon="line-md:menu"
+          className="text-white w-[38.869px] h-[43.442px]  md:w-7 md:h-7 cursor-pointer group-hover:hidden"
         />
 
-        <div className="flex items-center justify-end border-b border-white w-[45%] lg:w-[40%] text-white text-[10px] md:text-sm font-medium leading-6 h-18">
-          <div
-            onClick={() => router.push('/reservation')}
-            className="flex items-center -ml-4 md:-ml-0 h-full pr-2 md:pr-4 cursor-pointer group"
-          >
-            <Image
-              src={dish}
-              alt="Dish"
-              width={35}
-              height={24}
-              className="group-hover:hidden w-7 h-4 md:w-9 md:h-6"
-            />
-            <Image
-              src={dishFill}
-              alt="Dish"
-              width={35}
-              height={24}
-              className="hidden group-hover:block w-7 h-4 md:w-9 md:h-6"
-            />
-            <p className="ml-1 md:ml-2 group-hover:font-semibold text-[10px] md:text-base">
-              Reservation
-            </p>
-          </div>
-          <div
-            className="group flex items-center px-4 md:px-8 border-l border-white h-full cursor-pointer"
-            onClick={openNavigation}
-          >
-            <Icon
-              icon="line-md:menu"
-              className="text-white w-5 h-5  md:w-7 md:h-7 cursor-pointer group-hover:hidden"
-            />
-
-            <Image
-              src={menuHover}
-              alt="Menu"
-              width={28}
-              height={28}
-              className="hidden group-hover:block w-5 h-5  md:w-7 md:h-7"
-            />
-          </div>
-        </div>
+        <Image
+          src={menuHover}
+          alt="Menu"
+          width={28}
+          height={28}
+          className="hidden group-hover:block w-[38.869px] h-[43.442px]  md:w-7 md:h-7"
+        />
       </div>
     </div>
   );
