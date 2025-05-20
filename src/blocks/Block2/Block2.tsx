@@ -1,53 +1,34 @@
 import Image from 'next/image';
-import forkKnife from '@/assets/fork-knife.svg';
-import drinks from '@/assets/drinks.jpg';
-import main from '@/assets/main.jpg';
-import dessert from '@/assets/dessert.jpg';
+import { dishes } from '@/helpers/data';
 
 const Block2 = () => {
   return (
-    <div className="flex flex-col items-center bg-white py-20">
-      <div className="flex flex-col items-center mx-auto w-[90%] md:w-[70%] xl:w-[60%]">
-        <Image src={forkKnife} alt="Drip London Logo" width={48} height={60} />
-        <h1 className="text-sm xl:text-xl font-semibold leading-8 xl:leading-10 text-center my-12 text-beige-500 font-thankslabs">
-          Step into Drip London, where elevated dining meets electric nightlife. From mouth-watering
-          meals to curated cocktails and DJ-fueled evenings, every visit is an experience to savour.
-        </h1>
-      </div>
-      <div className="flex flex-col md:flex-row items-center justify-center w-[90%] mx-auto gap-y-4 md:gap-x-4">
-        {[
-          { src: drinks, alt: 'Drinks' },
-          { src: main, alt: 'Main' },
-          { src: dessert, alt: 'Dessert' },
-        ].map((item, index) => (
-          <div
-            key={index}
-            className="relative group w-[95%] md:w-[430px] h-[430px] md:h-[280px] lg:h-[490px]"
-          >
-            <div className="relative w-full h-full overflow-hidden">
+    <section id="next-section" className="bg-[#000000] py-12 px-6 w-full h-full   md:py-[25px]  md:px-[40px]  lg:py-[70px]   xl:py-[25px]">
+      <h2 className="text-white text-[18px] font-thankslabs mb-6 text-center  sm:text-[21px]  md:text-[24px]  md:mb-[56px]  lg:text-[28]  xl:text-[32px]">World of Flavors</h2>
+
+      {/* Scrollable wrapper */}
+      <div className="w-full overflow-x-auto scrollbar-hide">
+        {/* Inner flex container that scrolls */}
+        <div className="flex gap-[12px] w-[300px] px-2  md:w-[464px]">
+          {dishes.map((dish, index) => (
+            <div
+              key={index}
+              className="w-[300px] bg-[#000000] border border-[#1D1D1D] rounded-lg  text-white flex-shrink-0 ] bg-[length:30px_30px] bg-[radial-gradient(#1D1D1D_0.5px,transparent_5px)]  sm:w-[400px]  md:w-[464px] "
+            >
               <Image
-                src={item.src}
-                alt={item.alt}
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-in-out"
-                width={400}
-                height={400}
+                src={dish.img}
+                alt={dish.title}
+                className="rounded-md mb-[34px] h-[192px] w-full object-cover sm:h-[250px]   md:h-[300px]  md:mb-[56.5px]"
               />
-
-              <div className="absolute inset-0 border border-beige-300 rounded-[1px] m-6 pointer-events-none" />
-
-              <div className="absolute inset-0 bg-[#8B4513]/60 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out" />
-
-              <div
-                className="absolute left-1/2 transform -translate-x-1/2 text-white text-lg md:text-sm xl:text-xl font-bold z-10 transition-all duration-500 ease-in-out
-                        bottom-10 group-hover:bottom-1/2 group-hover:translate-y-1/2 capitalize text-center font-thankslabs"
-              >
-                {item.alt}
+              <div className="flex flex-col text-center px-[50px] mb-[30px] gap-[8px]  sm:px-[90px]  md:mb-[50.5px]  md:px-[60px]">
+                <h3 className="text-[14px] font-thankslabs mb-2  sm:text-[16px]   md:text-[17px]  md:mb-[8px] ">{dish.title}</h3>
+                <p className="text-[14px] font-monserrat  sm:text-[16px]   md:px-[40px]">{dish.desc}</p>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

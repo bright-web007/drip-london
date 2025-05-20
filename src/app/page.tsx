@@ -36,8 +36,6 @@ export default function HomePage() {
       <Block2 />
       <Block3 />
       <Block4 />
-      <Block5 />
-      <Block6 />
     </div>
   );
 }
