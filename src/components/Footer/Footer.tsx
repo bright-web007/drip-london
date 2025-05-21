@@ -140,8 +140,8 @@ const Footer = () => {
         <hr className="border-[#2a2828] h-[3px] xl:h-[5px]" />
       </div>
 
-      <div className="bg-[black]">
-        <p className="text-[#FFFFFF75] text-[10px] font-normal leading-5 text-center my-14 md:text-[16px] bg-[black]">
+      <div className="bg-[#0D0D0D]">
+        <p className="text-[#FFFFFF75] text-[10px] font-normal leading-5 text-center my-14 md:text-[16px] bg-[#0D0D0D]">
           @Drip London Restaurant, London {new Date().getFullYear()}. All Rights Reserved.
         </p>
       </div>
