@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import menuBg from '@/assets/background/menu-bg.webp';
+import menuBg from '@/assets/background/menu-bg.jpg';
 
 const Block11 = () => {
   return (
@@ -12,10 +12,12 @@ const Block11 = () => {
         width={400}
         height={400}
       />
-      <div className="absolute inset-0  flex items-center justify-center ">
-        <h1 className="font-thankslabs text-center leading-11 md:leading-14 font-bold text-2xl md:text-[32px] xl:text-[50px] text-white mx-4 md:mx-0">
-          Enjoy a Delicious Meal
+      <div className="absolute inset-0  flex flex-col items-center justify-center gap-[20px]">
+        <h1 className="font-thankslabs text-center text-[41.77px]  leading-11 md:leading-14 font-bold md:text-[32px] xl:text-[50px] text-[white] mx-4 md:mx-0">
+        MENUS
         </h1>
+        <hr className="w-[56.08px] h-[1px] border-1 border-[#898155]"></hr>
+        <p className="text-[16px] font-monserrat text-[white]">Welcome to Flavour.</p>
       </div>
     </div>
   );
