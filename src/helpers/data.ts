@@ -28,6 +28,8 @@ import drip4 from '@/assets/drip4.jpg';
 import drip5 from '@/assets/drip5.jpg';
 import drip6 from '@/assets/drip6.jpg';
 
+import { StaticImageData } from 'next/image';
+
 export const reviews = [
   {
     author: 'Richard Johnson',
@@ -546,7 +548,21 @@ export const dishes = [
   },
 ];
 
-export const items = [
+export type Button = {
+  label: string;
+  actionType: 'navigate'; // Add more types if needed
+  path?: string;
+};
+
+export type Item = {
+  img: StaticImageData;
+  title: string;
+  subtitle?: string;
+  desc: string;
+  buttons?: Button[];
+};
+
+export const items: Item[] = [
   {
     img: deam1,
     title: 'Private Dining',

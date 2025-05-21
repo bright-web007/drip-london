@@ -2,11 +2,12 @@
 import { useRouter } from 'next/navigation';
 import { items } from '@/helpers/data';
 import Image from 'next/image';
+import type { Button } from '@/helpers/data';
 
 const Block3 = () => {
   const router = useRouter();
 
-  const handleButtonClick = (button: any) => {
+  const handleButtonClick = (button: Button) => {
     if (button.actionType === 'navigate' && button.path) {
       router.push(button.path);
     }
@@ -34,12 +35,7 @@ const Block3 = () => {
                   className="relative h-[432px] md:h-[693px] xl:h-[693px] w-full rounded overflow-hidden"
                   style={{ boxShadow: 'inset 0 0 80px rgba(0,0,0,0.6)' }} // Inner shadow
                 >
-                  <Image
-                    src={item.img}
-                    alt={item.title}
-                    fill
-                    className="object-cover"
-                  />
+                  <Image src={item.img} alt={item.title} fill className="object-cover" />
                 </div>
               )}
             </div>

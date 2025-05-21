@@ -3,8 +3,13 @@ import { dishes } from '@/helpers/data';
 
 const Block2 = () => {
   return (
-    <section id="next-section" className="bg-[#000000] py-12 px-6 w-full h-full   md:py-[25px]  md:px-[40px]  lg:py-[70px]   xl:py-[25px]">
-      <h2 className="text-white text-[18px] font-thankslabs mb-6 text-center  sm:text-[21px]  md:text-[24px]  md:mb-[56px]  lg:text-[28]  xl:text-[32px]">World of Flavors</h2>
+    <section
+      id="next-section"
+      className="bg-[#000000] py-12 px-6 w-full h-full   md:py-[25px]  md:px-[40px]  lg:py-[70px]   xl:py-[25px]"
+    >
+      <h2 className="text-white text-[18px] font-thankslabs mb-6 text-center  sm:text-[21px]  md:text-[24px]  md:mb-[56px]  lg:text-[28]  xl:text-[32px]">
+        World of Flavors
+      </h2>
 
       {/* Scrollable wrapper */}
       <div className="w-full overflow-x-auto scrollbar-hide">
@@ -21,8 +26,12 @@ const Block2 = () => {
                 className="rounded-md mb-[34px] h-[192px] w-full object-cover sm:h-[250px]   md:h-[300px]  md:mb-[56.5px]"
               />
               <div className="flex flex-col text-center px-[50px] mb-[30px] gap-[8px]  sm:px-[90px]  md:mb-[50.5px]  md:px-[60px]">
-                <h3 className="text-[14px] font-thankslabs mb-2  sm:text-[16px]   md:text-[17px]  md:mb-[8px] ">{dish.title}</h3>
-                <p className="text-[14px] font-monserrat  sm:text-[16px]   md:px-[40px]">{dish.desc}</p>
+                <h3 className="text-[14px] font-thankslabs mb-2  sm:text-[16px]   md:text-[17px]  md:mb-[8px] ">
+                  {dish.title}
+                </h3>
+                <p className="text-[14px] font-monserrat  sm:text-[16px]   md:px-[40px]">
+                  {dish.desc}
+                </p>
               </div>
             </div>
           ))}
