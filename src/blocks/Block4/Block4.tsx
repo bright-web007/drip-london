@@ -109,7 +109,7 @@ const Block4 = () => {
             <div className="flex items-center mt-10">
               <Image src={left} alt="Drip London Logo" width={12} height={16} color="red" />
               <div className="border border-[#89815578] p-[2px] rounded-[2px]">
-              <Button
+                <Button
                   onClick={() => {
                     router.push('/reservation');
                   }}

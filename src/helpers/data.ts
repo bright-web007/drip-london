@@ -12,6 +12,12 @@ import card4 from '@/assets/card4.png';
 import card5 from '@/assets/card5.png';
 import card6 from '@/assets/card6.png';
 
+import menu1 from '@/assets/menu1.jpg';
+import menu2 from '@/assets/menu2.jpg';
+import menu3 from '@/assets/menu3.jpg';
+
+import { StaticImageData } from 'next/image';
+
 export const reviews = [
   {
     author: 'Richard Johnson',
@@ -504,5 +510,54 @@ export const faqreview = [
     title: 'What is your dresscode?',
     review:
       'We ask our guests to embrace the spirit of the experience with an effortlessly stylish, elevated and occasion ready dress code. Not permitted, Hats, Hoodies, Flip-flops or casual footwear, Sportswear (Including tracksuits, joggers, or athletic shoes).  We encourage all guests to dress with intention and occasion-appropriate polish. Management reserves the right to refuse entry to guests who do not adhere to the dress code.',
+  },
+];
+
+export type Button = {
+  label: string;
+  actionType: 'navigate'; // Add more types if needed
+  path?: string;
+};
+
+export type men = {
+  img: StaticImageData;
+  title: string;
+  buttons?: Button[];
+};
+
+export const mens: men[] = [
+  {
+    img: menu1,
+    title: 'A la carte Menu',
+    buttons: [
+      {
+        label: 'View menu',
+        actionType: 'navigate',
+        path: 'https://drive.google.com/drive/u/0/folders/1L5Cz-fDVesfWGRaXGvctRACPVhbDM5PJ',
+      },
+    ],
+  },
+  {
+    img: menu2,
+    title: 'Bar Menu',
+    buttons: [
+      {
+        label: 'View Menu',
+        actionType: 'navigate',
+        path: 'https://drive.google.com/drive/u/0/folders/1L5Cz-fDVesfWGRaXGvctRACPVhbDM5PJ',
+      },
+    ],
+  },
+
+  {
+    img: menu3,
+    title: 'Bottomless Brunch Menu',
+    buttons: [
+      {
+        label: 'View menu',
+        actionType: 'navigate',
+        path: 'https://drive.google.com/drive/u/0/folders/1L5Cz-fDVesfWGRaXGvctRACPVhbDM5PJ',
+      },
+    ],
   },
 ];
