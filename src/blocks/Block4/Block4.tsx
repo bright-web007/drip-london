@@ -13,9 +13,9 @@ const Slider = () => {
       if (scrollRef.current) {
         scrollRef.current.scrollBy({ left: -398, behavior: 'smooth' });
       }
-      setCurrent((prev) => (prev > 0 ? prev - 1 : 0));
+      setCurrent(prev => (prev > 0 ? prev - 1 : 0));
     } else {
-      if (current > 0) setCurrent((prev) => prev - 1);
+      if (current > 0) setCurrent(prev => prev - 1);
     }
   };
 
@@ -24,9 +24,9 @@ const Slider = () => {
       if (scrollRef.current) {
         scrollRef.current.scrollBy({ left: 398, behavior: 'smooth' });
       }
-      setCurrent((prev) => (prev < length - 1 ? prev + 1 : prev));
+      setCurrent(prev => (prev < length - 1 ? prev + 1 : prev));
     } else {
-      if (current < length - 1) setCurrent((prev) => prev + 1);
+      if (current < length - 1) setCurrent(prev => prev + 1);
     }
   };
 
@@ -95,53 +95,51 @@ const Slider = () => {
         </div>
       </div>
 
-      
-{/* md+ screens */}
-<div className="hidden md:flex flex-col items-center">
-  <div className="w-full overflow-x-hidden scrollbar-hide" ref={scrollRef}>
-    <div className="flex gap-4 pb-6 px-2">
-      {dits.map((item, index) => (
-        <div
-          key={index}
-          className={`flex-shrink-0 w-[424px] h-[473px] rounded-lg border ${
-            current === index ? 'border-[#898155]' : 'border-[#1D1D1D]'
-          } cursor-pointer relative`}
-          onClick={() => handleImageClick(index)}
-        >
-          <Image
-            src={item.img}
-            alt={`slide-${index}`}
-            className="rounded-md object-cover w-[424px] h-full  lg:w-[500px]"
-            unselectable="on"
-          />
+      {/* md+ screens */}
+      <div className="hidden md:flex flex-col items-center">
+        <div className="w-full overflow-x-hidden scrollbar-hide" ref={scrollRef}>
+          <div className="flex gap-4 pb-6 px-2">
+            {dits.map((item, index) => (
+              <div
+                key={index}
+                className={`flex-shrink-0 w-[424px] h-[473px] rounded-lg border ${
+                  current === index ? 'border-[#898155]' : 'border-[#1D1D1D]'
+                } cursor-pointer relative`}
+                onClick={() => handleImageClick(index)}
+              >
+                <Image
+                  src={item.img}
+                  alt={`slide-${index}`}
+                  className="rounded-md object-cover w-[424px] h-full  lg:w-[500px]"
+                  unselectable="on"
+                />
+              </div>
+            ))}
+          </div>
         </div>
-      ))}
-    </div>
-  </div>
 
-  {/* Toggles below scroll container */}
-  <div className="flex justify-center gap-4">
-    <button
-      onClick={prevSlide}
-      className={`bg-[#898155] border border-[#898155] text-white px-4 py-2 rounded-full ${
-        current === 0 ? 'opacity-30 cursor-not-allowed' : ''
-      }`}
-      disabled={current === 0}
-    >
-      ‹
-    </button>
-    <button
-      onClick={nextSlide}
-      className={`bg-[#898155] border border-[#898155] text-white px-4 py-2 rounded-full ${
-        current === length - 1 ? 'opacity-30 cursor-not-allowed' : ''
-      }`}
-      disabled={current === length - 1}
-    >
-      ›
-    </button>
-  </div>
-</div>
-
+        {/* Toggles below scroll container */}
+        <div className="flex justify-center gap-4">
+          <button
+            onClick={prevSlide}
+            className={`bg-[#898155] border border-[#898155] text-white px-4 py-2 rounded-full ${
+              current === 0 ? 'opacity-30 cursor-not-allowed' : ''
+            }`}
+            disabled={current === 0}
+          >
+            ‹
+          </button>
+          <button
+            onClick={nextSlide}
+            className={`bg-[#898155] border border-[#898155] text-white px-4 py-2 rounded-full ${
+              current === length - 1 ? 'opacity-30 cursor-not-allowed' : ''
+            }`}
+            disabled={current === length - 1}
+          >
+            ›
+          </button>
+        </div>
+      </div>
     </section>
   );
 };

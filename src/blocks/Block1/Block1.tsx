@@ -23,8 +23,12 @@ const Block1 = () => {
       <div className="absolute inset-0 flex flex-col items-center justify-center gap-[38px]  lg:gap-[50px]  xl:gap-[60px]">
         <div className="flex flex-col items-center justify-center gap-[12px] text-center w-full  lg:gap-[29px]">
           <div className="gap-[12px] flex flex-col md:gap-[20px]">
-            <p className="text-[16px] font-thankslabs text-white  md:text-[20px]  lg:text-[22px]  xl:text-[24px]">Experience</p>
-            <p className="text-[39.159px] font-thankslabs text-white  md:text-[60px]  lg:text-[70px]  xl:text-[80px]">DRIP LONDON</p>
+            <p className="text-[16px] font-thankslabs text-white  md:text-[20px]  lg:text-[22px]  xl:text-[24px]">
+              Experience
+            </p>
+            <p className="text-[39.159px] font-thankslabs text-white  md:text-[60px]  lg:text-[70px]  xl:text-[80px]">
+              DRIP LONDON
+            </p>
           </div>
           <div className="border-2 border-[#898155] w-[56.08px] h-[1px] my-2  lg:w-[80px]  xl:w-[94.691px]"></div>
           <div className="px-[50px]  sm:px-[150px]  md:px-[120px]  lg:px-[250px]  xl:px-[350px]">
@@ -58,7 +62,11 @@ const Block1 = () => {
           className="absolute bottom-6 left-1/2 transform -translate-x-1/2 cursor-pointer"
           onClick={handleScrollDown}
         >
-          <Image src={downicon} alt="arrow down icon"  className="w-[24px] h-[24px]  md:w-[32px] md:h-[32px]" />
+          <Image
+            src={downicon}
+            alt="arrow down icon"
+            className="w-[24px] h-[24px]  md:w-[32px] md:h-[32px]"
+          />
         </div>
       </div>
     </div>
