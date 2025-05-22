@@ -43,14 +43,14 @@ const Slider = () => {
   };
 
   return (
-    <section className="bg-black py-[100px] px-6 w-full h-full relative overflow-hidden">
-      <h2 className="text-white text-[18px] font-thankslabs mb-[30px] text-center sm:text-[20px] md:text-[24px] md:mb-[58px]">
+    <section className="bg-black py-[100px] xl:pb-[250px] px-6 w-full h-full relative overflow-hidden">
+      <h2 className="text-white text-[18px] font-thankslabs mb-[30px] text-center sm:text-[20px] md:text-[24px] md:mb-[0px]  xl:text-[32px]">
         A Glimpse of Drip
       </h2>
 
       {/* Small screens */}
       <div className="relative md:hidden">
-        <div className="w-full h-[349px] bg-black border border-[#1D1D1D] rounded-lg text-white flex justify-center items-center">
+        <div className="w-full h-[349px] bg-black border border-[#1D1D1D] rounded-lg text-white flex justify-center items-center ">
           <Image
             src={dits[current].img}
             alt="food card"
@@ -96,13 +96,13 @@ const Slider = () => {
       </div>
 
       {/* md+ screens */}
-      <div className="hidden md:flex flex-col items-center">
+      <div className="hidden md:flex flex-col items-center py-[56px] md:px-[40px]  xl:px-[100px]">
         <div className="w-full overflow-x-hidden scrollbar-hide" ref={scrollRef}>
           <div className="flex gap-4 pb-6 px-2">
             {dits.map((item, index) => (
               <div
                 key={index}
-                className={`flex-shrink-0 w-[424px] h-[473px] rounded-lg border ${
+                className={`flex-shrink-0 w-[424px] h-[473px] rounded-lg border  ${
                   current === index ? 'border-[#898155]' : 'border-[#1D1D1D]'
                 } cursor-pointer relative`}
                 onClick={() => handleImageClick(index)}

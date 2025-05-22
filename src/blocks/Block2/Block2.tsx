@@ -5,7 +5,7 @@ const Block2 = () => {
   return (
     <section
       id="next-section"
-      className="bg-[#000000] py-12 px-6 w-full h-full md:py-[25px] md:px-[40px] lg:py-[70px] xl:py-[25px]"
+      className="bg-[#000000] py-12 px-6 w-full h-full md:py-[25px] md:px-[40px] lg:py-[70px] xl:py-[86px]"
     >
       <h2 className="text-white text-[18px] font-thankslabs mb-6 text-center sm:text-[21px] md:text-[24px] md:mb-[56px] lg:text-[28] xl:text-[32px]">
         World of Flavors
@@ -18,7 +18,7 @@ const Block2 = () => {
           {dishes.map((dish, index) => (
             <div
               key={index}
-              className="w-[300px]  h-[520px]  pb-[30px] bg-[#000000] border border-[#1D1D1D] rounded-[4px] text-white flex-shrink-0 bg-[length:30px_30px] bg-[radial-gradient(#1D1D1D_0.5px,transparent_5px)] sm:w-[400px] md:w-[464px]"
+              className="w-[300px]  h-[520px]  pb-[30px] bg-[#000000] border border-[#1D1D1D] rounded-[4px] text-white flex-shrink-0 bg-[length:30px_30px] bg-[radial-gradient(#1D1D1D_0.5px,transparent_5px)] sm:w-[400px] md:w-[464px] "
             >
               {/* Image with bottom overlay text */}
               <div className="relative h-[192px] mb-[34px] sm:h-[250px] md:h-[300px] md:mb-[56.5px] rounded-[4px] overflow-hidden">
@@ -31,8 +31,8 @@ const Block2 = () => {
               </div>
 
               {/* Content */}
-              <div className="flex flex-col text-center px-[50px] mb-[30px] gap-[30px] sm:px-[90px] md:mb-[50.5px] md:px-[60px]">
-                <h3 className="text-[14px] font-thankslabs  sm:text-[16px] md:text-[17px] md:mb-[8px]">
+              <div className="flex flex-col text-center px-[50px] mb-[30px] gap-[30px] sm:px-[90px] md:mb-[50.5px] md:px-[40px] md:gap-[8px]">
+                <h3 className="text-[14px] font-thankslabs  sm:text-[16px] md:text-[17px]">
                   {dish.title}
                 </h3>
                 <p className="text-[14px] font-monserrat sm:text-[16px] md:px-[40px]">
