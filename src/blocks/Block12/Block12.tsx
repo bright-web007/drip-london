@@ -39,7 +39,7 @@ const Block3 = () => {
             <div className="w-full   mb-[18px] md:mb-[56px] xl:mb-0">
               {men.img && (
                 <div
-                  className="relative h-[560px]  w-full rounded overflow-hidden"
+                  className="relative h-[412px]  w-full rounded overflow-hidden"
                   style={{ boxShadow: 'inset 0 0 80px rgba(0,0,0,0.6)' }} // Inner shadow
                 >
                   <Image src={men.img} alt={men.title} fill className="object-cover" />
