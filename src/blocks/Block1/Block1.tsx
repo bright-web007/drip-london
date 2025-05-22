@@ -22,15 +22,15 @@ const Block1 = () => {
 
       <div className="absolute inset-0 flex flex-col items-center justify-center gap-[38px]  lg:gap-[50px]  xl:gap-[60px]">
         <div className="flex flex-col items-center justify-center gap-[12px] text-center w-full  lg:gap-[29px]">
-          <div className="gap-[12px] flex flex-col md:gap-[20px]">
-            <p className="text-[16px] font-thankslabs text-white font-[300px] not-italic leading-[35px] self-stretch md:text-[20px]  lg:text-[22px]  xl:text-[24px]" style={{ textShadow: '2px 2px 6px black' }}>
+          <div className="gap-[14px] flex flex-col md:gap-[25px]  lg:gap-[45px]">
+            <p className="text-[16px] font-thankslabs text-white font-[300px] not-italic leading-[35px] self-stretch md:text-[20px]  md:leading-[59.097px]  lg:text-[22px]  xl:text-[24px]" style={{ textShadow: '2px 2px 6px black' }}>
               Experience
             </p>
             <p className="text-[42px] font-thankslabs text-white  font-bold not-italic leading-[45.685px] self-stretch md:text-[60px]  lg:text-[70px]  xl:text-[80px]"  style={{ textShadow: '2px 2px 6px black' }}>
               DRIP LONDON
             </p>
           </div>
-          <div className="border-1 border-[#898155] w-[56.08px] h-[1px] my-2  lg:w-[80px]  xl:w-[94.691px]"></div>
+          <div className="border-1 border-[#898155] w-[56.08px] h-[1px] my-[20px]  md:my-[24px]  xl:my-[33.77px] lg:w-[80px]  xl:w-[94.691px]"></div>
           <div className="px-[50px]  sm:px-[150px]  md:px-[120px]  lg:px-[250px]  xl:px-[350px]">
             <p className="text-[16px] font-monserrat font-medium text-white not-italic leading-[18px] sm:text-[18px]  md:text-[20px]  lg:text-[22px]  xl:text-[24px]">
               Where bold West African Flavours meet modern culinary flair
