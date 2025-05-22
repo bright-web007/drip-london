@@ -42,6 +42,7 @@ const Block11 = () => {
           />
         </button>
       </div>
+      <div className="h-[55px] w-[4334px] border-2 border-[black]  absolute bottom-[-22px] left-1/2 transform -translate-x-1/2 blur-[15.75px] bg-[black]"></div>
     </div>
   );
 };

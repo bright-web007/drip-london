@@ -43,6 +43,7 @@ const Block3 = () => {
                   style={{ boxShadow: 'inset 0 0 80px rgba(0,0,0,0.6)' }} // Inner shadow
                 >
                   <Image src={men.img} alt={men.title} fill className="object-cover" />
+                  <div className="h-[55px] w-[4334px] border-2 border-[black]  absolute bottom-[-22px] left-1/2 transform -translate-x-1/2 blur-[15.75px] bg-[black]"></div>
                 </div>
               )}
             </div>
