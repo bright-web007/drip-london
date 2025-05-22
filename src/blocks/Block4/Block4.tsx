@@ -54,17 +54,17 @@ const Slider = () => {
           <Image
             src={dits[current].img}
             alt="food card"
-            className="rounded-md mb-[34px] h-full w-[382px] object-cover sm:w-[570px]"
+            className="rounded-md  h-full w-[382px] object-cover sm:w-[570px]"
             unselectable="on"
           />
         </div>
 
         {/* Toggles */}
-        <div className="absolute top-1/2 left-0 right-0 flex justify-between px-4">
+        <div className="absolute top-1/2 left-0 right-0 transform -translate-y-1/2 flex justify-between px-4">
           <button
             onClick={prevSlide}
             disabled={current === 0}
-            className={`bg-[#898155] border border-[#898155] text-white px-3 py-2 rounded-full z-10 ${
+            className={`bg-[#898155] border border-[#898155] text-white px-5 py-3 rounded-full z-10 ${
               current === 0 ? 'opacity-30 cursor-not-allowed' : ''
             }`}
           >
@@ -73,7 +73,7 @@ const Slider = () => {
           <button
             onClick={nextSlide}
             disabled={current === length - 1}
-            className={`bg-[#898155] border border-[#898155] text-white px-3 py-2 rounded-full z-10 ${
+            className={`bg-[#898155] border border-[#898155] text-white px-5 py-3 rounded-full z-10 ${
               current === length - 1 ? 'opacity-30 cursor-not-allowed' : ''
             }`}
           >
@@ -82,7 +82,7 @@ const Slider = () => {
         </div>
 
         {/* Dot Indicators */}
-        <div className="flex justify-center gap-2 bg-[#302e2e] py-[12px] w-full mt-4">
+        <div className="flex justify-center gap-2 bg-[#302e2e] py-[12px] w-full">
           {dits.map((_, index) => (
             <div
               key={index}

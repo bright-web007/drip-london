@@ -36,6 +36,7 @@ const Block3 = () => {
                   style={{ boxShadow: 'inset 0 0 80px rgba(0,0,0,0.6)' }} // Inner shadow
                 >
                   <Image src={item.img} alt={item.title} fill className="object-cover" />
+                  <div className="h-[50px] w-[4334px] border-2 border-[black]  absolute bottom-[-22px] left-1/2 transform -translate-x-1/2 blur-[14.75px] bg-[black]"></div>
                 </div>
               )}
             </div>
@@ -57,7 +58,7 @@ const Block3 = () => {
                   <button
                     key={btnIndex}
                     onClick={() => handleButtonClick(button)}
-                    className="bg-[rgba(137,129,85,0.15)] h-[46px] w-full px-4 py-2 border-2 border-[#898155] rounded text-white text-[14px] sm:text-[15px] md:text-[16px] md:py-[16px] md:h-[54px]"
+                    className="bg-[rgba(137,129,85,0.15)] h-[46px] w-full px-4 py-2 border-2 border-[#898155] rounded-[0.5px] text-white text-[14px] sm:text-[15px] md:text-[16px] md:py-[16px] md:h-[54px]"
                   >
                     {button.label}
                   </button>

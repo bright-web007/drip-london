@@ -277,6 +277,14 @@ export const navLinks = [
   { name: 'Contacts', link: '/contact-us' },
 ];
 
+export const navLinker = [
+  { name: 'Reservation', link: '/reservation' },
+  { name: 'Private Dinning', link: '/private' },
+  { name: 'Menus', link: '/menu' },
+  { name: 'FAQs', link: '/faq' },
+  { name: 'Contacts', link: '/contact-us' },
+];
+
 export const latestNews = [
   {
     image: card1,
@@ -570,7 +578,7 @@ export const items: Item[] = [
     desc: 'Host your event in style with curated menus, ambient luxury, and tailored service—perfect for birthdays, brand launches, and exclusive celebrations.',
     buttons: [
       {
-        label: 'Make a Reservation',
+        label: 'More Details',
         actionType: 'navigate',
         path: '/reservation',
       },
