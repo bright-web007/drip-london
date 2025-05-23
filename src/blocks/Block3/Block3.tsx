@@ -38,15 +38,13 @@ const Block3 = () => {
                   <div className="h-[50px] w-[4334px] border-2 border-[black]  absolute top-[2px] left-1/2 transform -translate-x-1/2 blur-[14.75px] bg-[black]"></div>
                   <Image src={item.img} alt={item.title} fill className="object-cover" />
                   <div className="h-[50px] w-[4334px] border-2 border-[black]  absolute bottom-[-22px] left-1/2 transform -translate-x-1/2 blur-[14.75px] bg-[black]"></div>
-                   {/* Top Blur */}
+                  {/* Top Blur */}
                   <div className="hidden h-[50px] w-[4334px] absolute top-[-20px] left-0 blur-[14.75px] transform -translate-x-1/2 bg-black  md:flex"></div>
                   {/* Left Blur */}
                   <div className="hidden w-[50px] h-full absolute top-0 left-0 blur-[14.75px] bg-black transform -translate-x-1/2 xl:flex"></div>
 
                   {/* Right Blur */}
-                   <div className="hidden w-[50px] h-full absolute top-0 right-[-45px] blur-[14.75px] bg-black transform -translate-x-1/2 xl:flex"></div>
-
-
+                  <div className="hidden w-[50px] h-full absolute top-0 right-[-45px] blur-[14.75px] bg-black transform -translate-x-1/2 xl:flex"></div>
                 </div>
               )}
             </div>

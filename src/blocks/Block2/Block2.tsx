@@ -22,11 +22,7 @@ const Block2 = () => {
             >
               {/* Image with bottom overlay text */}
               <div className="relative h-[192px] mb-[34px] sm:h-[250px] md:h-[300px] md:mb-[56.5px] rounded-[4px] overflow-hidden">
-                <Image
-                  src={dish.img}
-                  alt={dish.title}
-                  className="w-full h-full object-cover"
-                />
+                <Image src={dish.img} alt={dish.title} className="w-full h-full object-cover" />
                 <div className="h-[47px] w-[809px]   absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 blur-[14.75px] bg-[black]"></div>
               </div>
 
