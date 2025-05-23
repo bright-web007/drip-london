@@ -7,15 +7,21 @@ import mail from '@/assets/icons-svg/mail.svg';
 import location from '@/assets/icons-svg/location.svg';
 import { Icon } from '@iconify/react';
 import { navLinker } from '@/helpers/data';
+import { useRouter } from 'next/navigation';
+
 
 const Footer = () => {
+  const router = useRouter();
   return (
     <div className="bg-[#0D0D0D]">
       <div className="bg-[#0D0D0D] pt-[40px] pr-[24px] pl-[24px] pb-[24px] xl:flex xl:gap-[24px] xl:pr-[100px] xl:pl-[100px] xl:pt-[60px] xl:pb-[24px]">
         <div className="flex flex-col text-[#EBEBEB] mb-[24px] xl:w-[full]">
-          <h1 className="text-[16px] font-bold font-thankslabs mb-[16px] text-[#898155] sm:text-[19px] md:text-[27.049px]  xl:text-[32px] md:mb-[44px]">
+        
+          <h1 onClick={() => router.push('/')}
+           className="text-[16px] font-bold font-thankslabs mb-[16px] cursor-pointer text-[#898155] sm:text-[19px] md:text-[27.049px]  xl:text-[32px] md:mb-[44px]">
             DRIP LONDON
           </h1>
+
           <p className="text-[12px] font-Montserrat font-[300px] mb-[24px] leading-[18px] sm:text-[13px] md:text-[14px] md:leading-[20px] xl:text-[16px]  xl:w-[490px]">
             Drip London is a premier dining and nightlife destination where bold West African
             flavours meet contemporary culinary artistry. Located in the heart of the city, we offer

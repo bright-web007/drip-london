@@ -44,8 +44,12 @@ const Navbar = () => {
           />
         </div>
         <div className="hidden md:flex items-center justify-center  font-thankslabs text-[white] gap-[20px]  text-[11px] xl:">
-          <p>RESERVATIONS</p>
-          <p>MENU</p>
+          <p onClick={() => router.push('/reservation')}
+            className="cursor-pointer"
+            >RESERVATIONS</p>
+          <p onClick={() => router.push('/menu')}
+            className="cursor-pointer"
+            >MENU</p>
           <p>PRIVATE DINNING</p>
           <p>THE EXPERIENCE</p>
         </div>
