@@ -18,7 +18,7 @@ const Block3 = () => {
       {items.map((item, index) => (
         <div key={index} className="pt-[100px] lg:pt-[120px] xl:pt-[140px]">
           {/* Title */}
-          <h2 className="text-[18px] text-white font-thankslabs not-italic leading-[35px] font-bold mb-[30px] text-center sm:text-[21px] md:text-[24px] md:mb-[56px] lg:text-[28px] xl:text-[32px]">
+          <h2 className="text-[18px] text-white font-thankslabs not-italic leading-[35px] font-bold mb-[30px] text-center sm:text-[21px] md:text-[24px] md:mb-[56px] lg:text-[28px] xl:text-[32px]  xl:pb-[56px]">
             {item.title}
           </h2>
 
@@ -35,20 +35,31 @@ const Block3 = () => {
                   className="relative h-[432px] md:h-[693px] xl:h-[693px] w-full rounded overflow-hidden"
                   style={{ boxShadow: 'inset 0 0 80px rgba(0,0,0,0.6)' }} // Inner shadow
                 >
+                  <div className="h-[50px] w-[4334px] border-2 border-[black]  absolute top-[2px] left-1/2 transform -translate-x-1/2 blur-[14.75px] bg-[black]"></div>
                   <Image src={item.img} alt={item.title} fill className="object-cover" />
+                  <div className="h-[50px] w-[4334px] border-2 border-[black]  absolute bottom-[-22px] left-1/2 transform -translate-x-1/2 blur-[14.75px] bg-[black]"></div>
+                   {/* Top Blur */}
+                  <div className="hidden h-[50px] w-[4334px] absolute top-[-20px] left-0 blur-[14.75px] transform -translate-x-1/2 bg-black  md:flex"></div>
+                  {/* Left Blur */}
+                  <div className="hidden w-[50px] h-full absolute top-0 left-0 blur-[14.75px] bg-black transform -translate-x-1/2 xl:flex"></div>
+
+                  {/* Right Blur */}
+                   <div className="hidden w-[50px] h-full absolute top-0 right-[-45px] blur-[14.75px] bg-black transform -translate-x-1/2 xl:flex"></div>
+
+
                 </div>
               )}
             </div>
 
             {/* Content */}
-            <div className="w-full px-[24px] md:px-[40px] xl:w-[800px] xl:px-[82px] xl:flex xl:flex-col xl:justify-center">
+            <div className="w-full px-[38px] md:px-[40px] xl:w-[800px] xl:px-[82px] xl:flex xl:flex-col xl:justify-center">
               {item.subtitle && (
-                <h3 className="font-semibold font-Montserrat text-[12px] mb-1 text-[#898155] sm:text-[14px] md:text-[16px]">
+                <h3 className="font-semibold font-Montserrat text-[12px] mb-1 text-[#898155] sm:text-[14px] md:text-[16px]  xl:text-[24px]">
                   {item.subtitle}
                 </h3>
               )}
 
-              <p className="font-Montserrat text-[16px] text-[#D5D5D5] mb-[24px] sm:text-[18px] md:text-[20px]">
+              <p className="font-Montserrat text-[16px] text-[#D5D5D5] mb-[24px] sm:text-[18px] md:text-[20px]  xl:w-[438px]">
                 {item.desc}
               </p>
 
@@ -57,7 +68,7 @@ const Block3 = () => {
                   <button
                     key={btnIndex}
                     onClick={() => handleButtonClick(button)}
-                    className="bg-[rgba(137,129,85,0.15)] h-[46px] w-full px-4 py-2 border-2 border-[#898155] rounded text-white text-[14px] sm:text-[15px] md:text-[16px] md:py-[16px] md:h-[54px]"
+                    className="bg-[rgba(137,129,85,0.15)] h-[46px] w-full px-4 py-2 border-2 border-[#898155] rounded-[0.5px] text-white text-[14px] sm:text-[15px] md:text-[16px] md:py-[16px] md:h-[54px]  xl:w-[438px]"
                   >
                     {button.label}
                   </button>
