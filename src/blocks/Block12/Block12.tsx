@@ -1,79 +1,72 @@
 'use client';
-import Image from 'next/image';
-import eggs from '@/assets/eggs.svg';
-import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation';
-import right from '@/assets/right-color.svg';
-import left from '@/assets/left-color.png';
-import gift from '@/assets/icons-svg/gift.svg';
-import chef from '@/assets/icons-svg/chef.svg';
+import { mens } from '@/helpers/data';
+import Image from 'next/image';
+import type { Button } from '@/helpers/data';
 
-const Block12 = () => {
+const Block3 = () => {
   const router = useRouter();
+
+  const handleButtonClick = (button: Button) => {
+    if (button.actionType === 'navigate' && button.path) {
+      if (button.path.startsWith('http')) {
+        // Open external links (like Google Drive) in a new tab
+        window.open(button.path, '_blank');
+      } else {
+        // Internal navigation
+        router.push(button.path);
+      }
+    }
+  };
+
   return (
-    <div className="flex flex-col xl:flex-row items-center justify-between mx-auto w-[90%] xl:w-[75%] 2xl:w-[70%] py-16 xl:py-20">
-      <div className="bg-beige-400 relative flex items-center h-[450px] w-full xl:w-[58%] mb-[20px] xl:mb-0 overflow-hidden">
-        <Image
-          src={eggs}
-          alt="deals"
-          width={400}
-          height={400}
-          className="object-cover h-[450px] w-[45%]"
-        />
-        <div className="font-thankslabs text-beige-500 flex flex-col gap-[6px]  items-center  w-[180px]   sm:w-[290px]  md:w-full    xl:gap-[12px]">
-          <p className="text-[6.5px] leading-[20px]  sm:text-[11px]  md:text-[12px]   xl:text-[10px]">
-            Experience Drip London’s
-          </p>
-          <h1 className="uppercase text-[11px] leading-[30.967px] font-bold    sm:text-[18px]   md:text-[20px]  xl:text-[15px]">
-            Buttomless Brunch
-          </h1>
-          <p className="text-[7px] leading-[20px]  sm:text-[11px]  md:text-[12px]  xl:text-[10px]">
-            Every Sunday 5-9pm
-          </p>
-          <div className="flex items-center ">
-            <Image src={left} alt="Drip London Logo" width={12} height={16} color="red" />
-            <div className="border border-[#89815578] p-[2px] rounded-[2px]">
-              <Button
-                onClick={() => {
-                  router.push('/reservation');
-                }}
-                className="group  bg-transparent border border-beige-500 hover:bg-beige-500 text-sm cursor-pointer rounded-[2px] px-6 py-5 text-beige-500  flex items-center justify-center transition-all duration-300"
-              >
-                <span className="flex items-center space-x-1 font-monserrat">
-                  <span className="text-[6px]  xl:text-[14px]">Book your brunch table</span>
-                  <span className="overflow-hidden max-w-0 opacity-0 group-hover:max-w-[1.2rem] group-hover:opacity-100 transition-all duration-300">
-                    →
-                  </span>
-                </span>
-              </Button>
+    <div
+      className="bg-[#000000] py-[120px]  md:py-[63px]  xl:flex  xl:gap-[24px] justify-center  xl:py-[187px] xl:px-[121px]"
+      id="next"
+    >
+      {mens.map((men, index) => (
+        <div
+          key={index}
+          className="pt-[80px] lg:pt-[120px] xl:pt-[140px]  px-[24px]  gap-[24px]  sm:px-[40px]  md:px-[120px]  lg:px-[150px] xl:px-[0px] "
+        >
+          <div className="border-2 border-[#232323] xl:w-[383px]  xl:h-[]">
+            {/* Title */}
+            <h2 className="text-[18px] text-white font-thankslabs not-italic leading-[35px] font-bold mb-[30px] text-center sm:text-[21px] md:text-[24px] md:mb-[24px] lg:text-[28px] xl:text-[20px]">
+              {men.title}
+            </h2>
+
+            {/* Image with inner shadow */}
+            <div className="w-full   mb-[18px] md:mb-[56px] xl:mb-0">
+              {men.img && (
+                <div
+                  className="relative h-[412px]  w-full rounded overflow-hidden"
+                  style={{ boxShadow: 'inset 0 0 80px rgba(0,0,0,0.6)' }} // Inner shadow
+                >
+                  <Image src={men.img} alt={men.title} fill className="object-cover" />
+                  <div className="h-[55px] w-[4334px] border-2 border-[black]  absolute bottom-[-22px] left-1/2 transform -translate-x-1/2 blur-[15.75px] bg-[black]"></div>
+                </div>
+              )}
             </div>
-            <Image src={right} alt="Drip London Logo" width={12} height={16} />
+
+            {/* Content */}
+            <div className="py-[24px] px-[40px] xl:flex xl:flex-col xl:justify-center">
+              <div className=" flex justify-center  ">
+                {men.buttons?.map((button, btnIndex) => (
+                  <button
+                    key={btnIndex}
+                    onClick={() => handleButtonClick(button)}
+                    className="bg-[rgba(137,129,85,0.15)] h-[] w-full  text-center border-2 border-[#898155] rounded text-white text-[14px]  py-[10px]   md:py-[16px]  md:text-[16px]"
+                  >
+                    {button.label}
+                  </button>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
-        <div className="absolute inset-0 border border-beige-500 m-6" />
-      </div>
-      <div className="flex flex-col items-center justify-between h-[450px] w-full xl:w-[38%]">
-        <div className="bg-beige-400 relative flex items-center justify-center w-full h-[215px] overflow-hidden">
-          <div className="font-thankslabs text-beige-500 flex flex-col items-center justify-center">
-            <Image src={gift} alt="gift" width={50} height={50} className="w-12 h-12" />
-            <p className="text-xs leading-6 font-medium   sm:text-">£55pp</p>
-            <p className="text-xs leading-6 font-medium ">90 Minutes Unlimited</p>
-            <h1 className=" text-base leading-9 font-medium">Cocktail</h1>
-          </div>
-          <div className="absolute inset-0 border border-beige-500 m-6" />
-        </div>
-        <div className="bg-beige-400 relative flex items-center justify-center w-full h-[215px] overflow-hidden">
-          <div className="font-thankslabs text-beige-500 flex flex-col items-center justify-center">
-            <Image src={chef} alt="gift" width={50} height={50} className="w-12 h-12" />
-            <p className="text-xs leading-6 font-medium ">£45pp</p>
-            <p className="text-xs leading-6 font-medium ">90 Minutes Unlimited</p>
-            <h1 className=" text-base leading-9 font-medium">Prosecco</h1>
-          </div>
-          <div className="absolute inset-0 border border-beige-500 m-6" />
-        </div>
-      </div>
+      ))}
     </div>
   );
 };
 
-export default Block12;
+export default Block3;
