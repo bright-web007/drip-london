@@ -23,10 +23,16 @@ const Block1 = () => {
       <div className="absolute inset-0 flex flex-col items-center justify-center gap-[38px]  lg:gap-[50px]  xl:gap-[60px]">
         <div className="flex flex-col items-center justify-center gap-[12px] text-center w-full  lg:gap-[29px]">
           <div className="gap-[14px] flex flex-col md:gap-[25px]  lg:gap-[45px]">
-            <p className="text-[16px] font-thankslabs text-white font-[300px] not-italic leading-[35px] self-stretch md:text-[20px]  md:leading-[59.097px]  lg:text-[22px]  xl:text-[24px] xl:leading-[78px]" style={{ textShadow: '2px 2px 6px black' }}>
+            <p
+              className="text-[16px] font-thankslabs text-white font-[300px] not-italic leading-[35px] self-stretch md:text-[20px]  md:leading-[59.097px]  lg:text-[22px]  xl:text-[24px] xl:leading-[78px]"
+              style={{ textShadow: '2px 2px 6px black' }}
+            >
               Experience
             </p>
-            <p className="text-[42px] font-thankslabs text-white  font-bold not-italic leading-[45.685px] self-stretch md:text-[60px]  lg:text-[70px]  xl:text-[80px]"  style={{ textShadow: '2px 2px 6px black' }}>
+            <p
+              className="text-[42px] font-thankslabs text-white  font-bold not-italic leading-[45.685px] self-stretch md:text-[60px]  lg:text-[70px]  xl:text-[80px]"
+              style={{ textShadow: '2px 2px 6px black' }}
+            >
               DRIP LONDON
             </p>
           </div>

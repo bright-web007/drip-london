@@ -25,14 +25,12 @@ import deam1 from '@/assets/deam1.jpg';
 import deam2 from '@/assets/deam2.jpg';
 import deam3 from '@/assets/deam3.jpg';
 
-
 import drip1 from '@/assets/drip1.jpg';
 import drip2 from '@/assets/drip2.jpg';
 import drip3 from '@/assets/drip3.jpg';
 import drip4 from '@/assets/drip4.jpg';
 import drip5 from '@/assets/drip5.jpg';
 import drip6 from '@/assets/drip6.jpg';
-
 
 import { StaticImageData } from 'next/image';
 
@@ -539,8 +537,6 @@ export const faqreview = [
   },
 ];
 
-
-
 export type Button = {
   label: string;
   actionType: 'navigate'; // Add more types if needed
@@ -661,7 +657,6 @@ export const items: Item[] = [
     ],
   },
 ];
-
 
 export const dits = [
   {
