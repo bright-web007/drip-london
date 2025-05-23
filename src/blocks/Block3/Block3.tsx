@@ -52,7 +52,7 @@ const Block3 = () => {
             </div>
 
             {/* Content */}
-            <div className="w-full px-[24px] md:px-[40px] xl:w-[800px] xl:px-[82px] xl:flex xl:flex-col xl:justify-center">
+            <div className="w-full px-[38px] md:px-[40px] xl:w-[800px] xl:px-[82px] xl:flex xl:flex-col xl:justify-center">
               {item.subtitle && (
                 <h3 className="font-semibold font-Montserrat text-[12px] mb-1 text-[#898155] sm:text-[14px] md:text-[16px]  xl:text-[24px]">
                   {item.subtitle}
