@@ -559,7 +559,7 @@ export const mens: men[] = [
     title: 'A la carte Menu',
     buttons: [
       {
-        label: 'More Details',
+        label: 'View Menu',
         actionType: 'navigate',
         path: 'https://drive.google.com/drive/u/0/folders/1L5Cz-fDVesfWGRaXGvctRACPVhbDM5PJ',
       },
