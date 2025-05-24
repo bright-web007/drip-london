@@ -38,7 +38,7 @@ const Block11 = () => {
           <Image
             src={arrowdown}
             alt="Scroll down"
-            className="w-[24px] h-[24px]  sm:w-[45px] sm:h-[45px]  md:w-[55px] md:h-[55px]"
+            className="w-[24px] h-[24px]  sm:w-[45px] sm:h-[45px]  md:w-[55px] md:h-[55px] animate-bounce"
           />
         </button>
       </div>
