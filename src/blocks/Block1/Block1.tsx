@@ -24,13 +24,13 @@ const Block1 = () => {
         <div className="flex flex-col items-center justify-center gap-[12px] text-center w-full  lg:gap-[29px]">
           <div className="gap-[14px] flex flex-col md:gap-[25px]  lg:gap-[45px] xl:gap-[25px]  xl:h-[230px] ">
             <p
-              className="text-[16px] w-[200px] font-thankslabs bg-black/20 rounded-full text-white font-[300px] not-italic leading-[35px] mx-auto md:text-[20px]  md:leading-[59.097px]  lg:text-[22px]  xl:text-[15px] xl:leading-[78px] "
+              className="text-[16px] w-[200px] font-thankslabs bg-black/5 rounded-full text-white font-[300px] not-italic leading-[35px] mx-auto md:text-[20px]  md:leading-[59.097px]  lg:text-[22px]  xl:text-[15px] xl:leading-[78px] "
               
             >
               Experience
             </p>
             <p
-              className="text-[42px] w-[800px] h-full bg-black/20 rounded-full font-thankslabs text-white  font-bold not-italic  mx-auto md:text-[60px]  lg:text-[70px]  xl:text-[80px]"
+              className="text-[42px] w-[800px] h-full bg-black/5 rounded-full font-thankslabs text-white  font-bold not-italic  mx-auto md:text-[60px]  lg:text-[70px]  xl:text-[80px]"
             
             >
               DRIP LONDON
