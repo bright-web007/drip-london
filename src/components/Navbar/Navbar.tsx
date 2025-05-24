@@ -25,7 +25,7 @@ const Navbar = () => {
         />
       </div>
 
-      <div className="md:flex items-center justify-center h-[60px]">
+      <div className="flex items-center justify-center h-[60px]">
         <div
           className="group flex items-center h-full cursor-pointer  md:hidden"
           onClick={openNavigation}
