@@ -17,7 +17,7 @@ const Block1 = () => {
   };
 
   return (
-    <div className="flex flex-col mt-[-72px] font-monserrat h-[720px] bg-gray-500  relative ">
+    <div className="flex flex-col mt-[-72px] h-[950px] font-monserrat xl:h-[730px] bg-gray-500  relative ">
       <LayoutHeader />
 
       <div className="absolute inset-0 flex flex-col items-center justify-center gap-[38px]  lg:gap-[50px]  xl:gap-[60px]">
