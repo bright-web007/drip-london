@@ -22,12 +22,12 @@ const Block11 = () => {
         fill
         priority
       />
-      <div className="absolute inset-0 flex flex-col items-center justify-center gap-[20px]">
-        <h1 className="font-thankslabs text-center text-[41.77px] leading-11 md:leading-14 font-bold md:text-[60px] xl:text-[80px] text-white mx-4 md:mx-0">
+      <div className="absolute inset-0 flex flex-col items-center justify-center gap-[20px] bg-black/40">
+        <h1 className="font-thankslabs text-center text-[55px] leading-11 md:leading-14 font-bold md:text-[70px] xl:text-[80px] text-white mx-4 md:mx-0">
           MENUS
         </h1>
         <hr className="w-[56.08px] h-[3px] border-3 border-[#898155] mt-[20px] md:w-[80px]" />
-        <p className="text-[16px] font-monserrat text-white md:text-[20px]  xl:text-[24px]">
+        <p className="text-[24px] font-monserrat text-white md:text-[24px]  xl:text-[24px]">
           Welcome to Flavour.
         </p>
       </div>
@@ -38,11 +38,11 @@ const Block11 = () => {
           <Image
             src={arrowdown}
             alt="Scroll down"
-            className="w-[24px] h-[24px]  sm:w-[45px] sm:h-[45px]  md:w-[55px] md:h-[55px] animate-bounce"
+            className="w-[24px] h-[24px]  sm:w-[45px] sm:h-[45px]  md:w-[40px] md:h-[40px] animate-bounce"
           />
         </button>
       </div>
-      <div className="h-[55px] w-[4334px] border-2 border-[black]  absolute bottom-[-22px] left-1/2 transform -translate-x-1/2 blur-[15.75px] bg-[black]"></div>
+      <div className="h-[55px] w-[4334px] border-2 border-[black]  absolute bottom-[-22px] left-1/2 transform -translate-x-1/2 blur-[11.75px] bg-[black]"></div>
     </div>
   );
 };

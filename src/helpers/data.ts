@@ -531,7 +531,7 @@ export const mens: men[] = [
     title: 'A la carte Menu',
     buttons: [
       {
-        label: 'View menu',
+        label: 'View Menu',
         actionType: 'navigate',
         path: 'https://drive.google.com/drive/u/0/folders/1L5Cz-fDVesfWGRaXGvctRACPVhbDM5PJ',
       },
@@ -554,7 +554,7 @@ export const mens: men[] = [
     title: 'Bottomless Brunch Menu',
     buttons: [
       {
-        label: 'View menu',
+        label: 'View Menu',
         actionType: 'navigate',
         path: 'https://drive.google.com/drive/u/0/folders/1L5Cz-fDVesfWGRaXGvctRACPVhbDM5PJ',
       },
