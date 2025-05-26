@@ -18,7 +18,7 @@ const Block3 = () => {
       {items.map((item, index) => (
         <div key={index} className="pt-[100px] lg:pt-[120px] xl:pt-[140px]">
           {/* Title */}
-          <h2 className="text-[18px] text-white font-thankslabs not-italic leading-[35px] font-bold mb-[30px] text-center sm:text-[21px] md:text-[24px] md:mb-[56px] lg:text-[28px] xl:text-[32px]  xl:pb-[56px]">
+          <h2 className="text-[18px] text-white font-thankslabs not-italic leading-[35px] font-bold mb-[30px] text-center sm:text-[26px] md:text-[28px] md:mb-[56px] lg:text-[28px] xl:text-[32px]  xl:pb-[56px]">
             {item.title}
           </h2>
 
@@ -53,12 +53,12 @@ const Block3 = () => {
             {/* Content */}
             <div className="w-full py-[24px] px-[38px] md:px-[40px] xl:w-[800px] xl:px-[82px] xl:flex xl:flex-col xl:justify-center">
               {item.subtitle && (
-                <h3 className="font-normal font-Montserrat text-[10px] mb-1 text-[#898155] sm:text-[14px] md:text-[13px] md:mb-4">
+                <h3 className="font-normal font-Montserrat text-[10px] mb-4 sm:mb-6 text-[#898155] sm:text-[16px] md:text-[18px] md:mb-4">
                   {item.subtitle}
                 </h3>
               )}
 
-              <p className="font-Montserrat font-light text-[16px] leading-[22px] text-[#D5D5D5] mb-[24px] sm:text-[18px] md:text-[20px]  xl:w-[438px] xl:leading-[26px]">
+              <p className="font-Montserrat font-light text-[16px] leading-[22px] text-[#D5D5D5] mb-[30px] sm:mb-[24px] sm:text-[26px] sm:leading-[32px] md:text-[28px] md:mb-[60px] xl:w-[438px] xl:leading-[34px]">
                 {item.desc}
               </p>
 
@@ -67,7 +67,7 @@ const Block3 = () => {
                   <button
                     key={btnIndex}
                     onClick={() => handleButtonClick(button)}
-                    className="bg-[rgba(137,129,85,0.15)] font-normal h-[46px] w-full px-4 py-2 border-[0.5px] border-[#3d3926] rounded-[4px] text-[#cfcfcf] text-[14px] sm:text-[15px] md:text-[14px] md:py-[12px] md:h-[54px]  xl:w-[438px]"
+                    className="bg-[rgba(137,129,85,0.15)] font-normal h-[50px] sm:h-[62px] w-full px-4  py-2 border-[0.5px] border-[#3d3926] rounded-[4px] text-[#cfcfcf] text-[14px] sm:text-[18px] md:text-[18px] md:py-[12px] md:h-[70px]  xl:w-[438px]"
                   >
                     {button.label}
                   </button>
