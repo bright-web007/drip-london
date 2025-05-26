@@ -624,9 +624,9 @@ export const items: Item[] = [
     desc: 'Host your event in style with curated menus, ambient luxury, and tailored service—perfect for birthdays, brand launches, and exclusive celebrations.',
     buttons: [
       {
-        label: 'More Detail',
+        label: 'More Details',
         actionType: 'navigate',
-        path: '/reservation',
+        path: '/private',
       },
     ],
   },
