@@ -18,12 +18,12 @@ const Block2 = () => {
           {dishes.map((dish, index) => (
             <div
               key={index}
-              className="w-[300px]  h-[375px]  pb-[30px] bg-[#000000] border border-[#1D1D1D] rounded-[4px] text-white flex-shrink-0 bg-[length:30px_30px] bg-[radial-gradient(#1D1D1D_0.5px,transparent_5px)] sm:w-[400px] sm:h-[450px] md:w-[464px] md:h-[482px]  xl:h-[492px] "
+              className="w-[300px]  h-[375px]  pb-[30px] bg-[#000000] border border-[#191919] rounded-[4px] text-white flex-shrink-0 bg-[length:30px_30px] bg-[radial-gradient(#1D1D1D_0.5px,transparent_5px)] sm:w-[400px] sm:h-[450px] md:w-[464px] md:h-[482px]  xl:h-[460px] "
             >
               {/* Image with bottom overlay text */}
               <div className="relative h-[192px] mb-[34px] sm:h-[250px] md:h-[300px] md:mb-[56.5px] rounded-[4px] overflow-hidden">
                 <Image src={dish.img} alt={dish.title} className="w-full h-full object-cover" />
-                <div className="h-[47px] w-[809px]   absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 blur-[14.75px] bg-[black]"></div>
+                <div className="h-[47px] w-[809px]   absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 blur-[9.75px] bg-[black]"></div>
               </div>
 
               {/* Content */}

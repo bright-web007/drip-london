@@ -2,6 +2,7 @@
 import { useState, useRef } from 'react';
 import Image from 'next/image';
 import { dits } from '@/helpers/data';
+import { Icon } from '@iconify/react';
 
 const Slider = () => {
   const [current, setCurrent] = useState(0);
@@ -61,24 +62,24 @@ const Slider = () => {
 
         {/* Toggles */}
         <div className="absolute top-1/2 left-0 right-0 transform -translate-y-1/2 flex justify-between px-4">
-          <button
-            onClick={prevSlide}
-            disabled={current === 0}
-            className={`bg-[#898155] border border-[#898155] text-white px-5 py-3 rounded-full z-10 ${
-              current === 0 ? 'opacity-30 cursor-not-allowed' : ''
-            }`}
-          >
-            ‹
-          </button>
-          <button
-            onClick={nextSlide}
-            disabled={current === length - 1}
-            className={`bg-[#898155] border border-[#898155] text-white px-5 py-3 rounded-full z-10 ${
-              current === length - 1 ? 'opacity-30 cursor-not-allowed' : ''
-            }`}
-          >
-            ›
-          </button>
+        <button
+  onClick={prevSlide}
+  disabled={current === 0}
+  className={`w-[30px] h-[30px] bg-[#898155] border border-[#898155] rounded-full z-10 flex items-center justify-center text-white transition-opacity duration-300 ${
+    current === 0 ? 'opacity-30 cursor-not-allowed' : 'hover:opacity-80'
+  }`}
+>
+  <Icon icon="ic:round-chevron-left" className="w-8 h-8" />
+</button>
+<button
+  onClick={nextSlide}
+  disabled={current === length - 1}
+  className={`w-[30px] h-[30px] bg-[#898155] border border-[#898155] rounded-full z-10 flex items-center justify-center  text-white transition-opacity duration-300 ${
+    current === length - 1 ? 'opacity-30 cursor-not-allowed' : 'hover:opacity-80'
+  }`}
+>
+  <Icon icon="ic:round-chevron-right" className="w-8 h-8" />
+</button>
         </div>
 
         {/* Dot Indicators */}
@@ -110,7 +111,7 @@ const Slider = () => {
                 <Image
                   src={item.img}
                   alt={`slide-${index}`}
-                  className="rounded-md object-cover w-[424px] h-full  lg:w-[500px]"
+                  className="rounded-[4px] object-cover w-[424px] h-full  lg:w-[500px]"
                   unselectable="on"
                 />
               </div>
@@ -120,24 +121,24 @@ const Slider = () => {
 
         {/* Toggles below scroll container */}
         <div className="flex justify-center gap-4">
+        <button
+  onClick={prevSlide}
+  disabled={current === 0}
+  className={`w-[35px] h-[35px] bg-[#898155] border border-[#898155] rounded-full z-10 flex items-center justify-center text-white transition-opacity duration-300 ${
+    current === 0 ? 'opacity-30 cursor-not-allowed' : 'hover:opacity-80'
+  }`}
+>
+  <Icon icon="ic:round-chevron-left" className="w-8 h-8" />
+</button>
           <button
-            onClick={prevSlide}
-            className={`bg-[#898155] border border-[#898155] text-white px-4 py-2 rounded-full ${
-              current === 0 ? 'opacity-30 cursor-not-allowed' : ''
-            }`}
-            disabled={current === 0}
-          >
-            ‹
-          </button>
-          <button
-            onClick={nextSlide}
-            className={`bg-[#898155] border border-[#898155] text-white px-4 py-2 rounded-full ${
-              current === length - 1 ? 'opacity-30 cursor-not-allowed' : ''
-            }`}
-            disabled={current === length - 1}
-          >
-            ›
-          </button>
+  onClick={nextSlide}
+  disabled={current === length - 1}
+  className={`w-[35px] h-[35px] bg-[#898155] border border-[#898155] rounded-full z-10 flex items-center justify-center  text-white transition-opacity duration-300 ${
+    current === length - 1 ? 'opacity-30 cursor-not-allowed' : 'hover:opacity-80'
+  }`}
+>
+  <Icon icon="ic:round-chevron-right" className="w-8 h-8" />
+</button>
         </div>
       </div>
     </section>
