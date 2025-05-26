@@ -577,7 +577,7 @@ export const mens: men[] = [
     title: 'Bottomless Brunch Menu',
     buttons: [
       {
-        label: 'View menu',
+        label: 'View Menu',
         actionType: 'navigate',
         path: 'https://drive.google.com/drive/u/0/folders/1L5Cz-fDVesfWGRaXGvctRACPVhbDM5PJ',
       },
@@ -624,9 +624,9 @@ export const items: Item[] = [
     desc: 'Host your event in style with curated menus, ambient luxury, and tailored service—perfect for birthdays, brand launches, and exclusive celebrations.',
     buttons: [
       {
-        label: 'More Detail',
+        label: 'More Details',
         actionType: 'navigate',
-        path: '/reservation',
+        path: '/private',
       },
     ],
   },
