@@ -9,16 +9,16 @@ import { Icon } from '@iconify/react';
 import { navLinker } from '@/helpers/data';
 import { useRouter } from 'next/navigation';
 
-
 const Footer = () => {
   const router = useRouter();
   return (
     <div className="bg-[#0D0D0D]">
       <div className="bg-[#0D0D0D] pt-[40px] pr-[24px] pl-[24px] pb-[24px] xl:flex xl:gap-[24px] xl:pr-[100px] xl:pl-[100px] xl:pt-[60px] xl:pb-[24px]">
         <div className="flex flex-col text-[#EBEBEB] mb-[24px] xl:w-[full]">
-        
-          <h1 onClick={() => router.push('/')}
-           className="text-[16px] font-bold font-thankslabs mb-[16px] cursor-pointer text-[#898155] sm:text-[19px] md:text-[27.049px]  xl:text-[32px] md:mb-[44px]">
+          <h1
+            onClick={() => router.push('/')}
+            className="text-[16px] font-bold font-thankslabs mb-[16px] cursor-pointer text-[#898155] sm:text-[19px] md:text-[27.049px]  xl:text-[32px] md:mb-[44px]"
+          >
             DRIP LONDON
           </h1>
 
@@ -49,19 +49,15 @@ const Footer = () => {
                 style={{ backgroundColor: 'rgba(137, 129, 85, 0.15)' }}
                 className="w-[39px] h-[39px] rounded-full flex items-center justify-center"
               >
-                <a
-                  href="tel:+44 7923628705"
-                >
-                <Image src={call} alt="Icon" className="w-[20px] h-[20px] object-contain" />
+                <a href="tel:+44 7923628705">
+                  <Image src={call} alt="Icon" className="w-[20px] h-[20px] object-contain" />
                 </a>
               </div>
               <div>
-              <a
-                  href="tel:+44 7923628705"
-                >
-                <p className="hidden text-[14px] md:block leading-[18px] ml-[14px] md:text-[14px] xl:text-[16px]">
-                  +44 7923628705
-                </p>
+                <a href="tel:+44 7923628705">
+                  <p className="hidden text-[14px] md:block leading-[18px] ml-[14px] md:text-[14px] xl:text-[16px]">
+                    +44 7923628705
+                  </p>
                 </a>
               </div>
             </div>
@@ -71,10 +67,8 @@ const Footer = () => {
                 style={{ backgroundColor: 'rgba(137, 129, 85, 0.15)' }}
                 className="w-[39px] h-[39px] rounded-full flex items-center justify-center"
               >
-                <a
-                  href="mailto:Reservations@drip.london"
-                >
-                <Image src={mail} alt="Icon" className="w-[20px] h-[20px] object-contain" />
+                <a href="mailto:Reservations@drip.london">
+                  <Image src={mail} alt="Icon" className="w-[20px] h-[20px] object-contain" />
                 </a>
               </div>
               <div>
@@ -82,7 +76,7 @@ const Footer = () => {
                   href="mailto:Reservations@drip.london"
                   className="hidden text-[14px] md:block leading-[18px] ml-[14px] md:text-[14px] xl:text-[16px]"
                 >
-                <p>  Reservations@drip.london </p>
+                  <p> Reservations@drip.london </p>
                 </a>
               </div>
             </div>
@@ -111,16 +105,16 @@ const Footer = () => {
               QUICK LINKS
             </p>
             <div className="flex flex-col gap-[16px]">
-            {navLinker.map(item => (
-              <React.Fragment key={item.name}>
-                <a
-                  href={item.link}
-                  className="text-[12px]  leading-[12px] font-[300px] cursor-pointer text-[#EBEBEB] whitespace-nowrap md:text-[16px]"
-                >
-                  {item.name}
-                </a>
-              </React.Fragment>
-            ))}
+              {navLinker.map(item => (
+                <React.Fragment key={item.name}>
+                  <a
+                    href={item.link}
+                    className="text-[12px]  leading-[12px] font-[300px] cursor-pointer text-[#EBEBEB] whitespace-nowrap md:text-[16px]"
+                  >
+                    {item.name}
+                  </a>
+                </React.Fragment>
+              ))}
             </div>
           </div>
 
@@ -156,13 +150,11 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
-        
       </div>
 
       <div className="bg-[#0D0D0D] border-t-1 border-t-[#242424] w-fit mx-auto xl:border-t-2">
         <p className="text-[#FFFFFF75] text-[10px]   font-normal leading-5 text-center my-14 md:text-[16px] bg-[#0D0D0D]  w-[754px]  xl:w-[1240px]">
-           Copyright © 2025 Drip London. All Rights Reserved.
+          Copyright © 2025 Drip London. All Rights Reserved.
         </p>
       </div>
     </div>
