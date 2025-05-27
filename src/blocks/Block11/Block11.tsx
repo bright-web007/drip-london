@@ -27,7 +27,7 @@ const Block11 = () => {
           MENUS
         </h1>
         <hr className="w-[56.08px] h-[3px] border-3 border-[#898155] mt-[20px] md:w-[80px]" />
-        <p className="text-[24px] font-monserrat text-white md:text-[24px]  xl:text-[24px]">
+        <p className="text-[20px] font-monserrat text-white md:text-[24px]  xl:text-[24px]">
           Welcome to Flavour.
         </p>
       </div>
