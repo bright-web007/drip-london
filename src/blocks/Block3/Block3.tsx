@@ -58,7 +58,7 @@ const Block3 = () => {
                 </h3>
               )}
 
-              <p className="font-Montserrat font-light text-[16px] leading-[22px] text-[#D5D5D5] mb-[30px] sm:mb-[24px] sm:text-[26px] sm:leading-[32px] md:text-[28px] md:mb-[60px] xl:w-[438px] xl:leading-[34px]">
+              <p className="font-Montserrat font-light text-[16px] leading-[22px] text-[#D5D5D5] mb-[30px] sm:mb-[24px] sm:text-[26px] sm:leading-[32px] md:text-[25px] md:mb-[60px] xl:w-[438px] xl:leading-[30px] xl:text-[23px]  xl:mb-[40px]">
                 {item.desc}
               </p>
 
@@ -67,7 +67,7 @@ const Block3 = () => {
                   <button
                     key={btnIndex}
                     onClick={() => handleButtonClick(button)}
-                    className="bg-[rgba(137,129,85,0.15)] font-normal h-[50px] sm:h-[62px] w-full px-4  py-2 border-[0.5px] border-[#3d3926] rounded-[4px] text-[#cfcfcf] text-[14px] sm:text-[18px] md:text-[18px] md:py-[12px] md:h-[70px]  xl:w-[438px]"
+                    className="bg-[rgba(137,129,85,0.15)] font-normal h-[50px] sm:h-[62px] w-full px-4  py-2 border-[0.5px] border-[#3d3926] rounded-[4px] text-[#cfcfcf] text-[14px] sm:text-[18px] md:text-[18px] md:py-[12px] md:h-[70px]  xl:w-[438px]  xl:h-[50px]"
                   >
                     {button.label}
                   </button>

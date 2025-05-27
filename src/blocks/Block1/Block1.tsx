@@ -17,22 +17,22 @@ const Block1 = () => {
   };
 
   return (
-    <div className="flex flex-col mt-[-72px] h-[920px] font-monserrat xl:h-[730px] bg-gray-500  relative ">
+    <div className="flex flex-col mt-[-72px] min-h-[95vh] font-monserrat sm:min-h-[85vh] md:min-h-[98.5vh] lg:min-h-screen bg-gray-500  relative ">
       <LayoutHeader />
 
       <div className="absolute inset-0 flex flex-col items-center justify-center gap-[38px]  lg:gap-[50px]  xl:gap-[45px]">
         <div className="flex flex-col items-center justify-center gap-[12px] text-center w-full  lg:gap-[20px]">
           <div className="gap-[14px] flex flex-col md:gap-[25px]  lg:gap-[45px] xl:gap-[2px]  xl:h-[230px] ">
-            <p className="text-[16px] w-[200px] font-thankslabs bg-black/2 rounded-full text-white font-normal not-italic leading-[35px] mx-auto md:text-[20px]  md:leading-[59.097px]  lg:text-[22px]  xl:text-[16px] xl:leading-[78px] ">
+            <p className="text-[14px] w-[200px] font-thankslabs bg-black/2 rounded-full text-white font-normal not-italic leading-[35px] mx-auto md:text-[20px]  md:leading-[59.097px]  lg:text-[22px]  xl:text-[16px] xl:leading-[78px] ">
               Experience
             </p>
-            <p className="text-[40px] w-[800px] h-[60px] sm:h-[70px] bg-black/2 rounded-full font-thankslabs text-white  font-bold not-italic  mx-auto sm:text-[60px]  md:text-[60px]  lg:text-[70px]  xl:text-[80px] xl:h-[120px]">
+            <p className="text-[30px] w-[800px] h-[60px] sm:h-[70px] bg-black/2 rounded-full font-thankslabs text-white  font-bold not-italic  mx-auto sm:text-[60px]  md:text-[60px]  lg:text-[70px]  xl:text-[80px] xl:h-[120px]">
               DRIP LONDON
             </p>
           </div>
           <div className="border-1 border-[#898155] w-[56.08px] h-[1px] my-[10px] sm:my-[20px]  md:my-[24px]   lg:w-[80px]  xl:my-[2px]  xl:w-[94.691px]"></div>
           <div className="    md:px-[120px]  lg:px-[250px]  xl:px-[390px]  2xl:px-[480px]">
-            <p className="text-[16px] w-[350px] font-monserrat font-normal text-white not-italic leading-[24px] sm:text-[20px]  md:text-[20px]  lg:text-[22px]  xl:text-[24px]  md:leading-[30.393px]  md:w-[493.037px]">
+            <p className="text-[15px] w-[350px] font-monserrat font-normal text-white not-italic leading-[24px] sm:text-[20px]  md:text-[20px]  lg:text-[22px]  xl:text-[24px]  md:leading-[30.393px]  md:w-[493.037px]">
               Where bold West African Flavours meet modern culinary flair
             </p>
           </div>
@@ -43,7 +43,7 @@ const Block1 = () => {
             onClick={() => {
               router.push('/reservation');
             }}
-            className="bg-[#898155] h-[54px] w-[370px] p-[10px] text-[16px] font-light rounded-[4px] sm:w-[420px] sm:text-[18px]  md:h-[56px]  md:w-[290px]  "
+            className="bg-[#898155] h-[54px] w-[330px] p-[10px] text-[16px] font-light rounded-[4px] sm:w-[420px] sm:text-[18px]  md:h-[56px]  md:w-[290px]  "
           >
             Reserve Your Table
           </Button>
@@ -52,7 +52,7 @@ const Block1 = () => {
             onClick={() => {
               router.push('/menu');
             }}
-            className="bg-[rgba(137,129,85,0.21)] border-1 border-[#898155] font-light h-[54px] w-[370px] p-[10px] rounded-[4px] text-[16px] sm:text-[18px] sm:w-[420px]   md:h-[56px]  md:w-[290px]"
+            className="bg-[rgba(137,129,85,0.21)] border-1 border-[#898155] font-light h-[54px] w-[330px] p-[10px] rounded-[4px] text-[16px] sm:text-[18px] sm:w-[420px]   md:h-[56px]  md:w-[290px]"
           >
             View Menu
           </Button>
