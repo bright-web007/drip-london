@@ -1,5 +1,10 @@
-import flit1 from '@/assets/flit1.jpg'
-import flit2 from '@/assets/flit2.png'
+import flit1 from '@/assets/flit1.jpg';
+import flit2 from '@/assets/flit2.png';
+
+import night1 from '@/assets/night1.jpg';
+import night2 from '@/assets/night2.jpg';
+
+import { StaticImageData } from 'next/image';
 
 export const reviews = [
   {
@@ -207,5 +212,56 @@ export const proof = [
     description:
       'Perfect for birthdays, corporate events, or any moment worth celebrating—make every occasion unforgettable.',
   },
-  
+];
+
+export type Button = {
+  label: string;
+  actionType: 'navigate';
+  path: string;
+};
+
+export type lints = {
+  img: StaticImageData;
+  title: string;
+  desc: string;
+  buttons?: Button[];
+};
+
+export const lint: lints[] = [
+  {
+    img: night1,
+    title: 'Club Space Hire',
+    desc: 'Drip London’s club space is available for private hire – perfect for birthdays, brand launches, after-parties and exclusive celebrations.',
+    buttons: [
+      {
+        label: 'Book an Event',
+        actionType: 'navigate',
+        path: '/reservation',
+      },
+    ],
+  },
+  {
+    img: night1,
+    title: 'Restaurant Private Hire',
+    desc: 'Drip London’s Dinner Club Restaurant is available for private hire – perfect for private dinners and events. Accommodates up to 80 covers split over 16 tables.',
+    buttons: [
+      {
+        label: 'Book an Event',
+        actionType: 'navigate',
+        path: '/reservation',
+      },
+    ],
+  },
+  {
+    img: night2,
+    title: 'Semi-Private Group Dining',
+    desc: 'Ideal for large group dinners while still soaking in the Drip London vibe. Accommodates up to 30 guests.',
+    buttons: [
+      {
+        label: 'Book an Event',
+        actionType: 'navigate',
+        path: '/reservation',
+      },
+    ],
+  },
 ];

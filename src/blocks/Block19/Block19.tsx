@@ -5,7 +5,7 @@ import Image from 'next/image';
 import newsBg from '@/assets/background/latest-news-bg.jpg';
 import arrowdown from '@/assets/icons-svg/arrow-down.svg';
 
-const Block11 = () => {
+const Block19 = () => {
   const handleScroll = () => {
     const nextSection = document.getElementById('next');
     if (nextSection) {
@@ -47,4 +47,4 @@ const Block11 = () => {
   );
 };
 
-export default Block11;
+export default Block19;
