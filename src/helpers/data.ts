@@ -1,3 +1,6 @@
+import flit1 from '@/assets/flit1.jpg'
+import flit2 from '@/assets/flit2.png'
+
 export const reviews = [
   {
     author: 'Richard Johnson',
@@ -189,4 +192,20 @@ export const navLinks = [
   { name: 'Book an Event', link: '/' },
   { name: 'News', link: '/news' },
   { name: 'Contacts', link: '/' },
+];
+
+export const proof = [
+  {
+    img: flit1,
+    title: 'Group Dining Redefined',
+    description:
+      'Drip London’s group dining experience blends fire-grilled West African flavours with a luxe, immersive atmosphere.',
+  },
+  {
+    img: flit2,
+    title: 'Celebrate in Style',
+    description:
+      'Perfect for birthdays, corporate events, or any moment worth celebrating—make every occasion unforgettable.',
+  },
+  
 ];
