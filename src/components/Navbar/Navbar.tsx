@@ -50,7 +50,7 @@ const Navbar = () => {
           <p onClick={() => router.push('/menu')} className="cursor-pointer">
             MENU
           </p>
-          <p onClick={() => router.push('/menu')} className="cursor-pointer">
+          <p onClick={() => router.push('/news')} className="cursor-pointer">
             PRIVATE DINNING</p>
           <p>THE EXPERIENCE</p>
         </div>
