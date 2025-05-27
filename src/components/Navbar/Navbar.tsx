@@ -51,7 +51,8 @@ const Navbar = () => {
             MENU
           </p>
           <p onClick={() => router.push('/news')} className="cursor-pointer">
-            PRIVATE DINNING</p>
+            PRIVATE DINNING
+          </p>
           <p>THE EXPERIENCE</p>
         </div>
       </div>

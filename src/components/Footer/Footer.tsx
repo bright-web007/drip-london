@@ -86,12 +86,16 @@ const Footer = () => {
                 style={{ backgroundColor: 'rgba(137, 129, 85, 0.15)' }}
                 className="w-[39px] h-[39px] rounded-full flex items-center justify-center"
               >
-                <Image src={whatsapp} alt="Icon" className="w-[20px] h-[20px] object-contain" />
+                <a href="tel:+44 7923628705">
+                  <Image src={whatsapp} alt="Icon" className="w-[20px] h-[20px] object-contain" />
+                </a>
               </div>
               <div>
-                <p className="hidden md:block text-[14px] font-light leading-[18px] ml-[14px] md:text-[24px] sm:text-[21px] text-[#cfcfcf] xl:text-[16px]">
-                  +44 7923628705
-                </p>
+                <a href="tel:+44 7923628705">
+                  <p className="hidden md:block text-[14px] font-light leading-[18px] ml-[14px] md:text-[24px] sm:text-[21px] text-[#cfcfcf] xl:text-[16px]">
+                    +44 7923628705
+                  </p>
+                </a>
               </div>
             </div>
           </div>
