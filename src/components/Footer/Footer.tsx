@@ -22,7 +22,7 @@ const Footer = () => {
             DRIP LONDON
           </h1>
 
-          <p className="text-[14px] text-[#cfcfcf] font-Montserrat font-light mb-[24px] sm:leading-[29px] sm:text-[21px] md:text-[24px] md:leading-[30px] md:mb-[38px] xl:text-[22px]  xl:w-[490px]">
+          <p className="text-[14px] text-[#cfcfcf] font-Montserrat font-light mb-[24px] sm:leading-[29px] sm:text-[21px] md:text-[24px] md:leading-[30px] md:mb-[38px] xl:text-[20px]  xl:w-[490px]">
             Drip London is a premier dining and nightlife destination where bold West African
             flavours meet contemporary culinary artistry. Located in the heart of the city, we offer
             an immersive experience that seamlessly transitions from an elegant restaurant to a
@@ -37,7 +37,7 @@ const Footer = () => {
                 className="w-[39px] h-[39px] mr-[14px] object-contain hidden md:block"
               />
             </div>
-            <div className="md:flex text-[#cfcfcf] text-[14px] md:text-[24px] font-light sm:text-[21px] xl:text-[22px]">
+            <div className="md:flex text-[#cfcfcf] text-[14px] md:text-[24px] font-light sm:text-[21px] xl:text-[20px]">
               <p>27 Clerkenwell Road,</p>
               <p>London EC1M 5RN</p>
             </div>
@@ -55,7 +55,7 @@ const Footer = () => {
               </div>
               <div>
                 <a href="tel:+44 7923628705">
-                  <p className="hidden text-[14px] font-light md:block leading-[18px] text-[#cfcfcf] sm:text-[21px] ml-[14px] md:text-[24px]  xl:text-[22px]">
+                  <p className="hidden text-[14px] font-light md:block leading-[18px] text-[#cfcfcf] sm:text-[21px] ml-[14px] md:text-[24px]  xl:text-[20px]">
                     +44 7923628705
                   </p>
                 </a>
@@ -74,7 +74,7 @@ const Footer = () => {
               <div>
                 <a
                   href="mailto:Reservations@drip.london"
-                  className="hidden text-[14px] font-light md:block leading-[18px] ml-[14px] md:text-[24px] sm:text-[21px] text-[#cfcfcf] xl:text-[22px]"
+                  className="hidden text-[14px] font-light md:block leading-[18px] ml-[14px] md:text-[24px] sm:text-[21px] text-[#cfcfcf] xl:text-[20px]"
                 >
                   <p> Reservations@drip.london </p>
                 </a>
@@ -89,7 +89,7 @@ const Footer = () => {
                 <Image src={whatsapp} alt="Icon" className="w-[20px] h-[20px] object-contain" />
               </div>
               <div>
-                <p className="hidden md:block text-[14px] font-light leading-[18px] ml-[14px] md:text-[24px] sm:text-[21px] text-[#cfcfcf] xl:text-[22px]">
+                <p className="hidden md:block text-[14px] font-light leading-[18px] ml-[14px] md:text-[24px] sm:text-[21px] text-[#cfcfcf] xl:text-[20px]">
                   +44 7923628705
                 </p>
               </div>
@@ -109,7 +109,7 @@ const Footer = () => {
                 <React.Fragment key={item.name}>
                   <a
                     href={item.link}
-                    className="text-[14px]  leading-[12px] font-light cursor-pointer text-[#cfcfcf] whitespace-nowrap md:text-[24px] sm:text-[21px] xl:text-[22px]"
+                    className="text-[14px]  leading-[12px] font-light cursor-pointer text-[#cfcfcf] whitespace-nowrap md:text-[24px] sm:text-[21px] xl:text-[20px]"
                   >
                     {item.name}
                   </a>
@@ -123,7 +123,7 @@ const Footer = () => {
               LEGAL
             </p>
 
-            <div className="text-[14px] text-[#cfcfcf] gap-[20px] leading-[12px] flex flex-col sm:gap-[32px] md:text-[24px] font-light sm:text-[21px]  md:gap-[38px] xl:text-[22px]">
+            <div className="text-[14px] text-[#cfcfcf] gap-[20px] leading-[12px] flex flex-col sm:gap-[32px] md:text-[24px] font-light sm:text-[21px]  md:gap-[38px] xl:text-[20px]">
               <p>Terms and Conditions</p>
               <p>Privacy Policy</p>
               <p>Cookies Policy</p>
