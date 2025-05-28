@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Icon } from '@iconify/react';
+
 
 const Block17 = () => {
   return (
@@ -21,7 +21,6 @@ const Block17 = () => {
                   <p className="text-xs text-gray-600 mt-0.5">9VGR+9G3 Amsterdam, Netherlands</p>
                 </div>
                 <div className="text-blue-600 text-xs font-medium flex items-center gap-1">
-                  <ArrowUpRight size={14} className="mt-0.5" />
                   Directions
                 </div>
               </div>
@@ -31,7 +30,6 @@ const Block17 = () => {
           </div>
         </div>
 
-        <Image src={mapbg} alt="map" className="w-full h-full object-cover" />
       </div>
     </div>
   );
