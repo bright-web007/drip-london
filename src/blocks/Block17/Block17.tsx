@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { ArrowUpRight } from 'lucide-react';
 
 const Block17 = () => {
   return (
