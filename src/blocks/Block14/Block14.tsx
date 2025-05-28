@@ -48,7 +48,7 @@ const Slider = () => {
   const handleButtonClick = (button: { label: string; path?: string }) => {
     if (button.path) {
       router.push(button.path);
-    } 
+    }
   };
 
   return (

@@ -2,7 +2,6 @@
 
 import React from 'react';
 
-
 const Block17 = () => {
   return (
     <div className="pr-[24px] pl-[24px] pb-[60px]    md:pr-[36px] md:pl-[36px] md:pb-[60px] lg:pr-[70px] lg:pl-[70px]    xl:pr-[120px] xl:pl-[120px]   2xl:pr-[235px] 2xl:pl-[235px] ">
@@ -29,7 +28,6 @@ const Block17 = () => {
             </a>
           </div>
         </div>
-
       </div>
     </div>
   );
