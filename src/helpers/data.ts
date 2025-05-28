@@ -1,3 +1,14 @@
+import flit1 from '@/assets/flit1.jpg';
+import flit2 from '@/assets/flit2.png';
+
+import night1 from '@/assets/night1.jpg';
+import night2 from '@/assets/night2.jpg';
+
+import icon1 from '@/assets/icons-svg/icon1.svg';
+import icon2 from '@/assets/icons-svg/icon2.svg';
+import icon3 from '@/assets/icons-svg/icon3.svg';
+import icon4 from '@/assets/icons-svg/icon4.svg';
+import icon5 from '@/assets/icons-svg/icon5.svg';
 import smallPlatesImage from '@/assets/food1.png';
 import largePlatesImage from '@/assets/food2.png';
 import sideImage from '@/assets/food3.png';
@@ -16,6 +27,28 @@ import experience1 from '@/assets/experience1.jpg'
 import experience2 from '@/assets/experience2.jpg'
 import experience3 from '@/assets/experience3.png'
 import experience4 from '@/assets/experience4.jpg'
+
+import menu1 from '@/assets/menu1.jpg';
+import menu2 from '@/assets/menu2.jpg';
+import menu3 from '@/assets/menu3.jpg';
+
+import slide1 from '@/assets/slide1.jpg';
+import slide2 from '@/assets/slide2.jpg';
+import slide3 from '@/assets/slide3.jpg';
+import slide4 from '@/assets/slide4.jpg';
+
+import deam1 from '@/assets/deam1.jpg';
+import deam2 from '@/assets/deam2.jpg';
+import deam3 from '@/assets/deam3.jpg';
+
+import drip1 from '@/assets/drip1.jpg';
+import drip2 from '@/assets/drip2.jpg';
+import drip3 from '@/assets/drip3.jpg';
+import drip4 from '@/assets/drip4.jpg';
+import drip5 from '@/assets/drip5.jpg';
+import drip6 from '@/assets/drip6.jpg';
+
+import { StaticImageData } from 'next/image';
 
 export const reviews = [
   {
@@ -258,11 +291,21 @@ export const navLinks = [
   { name: 'Home', link: '/' },
   { name: 'The Menus', link: '/menu' },
   { name: 'About', link: '/about' },
+  { name: 'Book an Event', link: '/' },
+  { name: 'News', link: '/news' },
+  { name: 'Contacts', link: '/' },
   { name: 'Reservation', link: '/reservation' },
-  { name: 'faq', link: '/faq' },
+  { name: 'FAQs', link: '/faq' },
   { name: 'News', link: '/news' },
   { name: 'Contacts', link: '/contact-us' },
-  
+];
+
+export const navLinker = [
+  { name: 'Reservation', link: '/reservation' },
+  { name: 'Private Dinning', link: '/private' },
+  { name: 'Menus', link: '/menu' },
+  { name: 'FAQs', link: '/faq' },
+  { name: 'Contacts', link: '/contact-us' },
 ];
 
 export const latestNews = [
@@ -449,7 +492,6 @@ export const center = {
 
 export const GOOGLE_MAPS_APIKEY = 'AIzaSyB_Ujmyiir8qmceRFs5ICiSHUJhQnXRZD4';
 
-
 export const faqreview = [
   {
     title: 'How many people can I book for?',
@@ -465,8 +507,7 @@ export const faqreview = [
 
   {
     title: 'Do you cater to dietary requirements?',
-    review:
-      "Yes — we offer vegetarian, vegan, gluten-free, halal and allergen-friendly menus.",
+    review: 'Yes — we offer vegetarian, vegan, gluten-free, halal and allergen-friendly menus.',
   },
 
   {

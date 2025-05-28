@@ -5,7 +5,7 @@ import Image from 'next/image';
 import experience from '@/assets/background/Experience-bg.jpg';
 import arrowdown from '@/assets/icons-svg/arrow-down.svg';
 
-const Block19 = () => {
+const Block23 = () => {
   const handleScroll = () => {
     const nextSection = document.getElementById('next');
     if (nextSection) {
@@ -47,4 +47,4 @@ const Block19 = () => {
   );
 };
 
-export default Block19;
+export default Block23
