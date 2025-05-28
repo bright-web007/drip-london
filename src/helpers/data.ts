@@ -1,4 +1,3 @@
-
 import smallPlatesImage from '@/assets/food1.png';
 import largePlatesImage from '@/assets/food2.png';
 import sideImage from '@/assets/food3.png';
@@ -13,10 +12,10 @@ import card4 from '@/assets/card4.png';
 import card5 from '@/assets/card5.png';
 import card6 from '@/assets/card6.png';
 
-import experience1 from '@/assets/experience1.jpg'
-import experience2 from '@/assets/experience2.jpg'
-import experience3 from '@/assets/experience3.png'
-import experience4 from '@/assets/experience4.jpg'
+import experience1 from '@/assets/experience1.jpg';
+import experience2 from '@/assets/experience2.jpg';
+import experience3 from '@/assets/experience3.png';
+import experience4 from '@/assets/experience4.jpg';
 
 import deam1 from '@/assets/deam1.jpg';
 import deam2 from '@/assets/deam2.jpg';
@@ -35,7 +34,6 @@ import drip5 from '@/assets/drip5.jpg';
 import drip6 from '@/assets/drip6.jpg';
 
 import { StaticImageData } from 'next/image';
-
 
 export const reviews = [
   {
@@ -483,13 +481,13 @@ export const faqreview = [
   {
     title: 'How many people can I book for?',
     review:
-      "Restaurant bookings can be made online for up to 12 people, for bookings larger than 12 please email reservations@drip.london ",
+      'Restaurant bookings can be made online for up to 12 people, for bookings larger than 12 please email reservations@drip.london ',
   },
 
   {
     title: 'Is Drip London an 18+ Venue?',
     review:
-      "Drip London is strictly a 18+ venue. All guests must bring a valid physical ID to gain entry. For private family events please contact us. ",
+      'Drip London is strictly a 18+ venue. All guests must bring a valid physical ID to gain entry. For private family events please contact us. ',
   },
 
   {
@@ -500,7 +498,7 @@ export const faqreview = [
   {
     title: 'Dress Code?',
     review:
-      "Our dress code is Smart Elegant, we kindly invite guests to reflect the dress code. Please note management reserves the right to refuse entry.",
+      'Our dress code is Smart Elegant, we kindly invite guests to reflect the dress code. Please note management reserves the right to refuse entry.',
   },
 
   {
@@ -511,17 +509,17 @@ export const faqreview = [
   Friday, Saturday and Sunday
   18:30 – 02:30`,
   },
-  
+
   {
     title: 'Bottomless Brunch?',
     review:
-      "Brunch is available every Sunday between 17.30 – 21.00, the option of free-flowing prosecco and cocktails are available.",
+      'Brunch is available every Sunday between 17.30 – 21.00, the option of free-flowing prosecco and cocktails are available.',
   },
 
   {
     title: 'Do you have minimum spend policy?',
     review:
-      "All reservations on Friday and Saturday are subject to a minimum spend of £65 per person.",
+      'All reservations on Friday and Saturday are subject to a minimum spend of £65 per person.',
   },
 
   {
@@ -530,15 +528,13 @@ export const faqreview = [
   
   Your table will be held for 15 minutes from your reservation time. Only completed parties will be seated, if your party size changes kindly inform us in advance to ensure best seating arrangements.`,
   },
-  
 
   {
     title: 'Seating Time',
     review:
-      "The seating time is limited to 2 hours for parties of 2 to 9 guests, and 2.5 hours for guests with larger parties.",
+      'The seating time is limited to 2 hours for parties of 2 to 9 guests, and 2.5 hours for guests with larger parties.',
   },
-
-]
+];
 
 export const experience = [
   {
@@ -553,7 +549,7 @@ export const experience = [
     title: 'Live Entertainment',
     subtitle: 'Feel the Pulse of the Night',
     description:
-      "As the evening unfolds, Drip transforms. Experience live weekend performances ranging from soulful saxophonists to dynamic DJs spinning Afrobeats, Amapiano, and R&B. The rhythm of the night is curated to keep you engaged and energized.",
+      'As the evening unfolds, Drip transforms. Experience live weekend performances ranging from soulful saxophonists to dynamic DJs spinning Afrobeats, Amapiano, and R&B. The rhythm of the night is curated to keep you engaged and energized.',
   },
   {
     image: experience3,
@@ -567,7 +563,7 @@ export const experience = [
     title: 'Brunch & Group Celebrations',
     subtitle: 'Brunch Without Boundaries',
     description:
-      "Weekends at Drip are synonymous with our legendary Bottomless Brunches. Perfect for birthdays, reunions, or just because—our brunches are designed for those who live life unapologetically. Available on Sundays",
+      'Weekends at Drip are synonymous with our legendary Bottomless Brunches. Perfect for birthdays, reunions, or just because—our brunches are designed for those who live life unapologetically. Available on Sundays',
   },
 ];
 
