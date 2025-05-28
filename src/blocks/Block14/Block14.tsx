@@ -48,9 +48,7 @@ const Slider = () => {
   const handleButtonClick = (button: { label: string; path?: string }) => {
     if (button.path) {
       router.push(button.path);
-    } else {
-      console.log('No path found for button:', button.label);
-    }
+    } 
   };
 
   return (
