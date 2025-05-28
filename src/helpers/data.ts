@@ -33,6 +33,22 @@ import drip4 from '@/assets/drip4.jpg';
 import drip5 from '@/assets/drip5.jpg';
 import drip6 from '@/assets/drip6.jpg';
 
+import menu1 from '@/assets/menu1.jpg';
+import menu2 from '@/assets/menu2.jpg';
+import menu3 from '@/assets/menu3.jpg';
+
+import night1 from '@/assets/night1.jpg';
+import night2 from '@/assets/night2.jpg';
+
+import flit1 from '@/assets/flit1.jpg';
+import flit2 from '@/assets/flit2.png';
+
+import icon1 from '@/assets/icons-svg/icon1.svg';
+import icon2 from '@/assets/icons-svg/icon2.svg';
+import icon3 from '@/assets/icons-svg/icon3.svg';
+import icon4 from '@/assets/icons-svg/icon4.svg';
+import icon5 from '@/assets/icons-svg/icon5.svg';
+
 import { StaticImageData } from 'next/image';
 
 export const reviews = [
@@ -289,7 +305,7 @@ export const navLinker = [
   { name: 'Reservation', link: '/reservation' },
   { name: 'Private Dinning', link: '/private' },
   { name: 'Menus', link: '/menu' },
-  { name: 'FAQs', link: '/faq' },
+  { name: 'FAQs', link: '/faq#faq' },
   { name: 'Contacts', link: '/contact-us' },
 ];
 
@@ -663,5 +679,131 @@ export const dits = [
   },
   {
     img: drip6,
+  },
+];
+
+export type men = {
+  img: StaticImageData;
+  title: string;
+  buttons?: Button[];
+};
+
+export const mens: men[] = [
+  {
+    img: menu1,
+    title: 'A la carte Menu',
+    buttons: [
+      {
+        label: 'View Menu',
+        actionType: 'navigate',
+        path: 'https://drive.google.com/drive/u/0/folders/1L5Cz-fDVesfWGRaXGvctRACPVhbDM5PJ',
+      },
+    ],
+  },
+  {
+    img: menu2,
+    title: 'Bar Menu',
+    buttons: [
+      {
+        label: 'View Menu',
+        actionType: 'navigate',
+        path: 'https://drive.google.com/drive/u/0/folders/1L5Cz-fDVesfWGRaXGvctRACPVhbDM5PJ',
+      },
+    ],
+  },
+  {
+    img: menu3,
+    title: 'Bottomless Brunch Menu',
+    buttons: [
+      {
+        label: 'View Menu',
+        actionType: 'navigate',
+        path: 'https://drive.google.com/drive/u/0/folders/1L5Cz-fDVesfWGRaXGvctRACPVhbDM5PJ',
+      },
+    ],
+  },
+];
+
+export type lints = {
+  img: StaticImageData;
+  title: string;
+  desc: string;
+  buttons?: Button[];
+};
+export const lint: lints[] = [
+  {
+    img: night1,
+    title: 'Club Space Hire',
+    desc: 'Drip London’s club space is available for private hire – perfect for birthdays, brand launches, after-parties and exclusive celebrations.',
+    buttons: [
+      {
+        label: 'Book an Event',
+        actionType: 'navigate',
+        path: '/reservation',
+      },
+    ],
+  },
+  {
+    img: night1,
+    title: 'Restaurant Private Hire',
+    desc: 'Drip London’s Dinner Club Restaurant is available for private hire – perfect for private dinners and events. Accommodates up to 80 covers split over 16 tables.',
+    buttons: [
+      {
+        label: 'Book an Event',
+        actionType: 'navigate',
+        path: '/reservation',
+      },
+    ],
+  },
+
+  {
+    img: night2,
+    title: 'Semi-Private Group Dining',
+    desc: 'Ideal for large group dinners while still soaking in the Drip London vibe. Accommodates up to 30 guests.',
+    buttons: [
+      {
+        label: 'Book an Event',
+        actionType: 'navigate',
+        path: '/reservation',
+      },
+    ],
+  },
+];
+
+export const proof = [
+  {
+    img: flit1,
+    title: 'Group Dining Redefined',
+    description:
+      'Drip London’s group dining experience blends fire-grilled West African flavours with a luxe, immersive atmosphere.',
+  },
+  {
+    img: flit2,
+    title: 'Celebrate in Style',
+    description:
+      'Perfect for birthdays, corporate events, or any moment worth celebrating—make every occasion unforgettable.',
+  },
+];
+
+export const late = [
+  {
+    img: icon1,
+    title: 'Capacity of up to 150 Guests',
+  },
+  {
+    img: icon2,
+    title: 'State of the art sound system',
+  },
+  {
+    img: icon3,
+    title: 'Private DJ booth',
+  },
+  {
+    img: icon4,
+    title: 'Tailored canape options',
+  },
+  {
+    img: icon5,
+    title: 'Dedicated staff',
   },
 ];

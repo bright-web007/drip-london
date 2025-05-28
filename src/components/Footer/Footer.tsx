@@ -8,6 +8,7 @@ import location from '@/assets/icons-svg/location.svg';
 import { Icon } from '@iconify/react';
 import { navLinker } from '@/helpers/data';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 const Footer = () => {
   const router = useRouter();
@@ -111,12 +112,11 @@ const Footer = () => {
             <div className="flex flex-col gap-[20px] sm:gap-[32px] md:gap-[38px]">
               {navLinker.map(item => (
                 <React.Fragment key={item.name}>
-                  <a
-                    href={item.link}
-                    className="text-[14px]  leading-[12px] font-light cursor-pointer text-[#cfcfcf] whitespace-nowrap md:text-[24px] sm:text-[21px] xl:text-[16px]"
-                  >
-                    {item.name}
-                  </a>
+                  <Link href={item.link} scroll={false}>
+                    <span className="text-[14px] leading-[12px] font-light cursor-pointer text-[#cfcfcf] whitespace-nowrap md:text-[24px] sm:text-[21px] xl:text-[16px]">
+                      {item.name}
+                    </span>
+                  </Link>
                 </React.Fragment>
               ))}
             </div>
