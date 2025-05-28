@@ -67,7 +67,10 @@ const Block24 = () => {
   };
 
   return (
-    <div className="bg-black px-6 sm:px-[34px] md:px-12 xl:px-[120px] pb-[130px] sm:pt-[50px] sm:pb-[200px] text-white font-thankslabs">
+    <div
+      className="bg-black px-6 sm:px-[34px] md:px-12 xl:px-[120px] pb-[130px] sm:pt-[50px] sm:pb-[200px] text-white font-thankslabs"
+      id="faq"
+    >
       <h2 className="text-[#D5D5D5] text-[18px] mb-[30px] text-center leading-[35px] font-normal sm:text-[30px] sm:mb-[33px] sm:leading-[55px]">
         Frequently Asked Questions
       </h2>
