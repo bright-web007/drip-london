@@ -4,7 +4,10 @@ import Image from 'next/image';
 
 const Block20 = () => {
   return (
-    <section className="py-12 px-6  sm:px-17 md:px-[157px] lg:px-[280px] xl:px-[200px] bg-black text-white font-thankslabs" id="next">
+    <section
+      className="py-12 px-6  sm:px-17 md:px-[157px] lg:px-[280px] xl:px-[200px] bg-black text-white font-thankslabs"
+      id="next"
+    >
       <h2 className="text-center text-[#D5D5D5] text-[18px] flex flex-col mb-[33px] leading-[28px] font-normal sm:text-[24px] sm:leading-[37px] md:mb-[56px] xl:leading-[44px]  xl:md:mb-[46px]">
         <span>Elevated</span>
         <span>Dining Experiences</span>

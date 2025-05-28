@@ -4,11 +4,11 @@ import flit2 from '@/assets/flit2.png';
 import night1 from '@/assets/night1.jpg';
 import night2 from '@/assets/night2.jpg';
 
-import icon1 from '@/assets/icons-svg/icon1.svg'
-import icon2 from '@/assets/icons-svg/icon2.svg'
-import icon3 from '@/assets/icons-svg/icon3.svg'
-import icon4 from '@/assets/icons-svg/icon4.svg'
-import icon5 from '@/assets/icons-svg/icon5.svg'
+import icon1 from '@/assets/icons-svg/icon1.svg';
+import icon2 from '@/assets/icons-svg/icon2.svg';
+import icon3 from '@/assets/icons-svg/icon3.svg';
+import icon4 from '@/assets/icons-svg/icon4.svg';
+import icon5 from '@/assets/icons-svg/icon5.svg';
 
 import { StaticImageData } from 'next/image';
 
@@ -272,12 +272,10 @@ export const lint: lints[] = [
   },
 ];
 
-
 export const late = [
   {
     img: icon1,
     title: 'Capacity of up to 150 Guests',
-    
   },
   {
     img: icon2,
@@ -286,14 +284,13 @@ export const late = [
   {
     img: icon1,
     title: 'Private DJ booth',
-    
   },
   {
     img: icon2,
     title: 'Tailored canape options',
-  }, {
+  },
+  {
     img: icon5,
     title: 'Dedicated staff',
-    
   },
 ];

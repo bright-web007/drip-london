@@ -70,7 +70,7 @@ const Slider = () => {
               unselectable="on"
             />
             {/* Bottom */}
-  <div className="absolute bottom-[-22px] left-1/2 transform -translate-x-1/2 w-[4334px] h-[55px] blur-[15.75px] bg-black opacity-70 z-10 pointer-events-none"></div>
+            <div className="absolute bottom-[-22px] left-1/2 transform -translate-x-1/2 w-[4334px] h-[55px] blur-[15.75px] bg-black opacity-70 z-10 pointer-events-none"></div>
           </div>
 
           {/* Content */}
@@ -135,103 +135,99 @@ const Slider = () => {
         </div>
       </div>
 
-      
-{/* xl screen */}
-<div className="hidden xl:flex flex-col items-center w-screen overflow-hidden">
-  {/* Top Toggles */}
-  <div className="flex justify-center gap-4 my-[56px]">
-    <button
-      onClick={prevSlide}
-      disabled={current === 0}
-      className={`w-[55px] h-[55px] bg-[#898155] border border-[#898155] rounded-full z-10 flex items-center justify-center text-white transition-opacity duration-300 ${
-        current === 0 ? 'opacity-30 cursor-not-allowed' : 'hover:opacity-80'
-      }`}
-    >
-      <Icon icon="ic:round-chevron-left" className="w-8 h-8" />
-    </button>
-    <button
-      onClick={nextSlide}
-      disabled={current === lint.length - 1}
-      className={`w-[55px] h-[55px] bg-[#898155] border border-[#898155] rounded-full z-10 flex items-center justify-center text-white transition-opacity duration-300 ${
-        current === lint.length - 1 ? 'opacity-30 cursor-not-allowed' : 'hover:opacity-80'
-      }`}
-    >
-      <Icon icon="ic:round-chevron-right" className="w-8 h-8" />
-    </button>
-  </div>
+      {/* xl screen */}
+      <div className="hidden xl:flex flex-col items-center w-screen overflow-hidden">
+        {/* Top Toggles */}
+        <div className="flex justify-center gap-4 my-[56px]">
+          <button
+            onClick={prevSlide}
+            disabled={current === 0}
+            className={`w-[55px] h-[55px] bg-[#898155] border border-[#898155] rounded-full z-10 flex items-center justify-center text-white transition-opacity duration-300 ${
+              current === 0 ? 'opacity-30 cursor-not-allowed' : 'hover:opacity-80'
+            }`}
+          >
+            <Icon icon="ic:round-chevron-left" className="w-8 h-8" />
+          </button>
+          <button
+            onClick={nextSlide}
+            disabled={current === lint.length - 1}
+            className={`w-[55px] h-[55px] bg-[#898155] border border-[#898155] rounded-full z-10 flex items-center justify-center text-white transition-opacity duration-300 ${
+              current === lint.length - 1 ? 'opacity-30 cursor-not-allowed' : 'hover:opacity-80'
+            }`}
+          >
+            <Icon icon="ic:round-chevron-right" className="w-8 h-8" />
+          </button>
+        </div>
 
-  {/* Carousel Viewport */}
-  <div className="relative w-screen overflow-hidden">
-    <div
-      className="flex transition-transform duration-500 ease-in-out"
-      style={{ transform: `translateX(-${current * 100}vw)` }}
-    >
-      {lint.map((item, index) => (
-        <div
-          key={index}
-          className="flex-shrink-0 w-screen h-[693px] flex"
-          onClick={() => handleImageClick(index)}
-        >
-          {/* Left Image */}
-          <div className="relative w-2/3 h-[693px]">
-            <Image
-              src={item.img}
-              alt="Exclusive Event"
-              fill
-              className="object-cover w-full h-full"
-              unselectable="on"
-              priority={current === index}
-            />
+        {/* Carousel Viewport */}
+        <div className="relative w-screen overflow-hidden">
+          <div
+            className="flex transition-transform duration-500 ease-in-out"
+            style={{ transform: `translateX(-${current * 100}vw)` }}
+          >
+            {lint.map((item, index) => (
+              <div
+                key={index}
+                className="flex-shrink-0 w-screen h-[693px] flex"
+                onClick={() => handleImageClick(index)}
+              >
+                {/* Left Image */}
+                <div className="relative w-2/3 h-[693px]">
+                  <Image
+                    src={item.img}
+                    alt="Exclusive Event"
+                    fill
+                    className="object-cover w-full h-full"
+                    unselectable="on"
+                    priority={current === index}
+                  />
 
-             {/* Blur Overlays */}
-             <div className="absolute top-[-25px] left-1/2 transform -translate-x-1/2 w-[4334px] h-[55px] blur-[11.75px] bg-black opacity-90 z-10 pointer-events-none"></div>
-            <div className="absolute bottom-[-22px] left-1/2 transform -translate-x-1/2 w-[4334px] h-[55px] blur-[11.75px] bg-black opacity-90 z-10 pointer-events-none"></div>
-            <div className="absolute top-1/2 left-[-22px] transform -translate-y-1/2 w-[55px] h-[4334px] blur-[11.75px] bg-black opacity-90 z-10 pointer-events-none"></div>
-            <div className="absolute top-1/2 right-[-22px] transform -translate-y-1/2 w-[55px] h-[4334px] blur-[11.75px] bg-black opacity-90 z-10 pointer-events-none"></div>
-  
-          </div>
+                  {/* Blur Overlays */}
+                  <div className="absolute top-[-25px] left-1/2 transform -translate-x-1/2 w-[4334px] h-[55px] blur-[11.75px] bg-black opacity-90 z-10 pointer-events-none"></div>
+                  <div className="absolute bottom-[-22px] left-1/2 transform -translate-x-1/2 w-[4334px] h-[55px] blur-[11.75px] bg-black opacity-90 z-10 pointer-events-none"></div>
+                  <div className="absolute top-1/2 left-[-22px] transform -translate-y-1/2 w-[55px] h-[4334px] blur-[11.75px] bg-black opacity-90 z-10 pointer-events-none"></div>
+                  <div className="absolute top-1/2 right-[-22px] transform -translate-y-1/2 w-[55px] h-[4334px] blur-[11.75px] bg-black opacity-90 z-10 pointer-events-none"></div>
+                </div>
 
-          {/* Right Content */}
-          <div className="flex flex-col justify-center gap-4 p-[40px] w-1/3 bg-black text-white">
-            {item.title && (
-              <h3 className="font-thankslabs text-[20px] leading-[30px] text-[#898155]">
-                {item.title}
-              </h3>
-            )}
-            <p className="font-Montserrat font-light text-[18px] leading-[28px] text-[#D5D5D5]">
-              {item.desc}
-            </p>
-            <div className="flex flex-col gap-3">
-              {item.buttons?.map((button, btnIndex) => (
-                <button
-                  key={btnIndex}
-                  onClick={() => handleButtonClick(button)}
-                  className="bg-[rgba(137,129,85,0.15)] font-normal h-[50px] px-4 py-2 border border-[#3d3926] rounded-[4px] text-[#cfcfcf] text-[16px]"
-                >
-                  {button.label}
-                </button>
-              ))}
-            </div>
+                {/* Right Content */}
+                <div className="flex flex-col justify-center gap-4 p-[40px] w-1/3 bg-black text-white">
+                  {item.title && (
+                    <h3 className="font-thankslabs text-[20px] leading-[30px] text-[#898155]">
+                      {item.title}
+                    </h3>
+                  )}
+                  <p className="font-Montserrat font-light text-[18px] leading-[28px] text-[#D5D5D5]">
+                    {item.desc}
+                  </p>
+                  <div className="flex flex-col gap-3">
+                    {item.buttons?.map((button, btnIndex) => (
+                      <button
+                        key={btnIndex}
+                        onClick={() => handleButtonClick(button)}
+                        className="bg-[rgba(137,129,85,0.15)] font-normal h-[50px] px-4 py-2 border border-[#3d3926] rounded-[4px] text-[#cfcfcf] text-[16px]"
+                      >
+                        {button.label}
+                      </button>
+                    ))}
+                  </div>
 
-            {/* Dot Indicators */}
-            <div className="flex mt-6 space-x-2 justify-center">
-              {lint.map((_, dotIdx) => (
-                <span
-                  key={dotIdx}
-                  className={`w-[9px] h-[9px] rounded-full ${
-                    dotIdx === current ? 'bg-[white]' : 'bg-[#3a3a3a]'
-                  }`}
-                />
-              ))}
-            </div>
+                  {/* Dot Indicators */}
+                  <div className="flex mt-6 space-x-2 justify-center">
+                    {lint.map((_, dotIdx) => (
+                      <span
+                        key={dotIdx}
+                        className={`w-[9px] h-[9px] rounded-full ${
+                          dotIdx === current ? 'bg-[white]' : 'bg-[#3a3a3a]'
+                        }`}
+                      />
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
-      ))}
-    </div>
-  </div>
-</div>
-
-
+      </div>
     </section>
   );
 };
