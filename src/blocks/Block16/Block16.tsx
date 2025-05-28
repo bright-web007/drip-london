@@ -6,7 +6,6 @@ import Image from 'next/image';
 import dinning from '@/assets/dinning-table.png';
 import fulldinning from '@/assets/full-dinning.png';
 
-
 const Block16 = () => {
   return (
     <div className=" pt-[36px] pr-[24px] pb-[55px] pl-[24px] sm:pt-[40px] sm:pr-[28px] sm:pl-[28px]   md:pt-[70px] md:pl-[36px] md:pr-[36px] md:flex   lg:pr-[70px] lg:pl-[70px]   xl:pt-[70px] xl:pb-[55px] xl:pr-[120px] xl:pl-[120px]  xl:justify-center xl:items-center xl:self-stretch ">
@@ -98,12 +97,8 @@ const Block16 = () => {
           </div>
         </div>
       </div>
-      </div>
-  
+    </div>
   );
 };
-
-
-
 
 export default Block16;

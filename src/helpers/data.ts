@@ -708,7 +708,6 @@ export const proof = [
   },
 ];
 
-
 export type lints = {
   img: StaticImageData;
   title: string;
