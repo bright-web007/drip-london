@@ -24,7 +24,7 @@ const Block23 = () => {
       />
       <div className="absolute inset-0 flex flex-col items-center justify-center gap-[20px] bg-black/40">
         <h1 className="font-thankslabs text-center text-[41.77px] leading-[58px] font-bold sm:text-[55px] sm:leading-[75px] md:text-[70px] xl:text-[80px] xl:leading-[120px] text-white mx-4 md:mx-0  md:w-[590px] md:leading-[95px]">
-           THE EXPERIENCE
+          THE EXPERIENCE
         </h1>
         <hr className="w-[56.08px]  border-1 border-[#898155] my-[20px] md:w-[80px]  md:border-3 md:my-[20px]" />
         <p className="text-[16px] w-[292px] text-center font-monserrat text-white sm:text-[20px] sm:w-[380px] md:text-[24px] md:w-[590px]  xl:text-[24px]">
@@ -47,4 +47,4 @@ const Block23 = () => {
   );
 };
 
-export default Block23
+export default Block23;

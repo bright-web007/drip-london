@@ -20,8 +20,12 @@ const Block24 = () => {
     if (item.title === 'How many people can I book for?') {
       return (
         <p className="text-[#D3D3D3] font-monserrat mt-4 text-[16px] leading-[24px]  sm:text-[20px] sm:leading-[32px]">
-          Restaurant bookings can be made online for up to 12 people, for bookings larger than 12 please email{' '}
-          <a href="mailto:reservations@drip.london" className="text-[#898155] underline hover:opacity-80">
+          Restaurant bookings can be made online for up to 12 people, for bookings larger than 12
+          please email{' '}
+          <a
+            href="mailto:reservations@drip.london"
+            className="text-[#898155] underline hover:opacity-80"
+          >
             reservations@drip.london
           </a>
         </p>

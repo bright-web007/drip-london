@@ -18,8 +18,8 @@ const Block29 = () => {
               index % 2 === 0 ? 'xl:flex-row' : 'xl:flex-row-reverse'
             }`}
           >
-             {/* Image with inner shadow */}
-             <div className="w-full xl:w-[976px] mb-1 xl:mb-0">
+            {/* Image with inner shadow */}
+            <div className="w-full xl:w-[976px] mb-1 xl:mb-0">
               {item.image && (
                 <div
                   className="relative h-[432px] md:h-[693px] xl:h-[693px] w-full rounded overflow-hidden"
@@ -39,7 +39,6 @@ const Block29 = () => {
                 </div>
               )}
             </div>
-
 
             {/* Text section - vertically centered */}
             <div className="flex flex-col gap-[4px] sm:gap-[8px] px-[20px] xl:w-1/2 self-center  sm:px-[26px]">
