@@ -1,56 +1,74 @@
+'use client';
+
 import { Button } from '@/components/ui/button';
-import left from '@/assets/left-fly.svg';
-import right from '@/assets/right-fly.svg';
 import Image from 'next/image';
-import followUs from '@/assets/follow-us.svg';
-import { Icon } from '@iconify/react';
+import downicon from '@/assets/icons-svg/arrow-down.svg';
 import { LayoutHeader } from '@/components/LayoutHeader/LayoutHeader';
-import BookTable from '@/assets/icons-svg/BookTable';
+import { useRouter } from 'next/navigation';
 
 const Block1 = () => {
-  return (
-    <div className="flex flex-col mt-[-72px] font-monserrat bg-gray-500 h-[100vh] xl:h-[120vh] relative">
-      <LayoutHeader />
-      <div className=" absolute inset-0 z-10 flex flex-col items-center justify-center">
-        <h1 className=" text-[24px] md:text-[32px] xl:text-[50px] font-bold w-[70%] md:w-[75%] text-center text-white font-thankslabs">
-          {' '}
-          Welcome to DRIP LONDON
-        </h1>
-        <p className="text-xs md:text-base xl:text-[20px] text-white leading-5 md:leading-6 font-normal w-[85%] md:w-[55%] text-center mt-8 mb-6">
-          Where bold West African flavours meet modern culinary flair in the heart of the city. At
-          Drip, we serve more than just food—we deliver an immersive dining experience that blends
-          tradition, creativity, and culture. Step into our stylish space and indulge in vibrant,
-          fire-grilled dishes, rich spice blends, and soulful storytelling on every plate. This is
-          West African fusion, reimagined. 
-        </p>
-        <div className="flex items-center">
-          <Image src={left} alt="Drip London Logo" width={12} height={16} />
-          <div className="border border-[#d9d9d9] p-[2px] rounded-[2px]">
-            <Button className="group bg-transparent border border-white hover:bg-beige-500 text-sm cursor-pointer rounded-[2px] px-6 py-2 text-white flex items-center justify-center transition-all duration-300">
-              <span className="flex items-center space-x-1">
-                <span>Book Now</span>
-                <span className="overflow-hidden max-w-0 opacity-0 group-hover:max-w-[1.2rem] group-hover:opacity-100 transition-all duration-300">
-                  →
-                </span>
-              </span>
-            </Button>
-          </div>
-          <Image src={right} alt="Drip London Logo" width={12} height={16} />
-        </div>
-      </div>
-      <div className=" absolute bottom-[5%] flex items-end justify-between w-full px-4 md:px-12">
-        <Image src={followUs} alt="Follow us" width={20} height={310} />
+  const router = useRouter();
 
-        <div className="hidden md:flex flex-col items-center justify-center mr-[-90px] ">
-          <Icon icon="devicon:google" className="text-white w-14 h-14 cursor-pointer" />
-          <div className="flex items-center mt-2">
-            <p className="text-white text-sm font-medium mr-2">4.8</p>
-            {[1, 2, 3, 4, 5].map((item, index) => (
-              <Icon icon="fluent-color:star-16" key={index} className="w-3 h-3 " />
-            ))}
+  const handleScrollDown = () => {
+    const el = document.getElementById('next-section');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  return (
+    <div className="flex flex-col mt-[-72px] min-h-[95vh] font-monserrat sm:min-h-[85vh] md:min-h-[98.5vh] lg:min-h-screen bg-gray-500  relative ">
+      <LayoutHeader />
+
+      <div className="absolute inset-0 flex flex-col items-center justify-center gap-[38px]  lg:gap-[50px]  xl:gap-[45px]">
+        <div className="flex flex-col items-center justify-center gap-[12px] text-center w-full  lg:gap-[20px]">
+          <div className="gap-[14px] flex flex-col md:gap-[25px]  lg:gap-[45px] xl:gap-[2px]  xl:h-[230px] ">
+            <p className="text-[14px] w-[200px] font-thankslabs bg-black/2 rounded-full text-white font-normal not-italic leading-[35px] mx-auto md:text-[20px]  md:leading-[59.097px]  lg:text-[22px]  xl:text-[16px] xl:leading-[78px] ">
+              Experience
+            </p>
+            <p className="text-[30px] w-[800px] h-[60px] sm:h-[70px] bg-black/2 rounded-full font-thankslabs text-white  font-bold not-italic  mx-auto sm:text-[60px]  md:text-[60px]  lg:text-[70px]  xl:text-[80px] xl:h-[120px]">
+              DRIP LONDON
+            </p>
+          </div>
+          <div className="border-1 border-[#898155] w-[56.08px] h-[1px] my-[10px] sm:my-[20px]  md:my-[24px]   lg:w-[80px]  xl:my-[2px]  xl:w-[94.691px]"></div>
+          <div className="    md:px-[120px]  lg:px-[250px]  xl:px-[390px]  2xl:px-[480px]">
+            <p className="text-[15px] w-[350px] font-monserrat font-normal text-white not-italic leading-[24px] sm:text-[20px]  md:text-[20px]  lg:text-[22px]  xl:text-[24px]  md:leading-[30.393px]  md:w-[493.037px]">
+              Where bold West African Flavours meet modern culinary flair
+            </p>
           </div>
         </div>
-        <BookTable />
+
+        <div className="flex flex-col gap-[8px] w-full pr-[30px] pl-[30px] items-center  md:flex-row  justify-center">
+          <Button
+            onClick={() => {
+              router.push('/reservation');
+            }}
+            className="bg-[#898155] h-[54px] w-[330px] p-[10px] text-[16px] font-light rounded-[4px] sm:w-[420px] sm:text-[18px]  md:h-[56px]  md:w-[290px]  "
+          >
+            Reserve Your Table
+          </Button>
+
+          <Button
+            onClick={() => {
+              router.push('/menu');
+            }}
+            className="bg-[rgba(137,129,85,0.21)] border-1 border-[#898155] font-light h-[54px] w-[330px] p-[10px] rounded-[4px] text-[16px] sm:text-[18px] sm:w-[420px]   md:h-[56px]  md:w-[290px]"
+          >
+            View Menu
+          </Button>
+        </div>
+
+        <div
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 cursor-pointer  xl:bottom-7"
+          onClick={handleScrollDown}
+        >
+          <Image
+            src={downicon}
+            alt="arrow down icon"
+            className="w-[32px] h-[32px]  md:w-[32px] md:h-[32px]  animate-bounce"
+          />
+        </div>
+        <div className="h-[50px] w-[4334px] border-2 border-[black]  absolute bottom-[-22px] left-1/2 transform -translate-x-1/2 blur-[11.75px] bg-[black]   xl:h-[65px]"></div>
       </div>
     </div>
   );

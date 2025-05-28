@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import contactbg from '@/assets/background/contact-bg.jpg';
+import contactbg from '@/assets/background/contact-bg.webp';
 
 const Block15 = () => {
   return (
@@ -12,7 +12,7 @@ const Block15 = () => {
       />
 
       <div className="absolute inset-0  flex items-center justify-center ">
-        <h1 className="font-thankslabs font-bold text-[24px] sm:text-[28px] md:text-[32px]  lg:text-[40px] xl:text-[50px] text-white">
+        <h1 className="font-thankslabs text-center leading-11 md:leading-14 font-bold text-2xl md:text-[32px] xl:text-[50px] text-white mx-4 md:mx-0">
           Get in Touch
         </h1>
       </div>

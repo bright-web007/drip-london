@@ -1,15 +1,20 @@
 'use client';
 import { drinksMenu, foodMenu } from '@/helpers/data';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import { useState } from 'react';
-import food from '@/assets/food1.png';
 
 const capitalize = (str: string) => str.charAt(0).toUpperCase() + str.slice(1);
 
 const Block13 = () => {
   const [menu, setMenu] = useState<string>('food');
 
-  const renderSection = (title: string, items: typeof drinksMenu.cocktails) => (
+  const renderSection = (
+    title: string,
+    section: {
+      items: { title: string; description: string; price: string }[];
+      image: StaticImageData;
+    }
+  ) => (
     <div className="flex items-center mb-10" key={title}>
       <div className="flex items-center justify-center">
         <div className="-rotate-90 w-4 h-4 mt-30">
@@ -17,25 +22,26 @@ const Block13 = () => {
         </div>
       </div>
       <div className="w-[80%] ml-12">
-        {menu === 'food' && (
-          <p className="font-monserrat text-xs leading-5.5 text-[#6D6D6D] mb-12">
-            A curated selection of artfully crafted small plates, designed to be shared and
-            savoured. Each dish showcases bold flavours, seasonal ingredients, and thoughtful
-            pairing.
-          </p>
-        )}
-
-        {items.map((item, index) => (
+        {section.items.map((item, index) => (
           <div key={index} className="flex items-center justify-between mb-6">
-            <div className="mr-4">
+            <div className="mr-4 w-[70%]">
               <h1 className="text-xs font-semibold mb-1.5">{item.title}</h1>
               <p className="font-monserrat text-xs text-[#6D6D6D]">{item.description}</p>
             </div>
+            <hr className="border-b-[0.5px] border-t-0 border-[#B58C6778] w-[20%]" />
             <p className="font-semibold text-sm">{item.price}</p>
           </div>
         ))}
       </div>
-      <Image src={food} alt="food" width={400} height={400} className="hidden xl:block" />
+      {section.image && (
+        <Image
+          src={section.image}
+          alt={title}
+          width={300}
+          height={300}
+          className="hidden xl:block"
+        />
+      )}
     </div>
   );
 
@@ -44,31 +50,46 @@ const Block13 = () => {
       {/* Tabs */}
       <div className="flex justify-center font-semibold font-thankslabs text-xs leading-7 py-10 md:py-16">
         <h1
-          className={`mr-4 px-6 md:px-11 cursor-pointer py-1.5 ${menu === 'food' ? 'bg-beige-500 text-white' : 'bg-beige-400 text-beige-500'}`}
+          className={`mr-4 px-6 md:px-11 cursor-pointer py-1.5 ${
+            menu === 'food' ? 'bg-beige-500 text-white' : 'bg-beige-400 text-beige-500'
+          }`}
           onClick={() => setMenu('food')}
         >
           Food Menu
         </h1>
         <h1
-          className={`px-6 md:px-11 cursor-pointer py-1.5 ${menu === 'drinks' ? 'bg-beige-500 text-white' : 'bg-beige-400 text-beige-500'}`}
+          className={`px-6 md:px-11 cursor-pointer py-1.5 ${
+            menu === 'drinks' ? 'bg-beige-500 text-white' : 'bg-beige-400 text-beige-500'
+          }`}
           onClick={() => setMenu('drinks')}
         >
           Drinks Menu
         </h1>
       </div>
-      <div className="mt-8">
-        {menu === 'drinks' ? (
-          <div className="font-thankslabs text-beige-500 ">
-            {Object.entries(drinksMenu).map(([key, value]) =>
-              renderSection(capitalize(key), value)
-            )}
-          </div>
-        ) : (
-          <div className="font-thankslabs text-beige-500 ">
-            {Object.entries(foodMenu).map(([key, value]) => renderSection(capitalize(key), value))}
-          </div>
+
+      <div className="mt-8 font-thankslabs text-beige-500 w-full">
+        {/* Show description ONCE for food menu */}
+        {menu === 'food' && (
+          <p className="font-monserrat text-xs leading-5.5 text-[#6D6D6D] mb-12 text-left w-full xl:w-[80%]">
+            A curated selection of artfully crafted small plates, designed to be shared and
+            savoured. Each dish showcases bold flavours, seasonal ingredients, and thoughtful
+            pairing.
+          </p>
+        )}
+
+        {/* Render food or drinks */}
+        {(menu === 'drinks' ? Object.entries(drinksMenu) : Object.entries(foodMenu)).map(
+          ([key, section]) =>
+            renderSection(
+              capitalize(key),
+              section as {
+                items: { title: string; description: string; price: string }[];
+                image: StaticImageData;
+              }
+            )
         )}
       </div>
+
       <section className="font-monserrat text-sm leading-5.5 text-center mt-4">
         <h1 className="text-black mb-8 w-[95%] xl:w-[60%] mx-auto">
           Alongside our curated selection of signature creations, we are pleased to offer all the

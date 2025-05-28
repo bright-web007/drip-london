@@ -1,8 +1,7 @@
+'use client';
+
 import React from 'react';
-import map from '@/assets/map.png';
-import mapbg from '@/assets/map-bg.png';
-import Image from 'next/image';
-import { ArrowUpRight } from 'lucide-react';
+import { Icon } from '@iconify/react';
 
 const Block17 = () => {
   return (
