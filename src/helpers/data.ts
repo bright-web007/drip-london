@@ -302,7 +302,7 @@ export const navLinks = [
 
 export const navLinker = [
   { name: 'Reservation', link: '/reservation' },
-  { name: 'Private Dinning', link: '/private' },
+  { name: 'Private Dinning', link: '/faq' },
   { name: 'Menus', link: '/menu' },
   { name: 'FAQs', link: '/faq#faq' },
   { name: 'Contacts', link: '/contact-us' },
