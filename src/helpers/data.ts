@@ -632,3 +632,176 @@ export const lint: lints[] = [
     ],
   },
 ];
+
+export type Item = {
+  img: StaticImageData;
+  title: string;
+  subtitle?: string;
+  desc: string;
+  buttons?: Button[];
+};
+export const items: Item[] = [
+  {
+    img: deam1,
+    title: 'Private Dining',
+    subtitle: 'EXPERIENCE GREAT TASTE',
+    desc: 'Host your event in style with curated menus, ambient luxury, and tailored service—perfect for birthdays, brand launches, and exclusive celebrations.',
+    buttons: [
+      {
+        label: 'More Details',
+        actionType: 'navigate',
+        path: '/private',
+      },
+    ],
+  },
+  {
+    img: deam2,
+    title: 'Bottomless Brunch',
+    subtitle: 'BRUNCH, BUT MAKE IT DRIP',
+    desc: 'Every Sunday from 5PM to 9PM, indulge in bold, flavorful plates crafted to excite your palate, paired with free flowing pours of prosecco or cocktails.',
+    buttons: [
+      {
+        label: 'View Menu',
+        actionType: 'navigate',
+        path: '/menu',
+      },
+    ],
+  },
+  {
+    img: deam3,
+    title: 'Night Life',
+    subtitle: 'AFTER DARK AT DRIP',
+    desc: 'As the lights dim, the energy rises. Experience electrifying beats, curated cocktails, and unforgettable vibes in our luxe late-night space.',
+    buttons: [
+      {
+        label: 'Make a Reservation',
+        actionType: 'navigate',
+        path: '/reservation',
+      },
+    ],
+  },
+];
+
+export const dishes = [
+  {
+    img: slide1,
+    title: 'A New Taste of West Africa',
+    desc: 'Bold, fire-grilled dishes infused with rich spices.',
+  },
+  {
+    img: slide2,
+    title: 'More Than a Meal, It’s a Vibe',
+    desc: 'An immersive dining experience blending storytelling and creativity.',
+  },
+  {
+    img: slide3,
+    title: 'Where City Nights Come Alive',
+    desc: 'Dine, drink, and dance in the heart of the city.',
+  },
+  {
+    img: slide4,
+    title: 'Look the Part. Live the Vibe',
+    desc: 'Smart, bold, and unapologetically stylish—your drip matters.',
+  },
+];
+
+export const dits = [
+  {
+    img: drip1,
+  },
+  {
+    img: drip2,
+  },
+  {
+    img: drip3,
+  },
+  {
+    img: drip4,
+  },
+  {
+    img: drip5,
+  },
+  {
+    img: drip6,
+  },
+];
+
+export type men = {
+  img: StaticImageData;
+  title: string;
+  buttons?: Button[];
+};
+
+export const mens: men[] = [
+  {
+    img: menu1,
+    title: 'A la carte Menu',
+    buttons: [
+      {
+        label: 'View Menu',
+        actionType: 'navigate',
+        path: 'https://drive.google.com/drive/u/0/folders/1L5Cz-fDVesfWGRaXGvctRACPVhbDM5PJ',
+      },
+    ],
+  },
+  {
+    img: menu2,
+    title: 'Bar Menu',
+    buttons: [
+      {
+        label: 'View Menu',
+        actionType: 'navigate',
+        path: 'https://drive.google.com/drive/u/0/folders/1L5Cz-fDVesfWGRaXGvctRACPVhbDM5PJ',
+      },
+    ],
+  },
+  {
+    img: menu3,
+    title: 'Bottomless Brunch Menu',
+    buttons: [
+      {
+        label: 'View Menu',
+        actionType: 'navigate',
+        path: 'https://drive.google.com/drive/u/0/folders/1L5Cz-fDVesfWGRaXGvctRACPVhbDM5PJ',
+      },
+    ],
+  },
+];
+
+export const proof = [
+  {
+    img: flit1,
+    title: 'Group Dining Redefined',
+    description:
+      'Drip London’s group dining experience blends fire-grilled West African flavours with a luxe, immersive atmosphere.',
+  },
+  {
+    img: flit2,
+    title: 'Celebrate in Style',
+    description:
+      'Perfect for birthdays, corporate events, or any moment worth celebrating—make every occasion unforgettable.',
+  },
+];
+
+export const late = [
+  {
+    img: icon1,
+    title: 'Capacity of up to 150 Guests',
+  },
+  {
+    img: icon2,
+    title: 'State of the art sound system',
+  },
+  {
+    img: icon3,
+    title: 'Private DJ booth',
+  },
+  {
+    img: icon4,
+    title: 'Tailored canape options',
+  },
+  {
+    img: icon5,
+    title: 'Dedicated staff',
+  },
+];
