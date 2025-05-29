@@ -1,14 +1,3 @@
-import flit1 from '@/assets/flit1.jpg';
-import flit2 from '@/assets/flit2.png';
-
-import night1 from '@/assets/night1.jpg';
-import night2 from '@/assets/night2.jpg';
-
-import icon1 from '@/assets/icons-svg/icon1.svg';
-import icon2 from '@/assets/icons-svg/icon2.svg';
-import icon3 from '@/assets/icons-svg/icon3.svg';
-import icon4 from '@/assets/icons-svg/icon4.svg';
-import icon5 from '@/assets/icons-svg/icon5.svg';
 import smallPlatesImage from '@/assets/food1.png';
 import largePlatesImage from '@/assets/food2.png';
 import sideImage from '@/assets/food3.png';
@@ -28,18 +17,14 @@ import experience2 from '@/assets/experience2.jpg';
 import experience3 from '@/assets/experience3.png';
 import experience4 from '@/assets/experience4.jpg';
 
-import menu1 from '@/assets/menu1.jpg';
-import menu2 from '@/assets/menu2.jpg';
-import menu3 from '@/assets/menu3.jpg';
+import deam1 from '@/assets/deam1.jpg';
+import deam2 from '@/assets/deam2.jpg';
+import deam3 from '@/assets/deam3.jpg';
 
 import slide1 from '@/assets/slide1.jpg';
 import slide2 from '@/assets/slide2.jpg';
 import slide3 from '@/assets/slide3.jpg';
 import slide4 from '@/assets/slide4.jpg';
-
-import deam1 from '@/assets/deam1.jpg';
-import deam2 from '@/assets/deam2.jpg';
-import deam3 from '@/assets/deam3.jpg';
 
 import drip1 from '@/assets/drip1.jpg';
 import drip2 from '@/assets/drip2.jpg';
@@ -47,6 +32,22 @@ import drip3 from '@/assets/drip3.jpg';
 import drip4 from '@/assets/drip4.jpg';
 import drip5 from '@/assets/drip5.jpg';
 import drip6 from '@/assets/drip6.jpg';
+
+import menu1 from '@/assets/menu1.jpg';
+import menu2 from '@/assets/menu2.jpg';
+import menu3 from '@/assets/menu3.jpg';
+
+import night1 from '@/assets/night1.jpg';
+import night2 from '@/assets/night2.jpg';
+
+import flit1 from '@/assets/flit1.jpg';
+import flit2 from '@/assets/flit2.png';
+
+import icon1 from '@/assets/icons-svg/icon1.svg';
+import icon2 from '@/assets/icons-svg/icon2.svg';
+import icon3 from '@/assets/icons-svg/icon3.svg';
+import icon4 from '@/assets/icons-svg/icon4.svg';
+import icon5 from '@/assets/icons-svg/icon5.svg';
 
 import { StaticImageData } from 'next/image';
 
@@ -305,6 +306,7 @@ export const navLinker = [
   { name: 'Private Dinning', link: '/faq' },
   { name: 'Menus', link: '/menu' },
   { name: 'FAQs', link: '/faq#faq' },
+  { name: 'FAQs', link: '/faq#faq' },
   { name: 'Contacts', link: '/contact-us' },
 ];
 
@@ -527,6 +529,7 @@ export const faqreview = [
 
   {
     title: 'Bottomless Brunch?',
+
     review:
       'Brunch is available every Sunday between 17.30 – 21.00, the option of free-flowing prosecco and cocktails are available.',
   },
@@ -587,51 +590,6 @@ export type Button = {
   actionType: 'navigate'; // Add more types if needed
   path?: string;
 };
-
-export type lints = {
-  img: StaticImageData;
-  title: string;
-  desc: string;
-  buttons?: Button[];
-};
-export const lint: lints[] = [
-  {
-    img: night1,
-    title: 'Club Space Hire',
-    desc: 'Drip London’s club space is available for private hire – perfect for birthdays, brand launches, after-parties and exclusive celebrations.',
-    buttons: [
-      {
-        label: 'Book an Event',
-        actionType: 'navigate',
-        path: '/reservation',
-      },
-    ],
-  },
-  {
-    img: night1,
-    title: 'Restaurant Private Hire',
-    desc: 'Drip London’s Dinner Club Restaurant is available for private hire – perfect for private dinners and events. Accommodates up to 80 covers split over 16 tables.',
-    buttons: [
-      {
-        label: 'Book an Event',
-        actionType: 'navigate',
-        path: '/reservation',
-      },
-    ],
-  },
-  {
-    img: night2,
-    title: 'Semi-Private Group Dining',
-    desc: 'Ideal for large group dinners while still soaking in the Drip London vibe. Accommodates up to 30 guests.',
-    buttons: [
-      {
-        label: 'Book an Event',
-        actionType: 'navigate',
-        path: '/reservation',
-      },
-    ],
-  },
-];
 
 export type Item = {
   img: StaticImageData;
@@ -763,6 +721,52 @@ export const mens: men[] = [
         label: 'View Menu',
         actionType: 'navigate',
         path: 'https://drive.google.com/drive/u/0/folders/1L5Cz-fDVesfWGRaXGvctRACPVhbDM5PJ',
+      },
+    ],
+  },
+];
+
+export type lints = {
+  img: StaticImageData;
+  title: string;
+  desc: string;
+  buttons?: Button[];
+};
+export const lint: lints[] = [
+  {
+    img: night1,
+    title: 'Club Space Hire',
+    desc: 'Drip London’s club space is available for private hire – perfect for birthdays, brand launches, after-parties and exclusive celebrations.',
+    buttons: [
+      {
+        label: 'Book an Event',
+        actionType: 'navigate',
+        path: '/reservation',
+      },
+    ],
+  },
+  {
+    img: night1,
+    title: 'Restaurant Private Hire',
+    desc: 'Drip London’s Dinner Club Restaurant is available for private hire – perfect for private dinners and events. Accommodates up to 80 covers split over 16 tables.',
+    buttons: [
+      {
+        label: 'Book an Event',
+        actionType: 'navigate',
+        path: '/reservation',
+      },
+    ],
+  },
+
+  {
+    img: night2,
+    title: 'Semi-Private Group Dining',
+    desc: 'Ideal for large group dinners while still soaking in the Drip London vibe. Accommodates up to 30 guests.',
+    buttons: [
+      {
+        label: 'Book an Event',
+        actionType: 'navigate',
+        path: '/reservation',
       },
     ],
   },

@@ -29,19 +29,18 @@ const Block17 = () => {
               <div className="mt-2 text-blue-700 text-xs hover:underline">View larger map</div>
             </a>
           </div>
+          {/* Embedded Google Map */}
+          <iframe
+            title="Google Map"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1229.729323395791!2d4.891306!3d52.375889!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609c4eafc5b55%3A0x0!2zNTLCsDIyJzMzLjIiTiA0wrA1MycyOC43IkU!5e0!3m2!1sen!2snl!4v1686065474410!5m2!1sen!2snl"
+            width="100%"
+            height="100%"
+            className="absolute top-0 left-0 w-full h-full rounded"
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
-
-        {/* Embedded Google Map */}
-        <iframe
-          title="Google Map"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1229.729323395791!2d4.891306!3d52.375889!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609c4eafc5b55%3A0x0!2zNTLCsDIyJzMzLjIiTiA0wrA1MycyOC43IkU!5e0!3m2!1sen!2snl!4v1686065474410!5m2!1sen!2snl"
-          width="100%"
-          height="100%"
-          className="absolute top-0 left-0 w-full h-full rounded"
-          allowFullScreen
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>
       </div>
     </div>
   );
