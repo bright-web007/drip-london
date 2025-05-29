@@ -18,6 +18,7 @@ import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 import { ChevronDown } from "lucide-react"
 import { Listbox } from '@headlessui/react';
+import calender from '@/assets/icons-svg/calendar.svg'
 
 const steps = ["Personal", "Event", "Additional Info", "Success"];
 
@@ -38,8 +39,9 @@ export default function Booking() {
   const [errors, setErrors] = useState<any>({});
 
   const eventTypes = [
-    { id: 1, name: "Birthday Party" },
-    { id: 2, name: "Christmas Party" },
+    { id: 1, name: "Select Event Type" },
+    { id: 2, name: "Birthday Party" },
+    { id: 3, name: "Christmas Party" },
     { id: 3, name: "Get Together" },
   ];
 
@@ -306,7 +308,7 @@ export default function Booking() {
             key={event.id}
             value={event.name}
             className={({ active }) =>
-              `cursor-pointer select-none relative py-2 pl-10 pr-4 ${
+              `cursor-pointer select-none relative py-[12px] pl-10 pr-4 ${
                 active ? "bg-[#898155]" : ""
               }`
             }
@@ -334,23 +336,33 @@ export default function Booking() {
   )}
 </div>
 
-          <div>
-            <label className="block mb-1 text-white">Event Date</label>
-            <DatePicker
-              selected={formData.eventDate}
-              onChange={(date) => setFormData({ ...formData, eventDate: date as Date })}
-              className="w-full p-2 border text-white bg-[rgba(44,44,44,0.42)]"
-            />
-          </div>
-          {errors.eventDate && <p className="text-red-500 text-sm">{errors.eventDate}</p>}
+<div>
+  <label className="flex mb-1 text-white">Event Date</label>
 
+  <div className="relative w-[334px]">
+    <DatePicker
+      selected={formData.eventDate}
+      onChange={(date) => setFormData({ ...formData, eventDate: date as Date })}
+      className="w-[334px] p-2 pr-10 border text-white bg-[rgba(44,44,44,0.42)]"
+    />
+    <Image
+      src={calender}
+      alt="calendar"
+      className="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 pointer-events-none"
+    />
+  </div>
+
+  {errors.eventDate && <p className="text-red-500 text-sm">{errors.eventDate}</p>}
+</div>
+
+        <div className="flex gap-[12px]">
           <div>
             <label className="block mb-1 text-white">Start Time</label>
             <TimePicker
               onChange={(time) => setFormData({ ...formData, startTime: time as string })}
               value={formData.startTime}
               disableClock
-              className="w-full text-white bg-[rgba(44,44,44,0.42)]"
+              className="w-[161px] h-[42px] text-white bg-[rgba(44,44,44,0.42)] rounded-[4px]"
             />
           </div>
           {errors.startTime && <p className="text-red-500 text-sm">{errors.startTime}</p>}
@@ -361,10 +373,12 @@ export default function Booking() {
               onChange={(time) => setFormData({ ...formData, endTime: time as string })}
               value={formData.endTime}
               disableClock
-              className="w-full text-white bg-[rgba(44,44,44,0.42)]"
+              className="w-[161px] h-[42px] text-white bg-[rgba(44,44,44,0.42)] rounded-[4px]"
             />
           </div>
           {errors.endTime && <p className="text-red-500 text-sm">{errors.endTime}</p>}
+
+        </div>
 
           <label>
             Number of Members: {formData.members}
