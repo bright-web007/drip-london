@@ -5,13 +5,6 @@ import group2 from '@/assets/right-fly.svg';
 import Image from 'next/image';
 import dinning from '@/assets/dinning-table.png';
 import fulldinning from '@/assets/full-dinning.png';
-import React from 'react';
-import fork from '@/assets/fork.svg';
-import group1 from '@/assets/left-fly.svg';
-import group2 from '@/assets/right-fly.svg';
-import Image from 'next/image';
-import dinning from '@/assets/dinning-table.png';
-import fulldinning from '@/assets/full-dinning.png';
 
 const Block16 = () => {
   return (
@@ -104,13 +97,8 @@ const Block16 = () => {
           </div>
         </div>
       </div>
-      </div>
     </div>
   );
 };
-  );
-};
-
-export default Block16;
 
 export default Block16;
