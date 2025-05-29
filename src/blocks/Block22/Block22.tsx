@@ -1,206 +1,416 @@
-'use client';
+// pages/booking.tsx
+"use client";
+
+import { useState } from "react";
+import DatePicker from "react-datepicker";
+import TimePicker from "react-time-picker";
+import { ArrowLeft } from "lucide-react";
+import "react-datepicker/dist/react-datepicker.css";
+import "react-time-picker/dist/TimePicker.css";
+import group from '@/assets/icons-svg/Group.svg'
+import arrow from '@/assets/icons-svg/arrow-side.svg'
+import facebook from '@/assets/icons-svg/logos_facebook.svg'
+import google from '@/assets/icons-svg/devicon_google.svg'
+import apple from '@/assets/icons-svg/devicon_apple.svg'
+import reservation from '@/assets/background/reservation-bg.jpg'
 import Image from 'next/image';
-import { useState } from 'react';
-import { Icon } from '@iconify/react';
-import reservationBg from '@/assets/background/reservation-bg.webp';
-import reserve from '@/assets/reserve.svg';
-import { Button } from '@/components/ui/button';
-import { formatDisplayDate } from './function';
-import { acceptableIDs, dressSense, timeSlots } from '@/helpers/data';
-import SearchProgress from '@/components/SearchProgress/SearchProgress';
-import DatePicker from 'react-datepicker';
-import 'react-datepicker/dist/react-datepicker.css';
+import PhoneInput from 'react-phone-input-2';
+import 'react-phone-input-2/lib/style.css';
+import { ChevronDown } from "lucide-react"
+import { Listbox } from '@headlessui/react';
 
-const Block22 = () => {
-  const [date, setDate] = useState(new Date());
-  const [guests, setGuests] = useState(2);
-  const [timeIndex, setTimeIndex] = useState(0);
-  const [searching, setSearching] = useState(false);
-  const [progress, setProgress] = useState<number>(0);
-  const [showSecondPhase, setShowSecondPhase] = useState(false);
+const steps = ["Personal", "Event", "Additional Info", "Success"];
 
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
+export default function Booking() {
+  const [step, setStep] = useState(1);
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    eventType: "",
+    eventDate: new Date(),
+    startTime: "12:00",
+    endTime: "15:00",
+    members: 2,
+    notes: ""
+  });
+  const [errors, setErrors] = useState<any>({});
 
-  const handleSearch = () => {
-    setSearching(true);
-    setProgress(10);
-    setShowSecondPhase(false);
+  const eventTypes = [
+    { id: 1, name: "Birthday Party" },
+    { id: 2, name: "Christmas Party" },
+    { id: 3, name: "Get Together" },
+  ];
 
-    const interval = setInterval(() => {
-      setProgress((prev) => {
-        if (prev >= 100) {
-          clearInterval(interval);
-          setTimeout(() => {
-            setSearching(false);
-            setShowSecondPhase(true);
-          }, 1000);
-          return 100;
-        }
-        return prev + 10;
-      });
-    }, 300);
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+  
+
+  const validateStep = () => {
+    let err: any = {};
+    if (step === 2) {
+      if (!/^[A-Za-z]+$/.test(formData.firstName)) err.firstName = "Invalid first name";
+      if (!/^[A-Za-z]+$/.test(formData.lastName)) err.lastName = "Invalid last name";
+      if (!/^\S+@\S+\.\S+$/.test(formData.email)) err.email = "Invalid email";
+      if (!/^[0-9]{10,14}$/.test(formData.phone)) err.phone = "Invalid phone number";
+    }
+    if (step === 3) {
+      if (!formData.eventType) err.eventType = "Event type is required";
+      if (!formData.eventDate) err.eventDate = "Event date is required";
+      if (!formData.startTime) err.startTime = "Start time is required";
+      if (!formData.endTime) err.endTime = "End time is required";
+    }
+    setErrors(err);
+    return Object.keys(err).length === 0;
   };
 
-  const incrementDate = () => setDate(new Date(date.setDate(date.getDate() + 1)));
-  const decrementDate = () => setDate(new Date(date.setDate(date.getDate() - 1)));
-  const incrementGuests = () => setGuests((prev) => prev + 1);
-  const decrementGuests = () => setGuests((prev) => Math.max(1, prev - 1));
-  const incrementTime = () => setTimeIndex((prev) => Math.min(timeSlots.length - 1, prev + 1));
-  const decrementTime = () => setTimeIndex((prev) => Math.max(0, prev - 1));
-  const isPastDate = date <= today;
+  const nextStep = () => {
+    if (step === 5 || validateStep()) setStep(step + 1);
+  };
 
-  return (
-    <div className="relative w-full mt-[-72px]">
-      <div className="absolute inset-0 -z-10">
-        <Image src={reservationBg} alt="reservation background" className="w-full h-full object-cover" />
+  const prevStep = () => setStep(step - 1);
+
+  const submitBooking = async () => {
+    try {
+      const res = await fetch("/api/bookings", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (res.ok) {
+        nextStep();
+      } else {
+        alert("Failed to submit booking");
+      }
+    } catch (error) {
+      console.error(error);
+      alert("Something went wrong");
+    }
+  };
+
+  const BookingHeader = () => (
+    <div className="bg-black/60 backdrop-blur-md rounded-xl p-6 text-white mb-6 shadow-md">
+      <div className="flex items-center mb-6 space-x-2 cursor-pointer" onClick={prevStep}>
+        <ArrowLeft className="w-5 h-5" />
+        <span className="text-sm">Go Back</span>
       </div>
 
-      {searching && <SearchProgress progress={progress} />}
+      <h2 className="text-2xl font-serif mb-6 tracking-wide">Event Details</h2>
 
-      <div className="flex flex-col xl:flex-row items-center justify-between w-[90%] 2xl:w-[85%] pb-26 pt-40 xl:pb-30 xl:pt-45 mx-auto">
-        {/* Left Section */}
-        <div className="text-[#F5F5F5] w-full xl:w-[45%]">
-          <h1 className="font-thankslabs leading-11 md:leading-14 font-bold text-2xl md:text-[32px] xl:text-[40px] 2xl:text-[50px] text-white">
-            Reserve a Table
-          </h1>
-          <p className="font-monserrat text-base font-medium py-8">
-            Secure your spot at Drip London and indulge in an unforgettable dining experience.
-            Whether it’s a casual meal or a special celebration, we’ve got the perfect table waiting
-            for you.
-          </p>
-
-          <div className="font-monserrat">
-            <h1 className="text-white text-xl font-semibold mb-1">Dress to impress</h1>
-            {dressSense.map((item, index) => (
-              <div key={index} className="flex items-center gap-2 mt-2">
-                <Icon icon="oui:dot" className="text-white w-[6px] h-[6px]" />
-                <p className="text-base font-light">{item}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="font-monserrat py-8">
-            <h1 className="text-white text-xl font-semibold">ID is mandatory</h1>
-            <h1 className="uppercase font-medium text-base my-4">ACCEPTABLE IDENTIFICATION:</h1>
-            {acceptableIDs.map((item, index) => (
-              <div key={index} className="flex items-center gap-2 mt-1">
-                <Icon icon="oui:dot" className="text-white w-[6px] h-[6px]" />
-                <p className="text-base font-light">{item}</p>
-              </div>
-            ))}
-            <h1 className="italic text-base font-normal mt-10 mb-14">
-              Management have the right to refuse entry
-            </h1>
-
-            <div>
-              <h1 className="text-white text-xl font-semibold mb-1">
-                Can’t find a date and time? Contact us
-              </h1>
-              <h1 className="text-base font-normal my-2">
-                Email: <span className="text-white font-semibold">Drip.London@Drip.london</span>
-              </h1>
-              <h1 className="text-base font-normal">
-                Call us: <span className="text-white font-semibold">+44 0889 7894</span>
-              </h1>
+      <div className="flex justify-between">
+        {steps.map((label, idx) => (
+          <div key={idx} className="flex-1 flex flex-col items-center text-center">
+            <div
+              className={`w-6 h-6 rounded-full flex items-center justify-center mb-1
+                ${idx + 1 <= step ? "bg-yellow-400" : "border border-gray-400"}`}
+            >
+              {idx + 1 < step ? (
+                <span className="w-2 h-2 rounded-full bg-black" />
+              ) : null}
             </div>
+            <span className={`text-xs ${idx + 1 === step ? "text-yellow-400" : "text-gray-400"}`}>{label}</span>
           </div>
-        </div>
-
-        {/* Right section: before search */}
-        {!searching && !showSecondPhase && (
-          <div className="w-full xl:w-[45%]">
-            <Image src={reserve} alt="reserve" className="w-full h-[380px] object-cover" />
-            <div className="bg-white pb-2">
-              {/* Date with arrows + calendar */}
-              <div className="text-beige-500 w-[70%] mx-auto flex items-center justify-between py-6">
-                <Icon
-                  icon="ep:arrow-left"
-                  className={`w-6 h-6 ${isPastDate ? 'opacity-30 cursor-not-allowed' : 'cursor-pointer'}`}
-                  onClick={isPastDate ? undefined : decrementDate}
-                />
-                <DatePicker
-                  selected={date}
-                  onChange={(selectedDate: Date | null) => {
-                    if (selectedDate) setDate(selectedDate);
-                  }}
-                  dateFormat="EEE, MMM dd"
-                  minDate={today}
-                  customInput={
-                    <div className="text-center cursor-pointer">
-                      <h1 className="font-thankslabs text-sm md:text-xl font-semibold pb-3">
-                        {formatDisplayDate(date)}
-                      </h1>
-                      <p className="font-monserrat text-xs md:text-base font-medium">Date</p>
-                    </div>
-                  }
-                />
-                <Icon icon="ep:arrow-right" className="w-6 h-6 cursor-pointer" onClick={incrementDate} />
-              </div>
-              <hr className="border-b-[0.5px] border-t-0 border-[#C2C2C2]" />
-
-              {/* Guests */}
-              <div className="text-beige-500 w-[70%] mx-auto flex items-center justify-between py-6">
-                <Icon icon="ep:arrow-left" className="w-6 h-6 cursor-pointer" onClick={decrementGuests} />
-                <div className="text-center">
-                  <h1 className="font-thankslabs text-sm md:text-xl font-semibold pb-3">{guests}</h1>
-                  <p className="font-monserrat text-xs md:text-base font-medium">Guests</p>
-                </div>
-                <Icon icon="ep:arrow-right" className="w-6 h-6 cursor-pointer" onClick={incrementGuests} />
-              </div>
-              <hr className="border-b-[0.5px] border-t-0 border-[#C2C2C2]" />
-
-              {/* Time */}
-              <div className="text-beige-500 w-[70%] mx-auto flex items-center justify-between py-6">
-                <Icon icon="ep:arrow-left" className="w-6 h-6 cursor-pointer" onClick={decrementTime} />
-                <div className="text-center">
-                  <h1 className="font-thankslabs text-sm md:text-xl font-semibold pb-3">{timeSlots[timeIndex]}</h1>
-                  <p className="font-monserrat text-xs md:text-base font-medium">Time</p>
-                </div>
-                <Icon icon="ep:arrow-right" className="w-6 h-6 cursor-pointer" onClick={incrementTime} />
-              </div>
-              <hr className="border-b-[0.5px] border-t-0 border-[#C2C2C2]" />
-
-              <div className="m-6">
-                <Button
-                  onClick={handleSearch}
-                  className="bg-beige-500 shadow cursor-pointer text-white text-base font-medium w-full rounded-[2px] hover:bg-transparent border border-beige-500 hover:text-beige-500 py-6"
-                >
-                  Search
-                </Button>
-              </div>
-            </div>
-          </div>
-        )}
-
-        {/* Second Phase */}
-        {!searching && showSecondPhase && (
-          <div className="w-full xl:w-[45%]">
-            <Image src={reserve} alt="reserve" className="w-full h-[380px] object-cover" />
-            <div className="bg-white p-10 text-[#898155] text-center">
-              <h1 className="text-[14px] font-thankslabs mb-4 sm:text-[16px]">{formatDisplayDate(date)}</h1>
-              <div className="flex justify-center items-center gap-2 mb-4">
-                <Icon icon="mdi:account-check" className="w-[16px] h-[16px] text-[#B1B1B1] sm:w-[17.5px] sm:h-[17.5px] md:w-[19px] md:h-[19px] xl:w-[24px] xl:h-[24px]" />
-                <span className="text-base text-[12px] sm:text-[14px]">{guests} Guests</span>
-              </div>
-              <div className="flex justify-center items-center gap-2 mb-6">
-                <Icon icon="mdi:pencil" className="w-[16px] h-[16px] text-blue-500 sm:w-[17.5px] sm:h-[17.5px] md:w-[19px] md:h-[19px] xl:w-[21px] xl:h-[21px]" />
-                <span className="text-blue-500 text-[12px] underline cursor-pointer sm:text-[14px]">Edit</span>
-              </div>
-              <div className="grid grid-cols-3 gap-4">
-                {Array(9).fill(null).map((_, i) => (
-                  <div key={i} className="bg-[#F3EFD9] p-6 rounded-md shadow-sm">
-                    <h2 className="text-[12px] font-bold font-thankslabs mb-2 sm:text-[14px]">19:00</h2>
-                    <button className="text-[#898155] font-monserrat text-[12px] underline hover:text-[#6c664b] transition sm:text-[14px]">Select</button>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        )}
+        ))}
       </div>
     </div>
   );
-};
 
-export default Block22;
+  return (
+    <div className="w-full mx-auto  mt-[-72px] relative h-[90vh] overflow-hidden ">
+      <Image
+        src={reservation}
+        alt="contact background"
+        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-in-out"
+      />
+      {step > 1 && <BookingHeader />}
+
+      {step === 1 && (
+        <div className="space-y-4 absolute inset-0  flex flex-col items-center justify-center">
+          <h1 className="text-center text-[41.77px] font-thankslabs leading-[58px] text-[#FFF] mb-[32px]">
+            Book an Event
+            </h1>
+           
+          <div className="flex flex-col gap-[4px] items-center">
+          <p className="text-center text-[13px] font-monserrat leading-[19.5px] text-[#FFF] mb-[12px]">
+            Fill Booking Form Using:
+            </p>
+
+          <button className="w-full py-[12px] px-[24px] flex items-center justify-center  gap-[12px] text-[#FFF] text-[14px] font-monserrat leading-[21px] bg-black/30 backdrop-blur-sm">
+          <Image
+             src={google}
+             alt="google" 
+             width={20} height={20}
+             />
+            <span>Google</span>
+            </button>
+
+          <button className="w-full py-[12px] px-[24px] flex gap-[12px] items-center justify-center  text-[#FFF] text-[14px] font-monserrat leading-[21px] bg-black/30 backdrop-blur-sm">
+          <Image
+             src={apple}
+             alt="apple"
+             width={20} height={20} 
+             />
+           <span>Apple</span> 
+            </button>
+
+          <button className="w-full py-[12px] px-[24px] flex gap-[12px] items-center justify-center  text-[#FFF] text-[14px] font-monserrat leading-[21px] bg-black/30 backdrop-blur-sm">
+          <Image
+             src={facebook}
+             alt="facebook"
+             width={20} height={20} 
+             />
+            <span>Facebook</span>
+            </button>
+
+          <p className="text-center text-[13px] font-monserrat leading-[19.5px] text-[#FFF] my-[12px]">or</p>
+          
+           
+          <button className="w-full py-[12px] px-[12px] flex gap-[12px] items-center justify-center  text-[#FFF] text-[14px] font-monserrat leading-[21px] bg-black/30 backdrop-blur-sm" onClick={nextStep}>
+          <Image
+             src={group}
+             alt="group"
+             width={20} height={20} 
+             />
+            <span>Enter Your Details Manually</span>
+            <Image
+             src={arrow}
+             alt="group"
+             width={20} height={20} 
+             />
+            </button>
+        
+          </div>
+        </div>
+      )}
+
+
+{step === 2 && (
+        <div className="absolute inset-0 flex flex-col items-center justify-center px-4 py-8 z-10">
+          <div className=" bg-black/40 backdrop-blur-sm p-[24px]">
+            <div className="w-full flex items-center justify-start mb-4">
+              <button onClick={prevStep} className="flex items-center text-white gap-2">
+                <ArrowLeft className="w-[24px] h-[24px]" />
+                <span className="text-[12px] text-[#969696]">Go Back</span>
+              </button>
+            </div>
+
+            <h2 className="text-white text-[14px] font-normal mb-4 font-thankslabs">Personal Information</h2>
+
+            <div className="space-y-4 w-full max-w-md">
+              {["firstName", "lastName", "email", "phone"].map((name) => (
+                <div key={name}>
+                  <label htmlFor={name} className="block text-white text-sm mb-1">
+                    {name === "phone" ? "Phone Number" : name.charAt(0).toUpperCase() + name.slice(1)}
+                  </label>
+
+                  {name === "phone" ? (
+                    <PhoneInput
+                    country={"gb"}
+                    value={formData.phone}
+                    onChange={(phone) => setFormData({ ...formData, phone })}
+                    inputProps={{
+                      name: 'phone',
+                      required: true,
+                      autoFocus: false
+                    }}
+                    enableSearch
+                    inputStyle={{
+                      width: "334px",
+                      height: "42px",
+                      padding: "12px 12px 12px 48px", // left padding for flag
+                      borderRadius: "6px",
+                      border: "1px solid rgba(197,198,203,0.53)",
+                      backgroundColor: "rgba(44,44,44,0.42)",
+                      color: "#fff",
+                      fontSize: "14px"
+                    }}
+                    buttonStyle={{
+                      border: "none",
+                      backgroundColor: "transparent",
+                      left: "12px"
+                    }}
+                    containerStyle={{
+                      width: "334px"
+                    }}
+                    dropdownStyle={{
+                      backgroundColor: "#222",
+                      color: "black",
+                      border: "1px solid #555"
+                    }}
+                  />
+                  
+                  ) : (
+                    <input
+                      id={name}
+                      className="w-[334px] h-[42px] p-[12px] rounded border border-[rgba(197,198,203,0.53)] text-[#fff] bg-[rgba(44,44,44,0.42)]"
+                      name={name}
+                      placeholder={name.charAt(0).toUpperCase() + name.slice(1)}
+                      value={formData[name as keyof typeof formData] as string}
+                      onChange={handleChange}
+                    />
+                  )}
+                  {errors[name] && <p className="text-red-500 text-sm">{errors[name]}</p>}
+                </div>
+              ))}
+            </div>
+
+            <div className="flex justify-center w-full mt-6">
+              <button className="bg-[rgba(44,44,44,0.42)] w-full border border-[rgba(197,198,203,0.53)] text-[#fff] px-6 py-2 rounded font-semibold" onClick={nextStep}>
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+
+      {step === 3 && (
+        <div className="absolute inset-0 flex flex-col items-center justify-center px-4 py-8 z-10">
+          <div className="border-2 border-[red] p-[24px]">
+          <div className="w-full flex items-center justify-start mb-4">
+              <button onClick={prevStep} className="flex items-center text-white gap-2">
+                <ArrowLeft className="w-[24px] h-[24px]" />
+                <span className="text-[12px] text-[#969696]">Go Back</span>
+              </button>
+            </div>
+
+            <div className="relative w-[334px]">
+  <label htmlFor="eventType" className="block text-white text-sm mb-1">
+    Event Type
+  </label>
+
+  <Listbox
+    value={formData.eventType}
+    onChange={(value) => setFormData({ ...formData, eventType: value })}
+  >
+    <div className="relative">
+      <Listbox.Button className="relative w-full cursor-pointer rounded border border-[rgba(197,198,203,0.53)] bg-[rgba(44,44,44,0.42)] py-2 pl-4 pr-10 text-left text-white focus:outline-none">
+        <span className="block truncate">
+          {formData.eventType || "Select Event Type"}
+        </span>
+        <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
+          <ChevronDown className="w-4 h-4 text-white" />
+        </span>
+      </Listbox.Button>
+
+      <Listbox.Options className="absolute z-10 mt-1 max-h-60 w-full overflow-auto rounded bg-black text-white border border-[rgba(197,198,203,0.53)] py-1 text-sm shadow-lg">
+        {eventTypes.map((event) => (
+          <Listbox.Option
+            key={event.id}
+            value={event.name}
+            className={({ active }) =>
+              `cursor-pointer select-none relative py-2 pl-10 pr-4 ${
+                active ? "bg-[#898155]" : ""
+              }`
+            }
+          >
+            {({ selected }) => (
+              <>
+                <span className={`block truncate ${selected ? "font-bold" : ""}`}>
+                  {event.name}
+                </span>
+                {selected && (
+                  <span className="absolute left-3 top-2 text-yellow-400">
+                    ✓
+                  </span>
+                )}
+              </>
+            )}
+          </Listbox.Option>
+        ))}
+      </Listbox.Options>
+    </div>
+  </Listbox>
+
+  {errors.eventType && (
+    <p className="text-red-500 text-sm mt-1">{errors.eventType}</p>
+  )}
+</div>
+
+          <div>
+            <label className="block mb-1 text-white">Event Date</label>
+            <DatePicker
+              selected={formData.eventDate}
+              onChange={(date) => setFormData({ ...formData, eventDate: date as Date })}
+              className="w-full p-2 border text-white bg-[rgba(44,44,44,0.42)]"
+            />
+          </div>
+          {errors.eventDate && <p className="text-red-500 text-sm">{errors.eventDate}</p>}
+
+          <div>
+            <label className="block mb-1 text-white">Start Time</label>
+            <TimePicker
+              onChange={(time) => setFormData({ ...formData, startTime: time as string })}
+              value={formData.startTime}
+              disableClock
+              className="w-full text-white bg-[rgba(44,44,44,0.42)]"
+            />
+          </div>
+          {errors.startTime && <p className="text-red-500 text-sm">{errors.startTime}</p>}
+
+          <div>
+            <label className="block mb-1 text-white">End Time</label>
+            <TimePicker
+              onChange={(time) => setFormData({ ...formData, endTime: time as string })}
+              value={formData.endTime}
+              disableClock
+              className="w-full text-white bg-[rgba(44,44,44,0.42)]"
+            />
+          </div>
+          {errors.endTime && <p className="text-red-500 text-sm">{errors.endTime}</p>}
+
+          <label>
+            Number of Members: {formData.members}
+            <input
+              type="range"
+              min={2}
+              max={12}
+              value={formData.members}
+              onChange={(e) => setFormData({ ...formData, members: Number(e.target.value) })}
+            />
+          </label>
+
+          <div className="flex justify-between">
+            <button onClick={prevStep}>Back</button>
+            <button onClick={nextStep}>Next</button>
+          </div>
+          </div>
+        </div>
+      )}
+
+      {step === 4 && (
+        <div className="space-y-4">
+          <textarea
+            className="w-full p-2 border"
+            name="notes"
+            placeholder="Add more info (optional)"
+            value={formData.notes}
+            onChange={handleChange}
+          />
+          <div className="flex justify-between">
+            <button onClick={prevStep}>Back</button>
+            <button onClick={submitBooking}>Next</button>
+          </div>
+        </div>
+      )}
+
+      {step === 5 && (
+        <div className="text-center space-y-4">
+          <h2 className="text-xl font-bold">You've successfully booked an event for Drip London!</h2>
+          <div className="space-x-4">
+            <button className="p-2 bg-red-500 text-white" onClick={() => setStep(1)}>Book Again</button>
+            <button className="p-2 bg-gray-300">Return to Home Page</button>
+            <button className="p-2" onClick={prevStep}>Go Back</button>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
