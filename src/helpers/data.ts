@@ -303,8 +303,9 @@ export const navLinks = [
 
 export const navLinker = [
   { name: 'Reservation', link: '/reservation' },
-  { name: 'Private Dinning', link: '/private' },
+  { name: 'Private Dinning', link: '/faq' },
   { name: 'Menus', link: '/menu' },
+  { name: 'FAQs', link: '/faq#faq' },
   { name: 'FAQs', link: '/faq#faq' },
   { name: 'Contacts', link: '/contact-us' },
 ];
@@ -496,24 +497,32 @@ export const GOOGLE_MAPS_APIKEY = 'AIzaSyB_Ujmyiir8qmceRFs5ICiSHUJhQnXRZD4';
 export const faqreview = [
   {
     title: 'How many people can I book for?',
+    title: 'How many people can I book for?',
     review:
+      'Restaurant bookings can be made online for up to 12 people, for bookings larger than 12 please email reservations@drip.london ',
       'Restaurant bookings can be made online for up to 12 people, for bookings larger than 12 please email reservations@drip.london ',
   },
 
   {
     title: 'Is Drip London an 18+ Venue?',
+    title: 'Is Drip London an 18+ Venue?',
     review:
+      'Drip London is strictly a 18+ venue. All guests must bring a valid physical ID to gain entry. For private family events please contact us. ',
       'Drip London is strictly a 18+ venue. All guests must bring a valid physical ID to gain entry. For private family events please contact us. ',
   },
 
   {
     title: 'Do you cater to dietary requirements?',
     review: 'Yes — we offer vegetarian, vegan, gluten-free, halal and allergen-friendly menus.',
+    title: 'Do you cater to dietary requirements?',
+    review: 'Yes — we offer vegetarian, vegan, gluten-free, halal and allergen-friendly menus.',
   },
 
   {
     title: 'Dress Code?',
+    title: 'Dress Code?',
     review:
+      'Our dress code is Smart Elegant, we kindly invite guests to reflect the dress code. Please note management reserves the right to refuse entry.',
       'Our dress code is Smart Elegant, we kindly invite guests to reflect the dress code. Please note management reserves the right to refuse entry.',
   },
 
@@ -524,15 +533,26 @@ export const faqreview = [
   
   Friday, Saturday and Sunday
   18:30 – 02:30`,
+    title: 'Opening Hours?',
+    review: `Thursday
+  18:30 – 00:30
+  
+  Friday, Saturday and Sunday
+  18:30 – 02:30`,
   },
 
   {
     title: 'Bottomless Brunch?',
+    title: 'Bottomless Brunch?',
     review:
+      'Brunch is available every Sunday between 17.30 – 21.00, the option of free-flowing prosecco and cocktails are available.',
       'Brunch is available every Sunday between 17.30 – 21.00, the option of free-flowing prosecco and cocktails are available.',
   },
 
   {
+    title: 'Do you have minimum spend policy?',
+    review:
+      'All reservations on Friday and Saturday are subject to a minimum spend of £65 per person.',
     title: 'Do you have minimum spend policy?',
     review:
       'All reservations on Friday and Saturday are subject to a minimum spend of £65 per person.',
@@ -543,9 +563,16 @@ export const faqreview = [
     review: `To cancel your booking, please provide at least 24 hours notice. A fee of £30 per person will be charged for no-shows and cancellations made less than 24 hours before the reservation time.
   
   Your table will be held for 15 minutes from your reservation time. Only completed parties will be seated, if your party size changes kindly inform us in advance to ensure best seating arrangements.`,
+    title: 'Late Cancellation Policy',
+    review: `To cancel your booking, please provide at least 24 hours notice. A fee of £30 per person will be charged for no-shows and cancellations made less than 24 hours before the reservation time.
+  
+  Your table will be held for 15 minutes from your reservation time. Only completed parties will be seated, if your party size changes kindly inform us in advance to ensure best seating arrangements.`,
   },
 
   {
+    title: 'Seating Time',
+    review:
+      'The seating time is limited to 2 hours for parties of 2 to 9 guests, and 2.5 hours for guests with larger parties.',
     title: 'Seating Time',
     review:
       'The seating time is limited to 2 hours for parties of 2 to 9 guests, and 2.5 hours for guests with larger parties.',
@@ -559,8 +586,36 @@ export const experience = [
     subtitle: 'Where Flavour Meets the Night',
     description:
       "At Drip London, we fuse bold West African Flavors with the pulsating energy of London's nightlife. From the moment you step in, you're enveloped in an atmosphere where culinary excellence meets vibrant entertainment.",
+];
+
+export const experience = [
+  {
+    image: experience1,
+    title: 'Culinary Delight',
+    subtitle: 'Where Flavour Meets the Night',
+    description:
+      "At Drip London, we fuse bold West African Flavors with the pulsating energy of London's nightlife. From the moment you step in, you're enveloped in an atmosphere where culinary excellence meets vibrant entertainment.",
   },
   {
+    image: experience2,
+    title: 'Live Entertainment',
+    subtitle: 'Feel the Pulse of the Night',
+    description:
+      'As the evening unfolds, Drip transforms. Experience live weekend performances ranging from soulful saxophonists to dynamic DJs spinning Afrobeats, Amapiano, and R&B. The rhythm of the night is curated to keep you engaged and energized.',
+  },
+  {
+    image: experience3,
+    title: 'Cocktails & Bottle Shows',
+    subtitle: 'Sip, Sparkle, and Celebrate',
+    description:
+      'Our mixologists are artists, creating cocktails that are as visually stunning as they are delicious. Celebrate with our signature bottle shows—where presentation meets party.',
+  },
+  {
+    image: experience4,
+    title: 'Brunch & Group Celebrations',
+    subtitle: 'Brunch Without Boundaries',
+    description:
+      'Weekends at Drip are synonymous with our legendary Bottomless Brunches. Perfect for birthdays, reunions, or just because—our brunches are designed for those who live life unapologetically. Available on Sundays',
     image: experience2,
     title: 'Live Entertainment',
     subtitle: 'Feel the Pulse of the Night',
@@ -635,6 +690,29 @@ export const items: Item[] = [
         path: '/reservation',
       },
     ],
+  },
+];
+
+export const dishes = [
+  {
+    img: slide1,
+    title: 'A New Taste of West Africa',
+    desc: 'Bold, fire-grilled dishes infused with rich spices.',
+  },
+  {
+    img: slide2,
+    title: 'More Than a Meal, It’s a Vibe',
+    desc: 'An immersive dining experience blending storytelling and creativity.',
+  },
+  {
+    img: slide3,
+    title: 'Where City Nights Come Alive',
+    desc: 'Dine, drink, and dance in the heart of the city.',
+  },
+  {
+    img: slide4,
+    title: 'Look the Part. Live the Vibe',
+    desc: 'Smart, bold, and unapologetically stylish—your drip matters.',
   },
 ];
 
