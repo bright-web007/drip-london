@@ -35,7 +35,7 @@ const Block3 = () => {
               {men.title}
             </h2>
 
-            <div className="border-2 border-[#232323] rounded-[4px]">
+            <div className="border-1 border-[#232323] rounded-[4px]">
               {/* Image with inner shadow */}
               <div className="w-full   mb-[18px] md:mb-[56px] xl:mb-0">
                 {men.img && (
