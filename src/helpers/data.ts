@@ -306,7 +306,6 @@ export const navLinker = [
   { name: 'Private Dinning', link: '/faq' },
   { name: 'Menus', link: '/menu' },
   { name: 'FAQs', link: '/faq#faq' },
-  { name: 'FAQs', link: '/faq#faq' },
   { name: 'Contacts', link: '/contact-us' },
 ];
 
