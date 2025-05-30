@@ -1406,6 +1406,7 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@react-aria/focus@npm:^3.20.2":
   version: 3.20.3
   resolution: "@react-aria/focus@npm:3.20.3"
@@ -1495,6 +1496,8 @@ __metadata:
   languageName: node
   linkType: hard
 
+=======
+>>>>>>> main
 "@rollup/rollup-android-arm-eabi@npm:4.41.1":
   version: 4.41.1
   resolution: "@rollup/rollup-android-arm-eabi@npm:4.41.1"
@@ -1672,6 +1675,7 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@swc/helpers@npm:^0.5.0":
   version: 0.5.17
   resolution: "@swc/helpers@npm:0.5.17"
@@ -1681,6 +1685,8 @@ __metadata:
   languageName: node
   linkType: hard
 
+=======
+>>>>>>> main
 "@tailwindcss/node@npm:4.1.8":
   version: 4.1.8
   resolution: "@tailwindcss/node@npm:4.1.8"
@@ -1834,7 +1840,11 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@tailwindcss/postcss@npm:^4":
+=======
+"@tailwindcss/postcss@npm:^4.1.7":
+>>>>>>> main
   version: 4.1.8
   resolution: "@tailwindcss/postcss@npm:4.1.8"
   dependencies:
@@ -1847,14 +1857,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@tanstack/query-core@npm:5.79.0":
   version: 5.79.0
   resolution: "@tanstack/query-core@npm:5.79.0"
   checksum: 10c0/614c9f4dc7cb4df9c6804f67a76e2d580af5fa7b25505c2e3c5137bfa40d2005a1a96606c9f8e533754c78722e23708948760104a460fd8bc06df990fea42afb
+=======
+"@tanstack/query-core@npm:5.77.2":
+  version: 5.77.2
+  resolution: "@tanstack/query-core@npm:5.77.2"
+  checksum: 10c0/2c83a23f61443de054250f35f596345d0ed4731b2bf4218f2acbef224255d0d9a1e41547e56ec58db4da5a97942cdd829c5d7c3906fc4a23857dd16f4d4608de
+>>>>>>> main
   languageName: node
   linkType: hard
 
 "@tanstack/react-query@npm:^5.74.3":
+<<<<<<< HEAD
   version: 5.79.0
   resolution: "@tanstack/react-query@npm:5.79.0"
   dependencies:
@@ -1881,6 +1899,15 @@ __metadata:
   version: 3.13.9
   resolution: "@tanstack/virtual-core@npm:3.13.9"
   checksum: 10c0/6e9526a9d52f8ddc54af8a1dc7380814b10ab38d8a4265e362a5b69c3132097ace51496d4206fe8aa90e33129aaf1a177c93d7ed018b5564b78e057fc9cdb48d
+=======
+  version: 5.77.2
+  resolution: "@tanstack/react-query@npm:5.77.2"
+  dependencies:
+    "@tanstack/query-core": "npm:5.77.2"
+  peerDependencies:
+    react: ^18 || ^19
+  checksum: 10c0/949d866ca8e1264ab506c7ac5ae11a596103a2f0c5cbf46022a22d256951791e330a8f126011cc6a73831514f889b87de11063d04f14014038375ae5a7ad3556
+>>>>>>> main
   languageName: node
   linkType: hard
 
@@ -2271,123 +2298,225 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@unrs/resolver-binding-darwin-arm64@npm:1.7.8":
   version: 1.7.8
   resolution: "@unrs/resolver-binding-darwin-arm64@npm:1.7.8"
+=======
+"@unrs/resolver-binding-darwin-arm64@npm:1.7.6":
+  version: 1.7.6
+  resolution: "@unrs/resolver-binding-darwin-arm64@npm:1.7.6"
+>>>>>>> main
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@unrs/resolver-binding-darwin-x64@npm:1.7.8":
   version: 1.7.8
   resolution: "@unrs/resolver-binding-darwin-x64@npm:1.7.8"
+=======
+"@unrs/resolver-binding-darwin-x64@npm:1.7.6":
+  version: 1.7.6
+  resolution: "@unrs/resolver-binding-darwin-x64@npm:1.7.6"
+>>>>>>> main
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@unrs/resolver-binding-freebsd-x64@npm:1.7.8":
   version: 1.7.8
   resolution: "@unrs/resolver-binding-freebsd-x64@npm:1.7.8"
+=======
+"@unrs/resolver-binding-freebsd-x64@npm:1.7.6":
+  version: 1.7.6
+  resolution: "@unrs/resolver-binding-freebsd-x64@npm:1.7.6"
+>>>>>>> main
   conditions: os=freebsd & cpu=x64
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@unrs/resolver-binding-linux-arm-gnueabihf@npm:1.7.8":
   version: 1.7.8
   resolution: "@unrs/resolver-binding-linux-arm-gnueabihf@npm:1.7.8"
+=======
+"@unrs/resolver-binding-linux-arm-gnueabihf@npm:1.7.6":
+  version: 1.7.6
+  resolution: "@unrs/resolver-binding-linux-arm-gnueabihf@npm:1.7.6"
+>>>>>>> main
   conditions: os=linux & cpu=arm
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@unrs/resolver-binding-linux-arm-musleabihf@npm:1.7.8":
   version: 1.7.8
   resolution: "@unrs/resolver-binding-linux-arm-musleabihf@npm:1.7.8"
+=======
+"@unrs/resolver-binding-linux-arm-musleabihf@npm:1.7.6":
+  version: 1.7.6
+  resolution: "@unrs/resolver-binding-linux-arm-musleabihf@npm:1.7.6"
+>>>>>>> main
   conditions: os=linux & cpu=arm
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@unrs/resolver-binding-linux-arm64-gnu@npm:1.7.8":
   version: 1.7.8
   resolution: "@unrs/resolver-binding-linux-arm64-gnu@npm:1.7.8"
+=======
+"@unrs/resolver-binding-linux-arm64-gnu@npm:1.7.6":
+  version: 1.7.6
+  resolution: "@unrs/resolver-binding-linux-arm64-gnu@npm:1.7.6"
+>>>>>>> main
   conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@unrs/resolver-binding-linux-arm64-musl@npm:1.7.8":
   version: 1.7.8
   resolution: "@unrs/resolver-binding-linux-arm64-musl@npm:1.7.8"
+=======
+"@unrs/resolver-binding-linux-arm64-musl@npm:1.7.6":
+  version: 1.7.6
+  resolution: "@unrs/resolver-binding-linux-arm64-musl@npm:1.7.6"
+>>>>>>> main
   conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@unrs/resolver-binding-linux-ppc64-gnu@npm:1.7.8":
   version: 1.7.8
   resolution: "@unrs/resolver-binding-linux-ppc64-gnu@npm:1.7.8"
+=======
+"@unrs/resolver-binding-linux-ppc64-gnu@npm:1.7.6":
+  version: 1.7.6
+  resolution: "@unrs/resolver-binding-linux-ppc64-gnu@npm:1.7.6"
+>>>>>>> main
   conditions: os=linux & cpu=ppc64 & libc=glibc
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@unrs/resolver-binding-linux-riscv64-gnu@npm:1.7.8":
   version: 1.7.8
   resolution: "@unrs/resolver-binding-linux-riscv64-gnu@npm:1.7.8"
+=======
+"@unrs/resolver-binding-linux-riscv64-gnu@npm:1.7.6":
+  version: 1.7.6
+  resolution: "@unrs/resolver-binding-linux-riscv64-gnu@npm:1.7.6"
+>>>>>>> main
   conditions: os=linux & cpu=riscv64 & libc=glibc
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@unrs/resolver-binding-linux-riscv64-musl@npm:1.7.8":
   version: 1.7.8
   resolution: "@unrs/resolver-binding-linux-riscv64-musl@npm:1.7.8"
+=======
+"@unrs/resolver-binding-linux-riscv64-musl@npm:1.7.6":
+  version: 1.7.6
+  resolution: "@unrs/resolver-binding-linux-riscv64-musl@npm:1.7.6"
+>>>>>>> main
   conditions: os=linux & cpu=riscv64 & libc=musl
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@unrs/resolver-binding-linux-s390x-gnu@npm:1.7.8":
   version: 1.7.8
   resolution: "@unrs/resolver-binding-linux-s390x-gnu@npm:1.7.8"
+=======
+"@unrs/resolver-binding-linux-s390x-gnu@npm:1.7.6":
+  version: 1.7.6
+  resolution: "@unrs/resolver-binding-linux-s390x-gnu@npm:1.7.6"
+>>>>>>> main
   conditions: os=linux & cpu=s390x & libc=glibc
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@unrs/resolver-binding-linux-x64-gnu@npm:1.7.8":
   version: 1.7.8
   resolution: "@unrs/resolver-binding-linux-x64-gnu@npm:1.7.8"
+=======
+"@unrs/resolver-binding-linux-x64-gnu@npm:1.7.6":
+  version: 1.7.6
+  resolution: "@unrs/resolver-binding-linux-x64-gnu@npm:1.7.6"
+>>>>>>> main
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@unrs/resolver-binding-linux-x64-musl@npm:1.7.8":
   version: 1.7.8
   resolution: "@unrs/resolver-binding-linux-x64-musl@npm:1.7.8"
+=======
+"@unrs/resolver-binding-linux-x64-musl@npm:1.7.6":
+  version: 1.7.6
+  resolution: "@unrs/resolver-binding-linux-x64-musl@npm:1.7.6"
+>>>>>>> main
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@unrs/resolver-binding-wasm32-wasi@npm:1.7.8":
   version: 1.7.8
   resolution: "@unrs/resolver-binding-wasm32-wasi@npm:1.7.8"
+=======
+"@unrs/resolver-binding-wasm32-wasi@npm:1.7.6":
+  version: 1.7.6
+  resolution: "@unrs/resolver-binding-wasm32-wasi@npm:1.7.6"
+>>>>>>> main
   dependencies:
     "@napi-rs/wasm-runtime": "npm:^0.2.10"
   conditions: cpu=wasm32
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@unrs/resolver-binding-win32-arm64-msvc@npm:1.7.8":
   version: 1.7.8
   resolution: "@unrs/resolver-binding-win32-arm64-msvc@npm:1.7.8"
+=======
+"@unrs/resolver-binding-win32-arm64-msvc@npm:1.7.6":
+  version: 1.7.6
+  resolution: "@unrs/resolver-binding-win32-arm64-msvc@npm:1.7.6"
+>>>>>>> main
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@unrs/resolver-binding-win32-ia32-msvc@npm:1.7.8":
   version: 1.7.8
   resolution: "@unrs/resolver-binding-win32-ia32-msvc@npm:1.7.8"
+=======
+"@unrs/resolver-binding-win32-ia32-msvc@npm:1.7.6":
+  version: 1.7.6
+  resolution: "@unrs/resolver-binding-win32-ia32-msvc@npm:1.7.6"
+>>>>>>> main
   conditions: os=win32 & cpu=ia32
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@unrs/resolver-binding-win32-x64-msvc@npm:1.7.8":
   version: 1.7.8
   resolution: "@unrs/resolver-binding-win32-x64-msvc@npm:1.7.8"
+=======
+"@unrs/resolver-binding-win32-x64-msvc@npm:1.7.6":
+  version: 1.7.6
+  resolution: "@unrs/resolver-binding-win32-x64-msvc@npm:1.7.6"
+>>>>>>> main
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -2792,6 +2921,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"autoprefixer@npm:^10.4.21":
+  version: 10.4.21
+  resolution: "autoprefixer@npm:10.4.21"
+  dependencies:
+    browserslist: "npm:^4.24.4"
+    caniuse-lite: "npm:^1.0.30001702"
+    fraction.js: "npm:^4.3.7"
+    normalize-range: "npm:^0.1.2"
+    picocolors: "npm:^1.1.1"
+    postcss-value-parser: "npm:^4.2.0"
+  peerDependencies:
+    postcss: ^8.1.0
+  bin:
+    autoprefixer: bin/autoprefixer
+  checksum: 10c0/de5b71d26d0baff4bbfb3d59f7cf7114a6030c9eeb66167acf49a32c5b61c68e308f1e0f869d92334436a221035d08b51cd1b2f2c4689b8d955149423c16d4d4
+  languageName: node
+  linkType: hard
+
 "available-typed-arrays@npm:^1.0.7":
   version: 1.0.7
   resolution: "available-typed-arrays@npm:1.0.7"
@@ -2890,9 +3037,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "browserslist@npm:^4.24.0":
   version: 4.25.0
   resolution: "browserslist@npm:4.25.0"
+=======
+"browserslist@npm:^4.24.0, browserslist@npm:^4.24.4":
+  version: 4.24.5
+  resolution: "browserslist@npm:4.24.5"
+>>>>>>> main
   dependencies:
     caniuse-lite: "npm:^1.0.30001718"
     electron-to-chromium: "npm:^1.5.160"
@@ -3009,10 +3162,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "caniuse-lite@npm:^1.0.30001579, caniuse-lite@npm:^1.0.30001718":
   version: 1.0.30001720
   resolution: "caniuse-lite@npm:1.0.30001720"
   checksum: 10c0/ba9f963364ec4bfc8359d15d7e2cf365185fa1fddc90b4f534c71befedae9b3dd0cd2583a25ffc168a02d7b61b6c18b59bda0a1828ea2a5250fd3e35c2c049e9
+=======
+"caniuse-lite@npm:^1.0.30001579, caniuse-lite@npm:^1.0.30001702, caniuse-lite@npm:^1.0.30001716":
+  version: 1.0.30001718
+  resolution: "caniuse-lite@npm:1.0.30001718"
+  checksum: 10c0/67f9ad09bc16443e28d14f265d6e468480cd8dc1900d0d8b982222de80c699c4f2306599c3da8a3fa7139f110d4b30d49dbac78f215470f479abb6ffe141d5d3
+>>>>>>> main
   languageName: node
   linkType: hard
 
@@ -3649,10 +3809,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "electron-to-chromium@npm:^1.5.160":
   version: 1.5.161
   resolution: "electron-to-chromium@npm:1.5.161"
   checksum: 10c0/64e06657b747d889fdacd7ee042f5f2e189d215b6e7b8510d899d1eeb82676f9d4431ee6822cee009195500338f23996b9ae4eec0e4eb4e907e13e2d28489d5b
+=======
+"electron-to-chromium@npm:^1.5.149":
+  version: 1.5.159
+  resolution: "electron-to-chromium@npm:1.5.159"
+  checksum: 10c0/dc5b60a235ad04b1637b3b2af4914ac900c42813b02262a91a41d950223316f7b12de715697cf9c2d9f572f716f9422bf259ee65d86599cd2cc66e92c499ebd1
+>>>>>>> main
   languageName: node
   linkType: hard
 
@@ -3734,8 +3901,13 @@ __metadata:
   linkType: hard
 
 "es-abstract@npm:^1.17.5, es-abstract@npm:^1.23.2, es-abstract@npm:^1.23.3, es-abstract@npm:^1.23.5, es-abstract@npm:^1.23.6, es-abstract@npm:^1.23.9":
+<<<<<<< HEAD
   version: 1.24.0
   resolution: "es-abstract@npm:1.24.0"
+=======
+  version: 1.23.10
+  resolution: "es-abstract@npm:1.23.10"
+>>>>>>> main
   dependencies:
     array-buffer-byte-length: "npm:^1.0.2"
     arraybuffer.prototype.slice: "npm:^1.0.4"
@@ -3791,7 +3963,11 @@ __metadata:
     typed-array-length: "npm:^1.0.7"
     unbox-primitive: "npm:^1.1.0"
     which-typed-array: "npm:^1.1.19"
+<<<<<<< HEAD
   checksum: 10c0/b256e897be32df5d382786ce8cce29a1dd8c97efbab77a26609bd70f2ed29fbcfc7a31758cb07488d532e7ccccdfca76c1118f2afe5a424cdc05ca007867c318
+=======
+  checksum: 10c0/e65c8fb973d6ba489fc1bc88730c56a592e249f49a9811c77bf88568f23696b682fe3f3485c03aaf6561042a3c7a675ae57d512861dffd8b0abde0035231c6a3
+>>>>>>> main
   languageName: node
   linkType: hard
 
@@ -4645,6 +4821,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
+=======
+"fraction.js@npm:^4.3.7":
+  version: 4.3.7
+  resolution: "fraction.js@npm:4.3.7"
+  checksum: 10c0/df291391beea9ab4c263487ffd9d17fed162dbb736982dee1379b2a8cc94e4e24e46ed508c6d278aded9080ba51872f1bc5f3a5fd8d7c74e5f105b508ac28711
+  languageName: node
+  linkType: hard
+
+>>>>>>> main
 "fs-extra@npm:^11.1.0":
   version: 11.3.0
   resolution: "fs-extra@npm:11.3.0"
@@ -4825,6 +5011,7 @@ __metadata:
   dependencies:
     resolve-pkg-maps: "npm:^1.0.0"
   checksum: 10c0/7f8e3dabc6a49b747920a800fb88e1952fef871cdf51b79e98db48275a5de6cdaf499c55ee67df5fa6fe7ce65f0063e26de0f2e53049b408c585aa74d39ffa21
+<<<<<<< HEAD
   languageName: node
   linkType: hard
 
@@ -4834,6 +5021,8 @@ __metadata:
   dependencies:
     mem: "npm:^8.0.0"
   checksum: 10c0/2796b3fc3782b1f4826f31e899642cf72eeb23e296e1cf55280aab5caf7a25f4b906491ee1508a001519d6a410902ccf8fa8edaa895b7aee5dfd422ffe5523b9
+=======
+>>>>>>> main
   languageName: node
   linkType: hard
 
@@ -6376,6 +6565,7 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "mem@npm:^8.0.0":
   version: 8.1.1
   resolution: "mem@npm:8.1.1"
@@ -6386,6 +6576,8 @@ __metadata:
   languageName: node
   linkType: hard
 
+=======
+>>>>>>> main
 "merge-stream@npm:^2.0.0":
   version: 2.0.0
   resolution: "merge-stream@npm:2.0.0"
@@ -6597,8 +6789,13 @@ __metadata:
   linkType: hard
 
 "msw@npm:^2.7.1":
+<<<<<<< HEAD
   version: 2.8.6
   resolution: "msw@npm:2.8.6"
+=======
+  version: 2.8.5
+  resolution: "msw@npm:2.8.5"
+>>>>>>> main
   dependencies:
     "@bundled-es-modules/cookie": "npm:^2.0.1"
     "@bundled-es-modules/statuses": "npm:^1.0.1"
@@ -6625,7 +6822,11 @@ __metadata:
       optional: true
   bin:
     msw: cli/index.js
+<<<<<<< HEAD
   checksum: 10c0/91c5fb23f2c07a87d13439c1b02e4f05be9d5b8592e77349deee49ac306a4297172420055fe47b24c065775a0933720e8d393751ed10eae036dbebe2d3ed2a6e
+=======
+  checksum: 10c0/8c577d0975f512e09ff0fba20e1891f6f6ab394f4c7df844695903ed4455a9829fb6f2f58ce4180a03a64f77fb385c1d6746bbc343e13137a699d34711532e19
+>>>>>>> main
   languageName: node
   linkType: hard
 
@@ -6827,6 +7028,13 @@ __metadata:
   bin:
     nopt: bin/nopt.js
   checksum: 10c0/62e9ea70c7a3eb91d162d2c706b6606c041e4e7b547cbbb48f8b3695af457dd6479904d7ace600856bf923dd8d1ed0696f06195c8c20f02ac87c1da0e1d315ef
+  languageName: node
+  linkType: hard
+
+"normalize-range@npm:^0.1.2":
+  version: 0.1.2
+  resolution: "normalize-range@npm:0.1.2"
+  checksum: 10c0/bf39b73a63e0a42ad1a48c2bd1bda5a07ede64a7e2567307a407674e595bcff0fa0d57e8e5f1e7fa5e91000797c7615e13613227aaaa4d6d6e87f5bd5cc95de6
   languageName: node
   linkType: hard
 
@@ -7386,6 +7594,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"postcss-value-parser@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "postcss-value-parser@npm:4.2.0"
+  checksum: 10c0/f4142a4f56565f77c1831168e04e3effd9ffcc5aebaf0f538eee4b2d465adfd4b85a44257bb48418202a63806a7da7fe9f56c330aebb3cac898e46b4cbf49161
+  languageName: node
+  linkType: hard
+
 "postcss@npm:8.4.31":
   version: 8.4.31
   resolution: "postcss@npm:8.4.31"
@@ -7519,6 +7734,7 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "react-clock@npm:^5.0.0":
   version: 5.1.0
   resolution: "react-clock@npm:5.1.0"
@@ -7538,6 +7754,9 @@ __metadata:
   linkType: hard
 
 "react-datepicker@npm:^8.4.0":
+=======
+"react-datepicker@npm:^8.3.0":
+>>>>>>> main
   version: 8.4.0
   resolution: "react-datepicker@npm:8.4.0"
   dependencies:
@@ -7661,6 +7880,7 @@ __metadata:
     react-dom:
       optional: true
   checksum: 10c0/9968dcccc6695671cb216a74a756d717f47d5b8613869be72764966c2dc252ce12aa91a5f74838776b78d65a2297d7d5455c26a3ed78a380897905383b30c7d8
+<<<<<<< HEAD
   languageName: node
   linkType: hard
 
@@ -7683,6 +7903,8 @@ __metadata:
     "@types/react":
       optional: true
   checksum: 10c0/538a1964de1ef9021b195f856efedc207019b6da1b9bbdcb6899c876ec6b4eeb02f4f16b77677dc0edb704099ed7f204dde0821573b7a1f1f24909e02ea2aee6
+=======
+>>>>>>> main
   languageName: node
   linkType: hard
 
@@ -8788,7 +9010,11 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "tailwindcss@npm:4.1.8, tailwindcss@npm:^4":
+=======
+"tailwindcss@npm:4.1.8, tailwindcss@npm:^4.1.7":
+>>>>>>> main
   version: 4.1.8
   resolution: "tailwindcss@npm:4.1.8"
   checksum: 10c0/a566d049ee313f9c1638fd2a5fe95ae7e40bb35b58e92ed8d7c51880e71dff2a423dd430ff97444e2496c9c77b3f44ad4df48110b11484133019c1a8520d7bce
@@ -9000,9 +9226,15 @@ __metadata:
   linkType: hard
 
 "tw-animate-css@npm:^1.2.5":
+<<<<<<< HEAD
   version: 1.3.2
   resolution: "tw-animate-css@npm:1.3.2"
   checksum: 10c0/0cdac9936f1f8e9889118212d12d5aa1a29ef08bebc14906e6cbc4c46eae3bdd0aaba26f3a148a41b007da08380ed127db39d713a19b6d84ce5b7be170f238b0
+=======
+  version: 1.3.0
+  resolution: "tw-animate-css@npm:1.3.0"
+  checksum: 10c0/c72a2c189d6aebd6cc31189c3ca1cf4cf2c3f37f005d0879cd40cfdd6550bfb665384e9a50b91dfc9befe9860ff09adb536a7f7431bf18132aef7e04734a02f2
+>>>>>>> main
   languageName: node
   linkType: hard
 
@@ -9121,7 +9353,7 @@ __metadata:
     "@iconify/react": "npm:^5.2.1"
     "@playwright/test": "npm:^1.51.1"
     "@radix-ui/react-slot": "npm:^1.2.0"
-    "@tailwindcss/postcss": "npm:^4"
+    "@tailwindcss/postcss": "npm:^4.1.7"
     "@tanstack/react-query": "npm:^5.74.3"
     "@testing-library/dom": "npm:^10.4.0"
     "@testing-library/jest-dom": "npm:6.6.3"
@@ -9132,6 +9364,7 @@ __metadata:
     "@types/react": "npm:^19"
     "@types/react-dom": "npm:^19"
     "@vitejs/plugin-react": "npm:4.4.0"
+    autoprefixer: "npm:^10.4.21"
     axios: "npm:^1.8.4"
     class-variance-authority: "npm:^0.7.1"
     classnames: "npm:^2.5.1"
@@ -9148,6 +9381,7 @@ __metadata:
     lucide-react: "npm:^0.488.0"
     next: "npm:15.3.0"
     plop: "npm:^4.0.1"
+    postcss: "npm:^8.5.3"
     prettier: "npm:^3.5.3"
     react: "npm:^18"
     react-datepicker: "npm:^8.4.0"
@@ -9158,7 +9392,7 @@ __metadata:
     react-time-picker: "npm:^7.0.0"
     shadcn: "npm:^2.4.1"
     tailwind-merge: "npm:^3.2.0"
-    tailwindcss: "npm:^4"
+    tailwindcss: "npm:^4.1.7"
     tw-animate-css: "npm:^1.2.5"
     typescript: "npm:^5"
     vitest: "npm:3.1.1"
@@ -9233,6 +9467,7 @@ __metadata:
   linkType: hard
 
 "unrs-resolver@npm:^1.6.2":
+<<<<<<< HEAD
   version: 1.7.8
   resolution: "unrs-resolver@npm:1.7.8"
   dependencies:
@@ -9253,6 +9488,28 @@ __metadata:
     "@unrs/resolver-binding-win32-arm64-msvc": "npm:1.7.8"
     "@unrs/resolver-binding-win32-ia32-msvc": "npm:1.7.8"
     "@unrs/resolver-binding-win32-x64-msvc": "npm:1.7.8"
+=======
+  version: 1.7.6
+  resolution: "unrs-resolver@npm:1.7.6"
+  dependencies:
+    "@unrs/resolver-binding-darwin-arm64": "npm:1.7.6"
+    "@unrs/resolver-binding-darwin-x64": "npm:1.7.6"
+    "@unrs/resolver-binding-freebsd-x64": "npm:1.7.6"
+    "@unrs/resolver-binding-linux-arm-gnueabihf": "npm:1.7.6"
+    "@unrs/resolver-binding-linux-arm-musleabihf": "npm:1.7.6"
+    "@unrs/resolver-binding-linux-arm64-gnu": "npm:1.7.6"
+    "@unrs/resolver-binding-linux-arm64-musl": "npm:1.7.6"
+    "@unrs/resolver-binding-linux-ppc64-gnu": "npm:1.7.6"
+    "@unrs/resolver-binding-linux-riscv64-gnu": "npm:1.7.6"
+    "@unrs/resolver-binding-linux-riscv64-musl": "npm:1.7.6"
+    "@unrs/resolver-binding-linux-s390x-gnu": "npm:1.7.6"
+    "@unrs/resolver-binding-linux-x64-gnu": "npm:1.7.6"
+    "@unrs/resolver-binding-linux-x64-musl": "npm:1.7.6"
+    "@unrs/resolver-binding-wasm32-wasi": "npm:1.7.6"
+    "@unrs/resolver-binding-win32-arm64-msvc": "npm:1.7.6"
+    "@unrs/resolver-binding-win32-ia32-msvc": "npm:1.7.6"
+    "@unrs/resolver-binding-win32-x64-msvc": "npm:1.7.6"
+>>>>>>> main
     napi-postinstall: "npm:^0.2.2"
   dependenciesMeta:
     "@unrs/resolver-binding-darwin-arm64":
@@ -9289,7 +9546,11 @@ __metadata:
       optional: true
     "@unrs/resolver-binding-win32-x64-msvc":
       optional: true
+<<<<<<< HEAD
   checksum: 10c0/71f0bb972fdf786299eabe761d61c65c30a8b4965ba63305ee7133f22efbf51321abed844ba2bd00cb332580f9def1df270826b322efba748529dc1b9e1224dd
+=======
+  checksum: 10c0/e455be36daa8c6510dd3e3697be4de6d158e0115dd6371536486ed574318c397593bd2415eee2e752132523dd03098d9c564fec193c3e3b1f582871921d09bd9
+>>>>>>> main
   languageName: node
   linkType: hard
 
@@ -9848,8 +10109,14 @@ __metadata:
   linkType: hard
 
 "zod@npm:^3.20.2, zod@npm:^3.24.2":
+<<<<<<< HEAD
   version: 3.25.36
   resolution: "zod@npm:3.25.36"
   checksum: 10c0/9ad8ca759d1a5d19c86d6e49a1bda817b3c0566ea0a8726d45994b9fcaac8d569db45a65218a7b4067ca18b07c5fc636a587a94cd05f76793174ace8b81742e3
+=======
+  version: 3.25.32
+  resolution: "zod@npm:3.25.32"
+  checksum: 10c0/de0bc052a7666578b3d5dd42bc522f02f27e1c798236439c0f6b6bc1b311a221706aebdafb1f58399d5f558b1fab7860c6970e096fe8d6947743bc791d567c4b
+>>>>>>> main
   languageName: node
   linkType: hard
