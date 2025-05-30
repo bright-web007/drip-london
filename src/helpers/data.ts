@@ -302,11 +302,11 @@ export const navLinks = [
 ];
 
 export const navLinker = [
-  { name: 'Reservation', link: '/reservation' },
+  { name: 'Reservation', link: '/contact-us' },
   { name: 'Private Dinning', link: '/faq' },
   { name: 'Menus', link: '/menu' },
   { name: 'FAQs', link: '/faq#faq' },
-  { name: 'Book An Event', link: '/contact-us' },
+  { name: 'Book An Event', link: '/reservation' },
 ];
 
 export const latestNews = [
