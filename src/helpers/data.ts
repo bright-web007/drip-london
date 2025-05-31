@@ -12,6 +12,12 @@ import card4 from '@/assets/card4.png';
 import card5 from '@/assets/card5.png';
 import card6 from '@/assets/card6.png';
 
+import vector1 from '@/assets/Vector1.svg'
+import vector2 from '@/assets/vector2.svg'
+import vector3 from '@/assets/vector3.svg'
+import vector4 from '@/assets/vector4.svg'
+import vector5 from '@/assets/vector5.svg'
+
 export const reviews = [
   {
     author: 'Richard Johnson',
@@ -441,3 +447,36 @@ export const center = {
 };
 
 export const GOOGLE_MAPS_APIKEY = 'AIzaSyB_Ujmyiir8qmceRFs5ICiSHUJhQnXRZD4';
+
+export const contact = [
+  {
+    image: vector1,
+    subtitle: 'Minimum Spend',
+    description:
+      "A minimum spend of £65 per person applies from Friday to Sunday (excluding brunch bookings).",
+  },
+  {
+    image: vector2,
+    subtitle: 'Group Bookings',
+    description:
+      "Reservations of fewer than 12 guests are welcome to dine from our à la carte menu. Groups of 12 or more will be offered a specially curated set menu by our chef.",
+  },
+  {
+    image: vector3,
+    subtitle: 'Dress Code',
+    description:
+      'Our dress code is smart elegant. We reserve the right to refuse entry if attire does not meet our standards.',
+  },
+  {
+    image: vector4,
+    subtitle: "Reservation Timing",
+    description:
+      "We hold tables for 15 minutes past the booking time before releasing them to other waiting guests.",
+  },
+  {
+    image: vector5,
+    subtitle: 'Availability',
+    description:
+      'If you can’t find your preferred date or time online, feel free to contact us directly via WhatsApp or email.',
+  },
+];
