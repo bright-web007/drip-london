@@ -21,7 +21,7 @@ import { Listbox } from '@headlessui/react';
 import calender from '@/assets/icons-svg/calendar.svg';
 import { useRouter } from 'next/navigation';
 
-export default function Booking() {
+const Block22 = () => {
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
     firstName: '',
@@ -746,4 +746,6 @@ export default function Booking() {
       )}
     </div>
   );
-}
+};
+
+export default Block22;
