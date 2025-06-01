@@ -528,7 +528,7 @@ export const contact = [
     subtitle: 'Availability',
     description:
       'If you can’t find your preferred date or time online, feel free to contact us directly via WhatsApp or email.',
-  }
+  },
 ];
 
 export const faqreview = [
