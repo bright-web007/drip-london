@@ -20,6 +20,7 @@ import { ChevronDown } from 'lucide-react';
 import { Listbox } from '@headlessui/react';
 import calender from '@/assets/icons-svg/calendar.svg';
 import { useRouter } from 'next/navigation';
+import { FaCheck } from 'react-icons/fa';
 
 const Block22 = () => {
   const [step, setStep] = useState(1);
@@ -200,56 +201,57 @@ const Block22 = () => {
             <div className="flex items-center justify-between w-full max-w-xl mx-auto mb-[24px] sm:mb-[26px]">
               {/* <!-- Step 1 --> */}
               <div className="flex-1 flex flex-col items-center relative">
-                {/* <!-- Left Line (omit for first step) --> */}
-
-                {/* <!-- Right Line --> */}
+                {/* Right Line */}
                 <div className="absolute right-0 top-3 w-1/2 h-[2px] bg-[#5C5C5C] z-0"></div>
 
-                {/* <!-- Step Circle --> */}
-                <div className="w-6 h-6 rounded-full flex items-center justify-center z-10 bg-black border-2 border-[#898155]">
-                  <div className="w-2 h-2 bg-[#898155] rounded-full"></div>
+                {/* Step Circle */}
+                <div
+                  className={`w-6 h-6 rounded-full flex items-center justify-center z-10
+        ${
+          formData.firstName && formData.lastName && formData.email && formData.phone
+            ? 'bg-[#898155] text-black border border-[#898155]'
+            : 'bg-black border-2 border-[#898155]'
+        }`}
+                >
+                  {formData.firstName && formData.lastName && formData.email && formData.phone ? (
+                    <FaCheck className="w-3 h-3" />
+                  ) : (
+                    <div className="w-2 h-2 bg-[#898155] rounded-full"></div>
+                  )}
                 </div>
 
-                {/* <!-- Step Label --> */}
-                <span className="mt-2 text-xs text-center text-[#898155]">Personal</span>
+                {/* Step Label */}
+                <span
+                  className={`mt-2 text-xs text-center ${
+                    formData.firstName && formData.lastName && formData.email && formData.phone
+                      ? 'text-[#898155]'
+                      : 'text-[#898155]'
+                  }`}
+                >
+                  Personal
+                </span>
               </div>
 
               {/* <!-- Step 2 --> */}
               <div className="flex-1 flex flex-col items-center relative">
-                {/* <!-- Left Line --> */}
                 <div className="absolute left-0 top-3 w-1/2 h-[2px] bg-[#5C5C5C] z-0"></div>
-                {/* <!-- Right Line --> */}
                 <div className="absolute right-0 top-3 w-1/2 h-[2px] bg-[#5C5C5C] z-0"></div>
-
-                {/* <!-- Step Circle --> */}
                 <div className="w-6 h-6 rounded-full flex items-center justify-center z-10 bg-black border-2 border-[#5C5C5C]"></div>
-                {/* <!-- Step Label --> */}
-                <span className="mt-2 text-xs text-center text-white/70 ">Event</span>
+                <span className="mt-2 text-xs text-center text-white/70">Event</span>
               </div>
 
               {/* <!-- Step 3 --> */}
               <div className="flex-1 flex flex-col items-center relative">
-                {/* <!-- Left Line --> */}
                 <div className="absolute left-0 top-3 w-1/2 h-[2px] bg-[#5C5C5C] z-0"></div>
-                {/* <!-- Right Line --> */}
                 <div className="absolute right-0 top-3 w-1/2 h-[2px] bg-[#5C5C5C] z-0"></div>
-
-                {/* <!-- Step Circle --> */}
                 <div className="w-6 h-6 rounded-full flex items-center justify-center z-10 bg-black border-2 border-[#5C5C5C]"></div>
-
-                {/* <!-- Step Label --> */}
                 <span className="mt-2 text-xs text-center text-white/70">Additional Info</span>
               </div>
 
               {/* <!-- Step 4 --> */}
               <div className="flex-1 flex flex-col items-center relative">
-                {/* <!-- Left Line --> */}
                 <div className="absolute left-0 top-3 w-1/2 h-[2px] bg-[#5C5C5C] z-0"></div>
-
-                {/* <!-- Step Circle --> */}
                 <div className="w-6 h-6 rounded-full flex items-center justify-center z-10 bg-black border-2 border-[#5C5C5C]"></div>
-
-                {/* <!-- Step Label --> */}
                 <span className="mt-2 text-xs text-center text-white/70">Success</span>
               </div>
             </div>
@@ -344,61 +346,68 @@ const Block22 = () => {
             </h2>
 
             <div className="flex items-center justify-between w-full max-w-xl mx-auto mb-[24px]">
-              {/* <!-- Step 1 --> */}
+              {/* Step 1 - Personal (always completed) */}
               <div className="flex-1 flex flex-col items-center relative">
-                {/* <!-- Left Line (omit for first step) --> */}
-
-                {/* <!-- Right Line --> */}
                 <div className="absolute right-0 top-3 w-1/2 h-[2px] bg-[#5C5C5C] z-0"></div>
-
-                {/* <!-- Step Circle --> */}
-                <div className="w-6 h-6 rounded-full flex items-center justify-center z-10 bg-[#898155] text-white">
-                  <span className="text-sm font-bold">✓</span>
+                <div className="w-6 h-6 rounded-full flex items-center justify-center z-10 bg-[#898155] border border-[#898155] text-black">
+                  <FaCheck className="w-3 h-3" />
                 </div>
-
-                {/* <!-- Step Label --> */}
                 <span className="mt-2 text-xs text-center text-[#898155]">Personal</span>
               </div>
 
-              {/* <!-- Step 2 --> */}
+              {/* Step 2 - Event */}
               <div className="flex-1 flex flex-col items-center relative">
-                {/* <!-- Left Line --> */}
                 <div className="absolute left-0 top-3 w-1/2 h-[2px] bg-[#5C5C5C] z-0"></div>
-                {/* <!-- Right Line --> */}
                 <div className="absolute right-0 top-3 w-1/2 h-[2px] bg-[#5C5C5C] z-0"></div>
-
-                {/* <!-- Step Circle --> */}
-                <div className="w-6 h-6 rounded-full flex items-center justify-center z-10 bg-black border-2 border-[#898155]">
-                  <div className="w-2 h-2 bg-[#898155] rounded-full"></div>
+                <div
+                  className={`w-6 h-6 rounded-full flex items-center justify-center z-10
+        ${
+          formData.eventType &&
+          formData.eventDate &&
+          formData.startTime &&
+          formData.endTime &&
+          formData.members
+            ? 'bg-[#898155] border border-[#898155] text-black'
+            : 'bg-black border-2 border-[#898155]'
+        }`}
+                >
+                  {formData.eventType &&
+                  formData.eventDate &&
+                  formData.startTime &&
+                  formData.endTime &&
+                  formData.members ? (
+                    <FaCheck className="w-3 h-3" />
+                  ) : (
+                    <div className="w-2 h-2 bg-[#898155] rounded-full"></div>
+                  )}
                 </div>
-
-                {/* <!-- Step Label --> */}
-                <span className="mt-2 text-xs text-center  text-[#898155]">Event</span>
+                <span
+                  className={`mt-2 text-xs text-center ${
+                    formData.eventType &&
+                    formData.eventDate &&
+                    formData.startTime &&
+                    formData.endTime &&
+                    formData.members
+                      ? 'text-[#898155]'
+                      : 'text-[#898155]'
+                  }`}
+                >
+                  Event
+                </span>
               </div>
 
-              {/* <!-- Step 3 --> */}
+              {/* Step 3 - Additional Info */}
               <div className="flex-1 flex flex-col items-center relative">
-                {/* <!-- Left Line --> */}
                 <div className="absolute left-0 top-3 w-1/2 h-[2px] bg-[#5C5C5C] z-0"></div>
-                {/* <!-- Right Line --> */}
                 <div className="absolute right-0 top-3 w-1/2 h-[2px] bg-[#5C5C5C] z-0"></div>
-
-                {/* <!-- Step Circle --> */}
                 <div className="w-6 h-6 rounded-full flex items-center justify-center z-10 bg-black border-2 border-[#5C5C5C]"></div>
-
-                {/* <!-- Step Label --> */}
                 <span className="mt-2 text-xs text-center text-white/70">Additional Info</span>
               </div>
 
-              {/* <!-- Step 4 --> */}
+              {/* Step 4 - Success */}
               <div className="flex-1 flex flex-col items-center relative">
-                {/* <!-- Left Line --> */}
                 <div className="absolute left-0 top-3 w-1/2 h-[2px] bg-[#5C5C5C] z-0"></div>
-
-                {/* <!-- Step Circle --> */}
                 <div className="w-6 h-6 rounded-full flex items-center justify-center z-10 bg-black border-2 border-[#5C5C5C]"></div>
-
-                {/* <!-- Step Label --> */}
                 <span className="mt-2 text-xs text-center text-white/70">Success</span>
               </div>
             </div>
@@ -568,65 +577,51 @@ const Block22 = () => {
             </h2>
 
             <div className="flex items-center justify-between w-full max-w-xl mx-auto mb-[24px]">
-              {/* <!-- Step 1 --> */}
+              {/* Step 1 - Personal */}
               <div className="flex-1 flex flex-col items-center relative">
-                {/* <!-- Left Line (omit for first step) --> */}
-
-                {/* <!-- Right Line --> */}
                 <div className="absolute right-0 top-3 w-1/2 h-[2px] bg-[#5C5C5C] z-0"></div>
-
-                {/* <!-- Step Circle --> */}
-                <div className="w-6 h-6 rounded-full flex items-center justify-center z-10 bg-[#898155] text-white">
-                  <span className="text-sm font-bold">✓</span>
+                <div className="w-6 h-6 rounded-full flex items-center justify-center z-10 bg-[#898155] border border-[#898155] text-black">
+                  <FaCheck className="w-3 h-3" />
                 </div>
-
-                {/* <!-- Step Label --> */}
                 <span className="mt-2 text-xs text-center text-[#898155]">Personal</span>
               </div>
 
-              {/* <!-- Step 2 --> */}
+              {/* Step 2 - Event */}
               <div className="flex-1 flex flex-col items-center relative">
-                {/* <!-- Left Line --> */}
                 <div className="absolute left-0 top-3 w-1/2 h-[2px] bg-[#5C5C5C] z-0"></div>
-                {/* <!-- Right Line --> */}
                 <div className="absolute right-0 top-3 w-1/2 h-[2px] bg-[#5C5C5C] z-0"></div>
-
-                {/* <!-- Step Circle --> */}
-                <div className="w-6 h-6 rounded-full flex items-center justify-center z-10 bg-[#898155] text-white">
-                  <span className="text-sm font-bold">✓</span>
+                <div className="w-6 h-6 rounded-full flex items-center justify-center z-10 bg-[#898155] border border-[#898155] text-black">
+                  <FaCheck className="w-3 h-3" />
                 </div>
-
-                {/* <!-- Step Label --> */}
                 <span className="mt-2 text-xs text-center text-[#898155]">Event</span>
               </div>
 
-              {/* <!-- Step 3 --> */}
+              {/* Step 3 - Additional Info (Active with gold border and dot) */}
               <div className="flex-1 flex flex-col items-center relative">
-                {/* <!-- Left Line --> */}
                 <div className="absolute left-0 top-3 w-1/2 h-[2px] bg-[#5C5C5C] z-0"></div>
-                {/* <!-- Right Line --> */}
                 <div className="absolute right-0 top-3 w-1/2 h-[2px] bg-[#5C5C5C] z-0"></div>
 
-                {/* <!-- Step Circle --> */}
-                <div className="w-6 h-6 rounded-full flex items-center justify-center z-10 bg-black border-2 border-[#898155]">
-                  <div className="w-2 h-2 bg-[#898155] rounded-full"></div>
-                </div>
+                {step > 3 ? (
+                  // Completed: Gold background with checkmark
+                  <div className="w-6 h-6 rounded-full flex items-center justify-center z-10 bg-[#898155] text-black">
+                    <FaCheck className="w-3 h-3" />
+                  </div>
+                ) : (
+                  // Active: Black background with gold border and gold dot
+                  <div className="w-6 h-6 rounded-full flex items-center justify-center z-10 bg-black border-2 border-[#898155]">
+                    <div className="w-2 h-2 bg-[#898155] rounded-full"></div>
+                  </div>
+                )}
 
-                {/* <!-- Step Label --> */}
-                <span className="mt-2 text-[10.5px] text-center text-white/70">
+                <span className="mt-2 text-[10.2px] text-center text-[#898155]  xl:text-[11px]">
                   Additional Info
                 </span>
               </div>
 
-              {/* <!-- Step 4 --> */}
+              {/* Step 4 - Success (Inactive) */}
               <div className="flex-1 flex flex-col items-center relative">
-                {/* <!-- Left Line --> */}
                 <div className="absolute left-0 top-3 w-1/2 h-[2px] bg-[#5C5C5C] z-0"></div>
-
-                {/* <!-- Step Circle --> */}
                 <div className="w-6 h-6 rounded-full flex items-center justify-center z-10 bg-black border-2 border-[#5C5C5C]"></div>
-
-                {/* <!-- Step Label --> */}
                 <span className="mt-2 text-xs text-center text-white/70">Success</span>
               </div>
             </div>
