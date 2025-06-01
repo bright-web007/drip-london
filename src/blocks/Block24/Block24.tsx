@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { faqreview } from '@/helpers/data';
 import { FaChevronDown } from 'react-icons/fa';
 
@@ -11,6 +11,18 @@ interface FAQItem {
 
 const Block24 = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  useEffect(() => {
+    // Scroll to #faq if present in the URL hash
+    if (window.location.hash === '#faq') {
+      const el = document.getElementById('faq');
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }, 300); // Delay to ensure DOM is ready
+      }
+    }
+  }, []);
 
   const toggleIndex = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -81,7 +93,6 @@ const Block24 = () => {
 
           return (
             <div key={index} className="flex">
-              {/* Vertical line + dot section */}
               <div className="flex flex-col items-center mr-4 pt-2">
                 <div className="w-[2px] h-[80px] bg-white" />
                 <div className="h-[6px]" />
@@ -90,7 +101,6 @@ const Block24 = () => {
                 {isOpen && <div className="w-[2px] h-[100%] bg-white" />}
               </div>
 
-              {/* Content Box */}
               <div className="flex-1 bg-[#1A1A1A] border border-[#3D3D3D] rounded-lg p-6 transition-all duration-300 sm:p-[30px]">
                 <div
                   onClick={() => toggleIndex(index)}
@@ -105,7 +115,6 @@ const Block24 = () => {
                     }`}
                   />
                 </div>
-
                 {isOpen && formatReview(item)}
               </div>
             </div>
