@@ -33,8 +33,8 @@ const page = () => {
     <div>
       <Block15 />
       <div className="xl:flex w-full xl:pr-[40px] xl:pl-[40px] bg-[black]">
-      <Block16 />
-      <Block17 />
+        <Block16 />
+        <Block17 />
       </div>
     </div>
   );

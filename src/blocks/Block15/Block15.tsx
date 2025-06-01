@@ -76,7 +76,6 @@ const Block15 = () => {
                 <option>8:30pm</option>
                 <option>9:00pm</option>
                 <option>9:30pm</option>
-
               </select>
             </div>
           </div>
@@ -89,11 +88,7 @@ const Block15 = () => {
 
         {/* OpenTable Logo */}
         <div className="mb-[20px] xl:mb-[60px]">
-          <Image
-            src={OpenTable}
-            alt="open table"
-            className="w-[113.841px] h-[25.67px]"
-          />
+          <Image src={OpenTable} alt="open table" className="w-[113.841px] h-[25.67px]" />
         </div>
       </div>
 
