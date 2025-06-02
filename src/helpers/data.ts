@@ -645,7 +645,7 @@ export const items: Item[] = [
       {
         label: 'More Details',
         actionType: 'navigate',
-        path: '/private',
+        path: '/faq',
       },
     ],
   },
