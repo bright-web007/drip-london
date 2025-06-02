@@ -8,7 +8,7 @@ const Block17 = () => {
   const [isFocused, setIsFocused] = useState(false);
 
   return (
-    <div className="pr-[24px] pl-[24px] pt-[49px]  bg-[black] md:pr-[32px] md:pl-[32px] md:pt-[49px]  xl:h-[703px] xl:w-[441px] xl:mt-[97px] 2xl:w-[641px]">
+    <div className="pr-[24px] pl-[24px] pt-[0px] pb-[150px]  bg-[black] md:pr-[32px] md:pl-[32px] md:pt-[29px]  xl:h-[703px] xl:w-[441px] xl:mt-[114px] 2xl:w-[641px]">
       <div className="p-[24px] rounded-[4px] border-2 border-[rgba(110,110,110,0.15)] space-y-6  bg-[rgba(13,13,13,0.53)] md:p-[28px]">
         <h1 className="flex flex-col text-[16px] font-thankslabs leading-[28px] text-[#898155] font-normal mb-[24px]  md:text-[18px] xl:mb-[12px]">
           <span> Got Questions? </span>
