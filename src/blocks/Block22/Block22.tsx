@@ -7,7 +7,6 @@ import TimePicker from 'react-time-picker';
 import { ArrowLeft } from 'lucide-react';
 import 'react-datepicker/dist/react-datepicker.css';
 import 'react-time-picker/dist/TimePicker.css';
-import group from '@/assets/icons-svg/Group.svg';
 import arrow from '@/assets/icons-svg/arrow-side.svg';
 import facebook from '@/assets/icons-svg/logos_facebook.svg';
 import google from '@/assets/icons-svg/devicon_google.svg';
