@@ -20,8 +20,19 @@ const Block15 = () => {
     }
   };
 
+  const timeOptions = [
+    '6:00pm',
+    '6:30pm',
+    '7:00pm',
+    '7:30pm',
+    '8:00pm',
+    '8:30pm',
+    '9:00pm',
+    '9:30pm',
+  ];
+
   const handleRedirect = () => {
-    const restaurantId = '352578'; // Your OpenTable restaurant ID
+    const restaurantId = process.env.NEXT_PUBLIC_RESTAURANT_ID; // Your OpenTable restaurant ID
 
     // Convert 12-hour time (e.g. 6:30pm) to 24-hour format (e.g. 18:30)
     const [hourStr, minPeriod] = time.split(':');
@@ -34,7 +45,7 @@ const Block15 = () => {
     const hourFormatted = hour.toString().padStart(2, '0');
 
     const datetime = `${date}T${hourFormatted}:${minutes}`;
-    const url = `https://www.opentable.co.uk/restref/client/?restref=${restaurantId}&datetime=${datetime}&covers=${guests}`;
+    const url = `${process.env.NEXT_PUBLIC_OPENTABLE_URL}${restaurantId}&datetime=${datetime}&covers=${guests}`;
 
     window.open(url, '_blank'); // Open in new tab
   };
@@ -92,16 +103,7 @@ const Block15 = () => {
                 value={time}
                 onChange={e => setTime(e.target.value)}
               >
-                {[
-                  '6:00pm',
-                  '6:30pm',
-                  '7:00pm',
-                  '7:30pm',
-                  '8:00pm',
-                  '8:30pm',
-                  '9:00pm',
-                  '9:30pm',
-                ].map(t => (
+                {timeOptions.map(t => (
                   <option key={t}>{t}</option>
                 ))}
               </select>
