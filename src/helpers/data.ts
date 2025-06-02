@@ -42,8 +42,9 @@ import menu1 from '@/assets/menu1.jpg';
 import menu2 from '@/assets/menu2.jpg';
 import menu3 from '@/assets/menu3.jpg';
 
-import night1 from '@/assets/night1.jpg';
-import night2 from '@/assets/night2.jpg';
+import night1 from '@/assets/night1.webp';
+import night2 from '@/assets/night2.webp';
+import night3 from '@/assets/night3.jpg';
 
 import flit1 from '@/assets/flit1.jpg';
 import flit2 from '@/assets/flit2.png';
@@ -52,7 +53,7 @@ import icon1 from '@/assets/icons-svg/icon1.svg';
 import icon2 from '@/assets/icons-svg/icon2.svg';
 import icon3 from '@/assets/icons-svg/icon3.svg';
 import icon4 from '@/assets/icons-svg/icon4.svg';
-import icon5 from '@/assets/icons-svg/icon5.svg';
+import icon6 from '@/assets/icons-svg/icon6.svg';
 
 import { StaticImageData } from 'next/image';
 
@@ -307,11 +308,10 @@ export const navLinks = [
 ];
 
 export const navLinker = [
-  { name: 'Reservation', link: '/contact-us' },
-  { name: 'Private Dinning', link: '/faq' },
-  { name: 'Menus', link: '/menu' },
-  { name: 'FAQs', link: '/faq#faq' },
-  { name: 'Book An Event', link: '/reservation' },
+  { name: 'Reservations', link: '/reservations' },
+  { name: 'Menus', link: '/menus' },
+  { name: 'Private Dining', link: '/private-dining' },
+  { name: 'The Experience', link: '/the-experience' },
 ];
 
 export const latestNews = [
@@ -645,7 +645,7 @@ export const items: Item[] = [
       {
         label: 'More Details',
         actionType: 'navigate',
-        path: '/faq',
+        path: '/private-dining',
       },
     ],
   },
@@ -783,7 +783,7 @@ export const lint: lints[] = [
     ],
   },
   {
-    img: night1,
+    img: night2,
     title: 'Restaurant Private Hire',
     desc: 'Drip London’s Dinner Club Restaurant is available for private hire – perfect for private dinners and events. Accommodates up to 80 covers split over 16 tables.',
     buttons: [
@@ -796,7 +796,7 @@ export const lint: lints[] = [
   },
 
   {
-    img: night2,
+    img: night3,
     title: 'Semi-Private Group Dining',
     desc: 'Ideal for large group dinners while still soaking in the Drip London vibe. Accommodates up to 30 guests.',
     buttons: [
@@ -842,7 +842,7 @@ export const late = [
     title: 'Tailored canape options',
   },
   {
-    img: icon5,
+    img: icon6,
     title: 'Dedicated staff',
   },
 ];
