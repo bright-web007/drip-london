@@ -1,46 +1,108 @@
 'use client';
 
-import React from 'react';
-import { ArrowUpRight } from 'lucide-react';
+import React, { useState } from 'react';
+import 'react-phone-input-2/lib/style.css';
+import PhoneInput from 'react-phone-input-2';
 
 const Block17 = () => {
+  const [isFocused, setIsFocused] = useState(false);
+
   return (
-    <div className="pr-[24px] pl-[24px] pb-[60px] md:pr-[36px] md:pl-[36px] md:pb-[60px] lg:pr-[70px] lg:pl-[70px] xl:pr-[120px] xl:pl-[120px] 2xl:pr-[235px] 2xl:pl-[235px]">
-      <div className="relative h-[475px] md:flex w-[90%] sm:w-[89%] md:w-[97%] lg:w-[97%] xl:w-[85%] 2xl:w-[91%] mx-auto">
-        {/* Overlay Card */}
-        <div className="absolute  opacity-100 pr-[17.875px] pl-[18px] pb-[8px] pt-[9px] w-full h-[121px] md:h-[154px] md:pr-[391.875px] md:pl-[24px] md:pb-[25px] md:pt-[25px] z-10">
-          <div className="w-full h-[104px] border rounded shadow p-2 text-sm font-sans bg-white md:w-[100%] xl:w-[60%]">
-            <a
-              href="https://www.google.com/maps?q=52.375889,4.891306"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block"
-            >
-              <div className="flex justify-between items-start">
-                <div>
-                  <p className="font-medium leading-none">52°22'33.2"N 4°53'28.7"E</p>
-                  <p className="text-xs text-gray-600 mt-0.5">9VGR+9G3 Amsterdam, Netherlands</p>
-                </div>
-                <div className="text-blue-600 text-xs font-medium flex items-center gap-1">
-                  <ArrowUpRight size={14} className="mt-0.5" />
-                  Directions
-                </div>
-              </div>
-              <div className="mt-2 text-blue-700 text-xs hover:underline">View larger map</div>
-            </a>
-          </div>
-          {/* Embedded Google Map */}
-          <iframe
-            title="Google Map"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1229.729323395791!2d4.891306!3d52.375889!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609c4eafc5b55%3A0x0!2zNTLCsDIyJzMzLjIiTiA0wrA1MycyOC43IkU!5e0!3m2!1sen!2snl!4v1686065474410!5m2!1sen!2snl"
-            width="100%"
-            height="100%"
-            className="absolute top-0 left-0 w-full h-full rounded"
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+    <div className="pr-[24px] pl-[24px] pt-[49px]  bg-[black] md:pr-[32px] md:pl-[32px] md:pt-[49px]  xl:h-[703px] xl:w-[441px] xl:mt-[97px] 2xl:w-[641px]">
+      <div className="p-[24px] rounded-[4px] border-2 border-[rgba(110,110,110,0.15)] space-y-6  bg-[rgba(13,13,13,0.53)] md:p-[28px]">
+        <h1 className="flex flex-col text-[16px] font-thankslabs leading-[28px] text-[#898155] font-normal mb-[24px]  md:text-[18px] xl:mb-[12px]">
+          <span> Got Questions? </span>
+          <span> You can contact us</span>
+        </h1>
+        <div>
+          <label
+            htmlFor="full-name"
+            className="block mb-2 text-[12px] font-monserrat text-[#FFFFFF] leading-[18px] md:text-[14px] md:leading-[21px]"
+          >
+            Full Name
+          </label>
+          <input
+            type="text"
+            id="full-name"
+            name="full-name"
+            placeholder="Enter your full name"
+            className="w-full h-[42px] md:h-[50px] border-[rgba(44,44,44,0.29)] mb-[24px] border bg-[rgba(197,198,203,0.53)] rounded-md p-3 text-white focus:outline-none focus:ring-1 focus:ring-[#898155] xl:mb-[12px] xl:h-[38px]"
+          />
         </div>
+
+        <div>
+          <label
+            htmlFor="email"
+            className="block mb-2 text-[12px] font-monserrat text-[#FFFFFF] md:text-[14px] md:leading-[21px]"
+          >
+            Email Address
+          </label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter email address"
+            className="w-full h-[42px] md:h-[50px] border-[rgba(44,44,44,0.29)] border bg-[rgba(197,198,203,0.53)] rounded-md p-3 mb-[24px] text-white focus:outline-none focus:ring-1 focus:ring-[#898155] xl:mb-[12px] xl:h-[38px]"
+          />
+        </div>
+
+        <div>
+          <label
+            htmlFor="phone"
+            className="block mb-2 text-[12px] font-monserrat text-[#FFFFFF] md:text-[14px] md:leading-[21px]"
+          >
+            Phone Number
+          </label>
+          <div className="mb-10 h-[42px]  md:h-[50px] xl:mb-5">
+            <PhoneInput
+              country={'gb'}
+              enableSearch
+              containerStyle={{ width: '100%' }}
+              inputStyle={{
+                width: '100%',
+                height: '100%',
+                backgroundColor: 'rgba(197,198,203,0.53)',
+                color: 'white',
+                border: isFocused ? '1px solid #898155' : '1px solid rgba(44,44,44,0.29)',
+                boxShadow: isFocused ? '0 0 0 1px #898155' : 'none',
+                borderRadius: '0.375rem',
+                paddingLeft: '48px',
+                paddingTop: '12px',
+                paddingBottom: '12px',
+                fontSize: '14px',
+                outline: 'none',
+              }}
+              buttonStyle={{
+                backgroundColor: 'rgba(197,198,203,0.53)',
+                border: 'none',
+                borderTopLeftRadius: '0.375rem',
+                borderBottomLeftRadius: '0.375rem',
+              }}
+              onFocus={() => setIsFocused(true)}
+              onBlur={() => setIsFocused(false)}
+            />
+          </div>
+        </div>
+
+        <div>
+          <label
+            htmlFor="message"
+            className="block mb-2 text-[12px] font-monserrat text-[#FFFFFF] md:text-[14px] md:leading-[21px]"
+          >
+            Your Message
+          </label>
+          <textarea
+            id="message"
+            placeholder="Type your message"
+            className="w-full h-[155px] mb-[24px] border-[rgba(44,44,44,0.29)] border bg-[rgba(197,198,203,0.53)] rounded-md p-3 text-white resize-none focus:outline-none focus:ring-1 focus:ring-[#898155] xl:mb-[12px] xl:h-[150px]"
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          className="w-full  bg-[rgba(137,129,85,0.15)] border border-[#898155] text-white py-3 rounded-md hover:bg-opacity-90 transition-colors duration-300"
+        >
+          Submit Message
+        </button>
       </div>
     </div>
   );
