@@ -53,7 +53,7 @@ const Navbar = () => {
           <p onClick={() => router.push('/news')} className="cursor-pointer">
             PRIVATE DINNING
           </p>
-          <p>THE EXPERIENCE</p>
+          <p onClick={() => router.push('/faq#faq')} className="cursor-pointer">THE EXPERIENCE</p>
         </div>
       </div>
     </div>
