@@ -41,7 +41,7 @@ const Block1 = () => {
         <div className="flex flex-col gap-[8px] w-full pr-[30px] pl-[30px] items-center  md:flex-row  justify-center">
           <Button
             onClick={() => {
-              router.push('/reservation');
+              router.push('/contact-us');
             }}
             className="bg-[#898155] h-[54px] w-[330px] p-[10px] text-[16px] font-light rounded-[4px] sm:w-[420px] sm:text-[18px]  md:h-[56px]  md:w-[290px]  "
           >
