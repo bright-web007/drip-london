@@ -65,7 +65,7 @@ const Block15 = () => {
               <select
                 className="w-full bg-transparent text-gray-800 focus:outline-none"
                 value={guests}
-                onChange={(e) => setGuests(e.target.value)}
+                onChange={e => setGuests(e.target.value)}
               >
                 {[...Array(10)].map((_, i) => (
                   <option key={i + 2}>{i + 2}</option>
@@ -80,7 +80,7 @@ const Block15 = () => {
                 type="date"
                 className="w-full bg-transparent text-gray-800 focus:outline-none"
                 value={date}
-                onChange={(e) => setDate(e.target.value)}
+                onChange={e => setDate(e.target.value)}
               />
             </div>
 
@@ -90,7 +90,7 @@ const Block15 = () => {
               <select
                 className="w-full bg-transparent text-gray-800 focus:outline-none"
                 value={time}
-                onChange={(e) => setTime(e.target.value)}
+                onChange={e => setTime(e.target.value)}
               >
                 {[
                   '6:00pm',
@@ -101,7 +101,7 @@ const Block15 = () => {
                   '8:30pm',
                   '9:00pm',
                   '9:30pm',
-                ].map((t) => (
+                ].map(t => (
                   <option key={t}>{t}</option>
                 ))}
               </select>
@@ -119,11 +119,7 @@ const Block15 = () => {
 
         {/* OpenTable Logo */}
         <div className="mb-[20px] xl:mb-[60px]">
-          <Image
-            src={OpenTable}
-            alt="open table"
-            className="w-[113.841px] h-[25.67px]"
-          />
+          <Image src={OpenTable} alt="open table" className="w-[113.841px] h-[25.67px]" />
         </div>
       </div>
 
