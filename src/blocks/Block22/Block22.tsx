@@ -102,7 +102,7 @@ const Block22 = () => {
   );
 
   return (
-    <div className="w-full mx-auto mt-[-72px] relative h-[90vh] overflow-hidden ">
+    <div className="w-full mx-auto mt-[-72px] relative h-[90vh] overflow-hidden xl:h-[100vh]">
       <Image
         src={reservation}
         alt="contact background"
