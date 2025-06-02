@@ -33,7 +33,7 @@ const Block1 = () => {
           <div className="border-1 border-[#898155] w-[56.08px] h-[1px] my-[10px] sm:my-[20px]  md:my-[24px]   lg:w-[80px]  xl:my-[2px]  xl:w-[94.691px]"></div>
           <div className="    md:px-[120px]  lg:px-[250px]  xl:px-[390px]  2xl:px-[480px]">
             <p className="text-[15px] w-[350px] font-monserrat font-normal text-white not-italic leading-[24px] sm:text-[20px]  md:text-[20px]  lg:text-[22px]  xl:text-[24px]  md:leading-[30.393px]  md:w-[493.037px]">
-              Where bold West African Flavours meet modern culinary flair
+              Where bold West African flavours meet modern culinary flair
             </p>
           </div>
         </div>

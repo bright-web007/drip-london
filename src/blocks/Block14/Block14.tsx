@@ -202,7 +202,7 @@ const Slider = () => {
                       <button
                         key={btnIndex}
                         onClick={() => handleButtonClick(button)}
-                        className="bg-[rgba(137,129,85,0.15)] font-normal h-[50px] px-4 py-2 border border-[#3d3926] rounded-[4px] text-[#cfcfcf] text-[16px]"
+                        className="bg-[rgba(137,129,85,0.15)] cursor-pointer font-normal h-[50px] px-4 py-2 border border-[#3d3926] rounded-[4px] text-[#cfcfcf] text-[16px]"
                       >
                         {button.label}
                       </button>

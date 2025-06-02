@@ -312,6 +312,7 @@ export const navLinker = [
   { name: 'Menus', link: '/menus' },
   { name: 'Private Dining', link: '/private-dining' },
   { name: 'The Experience', link: '/the-experience' },
+  { name: 'Book An Event', link: '/book-an-event' },
 ];
 
 export const latestNews = [
@@ -515,7 +516,7 @@ export const contact = [
     image: vector3,
     subtitle: 'Dress Code',
     description:
-      'Our dress code is smart elegant. We reserve the right to refuse entry if attire does not meet our standards.',
+      'Our dress code is Smart Elegant, we kindly invite guests to reflect the dress code. We encourage smart shoes. To avoid disappointment please refrain from wearing sportswear, hats, hoodies, beachwear shorts and sandals. <br> Please note management reserves the right to refuse entry.',
   },
   {
     image: vector4,
@@ -778,7 +779,7 @@ export const lint: lints[] = [
       {
         label: 'Book an Event',
         actionType: 'navigate',
-        path: '/reservation',
+        path: '/book-an-event',
       },
     ],
   },

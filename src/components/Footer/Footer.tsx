@@ -24,7 +24,7 @@ const Footer = () => {
           </h1>
 
           <p className="text-[14px] text-[#cfcfcf] font-Montserrat font-light mb-[24px] sm:leading-[29px] sm:text-[21px] md:text-[24px] md:leading-[30px] md:mb-[38px] xl:text-[16px]  xl:w-[490px]">
-            Drip London is a premier dining and nightlife destination where bold West African
+            Drip London is a premium dining and nightlife destination where bold West African
             flavours meet contemporary culinary artistry. Located in the heart of the city, we offer
             an immersive experience that seamlessly transitions from an elegant restaurant to a
             vibrant late-night venue.

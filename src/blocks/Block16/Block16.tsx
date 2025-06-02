@@ -53,6 +53,13 @@ const Block16 = () => {
                   Groups of 12 or more will be offered a specially curated set menu by our chef.
                 </li>
               </ul>
+            ) : item.subtitle === 'Dress Code' ? (
+              <p className="text-[13px] font-normal font-monserrat leading-[22px] md:text-[14px] xl:text-[16px]">
+                Our dress code is Smart Elegant, we kindly invite guests to reflect the dress code.
+                We encourage smart shoes. To avoid disappointment please refrain from wearing
+                sportswear, hats, hoodies, beachwear shorts and sandals. <br /> Please note
+                management reserves the right to refuse entry.
+              </p>
             ) : (
               <p className="text-[13px] font-normal font-monserrat leading-[22px] md:text-[14px] xl:text-[16px]">
                 {item.description}
