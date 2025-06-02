@@ -44,7 +44,7 @@ const Navbar = () => {
           />
         </div>
         <div className="hidden md:flex items-center justify-center  font-thankslabs text-[white] gap-[20px]  text-[11px] xl:">
-          <p onClick={() => router.push('/reservation')} className="cursor-pointer">
+          <p onClick={() => router.push('/contact-us')} className="cursor-pointer">
             RESERVATIONS
           </p>
           <p onClick={() => router.push('/menu')} className="cursor-pointer">
@@ -53,7 +53,7 @@ const Navbar = () => {
           <p onClick={() => router.push('/news')} className="cursor-pointer">
             PRIVATE DINNING
           </p>
-          <p>THE EXPERIENCE</p>
+          <p onClick={() => router.push('/faq#faq')} className="cursor-pointer">THE EXPERIENCE</p>
         </div>
       </div>
     </div>
