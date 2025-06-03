@@ -121,7 +121,7 @@ const Block22 = () => {
               Fill Booking Form Using:
             </p>
 
-            <button className="w-full py-[12px] px-[24px] flex items-center justify-center  gap-[12px] text-[#FFF] text-[14px] font-monserrat leading-[21px] bg-black/30 backdrop-blur-sm  sm:text-[18px] sm:py-[15px]  xl:w-[900px] xl:h-[80.4637px] xl:text-[24.445px]">
+            <button className="w-full py-[12px] px-[24px] rounded-[4px] flex items-center justify-center  gap-[12px] text-[#FFF] text-[14px] font-monserrat leading-[21px] bg-black/30 backdrop-blur-sm  sm:text-[18px] sm:py-[15px]  xl:w-[900px] xl:h-[80.4637px] xl:text-[24.445px]">
               <Image
                 src={google}
                 alt="google"
@@ -132,7 +132,7 @@ const Block22 = () => {
               <span>Google</span>
             </button>
 
-            <button className="w-full py-[12px] px-[24px] flex gap-[12px] items-center justify-center  text-[#FFF] text-[14px] font-monserrat leading-[21px] bg-black/30 backdrop-blur-sm  sm:text-[18px] sm:py-[15px]  xl:w-[900px] xl:h-[80.4637px] xl:text-[24.445px]">
+            <button className="w-full py-[12px] px-[24px] rounded-[4px] flex gap-[12px] items-center justify-center  text-[#FFF] text-[14px] font-monserrat leading-[21px] bg-black/30 backdrop-blur-sm  sm:text-[18px] sm:py-[15px]  xl:w-[900px] xl:h-[80.4637px] xl:text-[24.445px]">
               <Image
                 src={apple}
                 alt="apple"
@@ -143,7 +143,7 @@ const Block22 = () => {
               <span>Apple</span>
             </button>
 
-            <button className="w-full py-[12px] px-[24px] flex gap-[12px] items-center justify-center  text-[#FFF] text-[14px] font-monserrat leading-[21px] bg-black/30 backdrop-blur-sm  sm:text-[18px] sm:py-[15px]  xl:w-[900px] xl:h-[80.4637px] xl:text-[24.445px]">
+            <button className="w-full py-[12px] px-[24px] rounded-[4px] flex gap-[12px] items-center justify-center  text-[#FFF] text-[14px] font-monserrat leading-[21px] bg-black/30 backdrop-blur-sm  sm:text-[18px] sm:py-[15px]  xl:w-[900px] xl:h-[80.4637px] xl:text-[24.445px]">
               <Image
                 src={facebook}
                 alt="facebook"
@@ -159,7 +159,7 @@ const Block22 = () => {
             </p>
 
             <button
-              className="w-full py-[12px] px-[12px] flex gap-[12px] items-center justify-center  text-[#FFF] text-[14px] font-monserrat leading-[21px] bg-black/30 backdrop-blur-sm  sm:text-[18px]  sm:py-[15px]  xl:w-[900px] xl:h-[80.4637px] xl:text-[24.445px]  hover:border-[#898155]"
+              className="w-full py-[12px] px-[12px] flex gap-[12px] items-center justify-center  text-[#FFF] text-[14px] font-monserrat leading-[21px] border-1 border-[rgba(197,198,203,0.53)] bg-[#898155] backdrop-blur-sm rounded-[4px] sm:text-[18px]  sm:py-[15px]  xl:w-[900px] xl:h-[80.4637px] xl:text-[24.445px]  hover:border-[#898155]"
               onClick={nextStep}
             >
               <Image
@@ -492,12 +492,15 @@ const Block22 = () => {
                   Start Time
                 </label>
                 <TimePicker
-                  onChange={time => setFormData({ ...formData, startTime: time as string })}
-                  value={formData.startTime}
-                  disableClock
-                  clearIcon={null}
-                  className="w-[161px] h-[42px] text-white bg-[rgba(44,44,44,0.42)] rounded-[4px] text-[12px] font-monserrat border border-[rgba(197,198,203,0.53)] xl:w-[220px] xl:h-[54px] xl:text-[16px]"
-                />
+  onChange={(time: string | null) =>
+    setFormData({ ...formData, startTime: time ?? '' })
+  }
+  value={formData.startTime}
+  disableClock
+  clearIcon={null}
+  className="w-[161px] h-[42px] text-white bg-[rgba(44,44,44,0.42)] rounded-[4px] text-[12px] font-monserrat border border-[rgba(197,198,203,0.53)] xl:w-[220px] xl:h-[54px] xl:text-[16px]"
+/>
+
               </div>
               {errors.startTime && (
                 <p className="text-red-500 text-[12px] font-monserrat">{errors.startTime}</p>
@@ -508,12 +511,15 @@ const Block22 = () => {
                   End Time
                 </label>
                 <TimePicker
-                  onChange={time => setFormData({ ...formData, endTime: time as string })}
-                  value={formData.endTime}
-                  disableClock
-                  clearIcon={null}
-                  className="w-[161px] h-[42px] text-white text-[12px] font-monserrat bg-[rgba(44,44,44,0.42)] border border-[rgba(197,198,203,0.53)] rounded-[4px] xl:w-[220px] xl:h-[54px] xl:text-[16px]"
-                />
+  onChange={(time: string | null) =>
+    setFormData({ ...formData, endTime: time ?? '' })
+  }
+  value={formData.endTime}
+  disableClock
+  clearIcon={null}
+  className="w-[161px] h-[42px] text-white text-[12px] font-monserrat bg-[rgba(44,44,44,0.42)] border border-[rgba(197,198,203,0.53)] rounded-[4px] xl:w-[220px] xl:h-[54px] xl:text-[16px]"
+/>
+
               </div>
               {errors.endTime && <p className="text-red-500 text-sm">{errors.endTime}</p>}
             </div>
