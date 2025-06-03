@@ -492,15 +492,14 @@ const Block22 = () => {
                   Start Time
                 </label>
                 <TimePicker
-  onChange={(time: string | null) =>
-    setFormData({ ...formData, startTime: time ?? '' })
-  }
-  value={formData.startTime}
-  disableClock
-  clearIcon={null}
-  className="w-[161px] h-[42px] text-white bg-[rgba(44,44,44,0.42)] rounded-[4px] text-[12px] font-monserrat border border-[rgba(197,198,203,0.53)] xl:w-[220px] xl:h-[54px] xl:text-[16px]"
-/>
-
+                  onChange={(time: string | null) =>
+                    setFormData({ ...formData, startTime: time ?? '' })
+                  }
+                  value={formData.startTime}
+                  disableClock
+                  clearIcon={null}
+                  className="w-[161px] h-[42px] text-white bg-[rgba(44,44,44,0.42)] rounded-[4px] text-[12px] font-monserrat border border-[rgba(197,198,203,0.53)] xl:w-[220px] xl:h-[54px] xl:text-[16px]"
+                />
               </div>
               {errors.startTime && (
                 <p className="text-red-500 text-[12px] font-monserrat">{errors.startTime}</p>
@@ -511,15 +510,14 @@ const Block22 = () => {
                   End Time
                 </label>
                 <TimePicker
-  onChange={(time: string | null) =>
-    setFormData({ ...formData, endTime: time ?? '' })
-  }
-  value={formData.endTime}
-  disableClock
-  clearIcon={null}
-  className="w-[161px] h-[42px] text-white text-[12px] font-monserrat bg-[rgba(44,44,44,0.42)] border border-[rgba(197,198,203,0.53)] rounded-[4px] xl:w-[220px] xl:h-[54px] xl:text-[16px]"
-/>
-
+                  onChange={(time: string | null) =>
+                    setFormData({ ...formData, endTime: time ?? '' })
+                  }
+                  value={formData.endTime}
+                  disableClock
+                  clearIcon={null}
+                  className="w-[161px] h-[42px] text-white text-[12px] font-monserrat bg-[rgba(44,44,44,0.42)] border border-[rgba(197,198,203,0.53)] rounded-[4px] xl:w-[220px] xl:h-[54px] xl:text-[16px]"
+                />
               </div>
               {errors.endTime && <p className="text-red-500 text-sm">{errors.endTime}</p>}
             </div>
