@@ -8,7 +8,7 @@ const Block29 = () => {
       {experience.map((item, index) => (
         <div key={index} className="flex flex-col items-center">
           {/* Title stays centered on top */}
-          <h2 className="text-[18px] text-[#D5D5D5] text-center font-thankslabs font-normal leading-[35px] mb-[30px] px-[20px] sm:text-[24px] sm:px-[80px] sm:mb-[40px] sm:leading-[40px]">
+          <h2 className="text-[18px] text-[#D5D5D5] text-center font-thankslabs font-normal leading-[35px] mb-[30px] px-[20px] sm:text-[24px] sm:px-[80px] sm:mb-[40px] sm:leading-[40px] md:text-[28px]  xl:text-[32px]">
             {item.title}
           </h2>
 
@@ -22,7 +22,7 @@ const Block29 = () => {
             <div className="w-full xl:w-[976px] mb-1 xl:mb-0">
               {item.image && (
                 <div
-                  className="relative h-[432px] md:h-[693px] xl:h-[693px] w-full rounded overflow-hidden"
+                  className="relative h-[525px] md:h-[990px] xl:h-[934px] w-full rounded overflow-hidden object-contain"
                   style={{ boxShadow: 'inset 0 0 80px rgba(0,0,0,0.6)' }} // Inner shadow
                 >
                   <div className="h-[432px] w-[4334px] border-2 border-[black]  absolute top-[2px] left-1/2 transform -translate-x-1/2 blur-[14.75px] bg-[black]"></div>
@@ -41,7 +41,7 @@ const Block29 = () => {
             </div>
 
             {/* Text section - vertically centered */}
-            <div className="flex flex-col gap-[4px] sm:gap-[8px] px-[20px] xl:w-1/2 self-center  sm:px-[26px]">
+            <div className="flex flex-col gap-[4px] sm:gap-[8px] px-[20px] h-[140px] xl:w-[510px] self-center  sm:px-[26px]">
               <h3 className="text-[12px] font-normal uppercase text-[#898155] leading-[22px] font-monserrat sm:text-[15px] md:text-[16px]">
                 {item.subtitle}
               </h3>
