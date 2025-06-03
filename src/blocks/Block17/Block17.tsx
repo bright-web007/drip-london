@@ -10,7 +10,7 @@ const Block17 = () => {
   return (
     <div className="pr-[24px] pl-[24px] pt-[0px] pb-[150px]  bg-[black] md:pr-[32px] md:pl-[32px] md:pt-[29px]  xl:h-[703px] xl:w-[441px] xl:mt-[114px] 2xl:w-[641px]">
       <div className="p-[24px] rounded-[4px] border-2 border-[rgba(110,110,110,0.15)] space-y-6  bg-[rgba(13,13,13,0.53)] md:p-[28px]">
-        <h1 className="flex flex-col text-[16px] font-thankslabs leading-[28px] text-[#898155] font-normal mb-[24px]  md:text-[18px] xl:mb-[12px]">
+        <h1 className="flex flex-col text-[16px] font-thankslabs leading-[28px] text-[#898155] font-normal mb-[34px]  md:text-[18px] xl:mb-[34px]">
           <span> Got Questions? </span>
           <span> You can contact us</span>
         </h1>
@@ -26,7 +26,7 @@ const Block17 = () => {
             id="full-name"
             name="full-name"
             placeholder="Enter your full name"
-            className="w-full h-[52px] md:h-[50px] border-[rgba(44,44,44,0.29)] mb-[24px] border bg-[#1E1E1E] rounded-md p-3 text-white focus:outline-none focus:ring-1 focus:ring-[#898155] xl:mb-[12px] xl:h-[38px]"
+            className="w-full h-[52px] md:h-[50px] border-[rgba(44,44,44,0.29)] mb-[24px] border bg-[#1E1E1E] rounded-md p-3 text-white focus:outline-none focus:ring-1 focus:ring-[#898155] xl:mb-[12px] xl:h-[52px]"
           />
         </div>
 
@@ -41,7 +41,7 @@ const Block17 = () => {
             type="email"
             id="email"
             placeholder="Enter email address"
-            className="w-full h-[52px] md:h-[50px] border-[rgba(44,44,44,0.29)] border bg-[#1E1E1E] rounded-md p-3 mb-[24px] text-white focus:outline-none focus:ring-1 focus:ring-[#898155] xl:mb-[12px] xl:h-[38px]"
+            className="w-full h-[52px] md:h-[50px] border-[rgba(44,44,44,0.29)] border bg-[#1E1E1E] rounded-md p-3 mb-[24px] text-white focus:outline-none focus:ring-1 focus:ring-[#898155] xl:mb-[12px] xl:h-[52px]"
           />
         </div>
 
