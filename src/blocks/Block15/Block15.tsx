@@ -68,13 +68,13 @@ const Block15 = () => {
         </h1>
 
         {/* Reservation Box */}
-        <div className="w-[400px] max-w-[855px]  bg-white overflow-hidden mx-[10px]  mb-[18px] md:w-[647px] xl:w-[855px]">
+        <div className="w-[400px] max-w-[855px]  bg-white overflow-hidden mx-auto  mb-[18px] md:w-[647px] xl:w-[855px]">
           <div className="flex flex-row items-center justify-between border-b">
             {/* Guests */}
             <div className="flex items-center w-full p-3 border-r border-[#DDDDDD] md:w-[215.6667px]">
               <User className="w-5 h-5 mr-2 text-gray-500" />
               <select
-                className="w-full bg-transparent text-gray-800 focus:outline-none"
+                className="w-full bg-transparent  focus:outline-none text-[12px] font-monserrat "
                 value={guests}
                 onChange={e => setGuests(e.target.value)}
               >
@@ -89,7 +89,7 @@ const Block15 = () => {
               <CalendarDays className="w-5 h-5 mr-2 text-gray-500" />
               <input
                 type="date"
-                className="w-full bg-transparent text-gray-800 focus:outline-none"
+                className="w-full bg-transparent text-gray-800 focus:outline-none text-[12px] font-monserrat"
                 value={date}
                 onChange={e => setDate(e.target.value)}
               />
@@ -99,7 +99,7 @@ const Block15 = () => {
             <div className="flex items-center w-full p-3 md:w-[215.6667px]">
               <Clock className="w-5 h-5 mr-2 text-gray-500" />
               <select
-                className="w-full bg-transparent text-gray-800 focus:outline-none"
+                className="w-full bg-transparent text-gray-800 focus:outline-none text-[12px] font-monserrat"
                 value={time}
                 onChange={e => setTime(e.target.value)}
               >
