@@ -12,6 +12,11 @@ import card4 from '@/assets/card4.png';
 import card5 from '@/assets/card5.png';
 import card6 from '@/assets/card6.png';
 
+import vector1 from '@/assets/Vector1.svg';
+import vector2 from '@/assets/vector2.svg';
+import vector3 from '@/assets/vector3.svg';
+import vector4 from '@/assets/vector4.svg';
+import vector5 from '@/assets/vector5.svg';
 import experience1 from '@/assets/experience1.jpg';
 import experience2 from '@/assets/experience2.jpg';
 import experience3 from '@/assets/experience3.png';
@@ -37,8 +42,9 @@ import menu1 from '@/assets/menu1.jpg';
 import menu2 from '@/assets/menu2.jpg';
 import menu3 from '@/assets/menu3.jpg';
 
-import night1 from '@/assets/night1.jpg';
-import night2 from '@/assets/night2.jpg';
+import night1 from '@/assets/night1.webp';
+import night2 from '@/assets/night2.webp';
+import night3 from '@/assets/night3.jpg';
 
 import flit1 from '@/assets/flit1.jpg';
 import flit2 from '@/assets/flit2.png';
@@ -47,7 +53,7 @@ import icon1 from '@/assets/icons-svg/icon1.svg';
 import icon2 from '@/assets/icons-svg/icon2.svg';
 import icon3 from '@/assets/icons-svg/icon3.svg';
 import icon4 from '@/assets/icons-svg/icon4.svg';
-import icon5 from '@/assets/icons-svg/icon5.svg';
+import icon6 from '@/assets/icons-svg/icon6.svg';
 
 import { StaticImageData } from 'next/image';
 
@@ -302,11 +308,11 @@ export const navLinks = [
 ];
 
 export const navLinker = [
-  { name: 'Reservation', link: '/contact-us' },
-  { name: 'Private Dinning', link: '/faq' },
-  { name: 'Menus', link: '/menu' },
-  { name: 'FAQs', link: '/faq#faq' },
-  { name: 'Book An Event', link: '/reservation' },
+  { name: 'Reservations', link: '/reservations' },
+  { name: 'Menus', link: '/menus' },
+  { name: 'Private Dining', link: '/private-dining' },
+  { name: 'The Experience', link: '/the-experience' },
+  { name: 'Book An Event', link: '/book-an-event' },
 ];
 
 export const latestNews = [
@@ -493,6 +499,39 @@ export const center = {
 
 export const GOOGLE_MAPS_APIKEY = 'AIzaSyB_Ujmyiir8qmceRFs5ICiSHUJhQnXRZD4';
 
+export const contact = [
+  {
+    image: vector1,
+    subtitle: 'Minimum Spend',
+    description:
+      'A minimum spend of £65 per person applies from Friday to Sunday (excluding brunch bookings).',
+  },
+  {
+    image: vector2,
+    subtitle: 'Group Bookings',
+    description:
+      'Reservations of fewer than 12 guests are welcome to dine from our à la carte menu. Groups of 12 or more will be offered a specially curated set menu by our chef.',
+  },
+  {
+    image: vector3,
+    subtitle: 'Dress Code',
+    description:
+      'Our dress code is Smart Elegant, we kindly invite guests to reflect the dress code. We encourage smart shoes. To avoid disappointment please refrain from wearing sportswear, hats, hoodies, beachwear shorts and sandals. <br> Please note management reserves the right to refuse entry.',
+  },
+  {
+    image: vector4,
+    subtitle: 'Reservation Timing',
+    description:
+      'We hold tables for 15 minutes past the booking time before releasing them to other waiting guests.',
+  },
+  {
+    image: vector5,
+    subtitle: 'Availability',
+    description:
+      'If you can’t find your preferred date or time online, feel free to contact us directly via WhatsApp or email.',
+  },
+];
+
 export const faqreview = [
   {
     title: 'How many people can I book for?',
@@ -607,7 +646,7 @@ export const items: Item[] = [
       {
         label: 'More Details',
         actionType: 'navigate',
-        path: '/private',
+        path: '/private-dining',
       },
     ],
   },
@@ -740,12 +779,12 @@ export const lint: lints[] = [
       {
         label: 'Book an Event',
         actionType: 'navigate',
-        path: '/reservation',
+        path: '/book-an-event',
       },
     ],
   },
   {
-    img: night1,
+    img: night2,
     title: 'Restaurant Private Hire',
     desc: 'Drip London’s Dinner Club Restaurant is available for private hire – perfect for private dinners and events. Accommodates up to 80 covers split over 16 tables.',
     buttons: [
@@ -758,7 +797,7 @@ export const lint: lints[] = [
   },
 
   {
-    img: night2,
+    img: night3,
     title: 'Semi-Private Group Dining',
     desc: 'Ideal for large group dinners while still soaking in the Drip London vibe. Accommodates up to 30 guests.',
     buttons: [
@@ -804,7 +843,7 @@ export const late = [
     title: 'Tailored canape options',
   },
   {
-    img: icon5,
+    img: icon6,
     title: 'Dedicated staff',
   },
 ];
