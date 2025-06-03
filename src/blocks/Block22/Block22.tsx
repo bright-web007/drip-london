@@ -111,20 +111,22 @@ const Block22 = () => {
 
       {step === 1 && (
         <div className="space-y-4 absolute inset-0  flex flex-col items-center justify-center">
-          <h1 className="text-center text-[41.77px] font-thankslabs leading-[58px] text-[#FFF] mb-[32px] sm:text-[45px] sm:mb-[36px]  xl:text-[80px]  xl:mb-[45px]">
+          <h1 className="text-center text-[41.77px] font-thankslabs leading-[58px] text-[#FFF] mb-[26px] sm:text-[45px] sm:mb-[36px]  xl:text-[80px] xl:leading-[100px] xl:mb-[0px]">
             Book an Event
           </h1>
 
-          <div className="flex flex-col gap-[4px] items-center">
-            <p className="text-center text-[14px] font-monserrat leading-[19.5px] text-[#FFF] mb-[12px] sm:text-[18px] xl:text-[27.5px]  xl:mb-[18px]">
+          <hr className="w-[56.08px] border-1 border-[#898155] mb-[26px] sm:mb-[36px] xl:my-[22px]"></hr>
+
+          <div className="flex flex-col gap-[4px] items-center w-[350px] md:w-[500px]">
+            <p className="text-center text-[16px] w-[300px] md:w-[410px] xl:w-[409.7px]  font-monserrat leading-[19.5px] text-[#FFF] mb-[25px] sm:text-[18px] md:text-[24px] md:leading-[32px] md:mb-[35px]   xl:mb-[32px]">
               Plan Your Event at Drip. Easy booking. Quick confirmation. Your party, your way.
             </p>
 
-            <p className="text-center text-[14px] font-monserrat leading-[19.5px] text-[#FFF] mb-[12px] sm:text-[18px] xl:text-[27.5px]  xl:mb-[18px]">
+            <p className="text-center text-[13px] font-monserrat leading-[19.5px] text-[#FFF] mb-[12px] sm:text-[16px] md:text-[16px]   xl:mb-[8px]">
               Fill Booking Form Using:
             </p>
 
-            <button className="w-full py-[12px] px-[24px] flex items-center justify-center  gap-[12px] text-[#FFF] text-[14px] font-monserrat leading-[21px] bg-black/30 backdrop-blur-sm  sm:text-[18px] sm:py-[15px]  xl:w-[900px] xl:h-[80.4637px] xl:text-[24.445px]">
+            <button className="w-full py-[12px] px-[24px] rounded-[4px] flex items-center justify-center  gap-[12px] text-[#FFF] text-[14px] font-monserrat leading-[21px] bg-black/30 backdrop-blur-sm  sm:text-[18px] sm:py-[15px] md:text-[20px] md:h-[52.67px]  xl:w-[870px] xl:h-[80.4637px] xl:text-[20px]">
               <Image
                 src={google}
                 alt="google"
@@ -135,7 +137,7 @@ const Block22 = () => {
               <span>Google</span>
             </button>
 
-            <button className="w-full py-[12px] px-[24px] flex gap-[12px] items-center justify-center  text-[#FFF] text-[14px] font-monserrat leading-[21px] bg-black/30 backdrop-blur-sm  sm:text-[18px] sm:py-[15px]  xl:w-[900px] xl:h-[80.4637px] xl:text-[24.445px]">
+            <button className="w-full py-[12px] px-[24px] rounded-[4px] flex gap-[12px] items-center justify-center  text-[#FFF] text-[14px] font-monserrat leading-[21px] bg-black/30 backdrop-blur-sm  sm:text-[18px] sm:py-[15px] md:text-[20px]  md:h-[52.67px] xl:w-[870px] xl:h-[80.4637px] xl:text-[20px]">
               <Image
                 src={apple}
                 alt="apple"
@@ -146,7 +148,7 @@ const Block22 = () => {
               <span>Apple</span>
             </button>
 
-            <button className="w-full py-[12px] px-[24px] flex gap-[12px] items-center justify-center  text-[#FFF] text-[14px] font-monserrat leading-[21px] bg-black/30 backdrop-blur-sm  sm:text-[18px] sm:py-[15px]  xl:w-[900px] xl:h-[80.4637px] xl:text-[24.445px]">
+            <button className="w-full py-[12px] px-[24px] rounded-[4px] flex gap-[12px] items-center justify-center  text-[#FFF] text-[14px] font-monserrat leading-[21px] bg-black/30 backdrop-blur-sm  sm:text-[18px] sm:py-[15px] md:text-[20px]  md:h-[52.67px] xl:w-[870px] xl:h-[80.4637px] xl:text-[20px]">
               <Image
                 src={facebook}
                 alt="facebook"
@@ -162,7 +164,7 @@ const Block22 = () => {
             </p>
 
             <button
-              className="w-full py-[12px] bg-[#898155] px-[12px] flex gap-[12px] items-center justify-center  text-[#FFF] text-[14px] font-monserrat leading-[21px] backdrop-blur-sm  sm:text-[18px]  sm:py-[15px]  xl:w-[900px] xl:h-[80.4637px] xl:text-[24.445px]  hover:border-[#898155]"
+              className="w-full py-[12px] px-[12px] flex gap-[12px] items-center justify-center  text-[#FFF] text-[14px] font-monserrat leading-[21px] border-1 border-[rgba(197,198,203,0.53)] bg-[#898155] backdrop-blur-sm rounded-[4px] sm:text-[18px]  sm:py-[15px] md:text-[20px]  md:h-[52.67px]  xl:w-[870px] xl:h-[80.4637px] xl:text-[20px]  hover:border-[#898155]"
               onClick={nextStep}
             >
               <span className="text-[12px] font-monserrat sm:text-[18px]">
@@ -182,7 +184,7 @@ const Block22 = () => {
 
       {step === 2 && (
         <div className="absolute inset-0 flex flex-col items-center justify-center px-4 py-8 z-10">
-          <div className=" bg-black/40 backdrop-blur-sm p-[24px]  xl:h-[831.6544px]  xl:w-[530px] xl:p-[36px]">
+          <div className=" bg-black/40 backdrop-blur-sm p-[24px]  xl:h-[920px]  xl:w-[530px] xl:p-[36px]">
             <div className="w-full flex items-center justify-start mb-4 md:mb-[28px]">
               <button onClick={prevStep} className="flex items-center text-white gap-2  ">
                 <ArrowLeft className="w-[24px] h-[24px]" />
@@ -277,7 +279,7 @@ const Block22 = () => {
                       enableSearch
                       inputStyle={{
                         width: '100%',
-                        height: '42px',
+                        height: "100%",
                         padding: '12px 12px 12px 48px', // left padding for flag
                         borderRadius: '6px',
                         border: '1px solid rgba(197,198,203,0.53)',
@@ -292,13 +294,14 @@ const Block22 = () => {
                       }}
                       containerStyle={{
                         width: '100%',
+                        
                       }}
                       dropdownStyle={{
                         backgroundColor: '#222',
                         color: 'black',
                         border: '1px solid #555',
                       }}
-                      containerClass="w-full sm:w-[334px] xl:w-[569.8115px]"
+                      containerClass="w-full sm:w-[334px] xl:w-[569.8115px]  xl:h-[58px]"
                     />
                   ) : (
                     <input
@@ -317,7 +320,7 @@ const Block22 = () => {
 
             <div className="flex justify-center w-full mt-6 xl:w-[445px]">
               <button
-                className="bg-[rgba(44,44,44,0.42)] w-full border border-[rgba(197,198,203,0.53)] text-[#fff] px-6 py-2 rounded font-normal text-[12px] font-monserrat sm:text-[16px] sm:py-3  hover:border-[#898155]"
+                className="bg-[rgba(44,44,44,0.42)] w-full border border-[rgba(197,198,203,0.53)] text-[#fff] px-6 py-2 rounded font-normal text-[12px] font-monserrat sm:text-[16px] sm:py-3 xl:h-[58px] hover:border-[#898155]"
                 onClick={nextStep}
               >
                 Next
@@ -488,7 +491,9 @@ const Block22 = () => {
                   Start Time
                 </label>
                 <TimePicker
-                  onChange={time => setFormData({ ...formData, startTime: time as string })}
+                  onChange={(time: string | null) =>
+                    setFormData({ ...formData, startTime: time ?? '' })
+                  }
                   value={formData.startTime}
                   disableClock
                   clearIcon={null}
@@ -504,7 +509,9 @@ const Block22 = () => {
                   End Time
                 </label>
                 <TimePicker
-                  onChange={time => setFormData({ ...formData, endTime: time as string })}
+                  onChange={(time: string | null) =>
+                    setFormData({ ...formData, endTime: time ?? '' })
+                  }
                   value={formData.endTime}
                   disableClock
                   clearIcon={null}
