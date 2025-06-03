@@ -12,7 +12,7 @@ const Block16 = () => {
       <h2 className="text-[18px] font-normal font-thankslabs mb-6 text-center leading-[35px] md:text-[20pxs] xl:text-left  xl:text-[32px]  xl:leading-[44px]">
         Reservation Guidelines
       </h2>
-      <div className="grid gap-4">
+      <div className="grid">
         {contact.map((item, index) => (
           <div
             key={index}
@@ -27,7 +27,7 @@ const Block16 = () => {
               backgroundColor: '#898155',
               backgroundSize: 'cover',
               backgroundPosition: '50%',
-              filter: 'saturate(60%)',
+              filter: 'saturate(0%)',
             }}
           >
             <div className="mb-[20px]">
@@ -53,6 +53,13 @@ const Block16 = () => {
                   Groups of 12 or more will be offered a specially curated set menu by our chef.
                 </li>
               </ul>
+            ) : item.subtitle === 'Dress Code' ? (
+              <p className="text-[13px] font-normal font-monserrat leading-[22px] md:text-[14px] xl:text-[16px]">
+                Our dress code is Smart Elegant, we kindly invite guests to reflect the dress code.
+                We encourage smart shoes. To avoid disappointment please refrain from wearing
+                sportswear, hats, hoodies, beachwear shorts and sandals. <br /> Please note
+                management reserves the right to refuse entry.
+              </p>
             ) : (
               <p className="text-[13px] font-normal font-monserrat leading-[22px] md:text-[14px] xl:text-[16px]">
                 {item.description}

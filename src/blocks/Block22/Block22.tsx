@@ -7,7 +7,6 @@ import TimePicker from 'react-time-picker';
 import { ArrowLeft } from 'lucide-react';
 import 'react-datepicker/dist/react-datepicker.css';
 import 'react-time-picker/dist/TimePicker.css';
-import group from '@/assets/icons-svg/Group.svg';
 import arrow from '@/assets/icons-svg/arrow-side.svg';
 import facebook from '@/assets/icons-svg/logos_facebook.svg';
 import google from '@/assets/icons-svg/devicon_google.svg';
@@ -118,6 +117,10 @@ const Block22 = () => {
 
           <div className="flex flex-col gap-[4px] items-center">
             <p className="text-center text-[14px] font-monserrat leading-[19.5px] text-[#FFF] mb-[12px] sm:text-[18px] xl:text-[27.5px]  xl:mb-[18px]">
+              Plan Your Event at Drip. Easy booking. Quick confirmation. Your party, your way.
+            </p>
+
+            <p className="text-center text-[14px] font-monserrat leading-[19.5px] text-[#FFF] mb-[12px] sm:text-[18px] xl:text-[27.5px]  xl:mb-[18px]">
               Fill Booking Form Using:
             </p>
 
@@ -162,15 +165,8 @@ const Block22 = () => {
               className="w-full py-[12px] px-[12px] flex gap-[12px] items-center justify-center  text-[#FFF] text-[14px] font-monserrat leading-[21px] border-1 border-[rgba(197,198,203,0.53)] bg-[#898155] backdrop-blur-sm rounded-[4px] sm:text-[18px]  sm:py-[15px]  xl:w-[900px] xl:h-[80.4637px] xl:text-[24.445px]  hover:border-[#898155]"
               onClick={nextStep}
             >
-              <Image
-                src={group}
-                alt="group"
-                width={20}
-                height={20}
-                className="xl:h-[37px] xl:w-[37px] "
-              />
               <span className="text-[12px] font-monserrat sm:text-[18px]">
-                Enter Your Details Manually
+                Continue without login
               </span>
               <Image
                 src={arrow}
