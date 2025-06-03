@@ -87,26 +87,26 @@ const Block24 = () => {
         Frequently Asked Questions
       </h2>
 
-      <div className="space-y-10">
+      <div className="space-y-5">
         {faqreview.map((item: FAQItem, index: number) => {
           const isOpen = openIndex === index;
 
           return (
             <div key={index} className="flex">
               <div className="flex flex-col items-center mr-4 pt-2">
-                <div className="w-[2px] h-[80px] bg-white" />
+                <div className="w-[2px] h-[100%] bg-white" />
                 <div className="h-[6px]" />
                 <div className="w-[15px] h-[15px] bg-[#C7B869] rounded-full" />
                 <div className="h-[6px]" />
                 {isOpen && <div className="w-[2px] h-[100%] bg-white" />}
               </div>
 
-              <div className="flex-1 bg-[#1A1A1A] border border-[#3D3D3D] rounded-lg p-6 transition-all duration-300 sm:p-[30px]">
+              <div className="flex-1 bg-[#1A1A1A] h-[100%] border border-[#3D3D3D] rounded-lg p-6 transition-all duration-300 sm:p-[30px] ">
                 <div
                   onClick={() => toggleIndex(index)}
                   className="flex justify-between items-start cursor-pointer"
                 >
-                  <p className="text-[14px] text-[#D5D5D5] font-normal sm:text-[17px] xl:text-[22px] pr-4 leading-[26px]">
+                  <p className="text-[12px] text-[#D5D5D5] font-normal sm:text-[15px] xl:text-[20px] pr-4 leading-[26px]">
                     {item.title}
                   </p>
                   <FaChevronDown
