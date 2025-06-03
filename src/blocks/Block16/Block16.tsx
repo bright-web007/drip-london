@@ -12,7 +12,7 @@ const Block16 = () => {
       <h2 className="text-[18px] font-normal font-thankslabs mb-6 text-center leading-[35px] md:text-[20pxs] xl:text-left  xl:text-[32px]  xl:leading-[44px]">
         Reservation Guidelines
       </h2>
-      <div className="grid gap-4">
+      <div className="grid">
         {contact.map((item, index) => (
           <div
             key={index}
@@ -27,7 +27,7 @@ const Block16 = () => {
               backgroundColor: '#898155',
               backgroundSize: 'cover',
               backgroundPosition: '50%',
-              filter: 'saturate(60%)',
+              filter: 'saturate(0%)',
             }}
           >
             <div className="mb-[20px]">
