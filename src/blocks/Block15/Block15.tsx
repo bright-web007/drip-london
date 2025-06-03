@@ -127,7 +127,7 @@ const Block15 = () => {
 
       {/* Info Box */}
       <div className="absolute bottom-[85px] w-full flex justify-center">
-        <div className="flex gap-[16px] bg-[rgba(17,17,17,0.30)] border border-[#2B2B2B] py-[24px] px-[12px] w-[400px] max-w-[855px]">
+        <div className="flex gap-[16px] bg-[rgba(17,17,17,0.30)] border border-[#2B2B2B] py-[24px] px-[12px] w-[400px] max-w-[855px] md:w-[647px] xl:w-[855px] xl:pr-[210px]">
           <Image src={info} alt="info icon" />
           <p className="text-[13px] text-gray-300 leading-[17px] md:text-[15.5px]">
             For reservations of 12 and above please contact us directly on{' '}
