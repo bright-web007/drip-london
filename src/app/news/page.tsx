@@ -2,10 +2,7 @@ import React from 'react';
 import Block19 from '@/blocks/Block19/Block19';
 import Block20 from '@/blocks/Block20/Block20';
 import Block14 from '@/blocks/Block14/Block14';
-<<<<<<< HEAD
 import Block28 from '@/blocks/Block28/Block28';
-=======
-import { latestNews } from '@/helpers/data';
 import type { Metadata } from 'next';
 import { Meta_Tags } from '@/helpers/data';
 import logo from '@/assets/logo.svg';
@@ -30,32 +27,14 @@ export const metadata: Metadata = {
     type: 'website',
   },
 };
->>>>>>> main
 
 const news = () => {
   return (
     <div>
       <Block19 />
-<<<<<<< HEAD
       <Block20 />
       <Block14 />
       <Block28 />
-=======
-      <div>
-        <div className="grid grid-cols-1 md:grid-cols-2 items-start place-items-center gap-x-[25.2055px] gap-y-[25px] mx-auto w-[90%] xl:w-[75%] 2xl:w-[70%] py-16 xl:py-20">
-          {latestNews.map((item, index) => (
-            <Block20
-              key={index}
-              image={item.image}
-              date={item.date}
-              subtitle={item.subtitle}
-              description={item.description}
-            />
-          ))}
-        </div>
-        <Block14 />
-      </div>
->>>>>>> main
     </div>
   );
 };

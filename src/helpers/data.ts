@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import flit1 from '@/assets/flit1.jpg';
 import flit2 from '@/assets/flit2.png';
 
@@ -10,7 +9,6 @@ import icon2 from '@/assets/icons-svg/icon2.svg';
 import icon3 from '@/assets/icons-svg/icon3.svg';
 import icon4 from '@/assets/icons-svg/icon4.svg';
 import icon5 from '@/assets/icons-svg/icon5.svg';
-=======
 import smallPlatesImage from '@/assets/food1.png';
 import largePlatesImage from '@/assets/food2.png';
 import sideImage from '@/assets/food3.png';
@@ -44,7 +42,6 @@ import drip3 from '@/assets/drip3.jpg';
 import drip4 from '@/assets/drip4.jpg';
 import drip5 from '@/assets/drip5.jpg';
 import drip6 from '@/assets/drip6.jpg';
->>>>>>> main
 
 import { StaticImageData } from 'next/image';
 
@@ -289,15 +286,11 @@ export const navLinks = [
   { name: 'Home', link: '/' },
   { name: 'The Menus', link: '/menu' },
   { name: 'About', link: '/about' },
-<<<<<<< HEAD
   { name: 'Book an Event', link: '/' },
   { name: 'News', link: '/news' },
   { name: 'Contacts', link: '/' },
-=======
   { name: 'Reservation', link: '/reservation' },
   { name: 'FAQs', link: '/faq' },
-  { name: 'News', link: '/news' },
-  { name: 'Contacts', link: '/contact-us' },
 ];
 
 export const navLinker = [
@@ -556,11 +549,7 @@ export const faqreview = [
   },
 ];
 
-export type Button = {
-  label: string;
-  actionType: 'navigate'; // Add more types if needed
-  path?: string;
-};
+
 
 export type men = {
   img: StaticImageData;
@@ -696,7 +685,6 @@ export const dits = [
   {
     img: drip6,
   },
->>>>>>> main
 ];
 
 export const proof = [
@@ -776,11 +764,11 @@ export const late = [
     title: 'State of the art sound system',
   },
   {
-    img: icon1,
+    img: icon3,
     title: 'Private DJ booth',
   },
   {
-    img: icon2,
+    img: icon4,
     title: 'Tailored canape options',
   },
   {

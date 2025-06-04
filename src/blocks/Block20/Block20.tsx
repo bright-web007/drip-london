@@ -12,7 +12,7 @@ const Block20 = () => {
         <span>Elevated</span>
         <span>Dining Experiences</span>
       </h2>
-      <div className="grid gap-[33px] xl:grid-cols-2  md:gap-[45px]">
+      <div className="grid gap-[33px] xl:grid-cols-2  md:gap-[45px] xl:gap-[35px]">
         {proof.map((item, index) => (
           <div key={index} className="flex flex-col items-center  rounded-[4px]">
             <div className="w-full h-[264px] relative">
