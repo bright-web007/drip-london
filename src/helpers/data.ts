@@ -669,7 +669,7 @@ export const items: Item[] = [
       {
         label: 'Make a Reservation',
         actionType: 'navigate',
-        path: '/reservation',
+        path: '/reservations',
       },
     ],
   },
