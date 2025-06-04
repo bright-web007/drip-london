@@ -1,11 +1,23 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import Image from 'next/image';
 import experience from '@/assets/background/Experience-bg.jpg';
 import arrowdown from '@/assets/icons-svg/arrow-down.svg';
 
 const Block23 = () => {
+  useEffect(() => {
+    // Scroll to #experience if present in the URL hash
+    if (window.location.hash === '#experience') {
+      const el = document.getElementById('experience');
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }, 300); // Delay to ensure DOM is ready
+      }
+    }
+  }, []);
+
   const handleScroll = () => {
     const nextSection = document.getElementById('next');
     if (nextSection) {
@@ -14,7 +26,10 @@ const Block23 = () => {
   };
 
   return (
-    <div className="relative w-full h-[646px] overflow-hidden mt-[-72px] sm:h-[780px] ">
+    <div
+      className="relative w-full h-[646px] overflow-hidden mt-[-72px] sm:h-[780px] "
+      id="experience"
+    >
       <Image
         src={experience}
         alt="Menu"
