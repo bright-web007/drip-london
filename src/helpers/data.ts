@@ -1,3 +1,15 @@
+import flit1 from '@/assets/flit1.jpg';
+import flit2 from '@/assets/flit2.png';
+
+import night1 from '@/assets/night1.webp';
+import night2 from '@/assets/night2.webp';
+import night3 from '@/assets/night3.jpg';
+
+import icon1 from '@/assets/icons-svg/icon1.svg';
+import icon2 from '@/assets/icons-svg/icon2.svg';
+import icon3 from '@/assets/icons-svg/icon3.svg';
+import icon4 from '@/assets/icons-svg/icon4.svg';
+import icon5 from '@/assets/icons-svg/icon5.svg';
 import smallPlatesImage from '@/assets/food1.png';
 import largePlatesImage from '@/assets/food2.png';
 import sideImage from '@/assets/food3.png';
@@ -41,19 +53,6 @@ import drip6 from '@/assets/drip6.jpg';
 import menu1 from '@/assets/menu1.jpg';
 import menu2 from '@/assets/menu2.jpg';
 import menu3 from '@/assets/menu3.jpg';
-
-import night1 from '@/assets/night1.webp';
-import night2 from '@/assets/night2.webp';
-import night3 from '@/assets/night3.jpg';
-
-import flit1 from '@/assets/flit1.jpg';
-import flit2 from '@/assets/flit2.png';
-
-import icon1 from '@/assets/icons-svg/icon1.svg';
-import icon2 from '@/assets/icons-svg/icon2.svg';
-import icon3 from '@/assets/icons-svg/icon3.svg';
-import icon4 from '@/assets/icons-svg/icon4.svg';
-import icon6 from '@/assets/icons-svg/icon6.svg';
 
 import { StaticImageData } from 'next/image';
 
@@ -303,13 +302,11 @@ export const navLinks = [
   { name: 'Contacts', link: '/' },
   { name: 'Reservation', link: '/reservation' },
   { name: 'FAQs', link: '/faq' },
-  { name: 'News', link: '/news' },
-  { name: 'Contacts', link: '/contact-us' },
 ];
 
 export const navLinker = [
   { name: 'Reservations', link: '/reservations' },
-  { name: 'Menus', link: '/menus' },
+  { name: 'Menus', link: '/menu' },
   { name: 'Private Dining', link: '/private-dining' },
   { name: 'The Experience', link: '/the-experience' },
   { name: 'Book An Event', link: '/book-an-event' },
@@ -764,6 +761,21 @@ export const mens: men[] = [
   },
 ];
 
+export const proof = [
+  {
+    img: flit1,
+    title: 'Group Dining Redefined',
+    description:
+      'Drip London’s group dining experience blends fire-grilled West African flavours with a luxe, immersive atmosphere.',
+  },
+  {
+    img: flit2,
+    title: 'Celebrate in Style',
+    description:
+      'Perfect for birthdays, corporate events, or any moment worth celebrating—make every occasion unforgettable.',
+  },
+];
+
 export type lints = {
   img: StaticImageData;
   title: string;
@@ -810,21 +822,6 @@ export const lint: lints[] = [
   },
 ];
 
-export const proof = [
-  {
-    img: flit1,
-    title: 'Group Dining Redefined',
-    description:
-      'Drip London’s group dining experience blends fire-grilled West African flavours with a luxe, immersive atmosphere.',
-  },
-  {
-    img: flit2,
-    title: 'Celebrate in Style',
-    description:
-      'Perfect for birthdays, corporate events, or any moment worth celebrating—make every occasion unforgettable.',
-  },
-];
-
 export const late = [
   {
     img: icon1,
@@ -843,7 +840,7 @@ export const late = [
     title: 'Tailored canape options',
   },
   {
-    img: icon6,
+    img: icon5,
     title: 'Dedicated staff',
   },
 ];
