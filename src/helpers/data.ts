@@ -305,7 +305,7 @@ export const navLinks = [
 ];
 
 export const navLinker = [
-  { name: 'Reservations', link: '/reservations' },
+  { name: 'Reservations', link: '/reservations#reservation' },
   { name: 'Menus', link: '/menu' },
   { name: 'Private Dining', link: '/private-dining#private-dinning' },
   { name: 'The Experience', link: '/the-experience#experience' },
