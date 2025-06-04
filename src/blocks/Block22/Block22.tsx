@@ -279,7 +279,7 @@ const Block22 = () => {
                       enableSearch
                       inputStyle={{
                         width: '100%',
-                        height: "100%",
+                        height: '100%',
                         padding: '12px 12px 12px 48px', // left padding for flag
                         borderRadius: '6px',
                         border: '1px solid rgba(197,198,203,0.53)',
@@ -294,7 +294,6 @@ const Block22 = () => {
                       }}
                       containerStyle={{
                         width: '100%',
-                        
                       }}
                       dropdownStyle={{
                         backgroundColor: '#222',
