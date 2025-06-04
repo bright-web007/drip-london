@@ -9,7 +9,7 @@ import icon1 from '@/assets/icons-svg/icon1.svg';
 import icon2 from '@/assets/icons-svg/icon2.svg';
 import icon3 from '@/assets/icons-svg/icon3.svg';
 import icon4 from '@/assets/icons-svg/icon4.svg';
-import icon5 from '@/assets/icons-svg/icon5.svg';
+import icon6 from '@/assets/icons-svg/icon6.svg';
 import smallPlatesImage from '@/assets/food1.png';
 import largePlatesImage from '@/assets/food2.png';
 import sideImage from '@/assets/food3.png';
@@ -305,9 +305,9 @@ export const navLinks = [
 ];
 
 export const navLinker = [
-  { name: 'Reservations', link: '/reservations#reservation' },
+  { name: 'Reservations', link: '/reservations' },
   { name: 'Menus', link: '/menus' },
-  { name: 'Private Dining', link: '/private-dining' },
+  { name: 'Private Dining', link: '/private-dining#private-dinning' },
   { name: 'The Experience', link: '/the-experience' },
   { name: 'Book An Event', link: '/book-an-event#book-an-event' },
 ];
@@ -803,7 +803,7 @@ export const lint: lints[] = [
       {
         label: 'Book an Event',
         actionType: 'navigate',
-        path: '/reservation',
+        path: '/book-an-event',
       },
     ],
   },
@@ -816,7 +816,7 @@ export const lint: lints[] = [
       {
         label: 'Book an Event',
         actionType: 'navigate',
-        path: '/reservation',
+        path: '/book-an-event',
       },
     ],
   },
@@ -840,7 +840,7 @@ export const late = [
     title: 'Tailored canape options',
   },
   {
-    img: icon5,
+    img: icon6,
     title: 'Dedicated staff',
   },
 ];
