@@ -26,7 +26,7 @@ const Block11 = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[646px] overflow-hidden mt-[-72px] "  id="menu">
+    <div className="relative w-full h-[646px] overflow-hidden mt-[-72px] " id="menu">
       <Image
         src={menuBg}
         alt="Menu"
