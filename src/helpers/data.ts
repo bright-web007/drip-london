@@ -1,8 +1,8 @@
 import flit1 from '@/assets/flit1.jpg';
 import flit2 from '@/assets/flit2.png';
 
-import night1 from '@/assets/night1.jpg';
-import night2 from '@/assets/night2.jpg';
+import night1 from '@/assets/night1.webp';
+import night2 from '@/assets/night2.webp';
 import night3 from '@/assets/night3.jpg';
 
 import icon1 from '@/assets/icons-svg/icon1.svg';
