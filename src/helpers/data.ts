@@ -309,7 +309,7 @@ export const navLinker = [
   { name: 'Menus', link: '/menu#menu' },
   { name: 'Private Dining', link: '/private-dining#private-dinning' },
   { name: 'The Experience', link: '/the-experience#experience' },
-  { name: 'Book An Event', link: '/book-an-event' },
+  { name: 'Book An Event', link: '/book-an-event#book-an-event' },
 ];
 
 export const latestNews = [
