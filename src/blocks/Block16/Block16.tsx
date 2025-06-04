@@ -16,19 +16,12 @@ const Block16 = () => {
         {contact.map((item, index) => (
           <div
             key={index}
-            className="p-[24px] shadow-md border-b-2 border-[#161616] bg-cover bg-no-repeat bg-center"
-            style={{
-              backgroundImage: `
-            linear-gradient(0deg, rgba(137, 129, 85, 0.06), rgba(137, 129, 85, 0.06)),
-            linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-            url(${gradient.src})
-          `,
-              backgroundBlendMode: 'overlay, normal',
-              backgroundColor: '#898155',
-              backgroundSize: 'cover',
-              backgroundPosition: '50%',
-              filter: 'saturate(0%)',
-            }}
+            className="relative overflow-hidden p-[24px] shadow-md border-b-2 border-[#161616] contact-card"
+            style={
+              {
+                '--card-bg-image': `url(${gradient.src})`,
+              } as React.CSSProperties
+            }
           >
             <div className="mb-[20px]">
               <Image
@@ -40,7 +33,7 @@ const Block16 = () => {
               />
             </div>
 
-            <h3 className="text-[13px] font-normal font-thankslabs mb-[12px] leading-[22px]  md:text-[14px]  xl:text-[16px]">
+            <h3 className="text-[13px] font-normal font-thankslabs mb-[12px] leading-[22px] md:text-[14px] xl:text-[16px]">
               {item.subtitle}
             </h3>
 
@@ -57,8 +50,8 @@ const Block16 = () => {
               <p className="text-[13px] font-normal font-monserrat leading-[22px] md:text-[14px] xl:text-[16px]">
                 Our dress code is Smart Elegant, we kindly invite guests to reflect the dress code.
                 We encourage smart shoes. To avoid disappointment please refrain from wearing
-                sportswear, hats, hoodies, beachwear shorts and sandals. <br /> Please note
-                management reserves the right to refuse entry.
+                sportswear, hats, hoodies, beachwear shorts and sandals. <br />
+                Please note management reserves the right to refuse entry.
               </p>
             ) : (
               <p className="text-[13px] font-normal font-monserrat leading-[22px] md:text-[14px] xl:text-[16px]">
