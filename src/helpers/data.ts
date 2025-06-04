@@ -305,11 +305,11 @@ export const navLinks = [
 ];
 
 export const navLinker = [
-  { name: 'Reservation', link: '/reservation' },
-  { name: 'Private Dinning', link: '/private' },
-  { name: 'Menus', link: '/menu#menu' },
-  { name: 'FAQs', link: '/faq' },
-  { name: 'Contacts', link: '/contact-us' },
+  { name: 'Reservations', link: '/reservations#reservation' },
+  { name: 'Menus', link: '/menus' },
+  { name: 'Private Dining', link: '/private-dining' },
+  { name: 'The Experience', link: '/the-experience' },
+  { name: 'Book An Event', link: '/book-an-event' },
 ];
 
 export const latestNews = [
