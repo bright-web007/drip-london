@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import contactbg from '@/assets/background/contact-bg.jpg';
 import arrowdown from '@/assets/icons-svg/arrow-down.svg';
@@ -19,6 +19,18 @@ const Block15 = () => {
       nextSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  useEffect(() => {
+    // Scroll to #faq if present in the URL hash
+    if (window.location.hash === '#reservation') {
+      const el = document.getElementById('reservation');
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }, 300); // Delay to ensure DOM is ready
+      }
+    }
+  }, []);
 
   const timeOptions = [
     '6:00pm',
@@ -51,7 +63,7 @@ const Block15 = () => {
   };
 
   return (
-    <div className="relative w-full h-[760px] sm:h-[800px] overflow-hidden mt-[-72px]">
+    <div className="relative w-full h-[760px] sm:h-[800px] overflow-hidden mt-[-72px]" id="reservation">
       {/* Background Image */}
       <Image
         src={contactbg}
