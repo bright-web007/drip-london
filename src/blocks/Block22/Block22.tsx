@@ -101,7 +101,7 @@ const Block22 = () => {
   );
 
   return (
-    <div className="w-full mx-auto mt-[-72px] relative h-[90vh] overflow-hidden xl:h-[100vh]">
+    <div className="w-full mx-auto mt-[-72px] relative h-[90vh] overflow-hidden xl:h-[110vh]">
       <Image
         src={reservation}
         alt="contact background"
@@ -118,7 +118,7 @@ const Block22 = () => {
           <hr className="w-[56.08px] border-1 border-[#898155] mb-[26px] sm:mb-[36px] xl:my-[22px]"></hr>
 
           <div className="flex flex-col gap-[4px] items-center w-[350px] md:w-[500px]">
-            <p className="text-center text-[16px] w-[300px] md:w-[410px] xl:w-[409.7px]  font-monserrat leading-[19.5px] text-[#FFF] mb-[25px] sm:text-[18px] md:text-[24px] md:leading-[32px] md:mb-[35px]   xl:mb-[32px]">
+            <p className="text-center text-[16px] w-[300px] md:w-[410px] xl:w-[409.7px]  font-monserrat leading-[19.5px] text-[#FFF] mb-[25px] sm:text-[18px] md:text-[22px] md:leading-[32px] md:mb-[35px]   xl:mb-[32px]">
               Plan Your Event at Drip. Easy booking. Quick confirmation. Your party, your way.
             </p>
 
@@ -126,35 +126,35 @@ const Block22 = () => {
               Fill Booking Form Using:
             </p>
 
-            <button className="w-full py-[12px] px-[24px] rounded-[4px] flex items-center justify-center  gap-[12px] text-[#FFF] text-[14px] font-monserrat leading-[21px] bg-black/30 backdrop-blur-sm  sm:text-[18px] sm:py-[15px] md:text-[20px] md:h-[52.67px]  xl:w-[870px] xl:h-[80.4637px] xl:text-[20px]">
+            <button className="w-full py-[12px] px-[24px] rounded-[4px] flex items-center justify-center  gap-[12px] text-[#FFF] text-[14px] font-monserrat leading-[21px] bg-black/30 backdrop-blur-sm  sm:text-[18px] sm:py-[15px] md:text-[20px] md:h-[52.67px]  xl:w-[870px] xl:h-[60px] xl:text-[18px]">
               <Image
                 src={google}
                 alt="google"
                 width={20}
                 height={20}
-                className="xl:h-[37px] xl:w-[37px]"
+                className="xl:h-[24px] xl:w-[24px]"
               />
               <span>Google</span>
             </button>
 
-            <button className="w-full py-[12px] px-[24px] rounded-[4px] flex gap-[12px] items-center justify-center  text-[#FFF] text-[14px] font-monserrat leading-[21px] bg-black/30 backdrop-blur-sm  sm:text-[18px] sm:py-[15px] md:text-[20px]  md:h-[52.67px] xl:w-[870px] xl:h-[80.4637px] xl:text-[20px]">
+            <button className="w-full py-[12px] px-[24px] rounded-[4px] flex gap-[12px] items-center justify-center  text-[#FFF] text-[14px] font-monserrat leading-[21px] bg-black/30 backdrop-blur-sm  sm:text-[18px] sm:py-[15px] md:text-[20px]  md:h-[52.67px] xl:w-[870px] xl:h-[60px] xl:text-[18px]">
               <Image
                 src={apple}
                 alt="apple"
                 width={20}
                 height={20}
-                className="xl:h-[37px] xl:w-[37px]"
+                className="xl:h-[24px] xl:w-[24px]"
               />
               <span>Apple</span>
             </button>
 
-            <button className="w-full py-[12px] px-[24px] rounded-[4px] flex gap-[12px] items-center justify-center  text-[#FFF] text-[14px] font-monserrat leading-[21px] bg-black/30 backdrop-blur-sm  sm:text-[18px] sm:py-[15px] md:text-[20px]  md:h-[52.67px] xl:w-[870px] xl:h-[80.4637px] xl:text-[20px]">
+            <button className="w-full py-[12px] px-[24px] rounded-[4px] flex gap-[12px] items-center justify-center  text-[#FFF] text-[14px] font-monserrat leading-[21px] bg-black/30 backdrop-blur-sm  sm:text-[18px] sm:py-[15px] md:text-[20px]  md:h-[52.67px] xl:w-[870px] xl:h-[60px] xl:text-[18px]">
               <Image
                 src={facebook}
                 alt="facebook"
                 width={20}
                 height={20}
-                className="xl:h-[37px] xl:w-[37px]"
+                className="xl:h-[24px] xl:w-[24px]"
               />
               <span>Facebook</span>
             </button>
@@ -164,7 +164,7 @@ const Block22 = () => {
             </p>
 
             <button
-              className="w-full py-[12px] px-[12px] flex gap-[12px] items-center justify-center  text-[#FFF] text-[14px] font-monserrat leading-[21px] border-1 border-[rgba(197,198,203,0.53)] bg-[#898155] backdrop-blur-sm rounded-[4px] sm:text-[18px]  sm:py-[15px] md:text-[20px]  md:h-[52.67px]  xl:w-[870px] xl:h-[80.4637px] xl:text-[20px]  hover:border-[#898155]"
+              className="w-full py-[12px] px-[12px] flex gap-[12px] items-center justify-center  text-[#FFF] text-[14px] font-monserrat leading-[21px]  bg-[#898155] backdrop-blur-sm rounded-[4px] sm:text-[18px]  sm:py-[15px] md:text-[20px]  md:h-[52.67px]  xl:w-[870px] xl:h-[60px] xl:text-[20px]  hover:border-[#898155]"
               onClick={nextStep}
             >
               <span className="text-[12px] font-monserrat sm:text-[18px]">
@@ -175,7 +175,7 @@ const Block22 = () => {
                 alt="group"
                 width={20}
                 height={20}
-                className="xl:h-[29px] xl:w-[29px] "
+                className="xl:h-[24px] xl:w-[24px] "
               />
             </button>
           </div>

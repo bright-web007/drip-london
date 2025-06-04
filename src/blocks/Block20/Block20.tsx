@@ -12,13 +12,10 @@ const Block20 = () => {
         <span>Elevated</span>
         <span>Dining Experiences</span>
       </h2>
-      <div className="flex flex-wrap gap-[33px] md:gap-[45px] justify-center z-10 xl:grid xl:grid-cols-2">
+      <div className="grid gap-[33px] xl:grid-cols-2  md:gap-[45px] xl:gap-[35px]">
         {proof.map((item, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-center  rounded-[4px] w-[500px] border border-[#3f3f3f] border-opacity-20 rounded-[4px]"
-          >
-            <div className="w-full h-[400px] relative">
+          <div key={index} className="flex flex-col items-center  rounded-[4px]">
+            <div className="w-full h-[264px] relative">
               <Image src={item.img} alt={item.title} fill className="object-cover" />
               <div className="h-[55px] w-full border-2 border-[black]  absolute bottom-[-22px] left-1/2 transform -translate-x-1/2 blur-[15.75px] bg-[black]"></div>
             </div>
