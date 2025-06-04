@@ -126,35 +126,35 @@ const Block22 = () => {
               Fill Booking Form Using:
             </p>
 
-            <button className="w-full py-[12px] px-[24px] rounded-[4px] flex items-center justify-center  gap-[12px] text-[#FFF] text-[14px] font-monserrat leading-[21px] bg-black/30 backdrop-blur-sm  sm:text-[18px] sm:py-[15px] md:text-[20px] md:h-[52.67px]  xl:w-[870px] xl:h-[80.4637px] xl:text-[20px]">
+            <button className="w-full py-[12px] px-[24px] rounded-[4px] flex items-center justify-center  gap-[12px] text-[#FFF] text-[14px] font-monserrat leading-[21px] bg-black/30 backdrop-blur-sm  sm:text-[18px] sm:py-[15px] md:text-[20px] md:h-[52.67px]  xl:w-[870px] xl:h-[60px] xl:text-[18px]">
               <Image
                 src={google}
                 alt="google"
                 width={20}
                 height={20}
-                className="xl:h-[37px] xl:w-[37px]"
+                className="xl:h-[24px] xl:w-[24px]"
               />
               <span>Google</span>
             </button>
 
-            <button className="w-full py-[12px] px-[24px] rounded-[4px] flex gap-[12px] items-center justify-center  text-[#FFF] text-[14px] font-monserrat leading-[21px] bg-black/30 backdrop-blur-sm  sm:text-[18px] sm:py-[15px] md:text-[20px]  md:h-[52.67px] xl:w-[870px] xl:h-[80.4637px] xl:text-[20px]">
+            <button className="w-full py-[12px] px-[24px] rounded-[4px] flex gap-[12px] items-center justify-center  text-[#FFF] text-[14px] font-monserrat leading-[21px] bg-black/30 backdrop-blur-sm  sm:text-[18px] sm:py-[15px] md:text-[20px]  md:h-[52.67px] xl:w-[870px] xl:h-[60px] xl:text-[18px]">
               <Image
                 src={apple}
                 alt="apple"
                 width={20}
                 height={20}
-                className="xl:h-[37px] xl:w-[37px]"
+                className="xl:h-[24px] xl:w-[24px]"
               />
               <span>Apple</span>
             </button>
 
-            <button className="w-full py-[12px] px-[24px] rounded-[4px] flex gap-[12px] items-center justify-center  text-[#FFF] text-[14px] font-monserrat leading-[21px] bg-black/30 backdrop-blur-sm  sm:text-[18px] sm:py-[15px] md:text-[20px]  md:h-[52.67px] xl:w-[870px] xl:h-[80.4637px] xl:text-[20px]">
+            <button className="w-full py-[12px] px-[24px] rounded-[4px] flex gap-[12px] items-center justify-center  text-[#FFF] text-[14px] font-monserrat leading-[21px] bg-black/30 backdrop-blur-sm  sm:text-[18px] sm:py-[15px] md:text-[20px]  md:h-[52.67px] xl:w-[870px] xl:h-[60px] xl:text-[18px]">
               <Image
                 src={facebook}
                 alt="facebook"
                 width={20}
                 height={20}
-                className="xl:h-[37px] xl:w-[37px]"
+                className="xl:h-[24px] xl:w-[24px]"
               />
               <span>Facebook</span>
             </button>
@@ -164,7 +164,7 @@ const Block22 = () => {
             </p>
 
             <button
-              className="w-full py-[12px] px-[12px] flex gap-[12px] items-center justify-center  text-[#FFF] text-[14px] font-monserrat leading-[21px] border-1 border-[rgba(197,198,203,0.53)] bg-[#898155] backdrop-blur-sm rounded-[4px] sm:text-[18px]  sm:py-[15px] md:text-[20px]  md:h-[52.67px]  xl:w-[870px] xl:h-[80.4637px] xl:text-[20px]  hover:border-[#898155]"
+              className="w-full py-[12px] px-[12px] flex gap-[12px] items-center justify-center  text-[#FFF] text-[14px] font-monserrat leading-[21px]  bg-[#898155] backdrop-blur-sm rounded-[4px] sm:text-[18px]  sm:py-[15px] md:text-[20px]  md:h-[52.67px]  xl:w-[870px] xl:h-[60px] xl:text-[20px]  hover:border-[#898155]"
               onClick={nextStep}
             >
               <span className="text-[12px] font-monserrat sm:text-[18px]">
@@ -175,7 +175,7 @@ const Block22 = () => {
                 alt="group"
                 width={20}
                 height={20}
-                className="xl:h-[29px] xl:w-[29px] "
+                className="xl:h-[24px] xl:w-[24px] "
               />
             </button>
           </div>
