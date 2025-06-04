@@ -317,7 +317,7 @@ const Block22 = () => {
                   ) : (
                     <input
                       id={name}
-                      className="w-[334px] h-[42px] p-[12px] text-[12px] font-monserrat rounded border border-[rgba(197,198,203,0.53)] text-[#fff] bg-[rgba(44,44,44,0.42)]  sm:h-[52px]  xl:w-[445px] xl:h-[58px]  xl:mb-[30px] sm:text-[16px]"
+                      className="w-[334px] h-[42px] p-[12px] text-[12px] font-monserrat rounded border border-[rgba(197,198,203,0.53)] text-[#fff] bg-[rgba(44,44,44,0.42)]  sm:h-[52px]  xl:w-[445px] xl:h-[58px] mb-[2px] sm:text-[16px]"
                       name={name}
                       placeholder={name.charAt(0).toUpperCase() + name.slice(1)}
                       value={formData[name as keyof typeof formData] as string}
