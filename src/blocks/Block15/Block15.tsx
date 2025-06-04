@@ -63,7 +63,10 @@ const Block15 = () => {
   };
 
   return (
-    <div className="relative w-full h-[760px] sm:h-[800px] overflow-hidden mt-[-72px]" id="reservation">
+    <div
+      className="relative w-full h-[760px] sm:h-[800px] overflow-hidden mt-[-72px]"
+      id="reservation"
+    >
       {/* Background Image */}
       <Image
         src={contactbg}
