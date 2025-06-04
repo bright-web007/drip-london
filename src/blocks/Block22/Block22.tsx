@@ -101,7 +101,7 @@ const Block22 = () => {
   );
 
   return (
-    <div className="w-full mx-auto mt-[-72px] relative h-[90vh] overflow-hidden xl:h-[100vh]">
+    <div className="w-full mx-auto mt-[-72px] relative h-[90vh] overflow-hidden xl:h-[110vh]">
       <Image
         src={reservation}
         alt="contact background"
@@ -118,7 +118,7 @@ const Block22 = () => {
           <hr className="w-[56.08px] border-1 border-[#898155] mb-[26px] sm:mb-[36px] xl:my-[22px]"></hr>
 
           <div className="flex flex-col gap-[4px] items-center w-[350px] md:w-[500px]">
-            <p className="text-center text-[16px] w-[300px] md:w-[410px] xl:w-[409.7px]  font-monserrat leading-[19.5px] text-[#FFF] mb-[25px] sm:text-[18px] md:text-[24px] md:leading-[32px] md:mb-[35px]   xl:mb-[32px]">
+            <p className="text-center text-[16px] w-[300px] md:w-[410px] xl:w-[409.7px]  font-monserrat leading-[19.5px] text-[#FFF] mb-[25px] sm:text-[18px] md:text-[22px] md:leading-[32px] md:mb-[35px]   xl:mb-[32px]">
               Plan Your Event at Drip. Easy booking. Quick confirmation. Your party, your way.
             </p>
 
