@@ -44,16 +44,18 @@ const Navbar = () => {
           />
         </div>
         <div className="hidden md:flex items-center justify-center  font-thankslabs text-[white] gap-[20px]  text-[11px] xl:">
-          <p onClick={() => router.push('/contact-us')} className="cursor-pointer">
+          <p onClick={() => router.push('/reservations')} className="cursor-pointer">
             RESERVATIONS
           </p>
           <p onClick={() => router.push('/menu')} className="cursor-pointer">
             MENU
           </p>
-          <p onClick={() => router.push('/news')} className="cursor-pointer">
-            PRIVATE DINNING
+          <p onClick={() => router.push('/private-dining')} className="cursor-pointer">
+            PRIVATE DINING
           </p>
-          <p onClick={() => router.push('/faq')} className="cursor-pointer">THE EXPERIENCE</p>
+          <p onClick={() => router.push('/the-experience')} className="cursor-pointer">
+            THE EXPERIENCE
+          </p>
         </div>
       </div>
     </div>

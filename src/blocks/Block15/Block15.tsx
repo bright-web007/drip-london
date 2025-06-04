@@ -68,13 +68,13 @@ const Block15 = () => {
         </h1>
 
         {/* Reservation Box */}
-        <div className="w-[382px] mx-auto bg-white overflow-hidden mb-[18px] md:w-[647px] xl:w-[855px]">
+        <div className="w-[400px] max-w-[855px]  bg-white overflow-hidden mx-auto  mb-[18px] md:w-[647px] xl:w-[855px]">
           <div className="flex flex-row items-center justify-between border-b">
             {/* Guests */}
             <div className="flex items-center w-full p-3 border-r border-[#DDDDDD] md:w-[215.6667px]">
               <User className="w-5 h-5 mr-2 text-gray-500" />
               <select
-                className="w-full bg-transparent text-gray-800 focus:outline-none"
+                className="w-full bg-transparent  focus:outline-none text-[12px] font-monserrat "
                 value={guests}
                 onChange={e => setGuests(e.target.value)}
               >
@@ -89,7 +89,7 @@ const Block15 = () => {
               <CalendarDays className="w-5 h-5 mr-2 text-gray-500" />
               <input
                 type="date"
-                className="w-full bg-transparent text-gray-800 focus:outline-none"
+                className="w-full bg-transparent text-gray-800 focus:outline-none text-[12px] font-monserrat"
                 value={date}
                 onChange={e => setDate(e.target.value)}
               />
@@ -99,7 +99,7 @@ const Block15 = () => {
             <div className="flex items-center w-full p-3 md:w-[215.6667px]">
               <Clock className="w-5 h-5 mr-2 text-gray-500" />
               <select
-                className="w-full bg-transparent text-gray-800 focus:outline-none"
+                className="w-full bg-transparent text-gray-800 focus:outline-none text-[12px] font-monserrat"
                 value={time}
                 onChange={e => setTime(e.target.value)}
               >
@@ -127,7 +127,7 @@ const Block15 = () => {
 
       {/* Info Box */}
       <div className="absolute bottom-[85px] w-full flex justify-center">
-        <div className="flex gap-[16px] bg-[rgba(17,17,17,0.30)] border border-[#2B2B2B] py-[24px] px-[12px] w-[382px] md:w-[647px] xl:w-[855px]">
+        <div className="flex gap-[16px] bg-[rgba(17,17,17,0.30)] border border-[#2B2B2B] py-[24px] px-[12px] w-[400px] max-w-[855px] md:w-[647px] xl:w-[855px] xl:pr-[210px]">
           <Image src={info} alt="info icon" />
           <p className="text-[13px] text-gray-300 leading-[17px] md:text-[15.5px]">
             For reservations of 12 and above please contact us directly on{' '}

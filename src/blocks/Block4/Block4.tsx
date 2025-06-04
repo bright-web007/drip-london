@@ -127,7 +127,7 @@ const Slider = () => {
           <button
             onClick={prevSlide}
             disabled={current === 0}
-            className={`w-[35px] h-[35px] bg-[#898155] border border-[#898155] rounded-full z-10 flex items-center justify-center text-white transition-opacity duration-300 ${
+            className={`w-[40px] h-[40px] bg-[#898155] border border-[#898155] rounded-full z-10 flex items-center justify-center text-white transition-opacity duration-300 ${
               current === 0 ? 'opacity-30 cursor-not-allowed' : 'hover:opacity-80'
             }`}
           >
@@ -136,7 +136,7 @@ const Slider = () => {
           <button
             onClick={nextSlide}
             disabled={current === length - 1}
-            className={`w-[35px] h-[35px] bg-[#898155] border border-[#898155] rounded-full z-10 flex items-center justify-center text-white transition-opacity duration-300 ${
+            className={`w-[40px] h-[40px] bg-[#898155] border border-[#898155] rounded-full z-10 flex items-center justify-center text-white transition-opacity duration-300 ${
               current === length - 1 ? 'opacity-30 cursor-not-allowed' : 'hover:opacity-80'
             }`}
           >
