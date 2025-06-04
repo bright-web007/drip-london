@@ -113,7 +113,10 @@ const Block22 = () => {
   );
 
   return (
-    <div className="w-full mx-auto mt-[-72px] relative h-[90vh] overflow-hidden xl:h-[110vh]"  id="book-an-event">
+    <div
+      className="w-full mx-auto mt-[-72px] relative h-[90vh] overflow-hidden xl:h-[110vh]"
+      id="book-an-event"
+    >
       <Image
         src={reservation}
         alt="contact background"
