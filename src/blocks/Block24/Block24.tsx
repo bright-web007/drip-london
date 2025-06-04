@@ -31,7 +31,7 @@ const Block24 = () => {
   const formatReview = (item: FAQItem) => {
     if (item.title === 'How many people can I book for?') {
       return (
-        <p className="text-[#D3D3D3] font-monserrat mt-4 text-[16px] leading-[24px]  sm:text-[20px] sm:leading-[32px]">
+        <p className="text-[#D3D3D3] font-monserrat mt-4 text-[16px] leading-[24px]  sm:text-[15px] xl:text-[14px] sm:leading-[32px]">
           Restaurant bookings can be made online for up to 12 people, for bookings larger than 12
           please email{' '}
           <a
@@ -46,7 +46,7 @@ const Block24 = () => {
 
     if (item.title === 'Opening Hours?') {
       return (
-        <div className="text-[#D3D3D3] font-monserrat mt-4 text-[16px] leading-[24px] sm:text-[20px] sm:leading-[32px] space-y-1">
+        <div className="text-[#D3D3D3] font-monserrat mt-4 text-[16px] leading-[24px] sm:text-[15px] xl:text-[14px] sm:leading-[32px] space-y-1">
           <p>
             <span className="text-[#898155]">Thursday</span>
             <br />
@@ -64,7 +64,7 @@ const Block24 = () => {
     if (item.title === 'Late Cancellation Policy') {
       const [firstPart, secondPart] = item.review.split('Your table will be held');
       return (
-        <div className="text-[#D5D5D5] font-monserrat mt-4 text-[16px] leading-[24px]  sm:text-[20px]">
+        <div className="text-[#D5D5D5] font-monserrat mt-4 text-[16px] leading-[24px]  sm:text-[15px] xl:text-[14px]">
           <p>{firstPart.trim()}</p>
           <p className="mt-4">Your table will be held {secondPart.trim()}</p>
         </div>
@@ -72,7 +72,7 @@ const Block24 = () => {
     }
 
     return (
-      <p className="text-[#D3D3D3] font-monserrat mt-4 text-[16px] leading-[24px]  sm:text-[20px]">
+      <p className="text-[#D3D3D3] font-monserrat mt-4 text-[16px] leading-[24px]  sm:text-[15px] xl:text-[14px]">
         {item.review}
       </p>
     );
@@ -106,7 +106,7 @@ const Block24 = () => {
                   onClick={() => toggleIndex(index)}
                   className="flex justify-between items-start cursor-pointer"
                 >
-                  <p className="text-[12px] text-[#D5D5D5] font-normal sm:text-[15px] xl:text-[20px] pr-4 leading-[26px]">
+                  <p className="text-[12px] text-[#D5D5D5] font-normal sm:text-[15px] xl:text-[16px] pr-4 leading-[26px]">
                     {item.title}
                   </p>
                   <FaChevronDown
