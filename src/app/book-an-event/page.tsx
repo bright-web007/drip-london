@@ -4,20 +4,20 @@ import logo from '@/assets/logo.svg';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: `Reservation | ${Meta_Tags.siteName}`,
+  title: `Book-An-Event | ${Meta_Tags.siteName}`,
   description: `${Meta_Tags.description}`,
   metadataBase: new URL(`${Meta_Tags.siteUrl}`),
   openGraph: {
-    title: `Reservation | ${Meta_Tags.siteName}`,
+    title: `Book-An-Event | ${Meta_Tags.siteName}`,
     description: `${Meta_Tags.description}`,
-    url: `/reservation`,
+    url: `/book-an-event`,
     siteName: `${Meta_Tags.siteName}`,
     images: [
       {
         url: `${logo}`,
         width: 1200,
         height: 630,
-        alt: `${Meta_Tags.siteName} Home`,
+        alt: `${Meta_Tags.siteName} Book-An-Event`,
       },
     ],
     type: 'website',

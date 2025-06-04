@@ -309,7 +309,7 @@ export const navLinker = [
   { name: 'Menus', link: '/menus' },
   { name: 'Private Dining', link: '/private-dining#private-dinning' },
   { name: 'The Experience', link: '/the-experience' },
-  { name: 'Book An Event', link: '/book-an-event' },
+  { name: 'Book An Event', link: '/book-an-event#book-an-event' },
 ];
 
 export const latestNews = [
@@ -669,7 +669,7 @@ export const items: Item[] = [
       {
         label: 'Make a Reservation',
         actionType: 'navigate',
-        path: '/reservation',
+        path: '/reservations',
       },
     ],
   },
