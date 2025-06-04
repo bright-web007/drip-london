@@ -15,8 +15,8 @@ const Block11 = () => {
 
   useEffect(() => {
     // Scroll to #faq if present in the URL hash
-    if (window.location.hash === '#faq') {
-      const el = document.getElementById('faq');
+    if (window.location.hash === '#menu') {
+      const el = document.getElementById('menu');
       if (el) {
         setTimeout(() => {
           el.scrollIntoView({ behavior: 'smooth' });
