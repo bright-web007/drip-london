@@ -719,7 +719,6 @@ export const dits = [
   },
 ];
 
-
 export type men = {
   img: StaticImageData;
   title: string;
@@ -762,11 +761,6 @@ export const mens: men[] = [
   },
 ];
 
-
-
-
-
-
 export const proof = [
   {
     img: flit1,
@@ -781,8 +775,6 @@ export const proof = [
       'Perfect for birthdays, corporate events, or any moment worth celebrating—make every occasion unforgettable.',
   },
 ];
-
-
 
 export type lints = {
   img: StaticImageData;
@@ -830,8 +822,6 @@ export const lint: lints[] = [
   },
 ];
 
-
-
 export const late = [
   {
     img: icon1,
@@ -854,4 +844,3 @@ export const late = [
     title: 'Dedicated staff',
   },
 ];
-
