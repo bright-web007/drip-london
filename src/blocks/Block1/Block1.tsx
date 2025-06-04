@@ -5,9 +5,22 @@ import Image from 'next/image';
 import downicon from '@/assets/icons-svg/arrow-down.svg';
 import { LayoutHeader } from '@/components/LayoutHeader/LayoutHeader';
 import { useRouter } from 'next/navigation';
+import React, { useEffect } from 'react';
 
 const Block1 = () => {
   const router = useRouter();
+
+  useEffect(() => {
+    // Scroll to #home if present in the URL hash
+    if (window.location.hash === '#home') {
+      const el = document.getElementById('faq');
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }, 400); // Delay to ensure DOM is ready
+      }
+    }
+  }, []);
 
   const handleScrollDown = () => {
     const el = document.getElementById('next-section');
@@ -17,7 +30,7 @@ const Block1 = () => {
   };
 
   return (
-    <div className="flex flex-col mt-[-72px] min-h-[95vh] font-monserrat sm:min-h-[85vh] md:min-h-[98.5vh] lg:min-h-screen bg-gray-500  relative ">
+    <div className="flex flex-col mt-[-72px] min-h-[95vh] font-monserrat sm:min-h-[85vh] md:min-h-[98.5vh] lg:min-h-screen bg-gray-500  relative " id="home">
       <LayoutHeader />
 
       <div className="absolute inset-0 flex flex-col items-center justify-center gap-[38px]  lg:gap-[50px]  xl:gap-[45px]">
