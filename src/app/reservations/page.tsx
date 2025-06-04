@@ -1,9 +1,6 @@
 import Block15 from '@/blocks/Block15/Block15';
 import Block16 from '@/blocks/Block16/Block16';
 import Block17 from '@/blocks/Block17/Block17';
-<<<<<<< HEAD
-
-=======
 import type { Metadata } from 'next';
 import { Meta_Tags } from '@/helpers/data';
 import logo from '@/assets/logo.svg';
@@ -29,15 +26,16 @@ export const metadata: Metadata = {
   },
 };
 
->>>>>>> main
 import React from 'react';
 
 const page = () => {
   return (
     <div>
       <Block15 />
-      <Block16 />
-      <Block17 />
+      <div className="xl:flex w-full xl:pr-[40px] xl:pl-[40px] bg-[black]">
+        <Block16 />
+        <Block17 />
+      </div>
     </div>
   );
 };

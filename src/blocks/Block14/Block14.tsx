@@ -48,13 +48,11 @@ const Slider = () => {
   const handleButtonClick = (button: { label: string; path?: string }) => {
     if (button.path) {
       router.push(button.path);
-    } else {
-      console.log('No path found for button:', button.label);
     }
   };
 
   return (
-    <section className="bg-black py-[100px] pb-[50px] xl:pb-[50px] xl:pt-[50px]  w-full h-full relative overflow-hidden">
+    <section className="bg-black py-[100px] pb-[50px] xl:pb-[50px] xl:pt-[100px] md:pt-[50px] w-full h-full relative overflow-hidden">
       <h2 className="text-white text-[18px] font-thankslabs mb-[30px] text-center sm:text-[24px] md:text-[30px] xl:mb-[0px]  xl:text-[32px]">
         Exclusive Events
       </h2>
@@ -142,16 +140,16 @@ const Slider = () => {
           <button
             onClick={prevSlide}
             disabled={current === 0}
-            className={`w-[55px] h-[55px] bg-[#898155] border border-[#898155] rounded-full z-10 flex items-center justify-center text-white transition-opacity duration-300 ${
+            className={`w-[40px] h-[40px] cursor-pointer bg-[#898155] border border-[#898155] rounded-full z-10 flex items-center justify-center text-white transition-opacity duration-300 ${
               current === 0 ? 'opacity-30 cursor-not-allowed' : 'hover:opacity-80'
             }`}
           >
-            <Icon icon="ic:round-chevron-left" className="w-8 h-8" />
+            <Icon icon="ic:round-chevron-left" fontSize={24} className="w-8 h-8" />
           </button>
           <button
             onClick={nextSlide}
             disabled={current === lint.length - 1}
-            className={`w-[55px] h-[55px] bg-[#898155] border border-[#898155] rounded-full z-10 flex items-center justify-center text-white transition-opacity duration-300 ${
+            className={`w-[40px] h-[40px] cursor-pointer bg-[#898155] border border-[#898155] rounded-full z-10 flex items-center justify-center text-white transition-opacity duration-300 ${
               current === lint.length - 1 ? 'opacity-30 cursor-not-allowed' : 'hover:opacity-80'
             }`}
           >
@@ -190,7 +188,7 @@ const Slider = () => {
                 </div>
 
                 {/* Right Content */}
-                <div className="flex flex-col justify-center gap-4 p-[40px] w-1/3 bg-black text-white">
+                <div className="flex flex-col justify-center gap-4 p-[40px] w-1/4 bg-black text-white">
                   {item.title && (
                     <h3 className="font-thankslabs text-[20px] leading-[30px] text-[#898155]">
                       {item.title}
@@ -199,12 +197,12 @@ const Slider = () => {
                   <p className="font-Montserrat font-light text-[18px] leading-[28px] text-[#D5D5D5]">
                     {item.desc}
                   </p>
-                  <div className="flex flex-col gap-3">
+                  <div className="flex flex-col gap-3 pt-4">
                     {item.buttons?.map((button, btnIndex) => (
                       <button
                         key={btnIndex}
                         onClick={() => handleButtonClick(button)}
-                        className="bg-[rgba(137,129,85,0.15)] font-normal h-[50px] px-4 py-2 border border-[#3d3926] rounded-[4px] text-[#cfcfcf] text-[16px]"
+                        className="bg-[rgba(137,129,85,0.15)] cursor-pointer font-normal h-[50px] px-4 py-2 border border-[#3d3926] rounded-[4px] text-[#cfcfcf] text-[16px]"
                       >
                         {button.label}
                       </button>

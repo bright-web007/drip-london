@@ -3,6 +3,7 @@ import flit2 from '@/assets/flit2.png';
 
 import night1 from '@/assets/night1.jpg';
 import night2 from '@/assets/night2.jpg';
+import night3 from '@/assets/night3.jpg';
 
 import icon1 from '@/assets/icons-svg/icon1.svg';
 import icon2 from '@/assets/icons-svg/icon2.svg';
@@ -23,18 +24,24 @@ import card4 from '@/assets/card4.png';
 import card5 from '@/assets/card5.png';
 import card6 from '@/assets/card6.png';
 
-import menu1 from '@/assets/menu1.jpg';
-import menu2 from '@/assets/menu2.jpg';
-import menu3 from '@/assets/menu3.jpg';
+import vector1 from '@/assets/Vector1.svg';
+import vector2 from '@/assets/vector2.svg';
+import vector3 from '@/assets/vector3.svg';
+import vector4 from '@/assets/vector4.svg';
+import vector5 from '@/assets/vector5.svg';
+import experience1 from '@/assets/experience1.jpg';
+import experience2 from '@/assets/experience2.jpg';
+import experience3 from '@/assets/experience3.png';
+import experience4 from '@/assets/experience4.jpg';
+
+import deam1 from '@/assets/deam1.jpg';
+import deam2 from '@/assets/deam2.jpg';
+import deam3 from '@/assets/deam3.jpg';
 
 import slide1 from '@/assets/slide1.jpg';
 import slide2 from '@/assets/slide2.jpg';
 import slide3 from '@/assets/slide3.jpg';
 import slide4 from '@/assets/slide4.jpg';
-
-import deam1 from '@/assets/deam1.jpg';
-import deam2 from '@/assets/deam2.jpg';
-import deam3 from '@/assets/deam3.jpg';
 
 import drip1 from '@/assets/drip1.jpg';
 import drip2 from '@/assets/drip2.jpg';
@@ -42,6 +49,10 @@ import drip3 from '@/assets/drip3.jpg';
 import drip4 from '@/assets/drip4.jpg';
 import drip5 from '@/assets/drip5.jpg';
 import drip6 from '@/assets/drip6.jpg';
+
+import menu1 from '@/assets/menu1.jpg';
+import menu2 from '@/assets/menu2.jpg';
+import menu3 from '@/assets/menu3.jpg';
 
 import { StaticImageData } from 'next/image';
 
@@ -294,11 +305,11 @@ export const navLinks = [
 ];
 
 export const navLinker = [
-  { name: 'Reservation', link: '/reservation' },
-  { name: 'Private Dinning', link: '/private' },
-  { name: 'Menus', link: '/menu' },
-  { name: 'FAQs', link: '/faq' },
-  { name: 'Contacts', link: '/contact-us' },
+  { name: 'Reservations', link: '/reservations' },
+  { name: 'Menus', link: '/menus' },
+  { name: 'Private Dining', link: '/private-dining' },
+  { name: 'The Experience', link: '/the-experience' },
+  { name: 'Book An Event', link: '/book-an-event' },
 ];
 
 export const latestNews = [
@@ -485,45 +496,50 @@ export const center = {
 
 export const GOOGLE_MAPS_APIKEY = 'AIzaSyB_Ujmyiir8qmceRFs5ICiSHUJhQnXRZD4';
 
+export const contact = [
+  {
+    image: vector1,
+    subtitle: 'Minimum Spend',
+    description:
+      'A minimum spend of £65 per person applies from Friday to Sunday (excluding brunch bookings).',
+  },
+  {
+    image: vector2,
+    subtitle: 'Group Bookings',
+    description:
+      'Reservations of fewer than 12 guests are welcome to dine from our à la carte menu. Groups of 12 or more will be offered a specially curated set menu by our chef.',
+  },
+  {
+    image: vector3,
+    subtitle: 'Dress Code',
+    description:
+      'Our dress code is Smart Elegant, we kindly invite guests to reflect the dress code. We encourage smart shoes. To avoid disappointment please refrain from wearing sportswear, hats, hoodies, beachwear shorts and sandals. <br> Please note management reserves the right to refuse entry.',
+  },
+  {
+    image: vector4,
+    subtitle: 'Reservation Timing',
+    description:
+      'We hold tables for 15 minutes past the booking time before releasing them to other waiting guests.',
+  },
+  {
+    image: vector5,
+    subtitle: 'Availability',
+    description:
+      'If you can’t find your preferred date or time online, feel free to contact us directly via WhatsApp or email.',
+  },
+];
+
 export const faqreview = [
   {
-    title: 'What is the experience like at Drip London?',
-    review:
-      'We’re not your typical restaurant. Expect an immersive evening filled with West African fusion cuisine, music, dancing, and theatrical flair. Our performers move through the space, engaging with guests for a truly unforgettable night.',
-  },
-
-  {
-    title: 'How do I make a reservation?',
-    review:
-      'Reservations can be made directly through our website. We recommend booking in advance.',
-  },
-
-  {
-    title: 'Is there live entertainment every night?',
-    review:
-      'The vibe is always alive at Drip London, Every evening feature vibrant music, immersive performances, and electric energy throughout the venue. On Saturdays and Sundays, we turn it up with a DJ spinning Afrobeat, Amapiano, Dancehall and feel-good tracks to late into the night. No matter when you join us, expect great music, passionate performances and unforgettable atmosphere.',
-  },
-
-  {
-    title: 'Is this experience suitable for children?',
-    review:
-      'We are a 21+ venue due to the nature of the performances and ambiance. For private family events, please contact us.',
-  },
-
-  {
     title: 'How many people can I book for?',
-    review: 'Group dining: 12–30 guests | Brunch: Up to 10 guests per booking (larger on request)',
-  },
-
-  {
-    title: 'Do you require a deposit?',
     review:
-      'Yes, group bookings require a 50% deposit. A La Carte and Brunch bookings require card details to secure.',
+      'Restaurant bookings can be made online for up to 12 people, for bookings larger than 12 please email reservations@drip.london ',
   },
 
   {
-    title: 'Can I bring a cake?',
-    review: 'Absolutely — please give us notice to help you set up.',
+    title: 'Is Drip London an 18+ Venue?',
+    review:
+      'Drip London is strictly a 18+ venue. All guests must bring a valid physical ID to gain entry. For private family events please contact us. ',
   },
 
   {
@@ -532,23 +548,176 @@ export const faqreview = [
   },
 
   {
-    title: 'Is the brunch really bottomless?',
-    review: 'Yes! Drinks flow freely for 90 minutes from your seating time.',
+    title: 'Dress Code?',
+    review:
+      'Our dress code is Smart Elegant, we kindly invite guests to reflect the dress code. Please note management reserves the right to refuse entry.',
   },
 
   {
-    title: 'Can we stay after brunch?',
-    review:
-      'Yes. Stay into the evening — the lights go down; the DJ comes up, send us an email if you’d like to extend your brunch booking with us.',
+    title: 'Opening Hours?',
+    review: `Thursday
+  18:30 – 00:30
+  
+  Friday, Saturday and Sunday
+  18:30 – 02:30`,
   },
 
   {
-    title: 'What is your dresscode?',
+    title: 'Bottomless Brunch?',
+
     review:
-      'We ask our guests to embrace the spirit of the experience with an effortlessly stylish, elevated and occasion ready dress code. Not permitted, Hats, Hoodies, Flip-flops or casual footwear, Sportswear (Including tracksuits, joggers, or athletic shoes).  We encourage all guests to dress with intention and occasion-appropriate polish. Management reserves the right to refuse entry to guests who do not adhere to the dress code.',
+      'Brunch is available every Sunday between 17.30 – 21.00, the option of free-flowing prosecco and cocktails are available.',
+  },
+
+  {
+    title: 'Do you have minimum spend policy?',
+    review:
+      'All reservations on Friday and Saturday are subject to a minimum spend of £65 per person.',
+  },
+
+  {
+    title: 'Late Cancellation Policy',
+    review: `To cancel your booking, please provide at least 24 hours notice. A fee of £30 per person will be charged for no-shows and cancellations made less than 24 hours before the reservation time.
+  
+  Your table will be held for 15 minutes from your reservation time. Only completed parties will be seated, if your party size changes kindly inform us in advance to ensure best seating arrangements.`,
+  },
+
+  {
+    title: 'Seating Time',
+    review:
+      'The seating time is limited to 2 hours for parties of 2 to 9 guests, and 2.5 hours for guests with larger parties.',
   },
 ];
 
+export const experience = [
+  {
+    image: experience1,
+    title: 'Culinary Delight',
+    subtitle: 'Where Flavour Meets the Night',
+    description:
+      "At Drip London, we fuse bold West African Flavors with the pulsating energy of London's nightlife. From the moment you step in, you're enveloped in an atmosphere where culinary excellence meets vibrant entertainment.",
+  },
+  {
+    image: experience2,
+    title: 'Live Entertainment',
+    subtitle: 'Feel the Pulse of the Night',
+    description:
+      'As the evening unfolds, Drip transforms. Experience live weekend performances ranging from soulful saxophonists to dynamic DJs spinning Afrobeats, Amapiano, and R&B. The rhythm of the night is curated to keep you engaged and energized.',
+  },
+  {
+    image: experience3,
+    title: 'Cocktails & Bottle Shows',
+    subtitle: 'Sip, Sparkle, and Celebrate',
+    description:
+      'Our mixologists are artists, creating cocktails that are as visually stunning as they are delicious. Celebrate with our signature bottle shows—where presentation meets party.',
+  },
+  {
+    image: experience4,
+    title: 'Brunch & Group Celebrations',
+    subtitle: 'Brunch Without Boundaries',
+    description:
+      'Weekends at Drip are synonymous with our legendary Bottomless Brunches. Perfect for birthdays, reunions, or just because—our brunches are designed for those who live life unapologetically. Available on Sundays',
+  },
+];
+
+export type Button = {
+  label: string;
+  actionType: 'navigate'; // Add more types if needed
+  path?: string;
+};
+
+export type Item = {
+  img: StaticImageData;
+  title: string;
+  subtitle?: string;
+  desc: string;
+  buttons?: Button[];
+};
+export const items: Item[] = [
+  {
+    img: deam1,
+    title: 'Private Dining',
+    subtitle: 'EXPERIENCE GREAT TASTE',
+    desc: 'Host your event in style with curated menus, ambient luxury, and tailored service—perfect for birthdays, brand launches, and exclusive celebrations.',
+    buttons: [
+      {
+        label: 'More Details',
+        actionType: 'navigate',
+        path: '/private-dining',
+      },
+    ],
+  },
+  {
+    img: deam2,
+    title: 'Bottomless Brunch',
+    subtitle: 'BRUNCH, BUT MAKE IT DRIP',
+    desc: 'Every Sunday from 5PM to 9PM, indulge in bold, flavorful plates crafted to excite your palate, paired with free flowing pours of prosecco or cocktails.',
+    buttons: [
+      {
+        label: 'View Menu',
+        actionType: 'navigate',
+        path: '/menu',
+      },
+    ],
+  },
+  {
+    img: deam3,
+    title: 'Night Life',
+    subtitle: 'AFTER DARK AT DRIP',
+    desc: 'As the lights dim, the energy rises. Experience electrifying beats, curated cocktails, and unforgettable vibes in our luxe late-night space.',
+    buttons: [
+      {
+        label: 'Make a Reservation',
+        actionType: 'navigate',
+        path: '/reservation',
+      },
+    ],
+  },
+];
+
+export const dishes = [
+  {
+    img: slide1,
+    title: 'A New Taste of West Africa',
+    desc: 'Bold, fire-grilled dishes infused with rich spices.',
+  },
+  {
+    img: slide2,
+    title: 'More Than a Meal, It’s a Vibe',
+    desc: 'An immersive dining experience blending storytelling and creativity.',
+  },
+  {
+    img: slide3,
+    title: 'Where City Nights Come Alive',
+    desc: 'Dine, drink, and dance in the heart of the city.',
+  },
+  {
+    img: slide4,
+    title: 'Look the Part. Live the Vibe',
+    desc: 'Smart, bold, and unapologetically stylish—your drip matters.',
+  },
+];
+
+export const dits = [
+  {
+    img: drip1,
+  },
+  {
+    img: drip2,
+  },
+  {
+    img: drip3,
+  },
+  {
+    img: drip4,
+  },
+  {
+    img: drip5,
+  },
+  {
+    img: drip6,
+  },
+];
 
 
 export type men = {
@@ -593,99 +762,10 @@ export const mens: men[] = [
   },
 ];
 
-export const dishes = [
-  {
-    img: slide1,
-    title: 'A New Taste of West Africa',
-    desc: 'Bold, fire-grilled dishes infused with rich spices.',
-  },
-  {
-    img: slide2,
-    title: 'More Than a Meal, It’s a Vibe',
-    desc: 'An immersive dining experience blending storytelling and creativity.',
-  },
-  {
-    img: slide3,
-    title: 'Where City Nights Come Alive',
-    desc: 'Dine, drink, and dance in the heart of the city.',
-  },
-  {
-    img: slide4,
-    title: 'Look the Part. Live the Vibe',
-    desc: 'Smart, bold, and unapologetically stylish—your drip matters.',
-  },
-];
 
-export type Item = {
-  img: StaticImageData;
-  title: string;
-  subtitle?: string;
-  desc: string;
-  buttons?: Button[];
-};
 
-export const items: Item[] = [
-  {
-    img: deam1,
-    title: 'Private Dining',
-    subtitle: 'EXPERIENCE GREAT TASTE',
-    desc: 'Host your event in style with curated menus, ambient luxury, and tailored service—perfect for birthdays, brand launches, and exclusive celebrations.',
-    buttons: [
-      {
-        label: 'More Details',
-        actionType: 'navigate',
-        path: '/private',
-      },
-    ],
-  },
-  {
-    img: deam2,
-    title: 'Bottomless Brunch',
-    subtitle: 'BRUNCH, BUT MAKE IT DRIP',
-    desc: 'Every Sunday from 5PM to 9PM, indulge in bold, flavorful plates crafted to excite your palate, paired with free flowing pours of prosecco or cocktails.',
-    buttons: [
-      {
-        label: 'View Menu',
-        actionType: 'navigate',
-        path: '/menu',
-      },
-    ],
-  },
-  {
-    img: deam3,
-    title: 'Night Life',
-    subtitle: 'AFTER DARK AT DRIP',
-    desc: 'As the lights dim, the energy rises. Experience electrifying beats, curated cocktails, and unforgettable vibes in our luxe late-night space.',
-    buttons: [
-      {
-        label: 'Make a Reservation',
-        actionType: 'navigate',
-        path: '/reservation',
-      },
-    ],
-  },
-];
 
-export const dits = [
-  {
-    img: drip1,
-  },
-  {
-    img: drip2,
-  },
-  {
-    img: drip3,
-  },
-  {
-    img: drip4,
-  },
-  {
-    img: drip5,
-  },
-  {
-    img: drip6,
-  },
-];
+
 
 export const proof = [
   {
@@ -702,11 +782,7 @@ export const proof = [
   },
 ];
 
-export type Button = {
-  label: string;
-  actionType: 'navigate';
-  path: string;
-};
+
 
 export type lints = {
   img: StaticImageData;
@@ -714,7 +790,6 @@ export type lints = {
   desc: string;
   buttons?: Button[];
 };
-
 export const lint: lints[] = [
   {
     img: night1,
@@ -724,12 +799,12 @@ export const lint: lints[] = [
       {
         label: 'Book an Event',
         actionType: 'navigate',
-        path: '/reservation',
+        path: '/book-an-event',
       },
     ],
   },
   {
-    img: night1,
+    img: night2,
     title: 'Restaurant Private Hire',
     desc: 'Drip London’s Dinner Club Restaurant is available for private hire – perfect for private dinners and events. Accommodates up to 80 covers split over 16 tables.',
     buttons: [
@@ -740,8 +815,9 @@ export const lint: lints[] = [
       },
     ],
   },
+
   {
-    img: night2,
+    img: night3,
     title: 'Semi-Private Group Dining',
     desc: 'Ideal for large group dinners while still soaking in the Drip London vibe. Accommodates up to 30 guests.',
     buttons: [
@@ -753,6 +829,8 @@ export const lint: lints[] = [
     ],
   },
 ];
+
+
 
 export const late = [
   {
@@ -776,3 +854,4 @@ export const late = [
     title: 'Dedicated staff',
   },
 ];
+

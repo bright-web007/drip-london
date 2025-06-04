@@ -35,7 +35,7 @@ const Block3 = () => {
               {men.title}
             </h2>
 
-            <div className="border-2 border-[#232323] rounded-[4px]">
+            <div className="border-1 border-[#232323] rounded-[4px]">
               {/* Image with inner shadow */}
               <div className="w-full   mb-[18px] md:mb-[56px] xl:mb-0">
                 {men.img && (
@@ -56,7 +56,7 @@ const Block3 = () => {
                     <button
                       key={btnIndex}
                       onClick={() => handleButtonClick(button)}
-                      className="bg-[rgba(137,129,85,0.15)] font-normal w-full  text-center border-1 border-[#3d3926] rounded-[4px] text-white text-[16px] sm:text-[18px] py-[12px] sm:py-[18px]   md:py-[16px]  md:text-[20px]"
+                      className="bg-[rgba(137,129,85,0.15)] font-normal w-full  text-center border-1 border-[#3d3926] rounded-[4px] text-white text-[16px] sm:text-[18px] py-[12px] sm:py-[18px]   md:py-[16px]  md:text-[20px]  xl:text-[16px] xl:py-[12px]  "
                     >
                       {button.label}
                     </button>
