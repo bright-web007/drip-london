@@ -12,7 +12,7 @@ const Block3 = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 6000, // slow fade-in
+      duration: 2000, // slow fade-in
       easing: 'ease-in-out',
       once: false,
       offset: 50,
@@ -32,7 +32,7 @@ const Block3 = () => {
           {/* Title with fade-in */}
           <h2
             data-aos="custom-fade-in"
-            data-aos-delay="1000"
+            data-aos-delay="300"
             className="text-[18px] text-white font-thankslabs not-italic leading-[35px] font-bold mb-[30px] text-center sm:text-[26px] md:text-[28px] md:mb-[56px] lg:text-[28px] xl:text-[32px]  xl:pb-[56px]"
           >
             {item.title}
@@ -44,7 +44,7 @@ const Block3 = () => {
               index === 1 ? 'xl:flex-row-reverse' : ''
             }`}
             data-aos="custom-fade-in"
-            data-aos-delay="1500"
+            data-aos-delay="300"
           >
             {/* Image */}
             <div className="w-full xl:w-[976px] mb-[18px] md:mb-[56px] xl:mb-0">
@@ -53,7 +53,7 @@ const Block3 = () => {
                   className="relative h-[432px] md:h-[693px] xl:h-[693px] w-full rounded overflow-hidden"
                   style={{ boxShadow: 'inset 0 0 80px rgba(0,0,0,0.6)' }}
                   data-aos="custom-fade-in"
-                  data-aos-delay="2000"
+                  data-aos-delay="300"
                 >
                   <div className="h-[50px] w-[4334px] border-2 border-[black] absolute top-[2px] left-1/2 transform -translate-x-1/2 blur-[14.75px] bg-[black]"></div>
                   <Image src={item.img} alt={item.title} fill className="object-cover" />
@@ -69,7 +69,7 @@ const Block3 = () => {
             <div
               className="w-full py-[24px] px-[28px] md:px-[40px] xl:w-[800px] xl:px-[82px] xl:flex xl:flex-col xl:justify-center"
               data-aos="custom-fade-in"
-              data-aos-delay="1000"
+              data-aos-delay="300"
             >
               {item.subtitle && (
                 <h3 className="font-normal font-Montserrat text-[10px] mb-4 sm:mb-6 text-[#898155] sm:text-[16px] md:text-[18px] md:mb-4 xl:text-[16px]">
@@ -87,7 +87,7 @@ const Block3 = () => {
                     key={btnIndex}
                     onClick={() => handleButtonClick(button)}
                     data-aos="custom-fade-in"
-                    data-aos-delay={`${800 + btnIndex * 300}`}
+                    data-aos-delay={`${300 + btnIndex * 300}`}
                     className="bg-[rgba(137,129,85,0.15)] font-normal cursor-pointer h-[50px] sm:h-[62px] w-full px-4 py-2 border-[0.5px] border-[#3d3926] rounded-[4px] text-[#cfcfcf] text-[14px] sm:text-[18px] md:text-[18px] md:py-[12px] md:h-[70px] xl:w-[438px] xl:h-[50px] xl:text-[16px]"
                   >
                     {button.label}

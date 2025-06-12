@@ -23,7 +23,7 @@ const Block2 = () => {
       {/* Heading fades in */}
       <h2
         data-aos="custom-fade-in"
-        data-aos-delay="800"
+        data-aos-delay="300"
         className="text-white text-[18px] font-thankslabs mb-6 text-center sm:text-[26px] md:text-[28px] md:mb-[56px] xl:mb-[40px] lg:text-[28px] xl:text-[32px]"
       >
         World of Flavors
@@ -32,7 +32,7 @@ const Block2 = () => {
       {/* Container fades in */}
       <div
         data-aos="custom-fade-in"
-        data-aos-delay="1000"
+        data-aos-delay="300"
         className="w-full overflow-x-auto scrollbar-hide"
       >
         <div className="flex gap-[12px] w-max px-2">
@@ -40,7 +40,7 @@ const Block2 = () => {
             <div
               key={index}
               data-aos="custom-fade-in"
-              data-aos-delay={`${1500 + index * 600}`} // stagger fade in
+              data-aos-delay={`${300 + index * 600}`} // stagger fade in
               className="w-[300px] h-[375px] pb-[30px] bg-[#000000] border border-[#191919] rounded-[4px] text-white flex-shrink-0 bg-[length:30px_30px] bg-[radial-gradient(#1D1D1D_0.5px,transparent_5px)] sm:w-[480px] sm:h-[480px] md:w-[464px] md:h-[482px] xl:h-[570px] xl:w-[480px]"
             >
               <div className="relative h-[220px] mb-[34px] sm:h-[300px] xl:h-[400px] md:mb-[56.5px] rounded-[4px] overflow-hidden">

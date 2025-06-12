@@ -57,7 +57,7 @@ const Block4 = () => {
       <h2
         className="text-white text-[18px] font-thankslabs mb-[30px] text-center sm:text-[26px] md:text-[28px] xl:mb-[35px]  xl:text-[32px]"
         data-aos="custom-fade-in"
-        data-aos-delay="1000"
+        data-aos-delay="300"
       >
         A Glimpse of Drip
       </h2>
@@ -68,7 +68,7 @@ const Block4 = () => {
           key={current}
           className="w-full h-[349px] bg-black border border-[#1D1D1D] rounded-lg text-white flex justify-center items-center"
           data-aos="custom-fade-in"
-          data-aos-delay="1000"
+          data-aos-delay="300"
         >
           <Image
             src={dits[current].img}
@@ -82,7 +82,7 @@ const Block4 = () => {
         <div
           className="absolute top-1/2 left-0 right-0 transform -translate-y-1/2 flex justify-between px-4"
           data-aos="custom-fade-in"
-          data-aos-delay="1000"
+          data-aos-delay="300"
         >
           <button
             onClick={prevSlide}
@@ -108,7 +108,7 @@ const Block4 = () => {
         <div
           className="flex justify-center gap-2 bg-[#302e2e] py-[12px] w-full"
           data-aos="custom-fade-in"
-          data-aos-delay="1000"
+          data-aos-delay="300"
         >
           {dits.map((_, index) => (
             <div
@@ -126,7 +126,7 @@ const Block4 = () => {
       <div
         className="hidden md:flex flex-col items-center py-[56px] md:px-[40px] xl:px-[100px]"
         data-aos="custom-fade-in"
-        data-aos-delay="1000"
+        data-aos-delay="300"
       >
         <div
           className="w-full overflow-x-auto scrollbar-hide scroll-smooth snap-x snap-mandatory"
