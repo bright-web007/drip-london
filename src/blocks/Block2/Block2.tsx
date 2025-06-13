@@ -4,7 +4,6 @@ import { dishes } from '@/helpers/data';
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
 const Block2 = () => {
   useEffect(() => {
     AOS.init({
@@ -14,7 +13,6 @@ const Block2 = () => {
       offset: 50, // trigger 100px before element is in view
     });
   }, []);
-
   return (
     <section
       id="next-section"
@@ -28,7 +26,6 @@ const Block2 = () => {
       >
         World of Flavors
       </h2>
-
       {/* Container fades in */}
       <div
         data-aos="custom-fade-in"
@@ -47,7 +44,6 @@ const Block2 = () => {
                 <Image src={dish.img} alt={dish.title} className="w-full h-full object-cover" />
                 <div className="h-[47px] w-[809px] absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 blur-[9.75px] bg-black"></div>
               </div>
-
               <div className="flex flex-col text-center px-[50px] mb-[30px] gap-[16px] sm:px-[90px] md:mb-[50.5px] md:px-[40px] md:gap-[8px]">
                 <h3 className="text-[14px] text-[#cfcfcf] font-thankslabs sm:text-[20px] md:text-[17px]">
                   {dish.title}
@@ -63,5 +59,4 @@ const Block2 = () => {
     </section>
   );
 };
-
 export default Block2;
