@@ -170,3 +170,23 @@
   position: relative;
   z-index: 1;
 }
+
+@keyframes customFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+[data-aos='custom-fade-in'] {
+  opacity: 0;
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 1000ms;
+}
+
+[data-aos='custom-fade-in'].aos-animate {
+  opacity: 1;
+}
