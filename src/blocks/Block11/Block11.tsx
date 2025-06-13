@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import Image from 'next/image';
 import menuBg from '@/assets/background/menu-bg.jpg';
 import arrowdown from '@/assets/icons-svg/arrow-down.svg';
@@ -13,8 +13,20 @@ const Block11 = () => {
     }
   };
 
+  useEffect(() => {
+    // Scroll to #faq if present in the URL hash
+    if (window.location.hash === '#menu') {
+      const el = document.getElementById('menu');
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }, 300); // Delay to ensure DOM is ready
+      }
+    }
+  }, []);
+
   return (
-    <div className="relative w-full h-[646px] overflow-hidden mt-[-72px] ">
+    <div className="relative w-full h-[646px] overflow-hidden mt-[-72px] " id="menu">
       <Image
         src={menuBg}
         alt="Menu"

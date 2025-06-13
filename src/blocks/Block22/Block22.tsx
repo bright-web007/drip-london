@@ -1,7 +1,7 @@
 // pages/booking.tsx
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import DatePicker from 'react-datepicker';
 import TimePicker from 'react-time-picker';
 import { ArrowLeft } from 'lucide-react';
@@ -44,6 +44,18 @@ const Block22 = () => {
     { id: 3, name: 'Christmas Party' },
     { id: 4, name: 'Get Together' },
   ];
+
+  useEffect(() => {
+    // Scroll to #faq if present in the URL hash
+    if (window.location.hash === '#book-an-event') {
+      const el = document.getElementById('book-an-event');
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }, 300); // Delay to ensure DOM is ready
+      }
+    }
+  }, []);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -101,7 +113,7 @@ const Block22 = () => {
   );
 
   return (
-    <div className="w-full mx-auto mt-[-72px] relative h-[90vh] overflow-hidden xl:h-[110vh]">
+    <div className="w-full mx-auto mt-[-72px] relative h-[90vh] overflow-hidden xl:h-[1228px]"  id="book-an-event">
       <Image
         src={reservation}
         alt="contact background"
@@ -305,7 +317,7 @@ const Block22 = () => {
                   ) : (
                     <input
                       id={name}
-                      className="w-[334px] h-[42px] p-[12px] text-[12px] font-monserrat rounded border border-[rgba(197,198,203,0.53)] text-[#fff] bg-[rgba(44,44,44,0.42)]  sm:h-[52px]  xl:w-[445px] xl:h-[58px]  xl:mb-[30px] sm:text-[16px]"
+                      className="w-[334px] h-[42px] p-[12px] text-[12px] font-monserrat rounded border border-[rgba(197,198,203,0.53)] text-[#fff] bg-[rgba(44,44,44,0.42)]  sm:h-[52px]  xl:w-[445px] xl:h-[58px] mb-[2px] sm:text-[16px]"
                       name={name}
                       placeholder={name.charAt(0).toUpperCase() + name.slice(1)}
                       value={formData[name as keyof typeof formData] as string}

@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import Image from 'next/image';
 import newsBg from '@/assets/background/latest-news-bg.jpg';
 import arrowdown from '@/assets/icons-svg/arrow-down.svg';
@@ -13,8 +13,20 @@ const Block19 = () => {
     }
   };
 
+  useEffect(() => {
+    // Scroll to #faq if present in the URL hash
+    if (window.location.hash === '#private-dinning') {
+      const el = document.getElementById('private-dinning');
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }, 300); // Delay to ensure DOM is ready
+      }
+    }
+  }, []);
+
   return (
-    <div className="relative w-full h-[646px] overflow-hidden mt-[-72px] ">
+    <div className="relative w-full h-[646px] overflow-hidden mt-[-72px] " id="private-dinning">
       <Image
         src={newsBg}
         alt="Menu"

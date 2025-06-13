@@ -8,20 +8,20 @@ import { Meta_Tags } from '@/helpers/data';
 import logo from '@/assets/logo.svg';
 
 export const metadata: Metadata = {
-  title: `News | ${Meta_Tags.siteName}`,
+  title: `Private-dinning | ${Meta_Tags.siteName}`,
   description: `${Meta_Tags.description}`,
   metadataBase: new URL(`${Meta_Tags.siteUrl}`),
   openGraph: {
-    title: `News | ${Meta_Tags.siteName}`,
+    title: `Private-dinning | ${Meta_Tags.siteName}`,
     description: `${Meta_Tags.description}`,
-    url: `/news`,
+    url: `/private-dinning`,
     siteName: `${Meta_Tags.siteName}`,
     images: [
       {
         url: `${logo}`,
         width: 1200,
         height: 630,
-        alt: `${Meta_Tags.siteName} News`,
+        alt: `${Meta_Tags.siteName} Private-dinning`,
       },
     ],
     type: 'website',
