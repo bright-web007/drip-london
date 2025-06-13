@@ -1,10 +1,9 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Image from 'next/image';
 import newsBg from '@/assets/background/latest-news-bg.jpg';
 import arrowdown from '@/assets/icons-svg/arrow-down.svg';
-
 
 const Block19 = () => {
   const handleScroll = () => {
