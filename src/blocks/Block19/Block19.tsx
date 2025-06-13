@@ -5,7 +5,6 @@ import Image from 'next/image';
 import newsBg from '@/assets/background/latest-news-bg.jpg';
 import arrowdown from '@/assets/icons-svg/arrow-down.svg';
 
-
 const Block19 = () => {
   const handleScroll = () => {
     const nextSection = document.getElementById('next');
