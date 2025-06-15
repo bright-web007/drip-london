@@ -82,6 +82,7 @@ const Slider = () => {
           <div className="w-full h-[482px] bg-black border border-[#1D1D1D] rounded-lg text-white flex justify-center items-center md:h-[637px]">
             <Image
               src={lint[current].img}
+              fill
               alt="food card"
               className="h-full w-full object-cover"
               unselectable="on"

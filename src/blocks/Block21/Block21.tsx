@@ -2,7 +2,6 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import logo from '@/assets/icons-svg/drip-icon-white.png';
 import { Icon } from '@iconify/react';
 import { useRouter } from 'next/navigation';
 import { navLinker } from '@/helpers/data';
@@ -16,7 +15,7 @@ const MenuNavigation = () => {
         {/* Logo and close */}
         <div className="flex justify-between items-center m-6 z-10 relative">
           <Image
-            src={logo}
+            src="https://drip-london1.s3.eu-north-1.amazonaws.com/drip-icon-white.webp"
             alt="Drip London Logo"
             width={30.623}
             height={43.442}

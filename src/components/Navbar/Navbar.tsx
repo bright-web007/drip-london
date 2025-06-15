@@ -1,10 +1,8 @@
 'use client';
 
 import Image from 'next/image';
-import logo from '@/assets/icons-svg/drip-icon-white.png';
 import { Icon } from '@iconify/react';
 import { useRouter } from 'next/navigation';
-import menuHover from '@/assets/icons-svg/menu-hover.svg';
 
 const Navbar = () => {
   const router = useRouter();
@@ -16,7 +14,7 @@ const Navbar = () => {
     <div className="font-monserrat bg-transparent z-40 flex justify-between pt-[12px] px-[24px]  md:px-[40px] xl:px-[100px]">
       <div className="pt-[10px]">
         <Image
-          src={logo}
+          src="https://drip-london1.s3.eu-north-1.amazonaws.com/drip-icon-white.webp"
           alt="Drip London Logo"
           width={30.623}
           height={43.442}
@@ -36,7 +34,7 @@ const Navbar = () => {
           />
 
           <Image
-            src={menuHover}
+            src="https://drip-london1.s3.eu-north-1.amazonaws.com/menu-hover.webp"
             alt="Menu"
             width={28}
             height={28}

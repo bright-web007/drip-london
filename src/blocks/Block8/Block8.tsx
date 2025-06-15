@@ -1,7 +1,4 @@
 import Image from 'next/image';
-import spagArtboard from '@/assets/spag-artboard.svg';
-import right from '@/assets/right-color.svg';
-import left from '@/assets/left-color.png';
 import { Button } from '@/components/ui/button';
 
 const Block8 = () => {
@@ -9,7 +6,7 @@ const Block8 = () => {
     <div className="bg-beige-400 py-16 xl:py-20">
       <div className=" flex  flex-col md:flex-row items-center justify-between mx-auto w-[90%] xl:w-[85%] 2xl:w-[75%]">
         <Image
-          src={spagArtboard}
+          src="https://drip-london1.s3.eu-north-1.amazonaws.com/spag-artboard.webp"
           alt="Spaghetti"
           width={400}
           height={400}
@@ -26,7 +23,13 @@ const Block8 = () => {
             and a menu that brings global flavors together with finesse.
           </p>
           <div className="flex items-center mt-10">
-            <Image src={left} alt="Drip London Logo" width={12} height={16} color="red" />
+            <Image
+              src="https://drip-london1.s3.eu-north-1.amazonaws.com/left-color.webp"
+              alt="Drip London Logo"
+              width={12}
+              height={16}
+              color="red"
+            />
             <div className="border border-[#89815578] p-[2px] rounded-[2px]">
               <Button className="group bg-transparent border border-beige-500 hover:bg-beige-500 text-sm cursor-pointer rounded-[2px] px-6 py-5 text-beige-500  flex items-center justify-center transition-all duration-300">
                 <span className="flex items-center space-x-1 group-hover:text-white">
@@ -37,7 +40,12 @@ const Block8 = () => {
                 </span>
               </Button>
             </div>
-            <Image src={right} alt="Drip London Logo" width={12} height={16} />
+            <Image
+              src="https://drip-london1.s3.eu-north-1.amazonaws.com/right-color.webp"
+              alt="Drip London Logo"
+              width={12}
+              height={16}
+            />
           </div>
         </div>
       </div>

@@ -2,7 +2,6 @@
 
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
-import downicon from '@/assets/icons-svg/arrow-down.svg';
 import { LayoutHeader } from '@/components/LayoutHeader/LayoutHeader';
 import { useRouter } from 'next/navigation';
 import React, { useEffect } from 'react';
@@ -75,12 +74,13 @@ const Block1 = () => {
         </div>
 
         <div
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 cursor-pointer  xl:bottom-7"
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 cursor-pointer  xl:bottom-7 w-[32px] h-[32px]  md:w-[32px] md:h-[32px]"
           onClick={handleScrollDown}
         >
           <Image
-            src={downicon}
+            src="https://drip-london1.s3.eu-north-1.amazonaws.com/arrow-down.webp"
             alt="arrow down icon"
+            fill
             className="w-[32px] h-[32px]  md:w-[32px] md:h-[32px]  animate-bounce"
           />
         </div>

@@ -41,7 +41,12 @@ const Block2 = () => {
               className="w-[300px] h-[375px] pb-[30px] bg-[#000000] border border-[#191919] rounded-[4px] text-white flex-shrink-0 bg-[length:30px_30px] bg-[radial-gradient(#1D1D1D_0.5px,transparent_5px)] sm:w-[480px] sm:h-[480px] md:w-[464px] md:h-[482px] xl:h-[570px] xl:w-[480px]"
             >
               <div className="relative h-[220px] mb-[34px] sm:h-[300px] xl:h-[400px] md:mb-[56.5px] rounded-[4px] overflow-hidden">
-                <Image src={dish.img} alt={dish.title} className="w-full h-full object-cover" />
+                <Image
+                  src={dish.img}
+                  fill
+                  alt={dish.title}
+                  className="w-full h-full object-cover"
+                />
                 <div className="h-[47px] w-[809px] absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 blur-[9.75px] bg-black"></div>
               </div>
               <div className="flex flex-col text-center px-[50px] mb-[30px] gap-[16px] sm:px-[90px] md:mb-[50.5px] md:px-[40px] md:gap-[8px]">

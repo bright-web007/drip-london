@@ -1,10 +1,6 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import call from '@/assets/icons-svg/call.svg';
-import whatsapp from '@/assets/icons-svg/whatsapp.svg';
-import mail from '@/assets/icons-svg/mail.svg';
-import location from '@/assets/icons-svg/location.svg';
 import { Icon } from '@iconify/react';
 import { navLinker } from '@/helpers/data';
 import { useRouter } from 'next/navigation';
@@ -33,8 +29,10 @@ const Footer = () => {
           <div className="flex flex-col mb-[-8px] text-[12px] font-Montserrat sm:text-[13px] md:text-[14px] md:flex-row md:items-center">
             <div>
               <Image
-                src={location}
+                src="https://drip-london1.s3.eu-north-1.amazonaws.com/location.webp"
                 alt="Icon"
+                height={39}
+                width={39}
                 className="w-[39px] h-[39px] mr-[14px] object-contain hidden md:block"
               />
             </div>
@@ -51,7 +49,13 @@ const Footer = () => {
                 className="w-[39px] h-[39px] rounded-full flex items-center justify-center"
               >
                 <a href="tel:+44 7923628705">
-                  <Image src={call} alt="Icon" className="w-[20px] h-[20px] object-contain" />
+                  <Image
+                    src="https://drip-london1.s3.eu-north-1.amazonaws.com/call.webp"
+                    alt="Icon"
+                    height={20}
+                    width={20}
+                    className="w-[20px] h-[20px] object-contain"
+                  />
                 </a>
               </div>
               <div>
@@ -69,7 +73,13 @@ const Footer = () => {
                 className="w-[39px] h-[39px] rounded-full flex items-center justify-center"
               >
                 <a href="mailto:Reservations@drip.london">
-                  <Image src={mail} alt="Icon" className="w-[20px] h-[20px] object-contain" />
+                  <Image
+                    src="https://drip-london1.s3.eu-north-1.amazonaws.com/mail.webp"
+                    alt="Icon"
+                    height={20}
+                    width={20}
+                    className="w-[20px] h-[20px] object-contain"
+                  />
                 </a>
               </div>
               <div>
@@ -88,7 +98,13 @@ const Footer = () => {
                 className="w-[39px] h-[39px] rounded-full flex items-center justify-center"
               >
                 <a href="tel:+44 7923628705">
-                  <Image src={whatsapp} alt="Icon" className="w-[20px] h-[20px] object-contain" />
+                  <Image
+                    src="https://drip-london1.s3.eu-north-1.amazonaws.com/whatsapp.webp"
+                    alt="Icon"
+                    height={20}
+                    width={20}
+                    className="w-[20px] h-[20px] object-contain"
+                  />
                 </a>
               </div>
               <div>

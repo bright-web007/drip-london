@@ -1,13 +1,12 @@
 import Image from 'next/image';
 import { Icon } from '@iconify/react';
-import steakArtboard from '@/assets/steak-artBoard.svg';
 import { processes } from '@/helpers/data';
 
 const Block10 = () => {
   return (
     <div className="flex flex-col md:flex-row items-center mx-auto w-[90%] xl:w-[85%] 2xl:w-[75%] py-16 xl:py-20">
       <Image
-        src={steakArtboard}
+        src="https://drip-london1.s3.eu-north-1.amazonaws.com/steak-artBoard.webp"
         alt="steak"
         width={400}
         height={400}
