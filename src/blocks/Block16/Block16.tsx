@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import { contact } from '@/helpers/data';
-import gradient from '@/assets/background/gradient-bg.jpg';
 
 const Block16 = () => {
   return (
@@ -19,7 +18,7 @@ const Block16 = () => {
             className="relative overflow-hidden p-[24px] shadow-md border-b-2 border-[#161616] contact-card"
             style={
               {
-                '--card-bg-image': `url(${gradient.src})`,
+                '--card-bg-image': `url("https://drip-london1.s3.eu-north-1.amazonaws.com/gradient-bg.webp")`,
               } as React.CSSProperties
             }
           >

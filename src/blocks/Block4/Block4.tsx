@@ -73,6 +73,7 @@ const Block4 = () => {
           <Image
             src={dits[current].img}
             alt="food card"
+            fill
             className="h-full w-[382px] object-cover sm:w-[600px]"
             unselectable="on"
           />
@@ -144,6 +145,7 @@ const Block4 = () => {
                 <Image
                   src={item.img}
                   alt={`slide-${index}`}
+                  fill
                   className="rounded-[4px] object-cover w-[424px] h-full lg:w-[500px]"
                   unselectable="on"
                 />
