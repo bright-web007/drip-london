@@ -4,6 +4,8 @@ import './globals.css';
 import { AppProvider } from '@/context/AppContext';
 import LayoutWrapper from '@/components/LayoutWrapper/LayoutWrapper';
 import { restaurantSchema } from '@/helpers/data';
+import ApolloWrapper from './providers/ApolloWrapper';
+import { Toaster } from 'sonner';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -43,11 +45,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${fontMontserrat.variable} antialiased`}
       >
-        <AppProvider>
-          <div className="min-h-screen flex flex-col overflow-hidden">
-            <LayoutWrapper>{children}</LayoutWrapper>
-          </div>
-        </AppProvider>
+        <ApolloWrapper>
+          <AppProvider>
+            <div className="min-h-screen flex flex-col overflow-hidden">
+              <LayoutWrapper>{children}</LayoutWrapper>
+              <Toaster richColors />
+            </div>
+          </AppProvider>
+        </ApolloWrapper>
       </body>
     </html>
   );

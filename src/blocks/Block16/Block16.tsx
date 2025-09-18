@@ -1,20 +1,36 @@
-import React from 'react';
+'use client';
+
+import React, { useEffect } from 'react';
 import Image from 'next/image';
 import { contact } from '@/helpers/data';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Block16 = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: false,
+      offset: 50,
+    });
+  }, []);
+
   return (
     <section
-      className="py-[80px]  bg-[black] text-[#D5D5D5] w-full xl:w-[781px] 2xl:w-[981px]"
+      className="py-[80px] bg-black text-[#D5D5D5] w-full xl:w-[781px] 2xl:w-[981px]"
       id="next"
+      data-aos="custom-fade-in"
     >
-      <h2 className="text-[18px] font-normal font-thankslabs mb-6 text-center leading-[35px] md:text-[20pxs] xl:text-left  xl:text-[32px]  xl:leading-[44px]">
+      <h2 className="text-[18px] font-normal font-thankslabs mb-6 text-center leading-[35px] md:text-[20px] xl:text-left xl:text-[32px] xl:leading-[44px]">
         Reservation Guidelines
       </h2>
       <div className="grid">
         {contact.map((item, index) => (
           <div
             key={index}
+            data-aos="custom-fade-in"
+            data-aos-delay={`${index * 100}`}
             className="relative overflow-hidden p-[24px] shadow-md border-b-2 border-[#161616] contact-card"
             style={
               {
