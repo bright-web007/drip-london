@@ -3,21 +3,18 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { events } from '@/helpers/data';
-import image1 from '@/assets/slideshowImages/image1.webp';
-import image2 from '@/assets/slideshowImages/image2.webp';
-import image3 from '@/assets/slideshowImages/image3.webp';
 
 const slideshowImages = [
   {
-    src: image1,
+    src: 'https://drip-london1.s3.eu-north-1.amazonaws.com/image1.webp',
     alt: 'drinking',
   },
   {
-    src: image2,
+    src: 'https://drip-london1.s3.eu-north-1.amazonaws.com/image2.webp',
     alt: 'Burger',
   },
   {
-    src: image3,
+    src: 'https://drip-london1.s3.eu-north-1.amazonaws.com/image3.webp',
     alt: 'cheers',
   },
 ];

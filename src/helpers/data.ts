@@ -1,61 +1,3 @@
-import flit1 from '@/assets/flit1.jpg';
-import flit2 from '@/assets/flit2.png';
-
-import night1 from '@/assets/night1.webp';
-import night2 from '@/assets/night2.webp';
-import night3 from '@/assets/night3.jpg';
-
-import icon1 from '@/assets/icons-svg/icon1.svg';
-import icon2 from '@/assets/icons-svg/icon2.svg';
-import icon3 from '@/assets/icons-svg/icon3.svg';
-import icon4 from '@/assets/icons-svg/icon4.svg';
-import icon6 from '@/assets/icons-svg/icon6.svg';
-import smallPlatesImage from '@/assets/food1.png';
-import largePlatesImage from '@/assets/food2.png';
-import sideImage from '@/assets/food3.png';
-import dessertImage from '@/assets/food4.png';
-import cocktailsImg from '@/assets/drink1.png';
-import mocktailImg from '@/assets/drink2.png';
-
-import card1 from '@/assets/card1.png';
-import card2 from '@/assets/card2.png';
-import card3 from '@/assets/card3.png';
-import card4 from '@/assets/card4.png';
-import card5 from '@/assets/card5.png';
-import card6 from '@/assets/card6.png';
-
-import vector1 from '@/assets/Vector1.svg';
-import vector2 from '@/assets/vector2.svg';
-import vector3 from '@/assets/vector3.svg';
-import vector4 from '@/assets/vector4.svg';
-import vector5 from '@/assets/vector5.svg';
-import experience1 from '@/assets/experience1.jpg';
-import experience2 from '@/assets/experience2.jpg';
-import experience3 from '@/assets/experience3.png';
-import experience4 from '@/assets/experience4.jpg';
-
-import deam1 from '@/assets/deam1.jpg';
-import deam2 from '@/assets/deam2.jpg';
-import deam3 from '@/assets/deam3.jpg';
-
-import slide1 from '@/assets/slide1.jpg';
-import slide2 from '@/assets/slide2.jpg';
-import slide3 from '@/assets/slide3.jpg';
-import slide4 from '@/assets/slide4.jpg';
-
-import drip1 from '@/assets/drip1.jpg';
-import drip2 from '@/assets/drip2.jpg';
-import drip3 from '@/assets/drip3.jpg';
-import drip4 from '@/assets/drip4.jpg';
-import drip5 from '@/assets/drip5.jpg';
-import drip6 from '@/assets/drip6.jpg';
-
-import menu1 from '@/assets/menu1.jpg';
-import menu2 from '@/assets/menu2.jpg';
-import menu3 from '@/assets/menu3.jpg';
-
-import { StaticImageData } from 'next/image';
-
 export const reviews = [
   {
     author: 'Richard Johnson',
@@ -118,7 +60,7 @@ export const events = [
 
 export const drinksMenu = {
   cocktails: {
-    image: cocktailsImg,
+    image: 'https://drip-london1.s3.eu-north-1.amazonaws.com/drink1.webp',
     items: [
       {
         title: 'Savannah Drip',
@@ -160,7 +102,7 @@ export const drinksMenu = {
     ],
   },
   mocktails: {
-    image: mocktailImg,
+    image: 'https://drip-london1.s3.eu-north-1.amazonaws.com/drink2.webp',
     items: [
       {
         title: 'Victoria Island',
@@ -186,7 +128,7 @@ export const drinksMenu = {
 
 export const foodMenu = {
   SmallPlates: {
-    image: smallPlatesImage,
+    image: 'https://drip-london1.s3.eu-north-1.amazonaws.com/food1.webp',
     items: [
       {
         title: 'Suya Buttermilk Chicken',
@@ -220,7 +162,7 @@ export const foodMenu = {
     ],
   },
   largePlates: {
-    image: largePlatesImage,
+    image: 'https://drip-london1.s3.eu-north-1.amazonaws.com/food2.webp',
     items: [
       {
         title: 'Kaduna Beef Suya',
@@ -260,7 +202,7 @@ export const foodMenu = {
   },
 
   Sides: {
-    image: sideImage,
+    image: 'https://drip-london1.s3.eu-north-1.amazonaws.com/food3.webp',
     items: [
       {
         title: 'Sweet Potato, Swede & Cassava Mash',
@@ -281,7 +223,7 @@ export const foodMenu = {
     ],
   },
   Dessert: {
-    image: dessertImage,
+    image: 'https://drip-london1.s3.eu-north-1.amazonaws.com/food4.webp',
     items: [
       {
         title: 'Warm filled doughnuts',
@@ -306,50 +248,50 @@ export const navLinks = [
 
 export const navLinker = [
   { name: 'Reservations', link: '/reservations#reservation' },
-  { name: 'Menus', link: '/menu' },
+  { name: 'Menus', link: '/menu#menu' },
   { name: 'Private Dining', link: '/private-dining#private-dinning' },
   { name: 'The Experience', link: '/the-experience#experience' },
-  { name: 'Book An Event', link: '/book-an-event' },
+  { name: 'Book An Event', link: '/book-an-event#book-an-event' },
 ];
 
 export const latestNews = [
   {
-    image: card1,
+    image: 'https://drip-london1.s3.eu-north-1.amazonaws.com/card1.webp',
     date: 'April 25, 2025',
     subtitle: 'Inside the Drip: Our Signature Cocktail Menu Just Got a Glow Up',
     description:
       "Our bartenders have been busy shaking things up — literally. Discover the fresh new flavors and bold updates we've made to your favourite sips.",
   },
   {
-    image: card2,
+    image: 'https://drip-london1.s3.eu-north-1.amazonaws.com/card2.webp',
     date: 'March 25, 2025',
     subtitle: 'Friday Nights at Drip: What to Expect After Dark',
     description:
       "Dinner may end, but the vibe doesn't. Dive into the experience that turns Drip London from chic restaurant to high-energy lounge every Friday night.",
   },
   {
-    image: card3,
+    image: 'https://drip-london1.s3.eu-north-1.amazonaws.com/card3.webp',
     date: 'February 25, 2025',
     subtitle: 'Behind the Scenes: A Day in the Life of the Drip Kitchen Crew',
     description:
       'From prepping signature mains to plating your favourite starters, take a peek at how the Drip team keeps things flavorful and fast-paced in the kitchen.',
   },
   {
-    image: card4,
+    image: 'https://drip-london1.s3.eu-north-1.amazonaws.com/card4.webp',
     date: 'February 25, 2025',
     subtitle: "Event Recap: Women's Day Brunch Celebration",
     description:
       "Thank you to everyone who joined us for a day of joy, empowerment, and incredible food. Here's a recap of the best moments — and what's coming next.",
   },
   {
-    image: card5,
+    image: 'https://drip-london1.s3.eu-north-1.amazonaws.com/card5.webp',
     date: 'February 25, 2025',
     subtitle: 'Booking Private Dining at Drip: What You Need to Know',
     description:
       'Thinking about hosting a birthday or business dinner? We break down everything you need to know about our stunning private dining experiences.',
   },
   {
-    image: card6,
+    image: 'https://drip-london1.s3.eu-north-1.amazonaws.com/card6.webp',
     date: 'February 25, 2025',
     subtitle: 'Celebrate in Style: Your Guide to Private Dining at Drip',
     description:
@@ -498,31 +440,31 @@ export const GOOGLE_MAPS_APIKEY = 'AIzaSyB_Ujmyiir8qmceRFs5ICiSHUJhQnXRZD4';
 
 export const contact = [
   {
-    image: vector1,
+    image: 'https://drip-london1.s3.eu-north-1.amazonaws.com/Vector1.webp',
     subtitle: 'Minimum Spend',
     description:
       'A minimum spend of £65 per person applies from Friday to Sunday (excluding brunch bookings).',
   },
   {
-    image: vector2,
+    image: 'https://drip-london1.s3.eu-north-1.amazonaws.com/vector2.webp',
     subtitle: 'Group Bookings',
     description:
       'Reservations of fewer than 12 guests are welcome to dine from our à la carte menu. Groups of 12 or more will be offered a specially curated set menu by our chef.',
   },
   {
-    image: vector3,
+    image: 'https://drip-london1.s3.eu-north-1.amazonaws.com/vector3.webp',
     subtitle: 'Dress Code',
     description:
       'Our dress code is Smart Elegant, we kindly invite guests to reflect the dress code. We encourage smart shoes. To avoid disappointment please refrain from wearing sportswear, hats, hoodies, beachwear shorts and sandals. <br> Please note management reserves the right to refuse entry.',
   },
   {
-    image: vector4,
+    image: 'https://drip-london1.s3.eu-north-1.amazonaws.com/vector4.webp',
     subtitle: 'Reservation Timing',
     description:
       'We hold tables for 15 minutes past the booking time before releasing them to other waiting guests.',
   },
   {
-    image: vector5,
+    image: 'https://drip-london1.s3.eu-north-1.amazonaws.com/vector5.webp',
     subtitle: 'Availability',
     description:
       'If you can’t find your preferred date or time online, feel free to contact us directly via WhatsApp or email.',
@@ -591,28 +533,28 @@ export const faqreview = [
 
 export const experience = [
   {
-    image: experience1,
+    image: 'https://drip-london1.s3.eu-north-1.amazonaws.com/experience1.webp',
     title: 'Culinary Delight',
     subtitle: 'Where Flavour Meets the Night',
     description:
       "At Drip London, we fuse bold West African Flavors with the pulsating energy of London's nightlife. From the moment you step in, you're enveloped in an atmosphere where culinary excellence meets vibrant entertainment.",
   },
   {
-    image: experience2,
+    image: 'https://drip-london1.s3.eu-north-1.amazonaws.com/experience2.webp',
     title: 'Live Entertainment',
     subtitle: 'Feel the Pulse of the Night',
     description:
       'As the evening unfolds, Drip transforms. Experience live weekend performances ranging from soulful saxophonists to dynamic DJs spinning Afrobeats, Amapiano, and R&B. The rhythm of the night is curated to keep you engaged and energized.',
   },
   {
-    image: experience3,
+    image: 'https://drip-london1.s3.eu-north-1.amazonaws.com/experience3.webp',
     title: 'Cocktails & Bottle Shows',
     subtitle: 'Sip, Sparkle, and Celebrate',
     description:
       'Our mixologists are artists, creating cocktails that are as visually stunning as they are delicious. Celebrate with our signature bottle shows—where presentation meets party.',
   },
   {
-    image: experience4,
+    image: 'https://drip-london1.s3.eu-north-1.amazonaws.com/experience4.webp',
     title: 'Brunch & Group Celebrations',
     subtitle: 'Brunch Without Boundaries',
     description:
@@ -627,7 +569,7 @@ export type Button = {
 };
 
 export type Item = {
-  img: StaticImageData;
+  img: string;
   title: string;
   subtitle?: string;
   desc: string;
@@ -635,7 +577,7 @@ export type Item = {
 };
 export const items: Item[] = [
   {
-    img: deam1,
+    img: 'https://drip-london1.s3.eu-north-1.amazonaws.com/deam1.webp',
     title: 'Private Dining',
     subtitle: 'EXPERIENCE GREAT TASTE',
     desc: 'Host your event in style with curated menus, ambient luxury, and tailored service—perfect for birthdays, brand launches, and exclusive celebrations.',
@@ -648,7 +590,7 @@ export const items: Item[] = [
     ],
   },
   {
-    img: deam2,
+    img: 'https://drip-london1.s3.eu-north-1.amazonaws.com/deam2.webp',
     title: 'Bottomless Brunch',
     subtitle: 'BRUNCH, BUT MAKE IT DRIP',
     desc: 'Every Sunday from 5PM to 9PM, indulge in bold, flavorful plates crafted to excite your palate, paired with free flowing pours of prosecco or cocktails.',
@@ -661,7 +603,7 @@ export const items: Item[] = [
     ],
   },
   {
-    img: deam3,
+    img: 'https://drip-london1.s3.eu-north-1.amazonaws.com/deam3.webp',
     title: 'Night Life',
     subtitle: 'AFTER DARK AT DRIP',
     desc: 'As the lights dim, the energy rises. Experience electrifying beats, curated cocktails, and unforgettable vibes in our luxe late-night space.',
@@ -677,22 +619,22 @@ export const items: Item[] = [
 
 export const dishes = [
   {
-    img: slide1,
+    img: 'https://drip-london1.s3.eu-north-1.amazonaws.com/slide1.webp',
     title: 'A New Taste of West Africa',
     desc: 'Bold, fire-grilled dishes infused with rich spices.',
   },
   {
-    img: slide2,
+    img: 'https://drip-london1.s3.eu-north-1.amazonaws.com/slide2.webp',
     title: 'More Than a Meal, It’s a Vibe',
     desc: 'An immersive dining experience blending storytelling and creativity.',
   },
   {
-    img: slide3,
+    img: 'https://drip-london1.s3.eu-north-1.amazonaws.com/slide3.webp',
     title: 'Where City Nights Come Alive',
     desc: 'Dine, drink, and dance in the heart of the city.',
   },
   {
-    img: slide4,
+    img: 'https://drip-london1.s3.eu-north-1.amazonaws.com/slide4.webp',
     title: 'Look the Part. Live the Vibe',
     desc: 'Smart, bold, and unapologetically stylish—your drip matters.',
   },
@@ -700,34 +642,34 @@ export const dishes = [
 
 export const dits = [
   {
-    img: drip1,
+    img: 'https://drip-london1.s3.eu-north-1.amazonaws.com/drip1.webp',
   },
   {
-    img: drip2,
+    img: 'https://drip-london1.s3.eu-north-1.amazonaws.com/drip2.webp',
   },
   {
-    img: drip3,
+    img: 'https://drip-london1.s3.eu-north-1.amazonaws.com/drip3.webp',
   },
   {
-    img: drip4,
+    img: 'https://drip-london1.s3.eu-north-1.amazonaws.com/drip4.webp',
   },
   {
-    img: drip5,
+    img: 'https://drip-london1.s3.eu-north-1.amazonaws.com/drip5.webp',
   },
   {
-    img: drip6,
+    img: 'https://drip-london1.s3.eu-north-1.amazonaws.com/drip6.webp',
   },
 ];
 
 export type men = {
-  img: StaticImageData;
+  img: string;
   title: string;
   buttons?: Button[];
 };
 
 export const mens: men[] = [
   {
-    img: menu1,
+    img: 'https://drip-london1.s3.eu-north-1.amazonaws.com/menu1.webp',
     title: 'A la carte Menu',
     buttons: [
       {
@@ -738,7 +680,7 @@ export const mens: men[] = [
     ],
   },
   {
-    img: menu2,
+    img: 'https://drip-london1.s3.eu-north-1.amazonaws.com/menu2.webp',
     title: 'Bar Menu',
     buttons: [
       {
@@ -749,7 +691,7 @@ export const mens: men[] = [
     ],
   },
   {
-    img: menu3,
+    img: 'https://drip-london1.s3.eu-north-1.amazonaws.com/menu3.webp',
     title: 'Bottomless Brunch Menu',
     buttons: [
       {
@@ -763,13 +705,13 @@ export const mens: men[] = [
 
 export const proof = [
   {
-    img: flit1,
+    img: 'https://drip-london1.s3.eu-north-1.amazonaws.com/flit1.webp',
     title: 'Group Dining Redefined',
     description:
       'Drip London’s group dining experience blends fire-grilled West African flavours with a luxe, immersive atmosphere.',
   },
   {
-    img: flit2,
+    img: 'https://drip-london1.s3.eu-north-1.amazonaws.com/flit2.webp',
     title: 'Celebrate in Style',
     description:
       'Perfect for birthdays, corporate events, or any moment worth celebrating—make every occasion unforgettable.',
@@ -777,14 +719,14 @@ export const proof = [
 ];
 
 export type lints = {
-  img: StaticImageData;
+  img: string;
   title: string;
   desc: string;
   buttons?: Button[];
 };
 export const lint: lints[] = [
   {
-    img: night1,
+    img: 'https://drip-london1.s3.eu-north-1.amazonaws.com/night1.webp',
     title: 'Club Space Hire',
     desc: 'Drip London’s club space is available for private hire – perfect for birthdays, brand launches, after-parties and exclusive celebrations.',
     buttons: [
@@ -796,7 +738,7 @@ export const lint: lints[] = [
     ],
   },
   {
-    img: night2,
+    img: 'https://drip-london1.s3.eu-north-1.amazonaws.com/night2.webp',
     title: 'Restaurant Private Hire',
     desc: 'Drip London’s Dinner Club Restaurant is available for private hire – perfect for private dinners and events. Accommodates up to 80 covers split over 16 tables.',
     buttons: [
@@ -809,7 +751,7 @@ export const lint: lints[] = [
   },
 
   {
-    img: night3,
+    img: 'https://drip-london1.s3.eu-north-1.amazonaws.com/night3.webp',
     title: 'Semi-Private Group Dining',
     desc: 'Ideal for large group dinners while still soaking in the Drip London vibe. Accommodates up to 30 guests.',
     buttons: [
@@ -824,23 +766,23 @@ export const lint: lints[] = [
 
 export const late = [
   {
-    img: icon1,
+    img: 'https://drip-london1.s3.eu-north-1.amazonaws.com/icon1.webp',
     title: 'Capacity of up to 150 Guests',
   },
   {
-    img: icon2,
+    img: 'https://drip-london1.s3.eu-north-1.amazonaws.com/icon2.webp',
     title: 'State of the art sound system',
   },
   {
-    img: icon3,
+    img: 'https://drip-london1.s3.eu-north-1.amazonaws.com/icon3.webp',
     title: 'Private DJ booth',
   },
   {
-    img: icon4,
+    img: 'https://drip-london1.s3.eu-north-1.amazonaws.com/icon4.webp',
     title: 'Tailored canape options',
   },
   {
-    img: icon6,
+    img: 'https://drip-london1.s3.eu-north-1.amazonaws.com/icon6.webp',
     title: 'Dedicated staff',
   },
 ];

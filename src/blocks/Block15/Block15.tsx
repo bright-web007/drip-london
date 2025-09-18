@@ -2,11 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import contactbg from '@/assets/background/contact-bg.jpg';
-import arrowdown from '@/assets/icons-svg/arrow-down.svg';
 import { CalendarDays, Clock, User } from 'lucide-react';
-import OpenTable from '@/assets/OpenTable.png';
-import info from '@/assets/icons-svg/info-circle.svg';
 
 const Block15 = () => {
   const [guests, setGuests] = useState('2');
@@ -69,7 +65,7 @@ const Block15 = () => {
     >
       {/* Background Image */}
       <Image
-        src={contactbg}
+        src="https://drip-london1.s3.eu-north-1.amazonaws.com/contact-bg.webp"
         alt="Menu"
         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-in-out"
         fill
@@ -136,14 +132,25 @@ const Block15 = () => {
 
         {/* OpenTable Logo */}
         <div className="mb-[20px] xl:mb-[60px]">
-          <Image src={OpenTable} alt="open table" className="w-[113.841px] h-[25.67px]" />
+          <Image
+            src="https://drip-london1.s3.eu-north-1.amazonaws.com/OpenTable.webp"
+            height={25.67}
+            width={113.841}
+            alt="open table"
+            className="w-[113.841px] h-[25.67px]"
+          />
         </div>
       </div>
 
       {/* Info Box */}
       <div className="absolute bottom-[85px] w-full flex justify-center">
         <div className="flex gap-[16px] bg-[rgba(17,17,17,0.30)] border border-[#2B2B2B] py-[24px] px-[12px] w-[400px] max-w-[855px] md:w-[647px] xl:w-[855px] xl:pr-[210px]">
-          <Image src={info} alt="info icon" />
+          <Image
+            src="https://drip-london1.s3.eu-north-1.amazonaws.com/info-circle.webp"
+            height={15}
+            width={25}
+            alt="info icon"
+          />
           <p className="text-[13px] text-gray-300 leading-[17px] md:text-[15.5px]">
             For reservations of 12 and above please contact us directly on{' '}
             <a
@@ -157,14 +164,16 @@ const Block15 = () => {
       </div>
 
       {/* Scroll Arrow */}
-      <div className="absolute bottom-6 w-full flex justify-center">
-        <button onClick={handleScroll} aria-label="Scroll to next section">
-          <Image
-            src={arrowdown}
-            alt="Scroll down"
-            className="w-[24px] h-[24px] sm:w-[45px] sm:h-[45px] md:w-[40px] md:h-[40px] animate-bounce"
-          />
-        </button>
+      <div
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 cursor-pointer  xl:bottom-7 w-[32px] h-[32px]  md:w-[32px] md:h-[32px]"
+        onClick={handleScroll}
+      >
+        <Image
+          src="https://drip-london1.s3.eu-north-1.amazonaws.com/arrow-down.webp"
+          alt="arrow down icon"
+          fill
+          className="w-[32px] h-[32px]  md:w-[32px] md:h-[32px]  animate-bounce"
+        />
       </div>
 
       {/* Bottom Shadow Blur */}

@@ -7,17 +7,11 @@ import TimePicker from 'react-time-picker';
 import { ArrowLeft } from 'lucide-react';
 import 'react-datepicker/dist/react-datepicker.css';
 import 'react-time-picker/dist/TimePicker.css';
-import arrow from '@/assets/icons-svg/arrow-side.svg';
-import facebook from '@/assets/icons-svg/logos_facebook.svg';
-import google from '@/assets/icons-svg/devicon_google.svg';
-import apple from '@/assets/icons-svg/devicon_apple.svg';
-import reservation from '@/assets/background/reservation-bg.jpg';
 import Image from 'next/image';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 import { ChevronDown } from 'lucide-react';
 import { Listbox } from '@headlessui/react';
-import calender from '@/assets/icons-svg/calendar.svg';
 import { useRouter } from 'next/navigation';
 import { FaCheck } from 'react-icons/fa';
 
@@ -98,25 +92,17 @@ const Block22 = () => {
 
   const prevStep = () => setStep(step - 1);
 
-  const BookingHeader = () => (
-    <div className="bg-black/60 backdrop-blur-md rounded-xl p-6 text-white mb-6 shadow-md">
-      <div
-        className="flex items-center mb-6 space-x-2 cursor-pointer md:mb-[28px]"
-        onClick={prevStep}
-      >
-        <ArrowLeft className="w-5 h-5" />
-        <span className="text-sm">Go Back</span>
-      </div>
-
-      <h2 className="text-2xl font-serif mb-6 tracking-wide">Event Details</h2>
-    </div>
-  );
+  const BookingHeader = () => '';
 
   return (
-    <div className="w-full mx-auto mt-[-72px] relative h-[90vh] overflow-hidden xl:h-[110vh]"  id="book-an-event">
+    <div
+      className="w-full mx-auto mt-[-72px] relative h-[90vh] overflow-hidden xl:h-[1228px]"
+      id="book-an-event"
+    >
       <Image
-        src={reservation}
+        src="https://drip-london1.s3.eu-north-1.amazonaws.com/reservation-bg.webp"
         alt="contact background"
+        fill={true}
         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-in-out"
       />
       {step > 1 && <BookingHeader />}
@@ -140,7 +126,7 @@ const Block22 = () => {
 
             <button className="w-full py-[12px] px-[24px] rounded-[4px] flex items-center justify-center  gap-[12px] text-[#FFF] text-[14px] font-monserrat leading-[21px] bg-black/30 backdrop-blur-sm  sm:text-[18px] sm:py-[15px] md:text-[20px] md:h-[52.67px]  xl:w-[870px] xl:h-[60px] xl:text-[18px]">
               <Image
-                src={google}
+                src="https://drip-london1.s3.eu-north-1.amazonaws.com/devicon_google.webp"
                 alt="google"
                 width={20}
                 height={20}
@@ -151,7 +137,7 @@ const Block22 = () => {
 
             <button className="w-full py-[12px] px-[24px] rounded-[4px] flex gap-[12px] items-center justify-center  text-[#FFF] text-[14px] font-monserrat leading-[21px] bg-black/30 backdrop-blur-sm  sm:text-[18px] sm:py-[15px] md:text-[20px]  md:h-[52.67px] xl:w-[870px] xl:h-[60px] xl:text-[18px]">
               <Image
-                src={apple}
+                src="https://drip-london1.s3.eu-north-1.amazonaws.com/devicon_apple.webp"
                 alt="apple"
                 width={20}
                 height={20}
@@ -162,7 +148,7 @@ const Block22 = () => {
 
             <button className="w-full py-[12px] px-[24px] rounded-[4px] flex gap-[12px] items-center justify-center  text-[#FFF] text-[14px] font-monserrat leading-[21px] bg-black/30 backdrop-blur-sm  sm:text-[18px] sm:py-[15px] md:text-[20px]  md:h-[52.67px] xl:w-[870px] xl:h-[60px] xl:text-[18px]">
               <Image
-                src={facebook}
+                src="https://drip-london1.s3.eu-north-1.amazonaws.com/logos_facebook.webp"
                 alt="facebook"
                 width={20}
                 height={20}
@@ -183,7 +169,7 @@ const Block22 = () => {
                 Continue without login
               </span>
               <Image
-                src={arrow}
+                src="https://drip-london1.s3.eu-north-1.amazonaws.com/arrow-side.webp"
                 alt="group"
                 width={20}
                 height={20}
@@ -317,7 +303,7 @@ const Block22 = () => {
                   ) : (
                     <input
                       id={name}
-                      className="w-[334px] h-[42px] p-[12px] text-[12px] font-monserrat rounded border border-[rgba(197,198,203,0.53)] text-[#fff] bg-[rgba(44,44,44,0.42)]  sm:h-[52px]  xl:w-[445px] xl:h-[58px]  xl:mb-[30px] sm:text-[16px]"
+                      className="w-[334px] h-[42px] p-[12px] text-[12px] font-monserrat rounded border border-[rgba(197,198,203,0.53)] text-[#fff] bg-[rgba(44,44,44,0.42)]  sm:h-[52px]  xl:w-[445px] xl:h-[58px] mb-[2px] sm:text-[16px]"
                       name={name}
                       placeholder={name.charAt(0).toUpperCase() + name.slice(1)}
                       value={formData[name as keyof typeof formData] as string}
@@ -484,11 +470,14 @@ const Block22 = () => {
                   onChange={date => setFormData({ ...formData, eventDate: date as Date })}
                   className="w-[334px] p-2 pr-10 border border-[rgba(197,198,203,0.53)] text-[12px] font-monserrat text-white bg-[rgba(44,44,44,0.42)] sm:py-3  xl:w-[450px] xl:h-[54px] rounded-[4px] xl:text-[16px]"
                 />
-                <Image
-                  src={calender}
-                  alt="calendar"
-                  className="absolute right-[-92px] top-1/2 transform -translate-y-1/2 w-5 h-5 pointer-events-none"
-                />
+                <div className="absolute right-[-92px] top-1/2 transform -translate-y-1/2 w-5 h-5 pointer-events-none">
+                  <Image
+                    src="https://drip-london1.s3.eu-north-1.amazonaws.com/calendar.webp"
+                    alt="calendar"
+                    fill
+                    className="absolute right-[-92px] top-1/2 transform -translate-y-1/2 w-5 h-5 pointer-events-none"
+                  />
+                </div>
               </div>
 
               {errors.eventDate && (

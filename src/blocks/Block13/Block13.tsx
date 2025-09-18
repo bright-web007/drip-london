@@ -1,6 +1,6 @@
 'use client';
 import { drinksMenu, foodMenu } from '@/helpers/data';
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
 import { useState } from 'react';
 
 const capitalize = (str: string) => str.charAt(0).toUpperCase() + str.slice(1);
@@ -12,7 +12,7 @@ const Block13 = () => {
     title: string,
     section: {
       items: { title: string; description: string; price: string }[];
-      image: StaticImageData;
+      image: string;
     }
   ) => (
     <div className="flex items-center mb-10" key={title}>
@@ -84,7 +84,7 @@ const Block13 = () => {
               capitalize(key),
               section as {
                 items: { title: string; description: string; price: string }[];
-                image: StaticImageData;
+                image: string;
               }
             )
         )}

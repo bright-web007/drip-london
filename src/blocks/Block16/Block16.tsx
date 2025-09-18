@@ -3,7 +3,6 @@
 import React, { useEffect } from 'react';
 import Image from 'next/image';
 import { contact } from '@/helpers/data';
-import gradient from '@/assets/background/gradient-bg.jpg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -35,7 +34,7 @@ const Block16 = () => {
             className="relative overflow-hidden p-[24px] shadow-md border-b-2 border-[#161616] contact-card"
             style={
               {
-                '--card-bg-image': `url(${gradient.src})`,
+                '--card-bg-image': `url("https://drip-london1.s3.eu-north-1.amazonaws.com/gradient-bg.webp")`,
               } as React.CSSProperties
             }
           >
@@ -56,8 +55,7 @@ const Block16 = () => {
             {item.subtitle === 'Group Bookings' ? (
               <ul className="list-disc list-inside text-[13px] font-normal font-monserrat leading-[22px] md:text-[14px] xl:text-[16px]">
                 <li>
-                  Reservations of fewer than 12 guests are welcome to dine from our à la carte
-                  menu.
+                  Reservations of fewer than 12 guests are welcome to dine from our à la carte menu.
                 </li>
                 <li>
                   Groups of 12 or more will be offered a specially curated set menu by our chef.

@@ -2,9 +2,6 @@
 
 import React, { useEffect } from 'react';
 import Image from 'next/image';
-import newsBg from '@/assets/background/latest-news-bg.jpg';
-import arrowdown from '@/assets/icons-svg/arrow-down.svg';
-
 
 const Block19 = () => {
   const handleScroll = () => {
@@ -29,7 +26,7 @@ const Block19 = () => {
   return (
     <div className="relative w-full h-[646px] overflow-hidden mt-[-72px] " id="private-dinning">
       <Image
-        src={newsBg}
+        src="https://drip-london1.s3.eu-north-1.amazonaws.com/latest-news-bg.webp"
         alt="Menu"
         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-in-out"
         fill
@@ -46,14 +43,16 @@ const Block19 = () => {
       </div>
 
       {/* Scroll Arrow */}
-      <div className="absolute bottom-6 w-full flex justify-center">
-        <button onClick={handleScroll} aria-label="Scroll to next section">
-          <Image
-            src={arrowdown}
-            alt="Scroll down"
-            className="w-[24px] h-[24px]  sm:w-[45px] sm:h-[45px]  md:w-[40px] md:h-[40px] animate-bounce"
-          />
-        </button>
+      <div
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 cursor-pointer  xl:bottom-7 w-[32px] h-[32px]  md:w-[32px] md:h-[32px]"
+        onClick={handleScroll}
+      >
+        <Image
+          src="https://drip-london1.s3.eu-north-1.amazonaws.com/arrow-down.webp"
+          alt="arrow down icon"
+          fill
+          className="w-[32px] h-[32px]  md:w-[32px] md:h-[32px]  animate-bounce"
+        />
       </div>
       <div className="h-[55px] w-[4334px] border-2 border-[black]  absolute bottom-[-22px] left-1/2 transform -translate-x-1/2 blur-[11.75px] bg-[black]"></div>
     </div>

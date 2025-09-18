@@ -1,8 +1,21 @@
-import React from 'react';
+'use client';
+
+import React, { useEffect } from 'react';
 import Image from 'next/image';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { late } from '@/helpers/data';
 
 const Block28 = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+      easing: 'ease-in-out',
+      offset: 50,
+    });
+  }, []);
+
   return (
     <section className="pt-[52px] pb-[150px] px-6 bg-black xl:px-15">
       <div className="grid grid-cols-1 xl:grid-cols-5 gap-8 place-items-center">
@@ -10,6 +23,8 @@ const Block28 = () => {
           <div
             key={index}
             className="flex flex-col xl:flex-row items-center justify-center text-center gap-4"
+            data-aos="custom-fade-in"
+            data-aos-delay={index * 150}
           >
             {/* Image + Title grouped */}
             <div className="flex flex-col items-center justify-center">
@@ -30,7 +45,7 @@ const Block28 = () => {
             {/* HR Line — only if not the last item */}
             {index !== late.length - 1 && (
               <div className="mt-[24px] xl:mt-0 xl:mx-2">
-                <hr className="w-[56.08px]  border-1 border-[rgba(137,129,85,0.19)]" />
+                <hr className="w-[56.08px] border-1 border-[rgba(137,129,85,0.19)]" />
               </div>
             )}
           </div>

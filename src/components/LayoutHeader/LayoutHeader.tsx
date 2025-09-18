@@ -46,7 +46,10 @@ export const LayoutHeader = () => {
         playsInline
         className="w-full h-full object-cover"
       >
-        <source src="/video/homepage.mp4" type="video/mp4" />
+        <source
+          src="https://drip-london1.s3.eu-north-1.amazonaws.com/homepage.webm"
+          type="video/mp4"
+        />
       </video>
     </div>
   );

@@ -1,12 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
-import aboutBg from '@/assets/background/about-bg.webp';
 
 const Block7 = () => {
   return (
     <div className="relative w-full h-[70vh] overflow-hidden mt-[-72px]">
       <Image
-        src={aboutBg}
+        src="https://drip-london1.s3.eu-north-1.amazonaws.com/about-bg.webp"
         alt="About us"
         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-in-out"
         width={400}
