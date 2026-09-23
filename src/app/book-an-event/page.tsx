@@ -7,6 +7,14 @@ export const metadata: Metadata = {
   title: `Book-An-Event | ${Meta_Tags.siteName}`,
   description: `${Meta_Tags.description}`,
   metadataBase: new URL(`${Meta_Tags.siteUrl}`),
+  robots: {
+    index: false, // hide from Google
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+    },
+  },
   openGraph: {
     title: `Book-An-Event | ${Meta_Tags.siteName}`,
     description: `${Meta_Tags.description}`,
